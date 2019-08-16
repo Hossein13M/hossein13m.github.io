@@ -1,16 +1,44 @@
 @import "../../partial-styles/colors";
-@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
 // TODO: the colors have been imported
-.header{
-    background-color: map-get($primary-colors, "dark");
-    display: flex;
-    color: map-get($primary-colors, "light");
-    text-align: center;
-    padding-top: 10px;
-    .name-logo{
-        display: flex;
-        font-family: 'Lobster', cursive;
-        color: map-get($primary-colors, "logo");
+
+.header {
+  background-color: red;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  hr {
+    color: #fff;
+    height: 20px;
+  }
+
+  .sidebar {
+    background-color: #0c1e6e;
+    color: #fff;
+    padding-top: 70px;
+    .logo{
+        text-align: center;
     }
-    
+
+    .nav-bar-item {
+      padding-top: 15px;
+      padding-left: 10px;
+      color: #fff;
+    }
+  }
+
+  .header-introduce {
+    background-image: url(../../assets/images/header/background.jpg);
+    position: relative;
+ 
+
+    // .profile-picture {
+    //   position: absolute;
+
+    //   img {
+    //     border: 5px solid rgb(252, 0, 0);
+    //     border-radius: 50%;
+    //   }
+    // }
+  }
 }
