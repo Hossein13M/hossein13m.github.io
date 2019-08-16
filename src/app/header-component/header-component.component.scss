@@ -1,0 +1,16 @@
+@import "../../partial-styles/colors";
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+// TODO: the colors have been imported
+.header{
+    background-color: map-get($primary-colors, "dark");
+    display: flex;
+    color: map-get($primary-colors, "light");
+    text-align: center;
+    padding-top: 10px;
+    .name-logo{
+        display: flex;
+        font-family: 'Lobster', cursive;
+        color: map-get($primary-colors, "logo");
+    }
+    
+}
