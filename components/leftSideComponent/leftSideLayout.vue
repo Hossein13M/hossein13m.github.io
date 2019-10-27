@@ -36,8 +36,8 @@
               >
             </li>
             <li>
-              <nuxt-link to="/about   " class="text-decoration-none"
-                ><span>About</span></nuxt-link
+              <nuxt-link to="/story   " class="text-decoration-none"
+                ><span>My Story</span></nuxt-link
               >
             </li>
           </ul>

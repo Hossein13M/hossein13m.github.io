@@ -12,18 +12,20 @@
       </h2>
       <div class="links">
         <a
-          href="https://nuxtjs.org/"
+          href="https://github.com/hossein13m?tab=repositories"
           target="_blank"
           class="button--green text-decoration-none"
         >
           My Projects
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="~assets/images/programmer.png"
           target="_blank"
           class="button--grey text-decoration-none"
+          download
         >
           Download My CV
+          <!-- TODO: I need to fix downloading my CV -->
         </a>
       </div>
     </div>

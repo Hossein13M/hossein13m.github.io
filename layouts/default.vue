@@ -26,8 +26,9 @@
 }
 /*  */
 .pages {
-  display: block;
-  position: relative;
+  margin: 0 auto;
+  min-height: 100vh;
+  /* display: flex; */
 }
 .pages::after {
   box-sizing: border-box;
