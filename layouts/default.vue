@@ -1,11 +1,16 @@
 <template>
-  <div>
-    <leftSideLayout />
-    <!-- <nuxt /> -->
+  <div class="d-flex">
+    <leftSideLayout class="left" />
+    <nuxt />
   </div>
 </template>
 
 <style>
+.left {
+  position: fixed;
+  bottom: 0;
+  top: 0;
+}
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
