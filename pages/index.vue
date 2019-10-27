@@ -1,27 +1,29 @@
 <template>
-  <div class="container">
+  <div class="homePage col-lg-10 col-sm-12">
     <div>
-      <logo />
+      <div class="programmer-pic">
+        <img src="~assets/images/programmer.png" alt="" />
+      </div>
       <h1 class="title">
-        hossein13m.github.io
+        Hossein Mousavi
       </h1>
       <h2 class="subtitle">
-        Hossein Mousavi Personal Website
+        Hossein Mousavi Portfolio
       </h2>
       <div class="links">
         <a
           href="https://nuxtjs.org/"
           target="_blank"
-          class="button--green"
+          class="button--green text-decoration-none"
         >
-          Documentation
+          My Projects
         </a>
         <a
           href="https://github.com/nuxt/nuxt.js"
           target="_blank"
-          class="button--grey"
+          class="button--grey text-decoration-none"
         >
-          GitHub
+          Download My CV
         </a>
       </div>
     </div>
@@ -39,7 +41,7 @@ export default {
 </script>
 
 <style>
-.container {
+.homePage {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;
