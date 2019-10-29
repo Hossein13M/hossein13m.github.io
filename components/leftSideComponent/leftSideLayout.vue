@@ -43,25 +43,46 @@
           </ul>
         </div>
         <div class="socialIcons d-flex justify-content-center mt-5">
-          <a class="social-icon px-1 text-decoration-none" href=""
+          <a
+            class="social-icon px-1 text-decoration-none"
+            target="blank"
+            href="https://www.linkedin.com/in/hossein13mousavi/"
             ><i class="fab fa-linkedin-in"></i
           ></a>
-          <a class="social-icon px-1 text-decoration-none" href=""
+          <a
+            class="social-icon px-1 text-decoration-none"
+            target="blank"
+            href="https://stackoverflow.com/story/hossein13m"
             ><i class="fab fa-stack-overflow"></i
           ></a>
-          <a class="social-icon px-1 text-decoration-none" href=""
+          <a
+            class="social-icon px-1 text-decoration-none"
+            target="blank"
+            href="https://github.com/hossein13m"
             ><i class="fab fa-github"></i
           ></a>
-          <a class="social-icon px-1 text-decoration-none" href=""
+          <a
+            class="social-icon px-1 text-decoration-none"
+            target="blank"
+            href="https://gitlab.com/Hossein13M"
             ><i class="fab fa-gitlab"></i
           ></a>
-          <a class="social-icon px-1 text-decoration-none" href=""
+          <a
+            class="social-icon px-1 text-decoration-none"
+            target="blank"
+            href="https://medium.com/@hossein13m"
             ><i class="fab fa-medium-m"></i
           ></a>
-          <a class="social-icon px-1 text-decoration-none" href=""
+          <a
+            class="social-icon px-1 text-decoration-none"
+            target="blank"
+            href="https://twitter.com/Hossein13M"
             ><i class="fab fa-twitter"></i
           ></a>
-          <a class="social-icon px-1 text-decoration-none" href=""
+          <a
+            class="social-icon px-1 text-decoration-none"
+            target="blank"
+            href="https://t.me/m13hossein"
             ><i class="fab fa-telegram-plane"></i
           ></a>
         </div>

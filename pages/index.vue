@@ -8,7 +8,7 @@
         Hossein Mousavi
       </h1>
       <h2 class="subtitle">
-        Hossein Mousavi Portfolio
+        Front End Developer
       </h2>
       <div class="links">
         <a
