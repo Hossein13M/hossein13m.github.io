@@ -19,10 +19,10 @@
           My Projects
         </a>
         <a
-          href="~assets/images/programmer.png"
-          target="_blank"
+          href="https://files.jjcloudservices.com/files/uploads/documents/03a94e14-f529-11e9-a5ad-d6b790452c1a_e1250417-6908-4ca3-8c67-169bedac8d19.pdf"
           class="button--grey text-decoration-none"
-          download
+          target="blank"
+          download="HosseinMousaviCV"
         >
           Download My CV
           <!-- TODO: I need to fix downloading my CV -->
