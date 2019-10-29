@@ -1,13 +1,17 @@
 <template>
   <div class="d-flex">
     <head>
-      <title>Hossein Mousavi</title>
       <script
         defer
         src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
       ></script>
+      <link
+        rel="stylesheet"
+        type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"
+      />
     </head>
-    <leftSideLayout class="sidebar col-lg-2 col-sm-12" />
+    <leftSideLayout class="sidebar  col-lg-2 col-sm-12" />
     <nuxt class="pages col-lg-10 col-sm-12" />
   </div>
 </template>

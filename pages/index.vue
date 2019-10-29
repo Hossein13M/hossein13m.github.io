@@ -1,10 +1,10 @@
 <template>
   <div class="homePage col-lg-10 col-sm-12">
     <div>
-      <div class="programmer-pic">
+      <div class="programmer-pic animated zoomIn">
         <img src="~assets/images/programmer.png" alt="" />
       </div>
-      <h1 class="title">
+      <h1 class="title animated bounceIn">
         Hossein Mousavi
       </h1>
       <h2 class="subtitle">

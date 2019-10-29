@@ -1,5 +1,5 @@
 <template>
-  <div class="skills">
+  <div class="skills animated fadeInRight">
     <div class="skills-progressbar d-flex mt-5">
       <div class="leftSide col-lg-6">
         <ul>

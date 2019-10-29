@@ -3,11 +3,13 @@
     <div class="leftSideWrapper col-12 d-flex flex-column">
       <div class="top-sidebar mb-5">
         <div class="profilePic d-flex justify-content-center mt-5">
-          <img
-            src="/personalPicture.png"
-            alt="The Image is not available"
-            class="rounded-circle"
-          />
+          <nuxt-link to="/">
+            <img
+              src="/personalPicture.png"
+              alt="The Image is not available"
+              class="rounded-circle"
+            />
+          </nuxt-link>
         </div>
         <div class="name text-center justify-content-center mt-4 mb-4">
           <a href="/" class="text-decoration-none">
@@ -36,13 +38,15 @@
               >
             </li>
             <li>
-              <nuxt-link to="/story   " class="text-decoration-none"
+              <nuxt-link to="/story" class="text-decoration-none"
                 ><span>My Story</span></nuxt-link
               >
             </li>
           </ul>
         </div>
-        <div class="socialIcons d-flex justify-content-center mt-5">
+        <div
+          class="animated bounceInLeft socialIcons d-flex justify-content-center mt-5"
+        >
           <a
             class="social-icon px-1 text-decoration-none"
             target="blank"
