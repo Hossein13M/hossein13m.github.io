@@ -1,11 +1,18 @@
 <template>
   <div class="d-flex">
+    <head>
+      <script
+        defer
+        src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+      ></script>
+    </head>
     <leftSideLayout class="sidebar col-lg-2 col-sm-12" />
     <nuxt class="pages col-lg-10 col-sm-12" />
   </div>
 </template>
 
 <style>
+@import url('https://fonts.googleapis.com/css?family=Acme|Caveat|Fjalla+One|Kalam&display=swap');
 .sidebar {
   /* display: block; */
   position: relative;

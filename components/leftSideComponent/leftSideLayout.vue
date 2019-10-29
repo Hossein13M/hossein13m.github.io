@@ -43,11 +43,41 @@
           </ul>
         </div>
         <div class="socialIcons d-flex justify-content-center mt-5">
-          <p>here come the social icons</p>
+          <a class="social-icon px-1 text-decoration-none" href=""
+            ><i class="fab fa-linkedin-in"></i
+          ></a>
+          <a class="social-icon px-1 text-decoration-none" href=""
+            ><i class="fab fa-stack-overflow"></i
+          ></a>
+          <a class="social-icon px-1 text-decoration-none" href=""
+            ><i class="fab fa-github"></i
+          ></a>
+          <a class="social-icon px-1 text-decoration-none" href=""
+            ><i class="fab fa-gitlab"></i
+          ></a>
+          <a class="social-icon px-1 text-decoration-none" href=""
+            ><i class="fab fa-medium-m"></i
+          ></a>
+          <a class="social-icon px-1 text-decoration-none" href=""
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a class="social-icon px-1 text-decoration-none" href=""
+            ><i class="fab fa-telegram-plane"></i
+          ></a>
         </div>
+        <!-- <div
+          class="email-sidebar text-center d-flex justify-content-center mt-4"
+        >
+          <a
+            class="d-flex text-decoration-none"
+            href="mailto:hoseinjob13@gmail.com"
+            ><i class="fas fa-at"></i>
+            <p>Click to send me email!</p></a
+          >
+        </div> -->
       </div>
       <div class="bottom-sidebar align-self-end mt-5">
-        <div class="copyright mt-4">
+        <div class="copyright">
           <hr />
           <p>
             © 2019 Hossein Mousavi. All rights reserved.
@@ -60,7 +90,6 @@
 </template>
 
 <style scoped>
-@import url('https://fonts.googleapis.com/css?family=Acme|Caveat|Fjalla+One|Kalam&display=swap');
 .leftSideLayout {
   display: block;
   position: relative;
@@ -97,6 +126,10 @@
   font-weight: bold;
   letter-spacing: 1px;
   font-family: 'Fjalla One', sans-serif;
+}
+.social-icon {
+  font-size: 29px;
+  color: #dcdcda;
 }
 .copyright {
   font-size: 10px;
