@@ -1,7 +1,7 @@
 <template>
   <div class="homePage col-lg-10 col-sm-12">
     <div>
-      <div class="programmer-pic animated zoomIn">
+      <div class="programmer-pic animated zoomIn mt-5">
         <img src="~assets/images/programmer.png" alt="" />
       </div>
       <h1 class="title animated bounceIn">
@@ -10,7 +10,7 @@
       <h2 class="subtitle">
         Front End Developer
       </h2>
-      <div class="links">
+      <div class="links mb-3">
         <a
           href="https://github.com/hossein13m?tab=repositories"
           target="_blank"
@@ -25,7 +25,6 @@
           download="HosseinMousaviCV"
         >
           Download My CV
-          <!-- TODO: I need to fix downloading my CV -->
         </a>
       </div>
     </div>

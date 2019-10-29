@@ -1,11 +1,11 @@
 <template>
   <div class="contact-me">
-    <div class="top-contact justify-content-center mt-5">
+    <div class="top-contact justify-content-center pt-5">
       <h1 class="text-center">
         Contact Me
       </h1>
     </div>
-    <div class="bottom-contact d-flex mt-5">
+    <div class="bottom-contact mt-5">
       <div class="left-bottom mt-5 col-lg-6 col-sm-12  text-center">
         <div class="mb-5">
           <p class="bottom-text mb-5">
@@ -25,11 +25,11 @@
         <p class="bottom-text mb-5">
           OR you can just drop me a message and I will get back to you!
         </p>
-        <div class="ml-5">
+        <div class="">
           <a class="text-decoration-none" href="mailto:hoseinjob13@gmail.com"
             ><i class="animated zoomIn contact-icon mr-3 fas fa-at"></i
           ></a>
-          <p class="text-decoration-none contact-text mt-3">
+          <p class="text-decoration-none contact-text mt-3 mb-0 pb-3">
             Email: Hoseinjob13@gmail.com
           </p>
         </div>
@@ -37,46 +37,6 @@
     </div>
   </div>
 </template>
-
-<script>
-// export default {
-//   data() {
-//     return {
-//       user: {
-//         name: '',
-//         email: '',
-//         message: ''
-//       },
-//       errormsg: {
-//         name: false,
-//         email: false,
-//         message: false
-//       },
-//       hasError: false
-//     }
-//   },
-//   methods: {
-//     RequiredFields() {
-//       this.errormsg.name = !this.user.name
-//       this.errormsg.email = !this.user.email
-//       this.errormsg.message = !this.user.message
-//       this.hasError =
-//         this.hasError ||
-//         this.errormsg.name ||
-//         this.errormsg.email ||
-//         this.errormsg.message
-//     },
-//     SubmitInfo() {
-//       this.hasError = false
-//       this.RequiredFields()
-//       if (!this.hasError) this.Register()
-//     },
-//     SendInfo() {
-//       // TODO: send information to me the "hoseinjob13@gmail.com"
-//     }
-//   }
-// }
-</script>
 
 <style scope>
 .contact-me h1 {
@@ -103,5 +63,10 @@
 }
 .contact-text p:hover {
   color: #858585;
+}
+@media (min-width: 768px) {
+  .bottom-contact {
+    display: flex;
+  }
 }
 </style>

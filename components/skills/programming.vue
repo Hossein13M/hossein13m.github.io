@@ -1,6 +1,6 @@
 <template>
-  <div class="skills animated fadeInRight">
-    <div class="skills-progressbar d-flex mt-5">
+  <div class="skills">
+    <div class="skills-progressbar mt-5">
       <div class="leftSide col-lg-6">
         <ul>
           <li>
@@ -145,6 +145,11 @@
 }
 .skills-progressbar ul li {
   padding-bottom: 25px;
+}
+@media (min-width: 768px) {
+  .skills-progressbar {
+    display: flex;
+  }
 }
 </style>
 

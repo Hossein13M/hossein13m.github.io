@@ -164,4 +164,9 @@
   align-self: flex-end;
   margin-bottom: 0;
 }
+@media (max-width: 768px) {
+  .copyright {
+    display: none;
+  }
+}
 </style>

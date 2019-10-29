@@ -1,8 +1,8 @@
 <template>
   <div class="story">
-    <div class="top-contact justify-content-center mt-5">
+    <div class="top-contact justify-content-center">
       <h1
-        class="text-center"
+        class="text-center pt-5"
         style="    font-weight: 300;
     font-size: 100px;"
       >
@@ -32,7 +32,7 @@
         XEOPS (yeah right! I did start with C# but then I have decided to choose
         Front end over backend).
       </p>
-      <p>
+      <p class="mb-0 pb-5">
         In the last couple of months I have worked on three projects, one of
         them is Angular and the other two are Vue.js. I haven't got any chance
         to work with React.js but I will embrace the experience!
