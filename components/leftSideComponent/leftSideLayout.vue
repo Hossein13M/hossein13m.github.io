@@ -47,7 +47,7 @@
         </div>
       </div>
       <div class="bottom-sidebar align-self-end mt-5">
-        <div class="copyright mt-5">
+        <div class="copyright mt-4">
           <hr />
           <p>
             © 2019 Hossein Mousavi. All rights reserved.
@@ -86,6 +86,7 @@
 .leftSideLayout span {
   color: #dcdcda;
   font-family: 'Kalam', cursive;
+  font-size: 23px;
 }
 .sidebarLinks ul {
   list-style-type: none;
@@ -103,5 +104,6 @@
   font-weight: 100;
   bottom: 0;
   align-self: flex-end;
+  margin-bottom: 0;
 }
 </style>

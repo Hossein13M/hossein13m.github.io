@@ -7,7 +7,7 @@
 
 <style>
 .sidebar {
-  display: block;
+  /* display: block; */
   position: relative;
 }
 .sidebar::after {
