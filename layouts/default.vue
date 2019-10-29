@@ -1,6 +1,7 @@
 <template>
   <div class="d-flex">
     <head>
+      <title>Hossein Mousavi</title>
       <script
         defer
         src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"

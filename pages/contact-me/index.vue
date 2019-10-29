@@ -59,9 +59,21 @@
         </form>
       </div>
       <div class="right-bottom mt-5 col-lg-6 col-sm-12">
-        <p class="bottom-text text-center">
-          OR you can just simply find me on social medias!
+        <p class="bottom-text text-center mb-5">
+          OR you can just simply find me!
         </p>
+        <div class="social-media-contact ml-5">
+          <a class="text-decoration-none" href="tel:+989396197609"
+            ><p class=" mb-4">
+              <i class="mr-3 fas fa-mobile"></i>Phone number: +989396197609
+            </p></a
+          >
+          <a class="text-decoration-none" href="mailto:hoseinjob13@gmail.com"
+            ><p class="mt-3">
+              <i class="mr-3 fas fa-at"></i>Email: Hoseinjob13@gmail.com
+            </p></a
+          >
+        </div>
       </div>
     </div>
   </div>
@@ -118,5 +130,8 @@ export default {
   font-weight: 500;
   font-size: 19px;
   margin: 0;
+}
+.social-media-contact a {
+  color: #3f3f3f;
 }
 </style>
