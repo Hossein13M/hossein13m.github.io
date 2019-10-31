@@ -17,16 +17,15 @@ install:
   # switch nodejs version
   - ps: Install-Product node $env:nodejs_version
   # install modules
-  - npm install
+  - yarn install
   # generate static files
-  - npm run generate
+  - yarn build
   # configure global git credentials store (https://www.appveyor.com/docs/how-to/git-push/)
   - git config --global credential.helper store
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"
   - git config --global user.email $env:github_email
   # deploy to GitHub pages
-  - git clean -f/-n/-i
-  - npm run deploy
+  - yarn deploy
 
 # No tests to run
 test: off
