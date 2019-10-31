@@ -2,7 +2,7 @@
   <div class="contact-me">
     <div class="top-contact justify-content-center pt-5">
       <h1 class="text-center">
-        Contact Me
+        Contact Me!
       </h1>
     </div>
     <div class="bottom-contact mt-5">
