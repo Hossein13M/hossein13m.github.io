@@ -107,7 +107,6 @@
           <p>
             © 2019 Hossein Mousavi. All rights reserved.
           </p>
-          <hr />
         </div>
       </div>
     </div>
