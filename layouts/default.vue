@@ -1,16 +1,5 @@
 <template>
   <div class="page">
-    <head>
-      <!-- <script
-        defer
-        src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
-      ></script> -->
-      <link
-        rel="stylesheet"
-        type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"
-      />
-    </head>
     <leftSideLayout class="sidebar col-xl-2 col-lg-3 col-sm-12 col-md-3" />
     <nuxt class="pages col-xl-10 col-lg-9 col-sm-12 col-md-9" />
   </div>

@@ -48,7 +48,7 @@
 }
 .story-part-one p {
   font-size: 19px;
-  font-family: 'Kalam', cursive;
+  /* font-family: 'Kalam', cursive; */
   text-align: justify;
   /* text-justify: inter-word; */
 }
