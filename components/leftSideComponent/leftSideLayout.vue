@@ -127,7 +127,7 @@
   width: 100%;
   background-size: 100% 100%;
   content: '';
-  background: url(~assets/images/sidebar.jpg);
+  background: url(~assets/images/sidebar.png);
   opacity: 0.9;
   top: 0;
   left: 0;
