@@ -1,1 +1,1 @@
-Hossein Mousavi Personal Website
+Hossein Mousavi personal website built with Nuxt.js
