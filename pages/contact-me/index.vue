@@ -64,7 +64,7 @@
 .contact-text p:hover {
   color: #858585;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .bottom-contact {
     display: flex;
   }

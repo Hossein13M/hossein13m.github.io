@@ -28,15 +28,6 @@
 </template>
 
 <style scoped>
-@media (max-width: 768px) {
-  .mobile-size {
-    display: flex;
-    font-size: 28px;
-  }
-  .skills-title {
-    padding-top: 20px !important;
-  }
-}
 .skills-progressbar ul {
   list-style-type: none;
 }
@@ -51,7 +42,15 @@ button:focus {
   outline: none !important;
   /* TODO: fix the outline thing */
 }
-
+@media (max-width: 992px) {
+  .mobile-size {
+    display: flex;
+    font-size: 28px;
+  }
+  .skills-title {
+    padding-top: 20px !important;
+  }
+}
 @media (min-width: 768px) {
   .skills-title {
     display: flex;

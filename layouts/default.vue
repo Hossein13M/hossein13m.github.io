@@ -11,8 +11,8 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.css"
       />
     </head>
-    <leftSideLayout class="sidebar  col-lg-2 col-sm-12 col-md-2" />
-    <nuxt class="pages col-lg-10 col-sm-12 col-md-2" />
+    <leftSideLayout class="sidebar col-xl-2 col-lg-3 col-sm-12 col-md-3" />
+    <nuxt class="pages col-xl-10 col-lg-9 col-sm-12 col-md-9" />
   </div>
 </template>
 

@@ -45,7 +45,7 @@
           </ul>
         </div>
         <div
-          class="animated bounceInLeft socialIcons d-flex justify-content-center mt-5"
+          class="animated bounceInLeft socialIcons justify-content-center mt-5"
         >
           <a
             class="social-icon px-1 text-decoration-none"
@@ -119,6 +119,9 @@
   display: block;
   position: relative;
 }
+.socialIcons {
+  display: flex;
+}
 .leftSideLayout::after {
   box-sizing: border-box;
   width: 100%;
@@ -167,6 +170,16 @@
 @media (max-width: 768px) {
   .copyright {
     display: none;
+  }
+}
+@media (min-width: 837px) and (max-width: 1200px) {
+  .social-icon {
+    font-size: 25px;
+  }
+}
+@media (min-width: 768px) and (max-width: 837px) {
+  .social-icon {
+    font-size: 20px;
   }
 }
 </style>
