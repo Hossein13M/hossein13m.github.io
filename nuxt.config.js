@@ -63,8 +63,8 @@ export default {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
-  },
-  router: {
-    base: '/hossein13m.github.io/'
   }
+  // router: {
+  //   base: '/hossein13m.github.io/'
+  // }
 }
