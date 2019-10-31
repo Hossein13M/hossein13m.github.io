@@ -25,6 +25,7 @@ install:
   - ps: Add-Content "$env:USERPROFILE\.git-credentials" "https://$($env:github_access_token):x-oauth-basic@github.com`n"
   - git config --global user.email $env:github_email
   # deploy to GitHub pages
+  - git clean -ndx
   - yarn deploy
 
 # No tests to run
