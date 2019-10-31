@@ -112,6 +112,8 @@
 }
 @media (max-width: 900px) and (min-width: 400px) {
   .page {
+    margin: 0 !important;
+    padding: 0 !important;
   }
 }
 </style>
