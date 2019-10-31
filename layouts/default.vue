@@ -1,10 +1,10 @@
 <template>
   <div class="page">
     <head>
-      <script
+      <!-- <script
         defer
         src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
-      ></script>
+      ></script> -->
       <link
         rel="stylesheet"
         type="text/css"
