@@ -1,12 +1,3 @@
-// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/hossein13m.github.io/'
-        }
-      }
-    : {}
 export default {
   mode: 'universal',
   /*
@@ -64,7 +55,4 @@ export default {
      */
     extend(config, ctx) {}
   }
-  // router: {
-  //   base: '/hossein13m.github.io/'
-  // }
 }
