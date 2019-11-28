@@ -13,6 +13,7 @@
         @click="changeComponent('Network')"
         :class="{ activeComponent: currentComponent === 'Network' }"
       >
+      <!-- test -->
         <h1 class="mobile-size">Network Skills</h1>
       </button>
       <button
