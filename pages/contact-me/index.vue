@@ -64,7 +64,7 @@
 }
 @media (max-width: 400px) {
   .contact-me h1 {
-  font-size: 60px;
+  font-size: 50px;
 }
 }
 @media (min-width: 992px) {

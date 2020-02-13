@@ -1,6 +1,6 @@
 export default {
     router: {
-        base: '/hossein13m.github.io/'
+        base: '/'
     },
     mode: 'universal',
     /*
