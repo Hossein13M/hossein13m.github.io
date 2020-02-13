@@ -1,7 +1,7 @@
 <template>
   <div class="skills">
     <div class="skills-progressbar mt-5">
-      <div class="leftSide col-lg-6">
+      <div class="ul-padd-mobile-remove leftSide col-lg-6">
         <ul>
           <li>
             <span>Network Fundamentals</span>
@@ -68,7 +68,7 @@
           </li>
         </ul>
       </div>
-      <div class="rightSide col-lg-6">
+      <div class="ul-padd-mobile-remove rightSide col-lg-6">
         <ul>
           <li>
             <span>RADIUS</span>
@@ -146,9 +146,15 @@
 .skills-progressbar ul li {
   padding-bottom: 25px;
 }
+
 @media (min-width: 768px) {
   .skills-progressbar {
     display: flex;
+  }
+}
+@media (max-width: 768px) {
+  .ul-padd-mobile-remove ul {
+    padding-left: 0
   }
 }
 </style>

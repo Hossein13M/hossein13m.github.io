@@ -14,14 +14,18 @@
         <nuxt-link class="button--green text-decoration-none" to="/story"
           >My Story!</nuxt-link
         >
-        <a
+        <nuxt-link
+        class="button--grey text-decoration-none" to="/contact-me"          
+        >
+          Get In Touch With Me
+        </nuxt-link>
+        <!-- 
+          TODO: the bellow code can be add for downloading my CV which currently I want to remove
           href="https://drive.google.com/file/d/1H8xRkdr3z7Ve8Vq6AsYChSnpHLHFQd3s/view?usp=sharing"
           class="button--grey text-decoration-none"
           target="blank"
           download="HosseinMousaviCV"
-        >
-          Download My CV
-        </a>
+         -->
       </div>
     </div>
   </div>
