@@ -1,4 +1,7 @@
 export default {
+    router: {
+        base: '/hossein13m.github.io/'
+    },
     mode: 'universal',
     /*
      ** Headers of the page
