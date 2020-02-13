@@ -62,7 +62,7 @@
 .contact-text p:hover {
   color: #858585;
 }
-@media (max-width: 400px) {
+@media (max-width: 562px) {
   .contact-me h1 {
   font-size: 50px;
 }
