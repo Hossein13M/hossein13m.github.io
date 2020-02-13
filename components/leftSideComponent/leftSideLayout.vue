@@ -13,14 +13,14 @@
         </div>
         <div class="name text-center justify-content-center mt-4 mb-4">
           <a href="/" class="text-decoration-none">
-            <h1>Hossein Mousavi</h1>
+            <h1 class="font-weight-bold">Hossein Mousavi</h1>
           </a>
           <p class="d-flex justify-content-center">Front End Developer</p>
           <hr />
         </div>
-        <div class="sidebarLinks d-flex justify-content-center mt-4 mb-5">
+        <div class="sidebarLinks list-unstyled d-flex justify-content-center mt-4 mb-5">
           <ul
-            class=" d-flex justify-content-center flex-column text-center m-0 p-0"
+            class=" d-flex list-unstyled justify-content-center flex-column text-center m-0 p-0"
           >
             <li>
               <nuxt-link to="/" class="text-decoration-none"
@@ -45,7 +45,7 @@
           </ul>
         </div>
         <div
-          class="animated bounceInLeft socialIcons justify-content-center mt-5"
+          class="animated bounceInLeft socialIcons d-flex justify-content-center mt-5"
         >
           <a
             class="social-icon px-1 text-decoration-none"
@@ -90,19 +90,9 @@
             ><i class="fab fa-telegram-plane"></i
           ></a>
         </div>
-        <!-- <div
-          class="email-sidebar text-center d-flex justify-content-center mt-4"
-        >
-          <a
-            class="d-flex text-decoration-none"
-            href="mailto:hoseinjob13@gmail.com"
-            ><i class="fas fa-at"></i>
-            <p>Click to send me email!</p></a
-          >
-        </div> -->
       </div>
-      <div class="bottom-sidebar align-self-end mt-5">
-        <div class="copyright">
+      <div class="bottom-sidebar text-center justify-content-center mt-5">
+        <div class="copyright justify-content-center mb-0">
           <hr />
           <p>
             © 2019 Hossein Mousavi. All rights reserved.
@@ -114,19 +104,10 @@
 </template>
 
 <style scoped>
-.leftSideLayout {
-  display: block;
-  position: relative;
-}
-.socialIcons {
-  display: flex;
-}
 .leftSideLayout::after {
-  box-sizing: border-box;
   width: 100%;
-  background-size: 100% 100%;
-  content: '';
-  background: url(~assets/images/sidebar.png);
+  background: url(~assets/images/sidebar.png) center center fixed no-repeat;
+  background-size: cover;
   opacity: 0.9;
   top: 0;
   left: 0;
@@ -144,13 +125,10 @@
   font-family: 'Kalam', cursive;
   font-size: 23px;
 }
-.sidebarLinks ul {
-  list-style-type: none;
-}
+
 .name h1 {
   color: #dcdcda;
   font-size: 24px;
-  font-weight: bold;
   letter-spacing: 1px;
   font-family: 'Fjalla One', sans-serif;
 }
@@ -159,12 +137,7 @@
   color: #dcdcda;
 }
 .copyright {
-  font-size: 10px;
-  text-align: center;
-  font-weight: 100;
-  bottom: 0;
-  align-self: flex-end;
-  margin-bottom: 0;
+  font-size: 12px;
 }
 @media (max-width: 768px) {
   .copyright {

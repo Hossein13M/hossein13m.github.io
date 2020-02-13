@@ -5,6 +5,7 @@
         Contact Me!
       </h1>
     </div>
+    <hr>
     <div class="bottom-contact mt-5">
       <div class="left-bottom mt-5 col-lg-6 col-sm-12  text-center">
         <div class="mb-5">

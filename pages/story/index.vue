@@ -9,6 +9,7 @@
         My Story!
       </h1>
     </div>
+    <hr>
     <div class="animated bounceInUp story-part-one mt-5 mr-5">
       <p>
         Hi, I'm Hossein and I am 22! I am studying Atomic Physics but I'm more
