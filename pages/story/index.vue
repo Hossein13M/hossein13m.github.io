@@ -2,15 +2,13 @@
   <div class="story">
     <div class="top-contact justify-content-center">
       <h1
-        class="text-center pt-5"
-        style="    font-weight: 300;
-    font-size: 100px;"
+        class="text-center pt-5 font-weight-light"
       >
         My Story!
       </h1>
     </div>
     <hr>
-    <div class="animated bounceInUp story-part-one mt-5 mr-5">
+    <div class="animated bounceInUp container text-justify mx-auto story mt-5 mr-5">
       <p>
         Hi, I'm Hossein and I am 22! I am studying Atomic Physics but I'm more
         into computers than Physics!
@@ -22,7 +20,7 @@
         Linux based network as well.
       </p>
       <p>
-        After that, I begin to work in a Fintech company as a Tech Support Help
+        After that, I began to work in a Fintech company as a Tech Support Help
         Desk and after a short time, I get promoted to become Tech Support Lead
         on that company.
       </p>
@@ -35,8 +33,9 @@
       </p>
       <p class="mb-0 pb-5">
         In the last couple of months I have worked on three projects, one of
-        them is Angular and the other two are Vue.js. I haven't got any chance
-        to work with React.js but I will embrace the experience!
+        them was Angular and the other two were Vue.js and I am currently working on a project with Angular 8.
+        I haven't got any chance to work with React.js but I will embrace the experience!
+        
       </p>
     </div>
   </div>
@@ -44,13 +43,14 @@
 
 <style scoped>
 .top-contact h1 {
-  font-weight: 300;
   font-size: 100px;
 }
-.story-part-one p {
+.story p {
   font-size: 19px;
-  /* font-family: 'Kalam', cursive; */
-  text-align: justify;
-  /* text-justify: inter-word; */
+}
+@media (max-width: 439px) {
+  .top-contact h1 {
+  font-size: 60px;
+}
 }
 </style>

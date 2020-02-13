@@ -1,21 +1,21 @@
 <template>
-  <div class="homePage col-lg-10 col-sm-12">
+  <div class="homePage d-flex justify-content-center align-items-center m-0 text-center col-lg-10 col-sm-12">
     <div>
       <div class="programmer-pic animated zoomIn mt-5">
         <img src="~assets/images/programmer.png" alt="" />
       </div>
-      <h1 class="title animated bounceIn">
+      <h1 class="title d-block font-weight-light animated bounceIn">
         Hossein Mousavi
       </h1>
-      <h2 class="subtitle">
+      <h2 class="subtitle font-weight-light pb-2">
         Front End Developer
       </h2>
-      <div class="links mb-3">
+      <div class="links pt-2 mb-3">
         <nuxt-link class="button--green text-decoration-none" to="/story"
           >My Story!</nuxt-link
         >
         <a
-          href="https://files.jjcloudservices.com/files/uploads/documents/03a94e14-f529-11e9-a5ad-d6b790452c1a_e1250417-6908-4ca3-8c67-169bedac8d19.pdf"
+          href="https://drive.google.com/file/d/1H8xRkdr3z7Ve8Vq6AsYChSnpHLHFQd3s/view?usp=sharing"
           class="button--grey text-decoration-none"
           target="blank"
           download="HosseinMousaviCV"
@@ -39,33 +39,31 @@ export default {
 
 <style>
 .homePage {
-  margin: 0 auto;
   min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
 }
-
 .title {
   font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
     'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
   font-size: 100px;
   color: #35495e;
   letter-spacing: 1px;
 }
-
 .subtitle {
-  font-weight: 300;
   font-size: 42px;
   color: #526488;
   word-spacing: 5px;
-  padding-bottom: 15px;
 }
-
-.links {
-  padding-top: 15px;
+@media (max-width: 439px) {
+  .title {
+  font-size: 60px;
+}
+}
+@media (max-width: 365px) {
+  .links a {
+    display: block;
+    padding: 10px;
+    margin: 0;
+    margin-top: 20px
+}
 }
 </style>

@@ -35,7 +35,7 @@
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:85%"
+                style="width:90%"
               ></div>
             </div>
           </li>
@@ -53,7 +53,7 @@
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:75%"
+                style="width:90%"
               ></div>
             </div>
           </li>
@@ -98,7 +98,7 @@
             </div>
           </li>
           <li>
-            <span>Storage Quality of Service (QoS)</span>
+            <span>Quality of Service (QoS)</span>
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
@@ -111,7 +111,7 @@
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:45%"
+                style="width:55%"
               ></div>
             </div>
           </li>
@@ -120,7 +120,7 @@
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:70%"
+                style="width:75%"
               ></div>
             </div>
           </li>

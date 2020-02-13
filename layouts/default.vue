@@ -8,7 +8,6 @@
 <style>
 @import url('https://fonts.googleapis.com/css?family=Acme|Caveat|Fjalla+One|Kalam&display=swap');
 .sidebar {
-  /* display: block; */
   position: relative;
 }
 

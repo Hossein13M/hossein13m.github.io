@@ -28,7 +28,7 @@
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:40%"
+                style="width:60%"
               ></div>
             </div>
           </li>
@@ -46,7 +46,7 @@
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:50%"
+                style="width:60%"
               ></div>
             </div>
           </li>
@@ -87,7 +87,7 @@
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:35%"
+                style="width:40%"
               ></div>
             </div>
           </li>
@@ -96,7 +96,7 @@
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:80%"
+                style="width:85%"
               ></div>
             </div>
           </li>
@@ -105,7 +105,7 @@
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:60%"
+                style="width:80%"
               ></div>
             </div>
           </li>
@@ -115,7 +115,7 @@
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:45%"
+                style="width:55%"
               ></div>
             </div>
           </li>

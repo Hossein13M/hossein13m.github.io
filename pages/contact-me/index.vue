@@ -1,7 +1,7 @@
 <template>
   <div class="contact-me">
     <div class="top-contact justify-content-center pt-5">
-      <h1 class="text-center">
+      <h1 class="text-center font-weight-light">
         Contact Me!
       </h1>
     </div>
@@ -24,7 +24,7 @@
       </div>
       <div class="right-bottom mt-5 col-lg-6 col-sm-12 text-center">
         <p class="bottom-text mb-5">
-          OR you can just drop me a message and I will get back to you!
+          OR you could just drop me a message and I will get back to you!
         </p>
         <div class="">
           <a class="text-decoration-none" href="mailto:hoseinjob13@gmail.com"
@@ -41,8 +41,6 @@
 
 <style scope>
 .contact-me h1 {
-  /* font-family: 'Fjalla One', sans-serif; */
-  font-weight: 300;
   font-size: 100px;
 }
 .bottom-text {
@@ -51,7 +49,6 @@
   font-size: 19px;
   margin: 0;
 }
-
 .contact-icon {
   font-size: 200px;
   color: #3f3f3f;
@@ -64,6 +61,11 @@
 }
 .contact-text p:hover {
   color: #858585;
+}
+@media (max-width: 400px) {
+  .contact-me h1 {
+  font-size: 60px;
+}
 }
 @media (min-width: 992px) {
   .bottom-contact {

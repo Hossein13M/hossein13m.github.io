@@ -8,21 +8,12 @@
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:85%"
+                style="width:90%"
               ></div>
             </div>
           </li>
           <li>
-            <span>Cascading Style Sheets (CSS)</span>
-            <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:80%"
-              ></div>
-            </div>
-          </li>
-          <li>
-            <span>Sass</span>
+            <span>Cascading Style Sheets (CSS) and Sass</span>
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
@@ -35,7 +26,7 @@
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:75%"
+                style="width:85%"
               ></div>
             </div>
           </li>
@@ -44,47 +35,7 @@
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:60%"
-              ></div>
-            </div>
-          </li>
-          <li>
-            <span>Vue.js</span>
-            <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:65%"
-              ></div>
-            </div>
-          </li>
-          <li>
-            <span>Nuxt.js</span>
-            <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:60%"
-              ></div>
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="rightSide col-lg-6">
-        <ul>
-          <li>
-            <span>jQuery</span>
-            <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:40%"
-              ></div>
-            </div>
-          </li>
-          <li>
-            <span>Angular 2+</span>
-            <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:50%"
+                style="width:75%"
               ></div>
             </div>
           </li>
@@ -93,21 +44,61 @@
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:40%"
+                style="width:65%"
               ></div>
             </div>
           </li>
           <li>
-            <span>Git</span>
+            <span>Vue.js</span>
+            <div class="progress mt-2">
+              <div
+                class="progress-bar progress-bar-striped"
+                style="width:75%"
+              ></div>
+            </div>
+          </li>
+          <li>
+            <span>Nuxt.js</span>
+            <div class="progress mt-2">
+              <div
+                class="progress-bar progress-bar-striped"
+                style="width:70%"
+              ></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="rightSide col-lg-6">
+        <ul>
+          <li>
+            <span>Angular 2+</span>
+            <div class="progress mt-2">
+              <div
+                class="progress-bar progress-bar-striped"
+                style="width:85%"
+              ></div>
+            </div>
+          </li>
+          <li>
+            <span>Angular Material</span>
+            <div class="progress mt-2">
+              <div
+                class="progress-bar progress-bar-striped"
+                style="width:75%"
+              ></div>
+            </div>
+          </li>  
+          <li>
+            <span>jQuery</span>
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
                 style="width:40%"
               ></div>
             </div>
-          </li>
+          </li>       
           <li>
-            <span>Responsive Designing</span>
+            <span>Git and GitFlow</span>
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
@@ -116,11 +107,20 @@
             </div>
           </li>
           <li>
-            <span>RESTful API</span>
+            <span>Responsive Designing</span>
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:30%"
+                style="width:90%"
+              ></div>
+            </div>
+          </li>
+          <li>
+            <span>Working with API</span>
+            <div class="progress mt-2">
+              <div
+                class="progress-bar progress-bar-striped"
+                style="width:70%"
               ></div>
             </div>
           </li>
@@ -129,7 +129,7 @@
             <div class="progress mt-2">
               <div
                 class="progress-bar progress-bar-striped"
-                style="width:30%"
+                style="width:60%"
               ></div>
             </div>
           </li>

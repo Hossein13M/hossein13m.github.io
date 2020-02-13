@@ -57,6 +57,12 @@ button:focus {
     display: flex;
   }
 }
+@media (max-width: 350px) {
+  .mobile-size {
+    display: flex;
+    font-size: 24px;
+  }
+}
 </style>
 
 <script>
