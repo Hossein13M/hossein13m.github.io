@@ -4,11 +4,7 @@
       <div class="top-sidebar mb-5">
         <div class="profilePic d-flex justify-content-center mt-5">
           <nuxt-link to="/">
-            <img
-              src="/personalPicture.png"
-              alt="The Image is not available"
-              class="rounded-circle"
-            />
+            <img src="/personalPicture.png" alt="The Image is not available" class="rounded-circle" />
           </nuxt-link>
         </div>
         <div class="name text-center justify-content-center mt-4 mb-4">
@@ -19,84 +15,104 @@
           <hr />
         </div>
         <div class="sidebarLinks list-unstyled d-flex justify-content-center mt-4 mb-5">
-          <ul
-            class=" d-flex list-unstyled justify-content-center flex-column text-center m-0 p-0"
-          >
+          <ul class="d-flex list-unstyled justify-content-center flex-column text-center m-0 p-0">
             <li>
-              <nuxt-link to="/" class="text-decoration-none"
-                ><span>Home</span></nuxt-link
-              >
+              <nuxt-link to="/" class="text-decoration-none">
+                <span>Home</span>
+              </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/skills" class="text-decoration-none"
-                ><span>Skills</span></nuxt-link
-              >
+              <nuxt-link to="/skills" class="text-decoration-none">
+                <span>Skills</span>
+              </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/contact-me" class="text-decoration-none"
-                ><span>Contact Me</span></nuxt-link
-              >
+              <nuxt-link to="/contact-me" class="text-decoration-none">
+                <span>Contact Me</span>
+              </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/story" class="text-decoration-none"
-                ><span>My Story</span></nuxt-link
-              >
+              <nuxt-link to="/blog" class="text-decoration-none">
+                <span>Blog</span>
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/story" class="text-decoration-none">
+                <span>My Story</span>
+              </nuxt-link>
             </li>
           </ul>
         </div>
-        <div
-          class="animated bounceInLeft socialIcons d-flex justify-content-center mt-5"
-        >
+        <div class="animated bounceInLeft socialIcons d-flex justify-content-center mt-5">
           <a
             class="social-icon px-1 text-decoration-none"
             target="blank"
+            v-b-tooltip.hover
+            title="LinkedIn"
             href="https://www.linkedin.com/in/hossein13mousavi/"
-            ><i class="fab fa-linkedin-in"></i
-          ></a>
+          >
+            <i class="fab fa-linkedin-in"></i>
+          </a>
           <a
             class="social-icon px-1 text-decoration-none"
             target="blank"
+            v-b-tooltip.hover
+            title="StackOverFlow"
             href="https://stackoverflow.com/story/hossein13m"
-            ><i class="fab fa-stack-overflow"></i
-          ></a>
+          >
+            <i class="fab fa-stack-overflow"></i>
+          </a>
           <a
             class="social-icon px-1 text-decoration-none"
             target="blank"
+            v-b-tooltip.hover
+            title="GitHub"
             href="https://github.com/hossein13m"
-            ><i class="fab fa-github"></i
-          ></a>
+          >
+            <i class="fab fa-github"></i>
+          </a>
           <a
             class="social-icon px-1 text-decoration-none"
             target="blank"
+            v-b-tooltip.hover
+            title="GitLab"
             href="https://gitlab.com/Hossein13M"
-            ><i class="fab fa-gitlab"></i
-          ></a>
+          >
+            <i class="fab fa-gitlab"></i>
+          </a>
           <a
             class="social-icon px-1 text-decoration-none"
             target="blank"
+            v-b-tooltip.hover
+            title="Medium"
             href="https://medium.com/@hossein13m"
-            ><i class="fab fa-medium-m"></i
-          ></a>
+          >
+            <i class="fab fa-medium-m"></i>
+          </a>
           <a
             class="social-icon px-1 text-decoration-none"
             target="blank"
+            v-b-tooltip.hover
+            title="Twitter"
             href="https://twitter.com/Hossein13M"
-            ><i class="fab fa-twitter"></i
-          ></a>
+          >
+            <i class="fab fa-twitter"></i>
+          </a>
           <a
             class="social-icon px-1 text-decoration-none"
             target="blank"
+            v-b-tooltip.hover
+            title="Telegram"
             href="https://t.me/m13hossein"
-            ><i class="fab fa-telegram-plane"></i
-          ></a>
+          >
+            <i class="fab fa-telegram-plane"></i>
+          </a>
         </div>
       </div>
       <div class="bottom-sidebar text-center justify-content-center mt-5">
         <div class="copyright justify-content-center mb-0">
           <hr />
-          <p>
-            © 2019 Hossein Mousavi. All rights reserved.
-          </p>
+          <p>© 2019 Hossein Mousavi. All rights reserved.</p>
         </div>
       </div>
     </div>
