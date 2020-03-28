@@ -6,64 +6,43 @@
           <li>
             <span>Network Fundamentals</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:95%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:95%"></div>
             </div>
           </li>
           <li>
             <span>Windows Server</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:85%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:85%"></div>
             </div>
           </li>
           <li>
             <span>Active Directory</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:90%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:90%"></div>
             </div>
           </li>
           <li>
             <span>DHCP and DNS</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:90%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:90%"></div>
             </div>
           </li>
           <li>
             <span>IIS</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:95%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:95%"></div>
             </div>
           </li>
           <li>
             <span>Linux</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:90%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:90%"></div>
             </div>
           </li>
           <li>
             <span>Virtual Private Network (VPN)</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:65%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:65%"></div>
             </div>
           </li>
         </ul>
@@ -73,64 +52,43 @@
           <li>
             <span>RADIUS</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:50%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:50%"></div>
             </div>
           </li>
           <li>
-            <span>Subnetting </span>
+            <span>Subnetting</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:75%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:75%"></div>
             </div>
           </li>
           <li>
             <span>Virtualization (VMware)</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:35%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:35%"></div>
             </div>
           </li>
           <li>
             <span>Quality of Service (QoS)</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:60%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:60%"></div>
             </div>
           </li>
           <li>
             <span>WDS and WSUS</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:55%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:55%"></div>
             </div>
           </li>
           <li>
             <span>SSL</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:75%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:75%"></div>
             </div>
           </li>
           <li>
             <span>Bash</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:80%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:80%"></div>
             </div>
           </li>
         </ul>
@@ -154,7 +112,7 @@
 }
 @media (max-width: 768px) {
   .ul-padd-mobile-remove ul {
-    padding-left: 0
+    padding-left: 0;
   }
 }
 </style>

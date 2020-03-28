@@ -6,7 +6,6 @@
 </template>
 
 <style>
-@import url('https://fonts.googleapis.com/css?family=Acme|Caveat|Fjalla+One|Kalam&display=swap');
 .sidebar {
   position: relative;
 }
@@ -16,20 +15,19 @@
   width: 100%;
   background-size: 100% 100%;
   content: '';
-  background: url(~assets/images/sidebar.png);
-  opacity: 0.9;
+  /* background: url(~assets/images/sidebar.png); */
+  opacity: 0.5;
   top: 0;
   left: 0;
+  filter: grayscale(90%);
   bottom: 0;
   right: 0;
   position: absolute;
   z-index: -1;
 }
-/*  */
 .pages {
   margin: 0 auto;
   min-height: 100vh;
-  /* display: flex; */
 }
 .pages::after {
   box-sizing: border-box;
@@ -46,8 +44,6 @@
   z-index: -1;
 }
 html {
-  font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
@@ -67,22 +63,26 @@ html {
 .button--green {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #3b8070;
-  color: #3b8070;
+  border: 1px solid #00baba;
+  color: #00baba;
   text-decoration: none;
   padding: 10px 30px;
 }
 
 .button--green:hover {
   color: #fff;
-  background-color: #3b8070;
+  background-color: #00baba;
+}
+.bg-success {
+  color: #00baba;
+  background-color: #00baba !important ;
 }
 
 .button--grey {
   display: inline-block;
   border-radius: 4px;
-  border: 1px solid #35495e;
-  color: #35495e;
+  border: 1px solid #323a6f;
+  color: #323a6f;
   text-decoration: none;
   padding: 10px 30px;
   margin-left: 15px;
@@ -90,7 +90,7 @@ html {
 
 .button--grey:hover {
   color: #fff;
-  background-color: #35495e;
+  background-color: #323a6f;
 }
 
 @media (min-width: 768px) {

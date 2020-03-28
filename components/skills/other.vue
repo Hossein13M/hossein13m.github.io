@@ -6,57 +6,39 @@
           <li>
             <span>Team Leadership</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:85%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:85%"></div>
             </div>
           </li>
 
           <li>
             <span>Conflict Resolution</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:70%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:70%"></div>
             </div>
           </li>
 
           <li>
             <span>Adobe Photoshop</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:60%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:60%"></div>
             </div>
           </li>
           <li>
             <span>Task Management</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:90%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:90%"></div>
             </div>
           </li>
           <li>
             <span>Time Management</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:60%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:60%"></div>
             </div>
           </li>
           <li>
             <span>Adaptability</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:60%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:60%"></div>
             </div>
           </li>
         </ul>
@@ -66,57 +48,39 @@
           <li>
             <span>Teamwork</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:80%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:80%"></div>
             </div>
           </li>
           <li>
             <span>IT Solutions</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:75%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:75%"></div>
             </div>
           </li>
 
           <li>
             <span>SQL Server</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:40%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:40%"></div>
             </div>
           </li>
           <li>
             <span>Agile Methodology (Scrum)</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:85%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:85%"></div>
             </div>
           </li>
           <li>
             <span>Documentation</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:80%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:80%"></div>
             </div>
           </li>
 
           <li>
             <span>Creativity</span>
             <div class="progress mt-2">
-              <div
-                class="progress-bar progress-bar-striped"
-                style="width:55%"
-              ></div>
+              <div class="progress-bar progress-bar-striped bg-success" style="width:55%"></div>
             </div>
           </li>
         </ul>
@@ -139,7 +103,7 @@
 }
 @media (max-width: 768px) {
   .ul-padd-mobile-remove ul {
-    padding-left: 0
+    padding-left: 0;
   }
 }
 </style>

@@ -11,11 +11,7 @@
       <div>
         <div class="blog-item animated zoomIn mt-5">
           <div class="blog-image col-lg-2 mx-0 my-3">
-            <img
-              class="image-source"
-              src="~assets/images/blog-medium.jpeg"
-              alt="image not found"
-            />
+            <img class="image-source" src="~assets/images/blog-medium.jpeg" alt="image not found" />
           </div>
           <div class="blog-description col-lg-10">
             <h1 class="heading mb-2">
@@ -54,11 +50,7 @@
       <div>
         <div class="blog-item animated zoomIn mt-5">
           <div class="blog-image col-lg-2 mx-0 my-3">
-            <img
-              class="image-source"
-              src="~assets/images/blog-virgool.jpeg"
-              alt="image not found"
-            />
+            <img class="image-source" src="~assets/images/blog-virgool.jpeg" alt="image not found" />
           </div>
           <div class="blog-description col-lg-10">
             <h1 class="heading mb-2">
@@ -98,6 +90,7 @@ export default {}
 <style>
 .blog-header h1 {
   font-size: 100px;
+  color: #323a6f;
 }
 .virgool {
   width: 40px;

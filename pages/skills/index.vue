@@ -36,8 +36,8 @@
   padding-bottom: 25px;
 }
 .activeComponent {
-  color: #0b6891;
-  border-bottom: 2px solid #0b6891;
+  color: #323a6f;
+  border-bottom: 2px solid #323a6f;
 }
 button:focus {
   outline: none !important;

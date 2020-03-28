@@ -54,12 +54,18 @@
 <style scoped>
 .top-contact h1 {
   font-size: 100px;
+  color: #323a6f;
 }
 .story p {
   font-size: 19px;
   text-align: justify;
   text-justify: auto;
 }
+.story a{
+  color: #00baba;
+  text-decoration: none;
+}
+
 @media (max-width: 439px) {
   .top-contact h1 {
     font-size: 60px;

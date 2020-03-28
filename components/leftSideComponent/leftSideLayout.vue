@@ -22,13 +22,13 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/skills" class="text-decoration-none">
-                <span>Skills</span>
+              <nuxt-link to="/story" class="text-decoration-none">
+                <span>My Story</span>
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/contact-me" class="text-decoration-none">
-                <span>Contact Me</span>
+              <nuxt-link to="/skills" class="text-decoration-none">
+                <span>Skills</span>
               </nuxt-link>
             </li>
             <li>
@@ -37,8 +37,8 @@
               </nuxt-link>
             </li>
             <li>
-              <nuxt-link to="/story" class="text-decoration-none">
-                <span>My Story</span>
+              <nuxt-link to="/contact-me" class="text-decoration-none">
+                <span>Contact Me</span>
               </nuxt-link>
             </li>
           </ul>
@@ -115,7 +115,7 @@
           <p>
             © 2020 Hossein Mousavi.
             <a
-              class="text-decoration-none text-light"
+              class="text-decoration-none text-light copyright-link"
               target="blank"
               href="https://creativecommons.org/licenses/by/4.0/"
             >All rights reserved.</a>
@@ -127,9 +127,16 @@
 </template>
 
 <style scoped>
+@font-face {
+  font-family: 'acmeGoogleFont';
+  font-weight: normal;
+  src: url('~static/fonts/Acme-Regular.ttf');
+}
+
 .leftSideLayout::after {
   width: 100%;
-  background: url(~assets/images/sidebar.png) center center fixed no-repeat;
+  background: url(~assets/images/sidebar.png);
+  filter: grayscale(70%);
   background-size: cover;
   opacity: 0.9;
   top: 0;
@@ -141,11 +148,11 @@
 }
 .leftSideLayout p {
   color: #b8b8b8;
-  font-family: 'Acme', sans-serif;
+  font-family: 'acmeGoogleFont';
 }
 .leftSideLayout span {
   color: #dcdcda;
-  font-family: 'Kalam', cursive;
+  font-family: 'acmeGoogleFont';
   font-size: 23px;
 }
 
@@ -153,14 +160,28 @@
   color: #dcdcda;
   font-size: 24px;
   letter-spacing: 1px;
-  font-family: 'Fjalla One', sans-serif;
+  font-family: 'acmeGoogleFont';
+}
+.name h1:hover{
+  color: #00baba;
 }
 .social-icon {
   font-size: 29px;
   color: #dcdcda;
 }
+
+.social-icon:hover {
+  color: #00baba;
+}
+li span:hover {
+  color: #00baba;
+}
 .copyright {
   font-size: 14px;
+}
+
+.copyright p:hover + .copyright-link a {
+  color: #00baba;
 }
 @media (max-width: 768px) {
   .copyright {

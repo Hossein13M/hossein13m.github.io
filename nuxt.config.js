@@ -2,7 +2,7 @@ export default {
     router: {
         base: '/'
     },
-    mode: 'spa',
+    mode: 'universal',
     /*
      ** Headers of the page
      */
@@ -26,8 +26,9 @@ export default {
             }
         ],
         script: [{
-            src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'
+            // src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'
         }],
+        // script: [{ src: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js' }],
         script: [{ src: 'https://use.fontawesome.com/releases/v5.0.7/js/all.js' }]
     },
     /*

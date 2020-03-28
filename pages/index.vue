@@ -7,7 +7,7 @@
         <img src="~assets/images/programmer.png" alt />
       </div>
       <h1 class="title d-block font-weight-light animated bounceIn">Hossein Mousavi</h1>
-      <h2 class="subtitle font-weight-light pb-2">Front End Developer</h2>
+      <p class="mb-0 subtitle font-weight-light pb-2">Front End Developer</p>
       <div class="links pt-2 mb-3">
         <nuxt-link class="button--green text-decoration-none" to="/story">My Story!</nuxt-link>
         <nuxt-link class="button--grey text-decoration-none" to="/contact-me">Get In Touch With Me</nuxt-link>
@@ -38,15 +38,13 @@ export default {
   min-height: 100vh;
 }
 .title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   font-size: 100px;
-  color: #35495e;
+  color: #323a6f;
   letter-spacing: 1px;
 }
 .subtitle {
   font-size: 42px;
-  color: #526488;
+  color:#323a6f ;
   word-spacing: 5px;
 }
 @media (max-width: 439px) {
