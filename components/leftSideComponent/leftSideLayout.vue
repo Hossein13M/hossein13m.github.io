@@ -112,7 +112,7 @@
       <div class="bottom-sidebar text-center justify-content-center mt-5">
         <div class="copyright justify-content-center mb-0">
           <hr />
-          <p>© 2019 Hossein Mousavi. All rights reserved.</p>
+          <p>© 2020 Hossein Mousavi. All rights reserved.</p>
         </div>
       </div>
     </div>

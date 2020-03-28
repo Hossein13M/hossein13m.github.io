@@ -2,7 +2,7 @@
   <div class="homePage d-flex justify-content-center pt-5 m-0 text-center col-lg-10 col-sm-12">
     <div>
       <div class="blog-header">
-        <h1 class="text-center pt-5 font-weight-light">BLOG!</h1>
+        <h1 class="text-center font-weight-light">BLOG!</h1>
         <hr />
       </div>
       <!-- Blog -->
