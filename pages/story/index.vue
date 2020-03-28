@@ -13,7 +13,7 @@
         </span>.
       </p>
       <p>
-        I have begun working in the IT field since 2017. Back then, I was into
+        I have begun working in the IT since 2017. Back then, I was into
         networking since I had Network+ and MCSE certifications, I was implementing Microsoft based
         networks for several companies. When I gathered enough knowledge about Linux I
         started to take Linux based network projects as well and that was when I got LPIC1 and LPIC2 certifications.

@@ -15,11 +15,9 @@
   width: 100%;
   background-size: 100% 100%;
   content: '';
-  /* background: url(~assets/images/sidebar.png); */
   opacity: 0.5;
   top: 0;
   left: 0;
-  filter: grayscale(90%);
   bottom: 0;
   right: 0;
   position: absolute;
