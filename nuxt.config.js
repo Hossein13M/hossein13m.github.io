@@ -2,7 +2,7 @@ export default {
     router: {
         base: '/'
     },
-    mode: 'universal',
+    mode: 'spa',
     /*
      ** Headers of the page
      */
@@ -33,7 +33,7 @@ export default {
     /*
      ** Customize the progress-bar color
      */
-    loading: { color: '#fff' },
+    loading: { color: '#71b479' },
     /*
      ** Global CSS
      */
@@ -50,7 +50,6 @@ export default {
      ** Nuxt.js modules
      */
     modules: [
-        // Doc: https://bootstrap-vue.js.org/docs/
         'bootstrap-vue/nuxt',
     ],
     /*

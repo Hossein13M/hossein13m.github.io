@@ -10,7 +10,7 @@
         into computers than Physics! I am currently a Front End Developer at
         <span>
           <a target="blank" href="http://tapsell.ir/">Tapsell Ad Net</a>
-        </span>
+        </span>.
       </p>
       <p>
         I have begun working in the IT field since 2017. Back then, I was into

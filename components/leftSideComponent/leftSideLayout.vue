@@ -112,7 +112,14 @@
       <div class="bottom-sidebar text-center justify-content-center mt-5">
         <div class="copyright justify-content-center mb-0">
           <hr />
-          <p>© 2020 Hossein Mousavi. All rights reserved.</p>
+          <p>
+            © 2020 Hossein Mousavi.
+            <a
+              class="text-decoration-none text-light"
+              target="blank"
+              href="https://creativecommons.org/licenses/by/4.0/"
+            >All rights reserved.</a>
+          </p>
         </div>
       </div>
     </div>
@@ -133,7 +140,7 @@
   z-index: -1;
 }
 .leftSideLayout p {
-  color: #dcdcda;
+  color: #b8b8b8;
   font-family: 'Acme', sans-serif;
 }
 .leftSideLayout span {
@@ -153,7 +160,7 @@
   color: #dcdcda;
 }
 .copyright {
-  font-size: 12px;
+  font-size: 14px;
 }
 @media (max-width: 768px) {
   .copyright {

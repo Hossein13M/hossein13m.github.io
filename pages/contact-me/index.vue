@@ -27,11 +27,11 @@
           OR you could just drop me a message and I will get back to you!
         </p>
         <div class="">
-          <a class="text-decoration-none" href="mailto:info@hmousavi.dev"
+          <a class="text-decoration-none" href="mailto:hoseinjob13@gmail.com"
             ><i class="animated zoomIn contact-icon mr-3 fas fa-at"></i
           ></a>
           <p class="text-decoration-none contact-text mt-3 mb-0 pb-3">
-            Email: info@hmousavi.dev
+            Email: hoseinjob13@gmail.com
           </p>
         </div>
       </div>
