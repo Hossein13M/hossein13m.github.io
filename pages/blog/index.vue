@@ -7,6 +7,44 @@
       </div>
       <!-- Blog -->
       <div></div>
+      <div>
+        <div class="blog-item animated zoomIn mt-5">
+          <div class="blog-image col-lg-2 mx-0 my-3">
+            <img class="image-source" src="~assets/images/blog-medium1.jpeg" alt="image not found" />
+          </div>
+          <div class="blog-description col-lg-10">
+            <h1 class="heading mb-2">
+              <a
+                target="blank"
+                class="text-decoration-none"
+                v-b-tooltip.hover
+                title="Medium"
+                href="https://medium.com"
+              >
+                <i class="fab fa-medium-m"></i>
+              </a>
+              <a
+                target="blank"
+                href="https://medium.com/angular-in-depth/angular-forms-reactive-form-including-angular-material-and-custom-validator-9ef324cc3b08"
+              >Angular forms (Reactive Form) including Angular Material and Custom Validator</a>
+            </h1>
+
+            <p class="col-8 mx-auto mt-4">
+              Forms are major parts of every Angular project and in this article, we want to implement a Reactive Angular form with a custom and dynamic validator...
+              <span>
+                <a
+                  target="blank"
+                  href="https://medium.com/angular-in-depth/angular-forms-reactive-form-including-angular-material-and-custom-validator-9ef324cc3b08"
+                >Read More</a>
+              </span>
+            </p>
+          </div>
+          <a
+            target="blank"
+            href="https://medium.com/angular-in-depth/angular-forms-reactive-form-including-angular-material-and-custom-validator-9ef324cc3b08"
+          ></a>
+        </div>
+      </div>
       <!-- Medium -->
       <div>
         <div class="blog-item animated zoomIn mt-5">
