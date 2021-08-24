@@ -54,8 +54,7 @@ export default {
     .links a {
         display: block;
         padding: 10px;
-        margin: 0;
-        margin-top: 20px;
+        margin: 20px 0 0;
     }
 }
 </style>

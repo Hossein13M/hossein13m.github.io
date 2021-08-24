@@ -12,13 +12,6 @@
   </div>
 </template>
 
-<script>
-export default {}
-</script>
+<script></script>
 
-<style>
-.caution-sign {
-  width: 150px;
-  height: 150px;
-}
-</style>
+<style></style>
