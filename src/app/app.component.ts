@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MatSidenav } from '@angular/material/sidenav';
 
 @Component({
     selector: 'app-root',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
     styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
-    title = 'hossein-mousavi';
+    public isDarkTheme: boolean = true;
+    @ViewChild('sidenav') sidenav!: MatSidenav;
+
+    public clickHandler(): void {
+        this.sidenav.close().finally();
+    }
+
+    public changeTheme(): void {
+        this.isDarkTheme = !this.isDarkTheme;
+    }
 }
