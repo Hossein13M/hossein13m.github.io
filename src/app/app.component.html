@@ -21,7 +21,16 @@
                 <label class="text-custom-grey-900">Software Developer</label>
             </header>
 
-            <div class="bg-custom-purple-900 h-3/4 w-full"><h1>test</h1></div>
+            <div class="bg-custom-purple-900 h-3/4 w-full">
+                <div class="flex justify-around pt-10">
+                    <app-progress-spinner
+                        appProgressSpinner
+                        [color]="isDarkTheme ? '#FFC107' : 'red'"
+                        *ngFor="let language of languagesList"
+                        [progressSpinnerSetting]="language"
+                    ></app-progress-spinner>
+                </div>
+            </div>
 
             <footer class="bg-custom-purple-500 tw-h-10 w-full"><h1>test</h1></footer>
         </div>
