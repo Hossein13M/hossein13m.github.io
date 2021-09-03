@@ -10,6 +10,7 @@ const colors = {
         'custom-grey': {
             100: '#FAFAFC',
             500: '#8C8C8E',
+            900: '#656569',
         },
         'custom-yellow': {
             500: '#FFC107',
