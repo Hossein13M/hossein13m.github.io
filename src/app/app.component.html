@@ -1,4 +1,4 @@
-<mat-sidenav-container class="h-screen flex flex-col">
+<mat-sidenav-container class="h-screen flex flex-col" [ngClass]="isDarkTheme ? 'dark' : 'light'">
     <mat-sidenav #sidenav mode="side" position="end" class="text-custom-grey-500">
         <div class="tw-h-10 flex items-center justify-center bg-custom-purple-500 px-7"></div>
 
@@ -14,7 +14,7 @@
     </mat-sidenav>
 
     <mat-sidenav-content class="flex h-screen">
-        <mat-toolbar class="flex flex-row-reverse">
+        <mat-toolbar class="flex flex-row-reverse dark:bg-red-500">
             <header>
                 <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
             </header>
