@@ -14,15 +14,24 @@
     </mat-sidenav>
 
     <mat-sidenav-content class="flex h-screen">
-        <mat-toolbar class="flex flex-row-reverse dark:bg-red-500">
-            <header>
-                <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+        <div class="w-1/6 flex flex-col justify-center items-center text-custom-grey-100">
+            <header class="bg-custom-purple-500 w-full flex flex-col items-center py-10">
+                <img src="../assets/images/profile-pic1.jpg" class="image-border" alt="hossein mousavi profile picture" />
+                <h1 class="mb-0">Hossein Mousavi</h1>
+                <label class="text-custom-grey-900">Software Developer</label>
             </header>
-        </mat-toolbar>
-        <section>
+
+            <div class="bg-custom-purple-900 h-3/4 w-full"><h1>test</h1></div>
+
+            <footer class="bg-custom-purple-500 tw-h-10 w-full"><h1>test</h1></footer>
+        </div>
+
+        <!--end-->
+
+        <section class="flex flex-1">
             <router-outlet></router-outlet>
+            <h1>dastan</h1>
         </section>
-        <h1>dastan</h1>
 
         <!-- this is the button for hamburger button -->
         <div class="h-screen flex flex-col items-center text-custom-grey-500">
