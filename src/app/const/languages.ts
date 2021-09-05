@@ -14,10 +14,4 @@ export const Languages: Array<{ name: string; proficiencyPercent: number; profic
         proficiencyPercent: 90,
         proficiencyWithinText: 'A',
     },
-
-    {
-        name: 'Deutsch',
-        proficiencyPercent: 30,
-        proficiencyWithinText: 'C',
-    },
 ];
