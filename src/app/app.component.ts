@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { Languages } from './const/languages';
 import { ProgressSpinner } from './components/progress-spinner/progress-spinner.model';
@@ -11,7 +11,13 @@ import { ProgressSpinner } from './components/progress-spinner/progress-spinner.
 export class AppComponent implements OnInit {
     public isDarkTheme: boolean = true;
     public languagesList: Array<ProgressSpinner> = [];
+    public screenWidth: number = window.innerWidth;
     @ViewChild('sidenav') sidenav!: MatSidenav;
+    @ViewChild('infoSidenav') infoSidenav!: MatSidenav;
+    @HostListener('window:resize', ['$event'])
+    public onResize() {
+        this.screenWidth = window.innerWidth;
+    }
 
     public clickHandler(): void {
         this.sidenav.close().finally();
