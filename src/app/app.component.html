@@ -22,7 +22,7 @@
         <div class="tw-h-10 bg-custom-purple-500 w-full"></div>
     </mat-sidenav>
 
-    <mat-sidenav #infoSidenav mode="side" opened position="start" class="text-custom-grey-500">
+    <mat-sidenav #infoSidenav mode="side" [opened]="screenWidth > 1023" position="start" class="text-custom-grey-500">
         <div class="flex flex-col justify-between h-screen bg-custom-purple-500">
             <header class="flex flex-col items-center py-10">
                 <img src="../assets/images/profile-pic1.jpg" class="image-border" alt="hossein mousavi profile picture" />
@@ -51,39 +51,13 @@
     </mat-sidenav>
 
     <mat-sidenav-content class="flex h-screen">
-        <!--        <div class="w-1/6 flex flex-col justify-center items-center text-custom-grey-100">-->
-        <!--            <header class="bg-custom-purple-500 w-full flex flex-col items-center py-10">-->
-        <!--                <img src="../assets/images/profile-pic1.jpg" class="image-border" alt="hossein mousavi profile picture" />-->
-        <!--                <h1 class="mb-0">Hossein Mousavi</h1>-->
-        <!--                <label class="text-custom-grey-900">Software Developer</label>-->
-        <!--            </header>-->
-
-        <!--            <div class="bg-custom-purple-900 h-3/4 w-full">-->
-        <!--                <div class="flex justify-around pt-10">-->
-        <!--                    <app-progress-spinner-->
-        <!--                        appProgressSpinner-->
-        <!--                        [color]="isDarkTheme ? '#FFC107' : 'red'"-->
-        <!--                        *ngFor="let language of languagesList"-->
-        <!--                        [progressSpinnerSetting]="language"-->
-        <!--                    ></app-progress-spinner>-->
-        <!--                </div>-->
-        <!--            </div>-->
-
-        <!--            <footer class="bg-custom-purple-500 tw-h-10 w-full">-->
-        <!--                <p class="h-full flex items-center justify-center text-custom-grey-900">-->
-        <!--                    © 2021 Hossein Mousavi.-->
-        <!--                    <a target="blank" href="https://creativecommons.org/licenses/by/4.0/">All rights reserved.</a>-->
-        <!--                </p>-->
-        <!--            </footer>-->
-        <!--        </div>-->
-
         <section class="flex flex-1">
             <router-outlet></router-outlet>
             <h1>dastan</h1>
         </section>
 
         <!-- this is the button for hamburger button -->
-        <div class="h-screen flex flex-col items-center text-custom-grey-500">
+        <div class="h-screen flex flex-col items-center text-custom-grey-500 hidden lg:block">
             <div
                 class="tw-h-10 hover:text-custom-grey-100 flex items-center justify-center bg-custom-purple-500 px-5 cursor-pointer"
                 (click)="sidenav.toggle()"
