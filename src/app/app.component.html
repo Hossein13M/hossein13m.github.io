@@ -63,7 +63,7 @@
 
     <mat-sidenav-content class="flex">
         <section class="flex flex-col flex-1 justify-between bg-red-500">
-            <mat-toolbar class="flex justify-between lg:hidden">
+            <mat-toolbar class="flex justify-between lg:hidden fixed">
                 <button mat-icon-button (click)="infoSidenav.toggle()">
                     <mat-icon>more_vert</mat-icon>
                 </button>
@@ -73,7 +73,9 @@
             </mat-toolbar>
 
             <!--            <router-outlet></router-outlet>-->
-            <div class="h-full flex justify-center items-center"><h1>dastan</h1></div>
+            <div class="h-full overflow-y-auto">
+                <h1>dastan</h1>
+            </div>
         </section>
 
         <div class="h-screen flex flex-col items-center text-custom-grey-500 bg-custom-purple-500 hidden lg:block">
