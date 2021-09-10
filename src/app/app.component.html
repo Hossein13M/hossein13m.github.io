@@ -1,15 +1,6 @@
-<mat-toolbar class="flex justify-between lg:hidden">
-    <button mat-icon-button (click)="infoSidenav.toggle()">
-        <mat-icon>more_vert</mat-icon>
-    </button>
-    <button mat-icon-button (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
-    </button>
-</mat-toolbar>
-
 <mat-sidenav-container class="h-screen flex flex-col" [ngClass]="isDarkTheme ? 'dark' : 'light'">
-    <mat-sidenav #sidenav mode="side" position="end" class="text-custom-grey-500 fixed md:flex">
-        <aside class="flex flex-col justify-between h-screen bg-custom-purple-500">
+    <mat-sidenav #sidenav mode="side" position="end" class="text-custom-grey-500 fixed md:flex bg-custom-purple-500">
+        <aside class="flex flex-col justify-between h-screen">
             <header class="flex flex-col items-center py-6 lg:py-0">
                 <button mat-icon-button disableRipple (click)="sidenav.toggle()" class="lg:hidden flex justify-start items-center w-full px-6 py-2">
                     <mat-icon>close</mat-icon>
@@ -36,8 +27,8 @@
         </aside>
     </mat-sidenav>
 
-    <mat-sidenav #infoSidenav mode="side" [opened]="screenWidth > 1023" position="start" class="text-custom-grey-500 fixed md:flex">
-        <div class="flex flex-col justify-between h-screen bg-custom-purple-500">
+    <mat-sidenav #infoSidenav mode="side" [opened]="screenWidth > 1023" position="start" class="text-custom-grey-500 fixed md:flex bg-custom-purple-500">
+        <div class="flex flex-col justify-between h-screen">
             <header class="flex flex-col items-center">
                 <button mat-icon-button disableRipple (click)="infoSidenav.toggle()" class="md:hidden flex justify-end w-full px-6 py-2">
                     <mat-icon>close</mat-icon>
@@ -71,10 +62,18 @@
     </mat-sidenav>
 
     <mat-sidenav-content class="flex">
-        <section class="flex items-center justify-center bg-red-500 flex-1">
+        <section class="flex flex-col flex-1 justify-between bg-red-500">
+            <mat-toolbar class="flex justify-between lg:hidden">
+                <button mat-icon-button (click)="infoSidenav.toggle()">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+                <button mat-icon-button (click)="sidenav.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </mat-toolbar>
 
-            <router-outlet></router-outlet>
-            <h1>dastan</h1>
+            <!--            <router-outlet></router-outlet>-->
+            <div class="h-full flex justify-center items-center"><h1>dastan</h1></div>
         </section>
 
         <div class="h-screen flex flex-col items-center text-custom-grey-500 bg-custom-purple-500 hidden lg:block">
@@ -85,7 +84,7 @@
                     </button>
                 </header>
 
-                <section class="bg-custom-purple-900 vertical-text flex items-center pt-20 h-full">
+                <section class="bg-custom-purple-900 vertical-text flex items-center pt-20 h-full sidenav-background">
                     <h1>home</h1>
                 </section>
 
