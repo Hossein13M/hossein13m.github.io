@@ -1,29 +1,34 @@
-<mat-toolbar class="flex justify-between lg:hidden">
-    <button mat-icon-button (click)="infoSidenav.toggle()">
-        <mat-icon>more_vert</mat-icon>
-    </button>
-    <button mat-icon-button (click)="sidenav.toggle()">
-        <mat-icon>menu</mat-icon>
-    </button>
-</mat-toolbar>
-
 <mat-sidenav-container class="h-screen flex flex-col" [ngClass]="isDarkTheme ? 'dark' : 'light'">
-    <mat-sidenav #sidenav mode="side" position="end" class="text-custom-grey-500">
-        <div class="tw-h-10 flex items-center justify-center bg-custom-purple-500 px-7"></div>
+    <mat-sidenav #sidenav mode="side" position="end" class="text-custom-grey-500 fixed md:flex bg-custom-purple-500">
+        <aside class="flex flex-col justify-between h-screen">
+            <header class="flex flex-col items-center py-6 lg:py-0">
+                <button mat-icon-button disableRipple (click)="sidenav.toggle()" class="lg:hidden flex justify-start items-center w-full px-6 py-2">
+                    <mat-icon>close</mat-icon>
+                </button>
+                <div class="sidenav-header hidden lg:block"></div>
+            </header>
 
-        <div class="h-4/5 bg-custom-purple-900 w-full justify-center flex flex-col items-center px-32">
-            <nav class="flex flex-col">
-                <a routerLink="home" (click)="clickHandler()" routerLinkActive="active"><h1>Home</h1></a>
-                <a routerLink="about" (click)="clickHandler()" routerLinkActive="active"><h1>About</h1> </a>
-                <a routerLink="contact" (click)="clickHandler()" routerLinkActive="active"><h1>Contact</h1> </a>
-            </nav>
-        </div>
+            <section class="bg-custom-purple-900 justify-center flex flex-col items-center text-center px-24 h-full sidenav-background">
+                <nav class="flex flex-col">
+                    <a routerLink="home" (click)="clickHandler()" routerLinkActive="active"><h1>Home</h1></a>
+                    <a routerLink="about" (click)="clickHandler()" routerLinkActive="active"><h1>About</h1> </a>
+                    <a routerLink="contact" (click)="clickHandler()" routerLinkActive="active"><h1>Contact</h1> </a>
+                </nav>
+            </section>
 
-        <div class="tw-h-10 bg-custom-purple-500 w-full"></div>
+            <footer class="py-5 lg:py-1 mx-auto">
+                <button mat-icon-button (click)="changeTheme()" class="lg:hidden">
+                    <span class="flex flex-col items-center dark:text-custom-yellow-500">
+                        <mat-icon>{{ isDarkTheme ? 'dark_mode' : 'light_mode' }}</mat-icon>
+                    </span>
+                </button>
+                <div class="sidenav-header hidden lg:block"></div>
+            </footer>
+        </aside>
     </mat-sidenav>
 
-    <mat-sidenav #infoSidenav mode="side" [opened]="screenWidth > 1023" position="start" class="text-custom-grey-500 fixed md:flex">
-        <div class="flex flex-col justify-between h-screen bg-custom-purple-500">
+    <mat-sidenav #infoSidenav mode="side" [opened]="screenWidth > 1023" position="start" class="text-custom-grey-500 fixed md:flex bg-custom-purple-500">
+        <div class="flex flex-col justify-between h-screen">
             <header class="flex flex-col items-center">
                 <button mat-icon-button disableRipple (click)="infoSidenav.toggle()" class="md:hidden flex justify-end w-full px-6 py-2">
                     <mat-icon>close</mat-icon>
@@ -57,31 +62,38 @@
     </mat-sidenav>
 
     <mat-sidenav-content class="flex">
-        <section class="flex flex-1">
-            <router-outlet></router-outlet>
-            <h1>dastan</h1>
+        <section class="flex flex-col flex-1 justify-between bg-red-500">
+            <mat-toolbar class="flex justify-between lg:hidden">
+                <button mat-icon-button (click)="infoSidenav.toggle()">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+                <button mat-icon-button (click)="sidenav.toggle()">
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </mat-toolbar>
+
+            <!--            <router-outlet></router-outlet>-->
+            <div class="h-full flex justify-center items-center"><h1>dastan</h1></div>
         </section>
 
-        <!-- this is the button for hamburger button -->
-        <div class="h-screen flex flex-col items-center text-custom-grey-500 hidden lg:block">
-            <div
-                class="tw-h-10 hover:text-custom-grey-100 flex items-center justify-center bg-custom-purple-500 px-5 cursor-pointer"
-                (click)="sidenav.toggle()"
-            >
-                <button mat-icon-button>
-                    <mat-icon>{{ sidenav.opened ? 'close' : 'menu' }}</mat-icon>
-                </button>
-            </div>
+        <div class="h-screen flex flex-col items-center text-custom-grey-500 bg-custom-purple-500 hidden lg:block">
+            <aside class="flex flex-col justify-between h-screen bg-custom-purple-500">
+                <header class="hover:text-custom-grey-100 py-5 flex items-center justify-center px-5 cursor-pointer" (click)="sidenav.toggle()">
+                    <button mat-icon-button>
+                        <mat-icon>{{ sidenav.opened ? 'close' : 'menu' }}</mat-icon>
+                    </button>
+                </header>
 
-            <div class="h-4/5 bg-custom-purple-900 w-full vertical-text flex items-center pt-20">
-                <h1>home</h1>
-            </div>
+                <section class="bg-custom-purple-900 vertical-text flex items-center pt-20 h-full sidenav-background">
+                    <h1>home</h1>
+                </section>
 
-            <div class="tw-h-10 bg-custom-purple-500 text-custom-yellow-500 w-full flex flex-col justify-center items-center">
-                <button mat-icon-button (click)="changeTheme()">
-                    <mat-icon>{{ isDarkTheme ? 'dark_mode' : 'light_mode' }}</mat-icon>
-                </button>
-            </div>
+                <footer class="text-custom-yellow-500 w-full flex flex-col justify-center py-6 items-center">
+                    <button mat-icon-button (click)="changeTheme()">
+                        <mat-icon>{{ isDarkTheme ? 'dark_mode' : 'light_mode' }}</mat-icon>
+                    </button>
+                </footer>
+            </aside>
         </div>
     </mat-sidenav-content>
 </mat-sidenav-container>
