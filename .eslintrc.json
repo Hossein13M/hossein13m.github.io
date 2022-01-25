@@ -13,7 +13,7 @@
             },
             "typescript": {
                 "moduleDirectory": ["node_modules", "src/"],
-                "extensions": [".js", ".jsx", ".ts", ".tsx"],
+                "extensions": [".js", ".ts"],
                 "alwaysTryTypes": true, // always try to resolve types under `<roo/>@types` directory even it doesn't contain any source code, like `@types/unist`
                 "directory": "./tsconfig.json"
             }
