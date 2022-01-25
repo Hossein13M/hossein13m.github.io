@@ -20,7 +20,7 @@
         }
     },
 
-    "parserOptions": { "ecmaVersion": 10, "sourceType": "module", "project": "./tsconfig.json" },
+    "parserOptions": { "ecmaVersion": 2020, "sourceType": "module", "project": "./tsconfig.json" },
     "plugins": ["@typescript-eslint", "prettier", "rxjs"],
     "env": { "browser": true },
     "rules": {
