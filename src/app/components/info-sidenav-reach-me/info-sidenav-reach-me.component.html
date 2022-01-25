@@ -1,0 +1,7 @@
+<section class="flex justify-center flex-wrap items-center">
+    <button *ngFor="let socialMedia of socialMedia" [matTooltip]="socialMedia.name" class="flex justify-center social-media-icon w-1/3">
+        <a [href]="socialMedia.url" target="_blank">
+            <img [src]="socialMedia['imageLink']" [alt]="socialMedia.name" />
+        </a>
+    </button>
+</section>

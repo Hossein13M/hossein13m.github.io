@@ -27,7 +27,13 @@
         </aside>
     </mat-sidenav>
 
-    <mat-sidenav #infoSidenav mode="side" [opened]="screenWidth > 1023" position="start" class="text-custom-grey-500 fixed md:flex bg-custom-purple-500">
+    <mat-sidenav
+        #infoSidenav
+        mode="side"
+        [opened]="screenWidth > 1023"
+        position="start"
+        class="text-custom-grey-500 fixed md:flex bg-custom-purple-500 lg:w-1/5"
+    >
         <div class="flex flex-col justify-between h-screen">
             <header class="flex flex-col items-center">
                 <button mat-icon-button disableRipple (click)="infoSidenav.toggle()" class="md:hidden flex justify-end w-full px-6 py-2">
@@ -41,8 +47,9 @@
                 </div>
             </header>
 
-            <section class="bg-custom-purple-900 h-full">
-                <div class="flex justify-around pt-10">
+            <section class="bg-custom-purple-900 h-full flex flex-col justify-between items-center">
+                <!--                <div class="flex flex-col items-center pt-10">-->
+                <div class="flex justify-evenly w-full">
                     <app-progress-spinner
                         appProgressSpinner
                         [color]="isDarkTheme ? '#FFC107' : 'red'"
@@ -50,6 +57,10 @@
                         [progressSpinnerSetting]="language"
                     ></app-progress-spinner>
                 </div>
+                <mat-divider class="bg-custom-grey-900 w-4/5 my-5"></mat-divider>
+
+                <app-info-sidenav-reach-me class="flex flex-1"></app-info-sidenav-reach-me>
+                <!--                </div>-->
             </section>
 
             <footer class="px-4">
