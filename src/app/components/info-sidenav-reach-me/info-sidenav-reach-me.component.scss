@@ -1,0 +1,11 @@
+.social-media-icon {
+    filter: grayscale(100%);
+    &:hover {
+        filter: none;
+    }
+    a {
+        img {
+            max-height: 40px;
+        }
+    }
+}
