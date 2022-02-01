@@ -16,8 +16,8 @@ import { InfoSidenavReachMeModule } from './components/info-sidenav-reach-me/inf
     declarations: [AppComponent],
     imports: [
         BrowserModule,
-        AppRoutingModule,
         BrowserAnimationsModule,
+        AppRoutingModule,
         MatSidenavModule,
         MatIconModule,
         MatToolbarModule,
