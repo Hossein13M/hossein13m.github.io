@@ -1,0 +1,7 @@
+<div class="flex justify-between mb-2" *ngFor="let baseInfo of baseInfo">
+    <p class="flex item-center m-0">
+        <mat-icon class="text-xs">trip_origin</mat-icon>
+        <span class="text-white">{{ baseInfo.subject }}:</span>
+    </p>
+    <p class="m-0">{{ baseInfo.answer }}</p>
+</div>

@@ -11,6 +11,7 @@ import { AppComponent } from './app.component';
 import { ProgressSpinnerModule } from './components/progress-spinner/progress-spinner.module';
 import { DirectivesModule } from './directives/directives.module';
 import { InfoSidenavReachMeModule } from './components/info-sidenav-reach-me/info-sidenav-reach-me.module';
+import { BaseInfoModule } from './components/base-info/base-info.module';
 
 @NgModule({
     declarations: [AppComponent],
@@ -26,6 +27,7 @@ import { InfoSidenavReachMeModule } from './components/info-sidenav-reach-me/inf
         DirectivesModule,
         InfoSidenavReachMeModule,
         MatDividerModule,
+        BaseInfoModule,
     ],
     providers: [],
     bootstrap: [AppComponent],
