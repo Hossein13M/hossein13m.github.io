@@ -1,7 +1,8 @@
 import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
-import { Languages } from './const/languages';
 import { ProgressSpinner } from './components/progress-spinner/progress-spinner.model';
+import { ActivationStart, Router } from '@angular/router';
+import { Languages } from './const/languages';
 
 @Component({
     selector: 'app-root',
@@ -12,8 +13,12 @@ export class AppComponent implements OnInit {
     public isDarkTheme: boolean = true;
     public languagesList: Array<ProgressSpinner> = [];
     public screenWidth: number = window.innerWidth;
+    public pageTitle!: string;
     @ViewChild('sidenav') sidenav!: MatSidenav;
     @ViewChild('infoSidenav') infoSidenav!: MatSidenav;
+
+    constructor(private readonly router: Router) {}
+
     @HostListener('window:resize', ['$event'])
     public onResize() {
         this.screenWidth = window.innerWidth;
@@ -26,6 +31,13 @@ export class AppComponent implements OnInit {
     ngOnInit(): void {
         this.isDarkTheme = localStorage.getItem('theme') === 'dark';
         this.prepareLanguageListForSpinner();
+        this.getCurrentRouteTitle();
+    }
+
+    private getCurrentRouteTitle() {
+        this.router.events.subscribe((data) => {
+            if (data instanceof ActivationStart) this.pageTitle = data.snapshot.data['pageTitle'];
+        });
     }
 
     public changeTheme(): void {
