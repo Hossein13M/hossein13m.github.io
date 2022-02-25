@@ -8,11 +8,18 @@
                 <div class="sidenav-header hidden lg:block"></div>
             </header>
 
-            <section class="bg-custom-purple-900 justify-center flex flex-col items-center text-center px-24 h-full sidenav-background">
+            <section class="bg-custom-purple-900 justify-center flex flex-col items-center px-24 h-full sidenav-background">
                 <nav class="flex flex-col">
-                    <a routerLink="home" (click)="clickHandler()" routerLinkActive="active"><h1>Home</h1></a>
-                    <a routerLink="about" (click)="clickHandler()" routerLinkActive="active"><h1>About</h1> </a>
-                    <a routerLink="contact" (click)="clickHandler()" routerLinkActive="active"><h1>Contact</h1> </a>
+                    <a
+                        class="flex items-center my-2"
+                        *ngFor="let route of navigationRoutes"
+                        [routerLink]="route.routeUrl"
+                        (click)="navigateToOtherPages(route.routeUrl)"
+                        routerLinkActive="active"
+                    >
+                        <mat-icon>{{ route.routeIcon }}</mat-icon>
+                        <h1 class="mx-2 my-0">{{ route.routeTitle }}</h1>
+                    </a>
                 </nav>
             </section>
 

@@ -3,6 +3,8 @@ import { MatSidenav } from '@angular/material/sidenav';
 import { ProgressSpinner } from './components/progress-spinner/progress-spinner.model';
 import { ActivationStart, Router } from '@angular/router';
 import { Languages } from './const/languages';
+import { NavigationRoutes } from './const/navigationRoutes';
+import { NavigationRouteModel } from './models/navigationRoute.model';
 
 @Component({
     selector: 'app-root',
@@ -14,6 +16,7 @@ export class AppComponent implements OnInit {
     public languagesList: Array<ProgressSpinner> = [];
     public screenWidth: number = window.innerWidth;
     public pageTitle!: string;
+    public navigationRoutes: Array<NavigationRouteModel> = NavigationRoutes;
     @ViewChild('sidenav') sidenav!: MatSidenav;
     @ViewChild('infoSidenav') infoSidenav!: MatSidenav;
 
@@ -24,8 +27,8 @@ export class AppComponent implements OnInit {
         this.screenWidth = window.innerWidth;
     }
 
-    public clickHandler(): void {
-        this.sidenav.close().finally();
+    public navigateToOtherPages(destinationRoute: string): void {
+        this.router.navigate([destinationRoute]).finally(() => this.sidenav.close().finally());
     }
 
     ngOnInit(): void {
