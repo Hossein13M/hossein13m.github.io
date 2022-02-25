@@ -34,7 +34,7 @@ export class AppComponent implements OnInit {
         this.getCurrentRouteTitle();
     }
 
-    private getCurrentRouteTitle() {
+    private getCurrentRouteTitle(): void {
         this.router.events.subscribe((data) => {
             if (data instanceof ActivationStart) this.pageTitle = data.snapshot.data['pageTitle'];
         });
