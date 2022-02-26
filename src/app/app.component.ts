@@ -1,7 +1,7 @@
 import { Component, HostListener, OnInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
-import { ProgressSpinner } from './components/progress-spinner/progress-spinner.model';
 import { ActivationStart, Router } from '@angular/router';
+import { ProgressSpinner } from './components/progress-spinner/progress-spinner.model';
 import { Languages } from './const/languages';
 import { NavigationRoutes } from './const/navigationRoutes';
 import { NavigationRouteModel } from './models/navigationRoute.model';
