@@ -1,4 +1,4 @@
-<mat-card class="py-5">
+<mat-card class="py-5 dark:bg-custom-purple-900 dark:text-white mat-elevation-z10">
     <mat-card-header>
         <div mat-card-avatar>
             <a [href]="article.publisher === 'Medium' ? 'https://medium.com/' : 'https://virgool.io/'">
@@ -11,7 +11,11 @@
             </a>
         </div>
         <mat-card-title class="font-semibold">{{ article.title }}</mat-card-title>
-        <mat-card-subtitle>{{ article.publisher }}</mat-card-subtitle>
+        <mat-card-subtitle class="dark:text-custom-yellow-500">
+            <a [href]="article.publisher === 'Medium' ? 'https://medium.com/' : 'https://virgool.io/'">
+                {{ article.publisher }}
+            </a>
+        </mat-card-subtitle>
     </mat-card-header>
 
     <mat-divider inset></mat-divider>
@@ -24,7 +28,8 @@
         <a [href]="article.url" target="_blank" class="mt-4">
             <button
                 mat-stroked-button
-                color="primary"
+                disableRipple
+                color="accent"
                 class="flex items-center"
                 matTooltip="Click to read more"
                 matTooltipPosition="below"
