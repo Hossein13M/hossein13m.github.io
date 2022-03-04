@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { ArticlesModel } from '../../models/articles.model';
 
 @Component({
     selector: 'app-publication-item',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
     styleUrls: ['./publication-item.component.scss'],
 })
 export class PublicationItemComponent {
+    @Input() article!: ArticlesModel;
     constructor() {}
 }
