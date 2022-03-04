@@ -6,6 +6,13 @@
         "plugin:@typescript-eslint/recommended-requiring-type-checking",
         "plugin:@angular-eslint/recommended"
     ],
+    "overrides": [
+        {
+            "files": ["*.ts"],
+            "parserOptions": { "project": "./tsconfig.json" },
+            "rules": { "@typescript-eslint/prefer-nullish-coalescing": "error" }
+        }
+    ],
     "settings": {
         "import/resolver": {
             "node": {
