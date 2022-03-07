@@ -12,6 +12,7 @@ import { ProgressSpinnerModule } from './components/progress-spinner/progress-sp
 import { DirectivesModule } from './directives/directives.module';
 import { InfoSidenavReachMeModule } from './components/info-sidenav-reach-me/info-sidenav-reach-me.module';
 import { BaseInfoModule } from './components/base-info/base-info.module';
+import { PageHeaderModule } from './components/page-header/page-header.module';
 
 @NgModule({
     declarations: [AppComponent],
@@ -28,6 +29,7 @@ import { BaseInfoModule } from './components/base-info/base-info.module';
         DirectivesModule,
         InfoSidenavReachMeModule,
         BaseInfoModule,
+        PageHeaderModule,
     ],
     providers: [],
     bootstrap: [AppComponent],

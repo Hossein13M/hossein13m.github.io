@@ -19,3 +19,18 @@
     text-align: center;
     font-size: 16px;
 }
+
+.sticky-header {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.void-height {
+    height: 40px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
