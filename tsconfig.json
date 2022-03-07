@@ -18,8 +18,8 @@
         "module": "es2020",
         "lib": ["es2018", "dom"]
     },
-    "include": ["**/*.d.ts", "**/*.ts", "**/*.html", "**/*.scss", "**/*.css"],
-    "exclude": ["node_modules"],
+    "include": ["**/*.d.ts", "**/*.ts"],
+    "exclude": ["node_modules", "**/*.html", "**/*.scss", "**/*.css"],
     "angularCompilerOptions": {
         "enableI18nLegacyMessageIdFormat": false,
         "strictInjectionParameters": true,
