@@ -92,8 +92,14 @@
             </mat-toolbar>
 
             <div class="h-full overflow-y-auto flex flex-col">
-                <div class="mx-5 mb-5 px-5">
-                    <router-outlet></router-outlet>
+                <div class="flex flex-col">
+                    <div class="void-height w-full dark:bg-custom-purple-500 bg-custom-yellow-500"></div>
+
+                    <app-page-header class="sticky-header" [pageTitle]="pageTitle"></app-page-header>
+
+                    <div class="mx-5 mb-5 px-5">
+                        <router-outlet></router-outlet>
+                    </div>
                 </div>
             </div>
         </section>

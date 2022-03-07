@@ -1,11 +1,3 @@
-<div class="flex flex-col">
-    <div class="void-height bg-custom-purple-900"></div>
-
-    <div class="sticky-header">
-        <app-page-header></app-page-header>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <app-publication-item *ngFor="let article of articles" [article]="article"></app-publication-item>
-    </div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <app-publication-item *ngFor="let article of articles" [article]="article"></app-publication-item>
 </div>
