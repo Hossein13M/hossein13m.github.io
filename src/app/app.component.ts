@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
 
     private getCurrentRouteTitle(): void {
         this.router.events.subscribe((data) => {
-            if (data instanceof ActivationStart) this.pageTitle = data.snapshot.data['pageTitle'];
+            if (data instanceof NavigationEnd) this.pageTitle = NavigationRoutes.find((navItem) => navItem.routeUrl === data.url.slice(1))!.routeTitle;
         });
     }
 
