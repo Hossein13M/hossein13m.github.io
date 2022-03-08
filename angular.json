@@ -20,7 +20,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/hossein-mousavi",
+                        "outputPath": "dist/hossein-mousavi/browser",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -93,6 +93,63 @@
                         "styles": ["./node_modules/@angular/material/prebuilt-themes/deeppurple-amber.css", "src/styles.scss"],
                         "scripts": []
                     }
+                },
+                "server": {
+                    "builder": "@angular-devkit/build-angular:server",
+                    "options": {
+                        "outputPath": "dist/hossein-mousavi/server",
+                        "main": "server.ts",
+                        "tsConfig": "tsconfig.server.json",
+                        "inlineStyleLanguage": "scss"
+                    },
+                    "configurations": {
+                        "production": {
+                            "outputHashing": "media",
+                            "fileReplacements": [
+                                {
+                                    "replace": "src/environments/environment.ts",
+                                    "with": "src/environments/environment.prod.ts"
+                                }
+                            ]
+                        },
+                        "development": {
+                            "optimization": false,
+                            "sourceMap": true,
+                            "extractLicenses": false
+                        }
+                    },
+                    "defaultConfiguration": "production"
+                },
+                "serve-ssr": {
+                    "builder": "@nguniversal/builders:ssr-dev-server",
+                    "configurations": {
+                        "development": {
+                            "browserTarget": "hossein-mousavi:build:development",
+                            "serverTarget": "hossein-mousavi:server:development"
+                        },
+                        "production": {
+                            "browserTarget": "hossein-mousavi:build:production",
+                            "serverTarget": "hossein-mousavi:server:production"
+                        }
+                    },
+                    "defaultConfiguration": "development"
+                },
+                "prerender": {
+                    "builder": "@nguniversal/builders:prerender",
+                    "options": {
+                        "routes": ["/"]
+                    },
+                    "configurations": {
+                        "production": {
+                            "browserTarget": "hossein-mousavi:build:production",
+                            "serverTarget": "hossein-mousavi:server:production"
+                        },
+                        "development": {
+                            "browserTarget": "hossein-mousavi:build:development",
+                            "serverTarget": "hossein-mousavi:server:development"
+                        }
+                    },
+                    "defaultConfiguration": "production"
                 }
             }
         }

@@ -17,7 +17,7 @@ import { PageHeaderModule } from './components/page-header/page-header.module';
 @NgModule({
     declarations: [AppComponent],
     imports: [
-        BrowserModule,
+        BrowserModule.withServerTransition({ appId: 'serverApp' }),
         BrowserAnimationsModule,
         AppRoutingModule,
         MatSidenavModule,
