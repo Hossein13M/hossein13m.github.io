@@ -8,7 +8,11 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "dev:ssr": "ng run hossein-mousavi:serve-ssr",
+    "serve:ssr": "node dist/hossein-mousavi/server/main.js",
+    "build:ssr": "ng build && ng run hossein-mousavi:server",
+    "prerender": "ng run hossein-mousavi:prerender"
   },
   "private": true,
   "dependencies": {
@@ -21,8 +25,11 @@
     "@angular/material": "13.2.0",
     "@angular/platform-browser": "~13.2.0",
     "@angular/platform-browser-dynamic": "~13.2.0",
+    "@angular/platform-server": "~13.2.0",
     "@angular/router": "~13.2.0",
+    "@nguniversal/express-engine": "^13.0.2",
     "@tailwindcss/typography": "^0.5.1",
+    "express": "^4.15.2",
     "rxjs": "^7.5.2",
     "tslib": "^2.3.1",
     "zone.js": "~0.11.4"
@@ -35,6 +42,8 @@
     "@angular/compiler-cli": "~13.2.0",
     "@commitlint/cli": "^16.1.0",
     "@commitlint/config-conventional": "^16.0.0",
+    "@nguniversal/builders": "^13.0.2",
+    "@types/express": "^4.17.0",
     "@types/jasmine": "^3.10.3",
     "@types/node": "^17.0.14",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
