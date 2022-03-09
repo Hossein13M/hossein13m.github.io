@@ -4,11 +4,13 @@ const colors = {
     ...defaultColors,
     ...{
         'custom-purple': {
+            100: '#3a3a4e',
             500: '#242430',
             900: '#20202A',
         },
         'custom-grey': {
             100: '#FAFAFC',
+            200: '#e3e3e3',
             500: '#8C8C8E',
             900: '#656569',
         },
