@@ -1,0 +1,43 @@
+.container {
+    height: 500px;
+    display: flex;
+    padding: 10px;
+}
+
+.input-textarea {
+    width: 100%;
+    border: none;
+    padding: 0 15px 0 20px;
+    margin-bottom: 0;
+    transition: 0.4s ease-in-out;
+    -webkit-transition: 0.4s ease-in-out;
+    resize: none;
+
+    &:focus + label {
+        transition: 0.6s ease-in-out;
+    }
+    &:focus {
+        outline: none;
+    }
+}
+
+input {
+    height: 50px;
+}
+
+textarea {
+    height: 100px;
+}
+
+.textarea-icon {
+    height: 100px;
+    display: flex;
+    padding: 25px 10px;
+}
+
+.input-icon {
+    height: 50px;
+    display: flex;
+    padding: 0 10px;
+    align-items: center;
+}
