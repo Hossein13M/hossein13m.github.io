@@ -1,4 +1,4 @@
-import { SocialMediaModel } from '../models/social-media.model';
+import { SocialMediaHeader, SocialMediaModel } from '../models/social-media.model';
 
 export const SocialMedia: Array<SocialMediaModel> = [
     {
@@ -85,4 +85,10 @@ export const SocialMedia: Array<SocialMediaModel> = [
         imageLink: 'assets/images/whatsapp.png',
         type: 'social',
     },
+];
+
+export const SocialMediaHeaders: Array<SocialMediaHeader> = [
+    { type: 'openSource', title: 'Check My Open Source Contributions', icon: 'code' },
+    { type: 'social', title: 'Reach Out To Me On Social Medias', icon: 'groups' },
+    { type: 'blogging', title: 'Find Out My Articles', icon: 'article' },
 ];

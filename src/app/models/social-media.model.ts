@@ -6,3 +6,9 @@ export interface SocialMediaModel {
     imageLink: string;
     type: ContactTypes;
 }
+
+export interface SocialMediaHeader {
+    type: ContactTypes;
+    title: string;
+    icon: string;
+}
