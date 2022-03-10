@@ -32,9 +32,9 @@ export const SocialMedia: Array<SocialMediaModel> = [
         type: 'openSource',
     },
     {
-        name: 'Google Dev Library',
+        name: 'Google Dev',
         url: 'https://devlibrary.withgoogle.com/authors/hossein13m',
-        imageLink: 'assets/images/ google-dev.png',
+        imageLink: 'assets/images/google-dev.png',
         type: 'blogging',
     },
     {
