@@ -1,0 +1,15 @@
+.contact-link-container {
+    height: 270px;
+}
+
+.social-media-icon {
+    //filter: grayscale(100%);
+    //&:hover {
+    //    filter: none;
+    //}
+    a {
+        img {
+            max-height: 30px;
+        }
+    }
+}
