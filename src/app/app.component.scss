@@ -15,7 +15,7 @@
 ::ng-deep .mat-tooltip {
     min-width: 100px;
     max-width: 150px;
-    background-color: #242430;
+    background-color: theme('colors.custom-purple.100');
     text-align: center;
     font-size: 16px;
 }

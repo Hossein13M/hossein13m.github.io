@@ -7,9 +7,10 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { ContactFormModule } from '../../components/contact-form/contact-form.module';
+import { ContactLinkModule } from '../../components/contact-link/contact-link.module';
 
 @NgModule({
     declarations: [ContactComponent],
-    imports: [CommonModule, ContactRoutingModule, MatIconModule, MatCardModule, MatDividerModule, MatButtonModule, ContactFormModule],
+    imports: [CommonModule, ContactRoutingModule, MatIconModule, MatCardModule, MatDividerModule, MatButtonModule, ContactFormModule, ContactLinkModule],
 })
 export class ContactModule {}
