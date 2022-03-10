@@ -1,17 +1,9 @@
 <mat-card class="py-5 dark:bg-custom-purple-900 dark:text-white mat-elevation-z10">
-    <mat-card-header>
-        <!--            <div mat-card-avatar>-->
-        <!--                <a [href]="article.publisher === 'Medium' ? 'https://medium.com/' : 'https://virgool.io/'">-->
-        <!--                    <img-->
-        <!--                        [src]="article.publisher === 'Medium' ? '../../../assets/images/medium.png' : '../../../assets/images/virgool.png'"-->
-        <!--                        alt="Publisher Logo"-->
-        <!--                        matTooltip="Medium"-->
-        <!--                        matTooltipPosition="below"-->
-        <!--                    />-->
-        <!--                </a>-->
-        <!--            </div>-->
-        <mat-card-title class="font-semibold">You Could Also Send Me A Message!</mat-card-title>
-        <!--            <mat-card-subtitle class="dark:text-custom-yellow-500"> You Need Anything? Please Don't Hesitate To Ask! </mat-card-subtitle>-->
+    <mat-card-header class="dark:text-custom-grey-500 text-custom-purple-900">
+        <div mat-card-avatar class="px-2">
+            <mat-icon>chat</mat-icon>
+        </div>
+        <mat-card-title class="font-semibold">You Can Also Send Me A Message!</mat-card-title>
     </mat-card-header>
 
     <mat-divider inset></mat-divider>
@@ -42,7 +34,7 @@
                     required
                 />
                 <label for="email" class="input-icon dark:input-icon-dark-theme input-icon-light-theme">
-                    <mat-icon class="order-first">email</mat-icon>
+                    <mat-icon class="order-first">alternate_email</mat-icon>
                 </label>
             </div>
 
@@ -50,7 +42,7 @@
                 <textarea
                     id="message"
                     name="email"
-                    class="order-last px-2 py-5 input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
+                    class="order-last px-5 py-5 input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
                     type="text"
                     placeholder="Message"
                     required
