@@ -37,7 +37,7 @@
     <mat-sidenav
         #infoSidenav
         mode="side"
-        [opened]="screenWidth > 1023"
+        [opened]="screenWidth > 1280"
         position="start"
         class="dark:text-custom-grey-500 text-custom-grey-900 fixed md:flex dark:bg-custom-purple-500 bg-custom-grey-200 lg:w-1/5"
     >
@@ -57,7 +57,7 @@
             <section class="dark:bg-custom-purple-900 bg-custom-grey-500 h-full flex flex-col items-center">
                 <app-base-info class="w-4/5 mt-10"></app-base-info>
 
-                <mat-divider class="bg-custom-grey-900 w-4/5 my-5"></mat-divider>
+                <mat-divider class="bg-custom-grey-900 my-5"></mat-divider>
 
                 <div class="flex justify-evenly w-full mt-2">
                     <app-progress-spinner
@@ -81,7 +81,7 @@
 
     <mat-sidenav-content class="flex">
         <section class="flex flex-col flex-1 justify-between dark:bg-custom-purple-100 bg-custom-grey-200">
-            <mat-toolbar class="sidenav-header flex justify-between lg:hidden sticky dark:bg-custom-purple-900 dark:text-custom-grey-500 py-11">
+            <mat-toolbar class="sidenav-header flex justify-between xl:hidden sticky dark:bg-custom-purple-900 dark:text-custom-grey-500 py-11">
                 <button mat-icon-button (click)="infoSidenav.toggle()">
                     <mat-icon>more_vert</mat-icon>
                 </button>
@@ -104,7 +104,7 @@
             </div>
         </section>
 
-        <div class="h-screen flex flex-col items-center text-custom-grey-500 dark:bg-custom-purple-500 bg-custom-grey-100 hidden lg:block">
+        <div class="h-screen flex flex-col items-center text-custom-grey-500 dark:bg-custom-purple-500 bg-custom-grey-100 hidden xl:block">
             <aside class="flex flex-col justify-between h-screen dark:bg-custom-purple-500 bg-custom-grey-100">
                 <header
                     class="dark:hover:text-custom-grey-100 hover:text-custom-grey-900 py-5 flex items-center justify-center px-5 cursor-pointer"
