@@ -23,9 +23,9 @@ const routes: Routes = [
         data: { pageTitle: 'Publications!' },
     },
     {
-        path: 'skills',
-        loadChildren: () => import('./modules/skills/skills.module').then((m) => m.SkillsModule),
-        data: { pageTitle: 'Skills!' },
+        path: 'expertises',
+        loadChildren: () => import('./modules/expertises/expertises.module').then((m) => m.ExpertisesModule),
+        data: { pageTitle: 'Expertises!' },
     },
     {
         path: '**',
