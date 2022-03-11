@@ -1,13 +1,13 @@
 <mat-card class="py-5 dark:bg-custom-purple-900 dark:text-white mat-elevation-z10 contact-link-container flex flex-col">
-    <mat-card-header class="dark:text-custom-grey-500 text-custom-purple-900 flex-shrink-0">
-        <div mat-card-avatar>
+    <mat-card-header class="dark:text-custom-grey-500 text-custom-purple-900 flex-shrink-0 flex items-center">
+        <div mat-card-avatar class="flex items-center">
             <mat-icon color="accent">{{ header.icon }}</mat-icon>
         </div>
-        <mat-card-title class="font-semibold">{{ header.title }}</mat-card-title>
+        <mat-card-title class="font-semibold mb-0">{{ header.title }}</mat-card-title>
     </mat-card-header>
 
     <mat-card-content class="flex my-5 flex-grow overflow-auto">
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-5">
+        <section class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 mb-5">
             <button *ngFor="let socialMedia of socialMedias" class="flex social-media-icon dark:text-custom-grey-500 dark:hover:text-custom-yellow-500">
                 <a [href]="socialMedia.url" target="_blank" class="flex items-center">
                     <img [src]="socialMedia['imageLink']" [alt]="socialMedia.name" />
