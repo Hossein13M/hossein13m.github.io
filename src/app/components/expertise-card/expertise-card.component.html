@@ -1,4 +1,4 @@
-<mat-card class="dark:bg-custom-purple-900 dark:text-white mat-elevation-z10 flex flex-col" [style.min-height]="componentMinHeight">
+<mat-card class="dark:bg-custom-purple-500 dark:text-white mat-elevation-z10 flex flex-col" [style.min-height]="componentMinHeight">
     <mat-card-header class="dark:text-custom-grey-500 text-custom-purple-900 flex-shrink-0 md:hidden flex">
         <div mat-card-avatar>
             <mat-icon color="accent">{{ header.icon }}</mat-icon>
@@ -7,13 +7,16 @@
     </mat-card-header>
 
     <mat-card-content class="flex my-5 flex-grow overflow-auto w-full">
-        <section class="grid grid-cols-1 md:grid-cols-3 gap-6 my-5 w-full">
-            <div *ngFor="let expertise of expertises" class="flex social-media-icon dark:text-custom-grey-500 dark:hover:text-custom-yellow-500 cursor-default">
+        <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 my-5 w-full">
+            <div
+                *ngFor="let expertise of expertises"
+                class="flex justify-between md:px-10 lg:px-10 items-center expertise-icons dark:text-custom-grey-500 dark:hover:text-custom-yellow-500 cursor-default"
+            >
                 <span class="flex items-center">
-                    <!--                    <img [src]="expertise['imageLink']" [alt]="expertise.name" />-->
+                    <img [src]="'assets/images/expertise/' + expertise['icon'] + '.png'" [alt]="expertise.name" class="expertise-icon-img" />
                     <span class="mx-2 text-2xl">{{ expertise.name }}</span>
-                    <app-level-badge [level]="expertise.level"></app-level-badge>
                 </span>
+                <app-level-badge [level]="expertise.level"></app-level-badge>
             </div>
         </section>
     </mat-card-content>
