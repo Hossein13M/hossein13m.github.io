@@ -38,6 +38,8 @@ export const Expertises: Array<ExpertiseModel> = [
     { name: 'REST API', icon: 'restAPI', type: 'softwareDevelopment', level: 'Familiar' },
     { name: 'Design Patterns', icon: 'designPatterns', type: 'softwareDevelopment', level: 'Familiar' },
     { name: 'SOLID Principles', icon: 'solid', type: 'softwareDevelopment', level: 'Familiar' },
+    { name: 'PWA', icon: 'pwa', type: 'softwareDevelopment', level: 'Experienced At' },
+    { name: 'WebPack', icon: 'webpack', type: 'softwareDevelopment', level: 'Familiar' },
 ];
 
 export const ExpertiseHeaders: Array<ExpertiseHeader> = [
