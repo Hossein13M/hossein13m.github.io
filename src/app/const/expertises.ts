@@ -6,7 +6,7 @@ export const Expertises: Array<ExpertiseModel> = [
     { name: 'TypeScript', icon: 'asd', type: 'language', level: 'Deep Knowledge' },
     { name: 'HTML', icon: 'asd', type: 'language', level: 'Advanced' },
     { name: 'CSS', icon: 'asd', type: 'language', level: 'Advanced' },
-    { name: 'SCSS', icon: 'asd', type: 'language', level: 'Advanced' },
+    { name: 'Sass', icon: 'asd', type: 'language', level: 'Advanced' },
     { name: 'Bash Script', icon: 'asd', type: 'language', level: 'Experienced At' },
     { name: 'C#', icon: 'asd', type: 'language', level: 'Familiar With' },
     { name: 'SQL', icon: 'asd', type: 'language', level: 'Familiar With' },
