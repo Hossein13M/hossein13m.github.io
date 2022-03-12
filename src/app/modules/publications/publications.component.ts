@@ -9,5 +9,6 @@ import { Articles } from '../../const/articles';
 })
 export class PublicationsComponent {
     public articles: Array<ArticlesModel> = Articles;
+
     constructor() {}
 }

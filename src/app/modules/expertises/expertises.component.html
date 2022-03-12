@@ -1,11 +1,11 @@
 <div>
-    <mat-tab-group class="mat-elevation-z10 hidden md:grid" animationDuration="1000ms" dynamicHeight>
+    <mat-tab-group animationDuration="1000ms" class="mat-elevation-z10 hidden md:grid" dynamicHeight>
         <mat-tab *ngFor="let expertise of expertiseHeaders" labelClass="dark:bg-custom-purple-500 dark:text-custom-yellow-500 w-1/3">
-            <ng-template mat-tab-label class="flex-grow-0">
+            <ng-template class="flex-grow-0" mat-tab-label>
                 <mat-icon class="mx-2" color="accent">{{ expertise.icon }}</mat-icon>
                 <span>{{ expertise.title }}</span>
             </ng-template>
-            <app-expertise-card [expertiseType]="expertise.type" [componentMinHeight]="'700px'"></app-expertise-card>
+            <app-expertise-card [componentMinHeight]="'700px'" [expertiseType]="expertise.type"></app-expertise-card>
         </mat-tab>
     </mat-tab-group>
 </div>
@@ -29,7 +29,7 @@
     <!--    </mat-button-toggle-group>-->
 
     <mat-form-field appearance="outline" class="md:hidden block bg-custom-purple-500 mb-5 p-0">
-        <mat-select [formControl]="selected" panelClass="bg-custom-purple-500" disableRipple>
+        <mat-select [formControl]="selected" disableRipple panelClass="bg-custom-purple-500">
             <mat-select-trigger class="flex items-center dark:text-custom-yellow-500">
                 <mat-icon class="mx-2" color="accent">{{ getProperNameForSelectBox('icon') }}</mat-icon>
                 <span>{{ getProperNameForSelectBox('title') }}</span>
@@ -42,5 +42,5 @@
         </mat-select>
     </mat-form-field>
 
-    <app-expertise-card class="md:hidden block" [expertiseType]="selected.value" [componentMinHeight]="'700px'"></app-expertise-card>
+    <app-expertise-card [componentMinHeight]="'700px'" [expertiseType]="selected.value" class="md:hidden block"></app-expertise-card>
 </div>

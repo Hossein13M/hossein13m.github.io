@@ -8,5 +8,6 @@ import { ArticlesModel } from '../../models/articles.model';
 })
 export class PublicationItemComponent {
     @Input() article!: ArticlesModel;
+
     constructor() {}
 }
