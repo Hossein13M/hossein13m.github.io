@@ -1,5 +1,5 @@
 export type ExpertiseType = 'language' | 'framework' | 'softwareDevelopment';
-export type ExpertiseLevel = 'Familiar With' | 'Experienced At' | 'Advanced' | 'Deep Knowledge';
+export type ExpertiseLevel = 'Familiar' | 'Experienced At' | 'Advanced' | 'Deep Knowledge';
 export type ExpertiseLevelClassName = 'bg-red-700' | 'bg-sky-700' | 'bg-lime-700' | 'bg-violet-700';
 
 export interface ExpertiseModel {
