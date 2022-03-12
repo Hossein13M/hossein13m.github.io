@@ -9,5 +9,6 @@ import { SocialMedia } from '../../const/socialMedia';
 })
 export class InfoSidenavReachMeComponent {
     public socialMedia: Array<SocialMediaModel> = SocialMedia;
+
     constructor() {}
 }

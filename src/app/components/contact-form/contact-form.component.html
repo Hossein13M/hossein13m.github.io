@@ -1,6 +1,6 @@
 <mat-card class="py-5 dark:bg-custom-purple-900 dark:text-white mat-elevation-z10">
     <mat-card-header class="dark:text-custom-grey-500 text-custom-purple-900">
-        <div mat-card-avatar class="px-2">
+        <div class="px-2" mat-card-avatar>
             <mat-icon color="accent">chat</mat-icon>
         </div>
         <mat-card-title class="font-semibold">You Can Also Send Me A Message!</mat-card-title>
@@ -12,51 +12,51 @@
         <div class="flex flex-col justify-around">
             <div class="flex items-center my-5">
                 <input
+                    class="order-last input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
                     id="name"
                     name="name"
-                    class="order-last input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
-                    type="text"
                     placeholder="Name"
                     required
+                    type="text"
                 />
-                <label for="name" class="input-icon dark:input-icon-dark-theme input-icon-light-theme">
+                <label class="input-icon dark:input-icon-dark-theme input-icon-light-theme" for="name">
                     <mat-icon class="order-first">person_outline</mat-icon>
                 </label>
             </div>
 
             <div class="flex items-center my-5">
                 <input
+                    class="order-last input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
                     id="email"
                     name="email"
-                    class="order-last input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
-                    type="email"
                     placeholder="Email"
                     required
+                    type="email"
                 />
-                <label for="email" class="input-icon dark:input-icon-dark-theme input-icon-light-theme">
+                <label class="input-icon dark:input-icon-dark-theme input-icon-light-theme" for="email">
                     <mat-icon class="order-first">alternate_email</mat-icon>
                 </label>
             </div>
 
             <div class="flex items-center my-5">
                 <textarea
+                    class="order-last px-5 py-5 input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
                     id="message"
                     name="email"
-                    class="order-last px-5 py-5 input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
-                    type="text"
                     placeholder="Message"
                     required
+                    type="text"
                 ></textarea>
 
-                <label for="message" class="textarea-icon dark:input-icon-dark-theme input-icon-light-theme">
+                <label class="textarea-icon dark:input-icon-dark-theme input-icon-light-theme" for="message">
                     <mat-icon class="order-first">email</mat-icon>
                 </label>
             </div>
         </div>
     </mat-card-content>
     <mat-card-actions class="mt-3 mx-1 flex justify-end">
-        <button mat-flat-button disableRipple color="accent" class="flex items-center">
-            <mat-icon class="mr-2"> check_circle </mat-icon>
+        <button class="flex items-center" color="accent" disableRipple mat-flat-button>
+            <mat-icon class="mr-2"> check_circle</mat-icon>
             <span>Submit Message</span>
         </button>
     </mat-card-actions>

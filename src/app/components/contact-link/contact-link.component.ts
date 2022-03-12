@@ -11,6 +11,7 @@ export class ContactLinkComponent implements OnInit {
     @Input() contactLinkType!: ContactTypes;
     public socialMedias: Array<SocialMediaModel> = [];
     public header!: SocialMediaHeader;
+
     constructor() {}
 
     ngOnInit(): void {

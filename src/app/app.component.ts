@@ -40,6 +40,11 @@ export class AppComponent implements OnInit {
         this.getCurrentRouteTitle();
     }
 
+    public changeTheme(): void {
+        this.isDarkTheme = !this.isDarkTheme;
+        this.applyChangesOnBrowserOnly(() => localStorage.setItem('theme', this.isDarkTheme ? 'dark' : 'light'));
+    }
+
     private applyChangesOnBrowserOnly(callback: () => void): void {
         isPlatformBrowser(!!this.platformId) && callback();
     }
@@ -48,11 +53,6 @@ export class AppComponent implements OnInit {
         this.router.events.subscribe((data) => {
             if (data instanceof NavigationEnd) this.pageTitle = NavigationRoutes.find((navItem) => navItem.routeUrl === data.url.slice(1))!.routeTitle;
         });
-    }
-
-    public changeTheme(): void {
-        this.isDarkTheme = !this.isDarkTheme;
-        this.applyChangesOnBrowserOnly(() => localStorage.setItem('theme', this.isDarkTheme ? 'dark' : 'light'));
     }
 
     private prepareLanguageListForSpinner(): void {
