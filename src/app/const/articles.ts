@@ -8,6 +8,7 @@ export const Articles: Array<ArticlesModel> = [
         summary:
             'One of the amazing features that Angular provides is the interceptors, but what does an Interceptor do, and can we implement multiple of them in our Angular project?',
         publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
     },
     {
         title: 'Husky 6 Lint (prettier + eslint) and commitlint for JavaScript Projects',
@@ -16,6 +17,7 @@ export const Articles: Array<ArticlesModel> = [
         summary:
             'Programming is a teamwork job so we must assure that our codebase is clean and usable for everyone in the team with the team culture and the best practices.',
         publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
     },
     {
         title: 'Angular Reactive Form including Angular Material and Custom Validation',
@@ -24,6 +26,7 @@ export const Articles: Array<ArticlesModel> = [
         summary:
             'Forms are major parts of every Angular project and in this article, we want to implement a Reactive Angular form with a custom and dynamic validator.',
         publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
     },
     {
         title: 'Take a good look at filter, map, and reduce in JavaScript',
@@ -32,6 +35,7 @@ export const Articles: Array<ArticlesModel> = [
         summary:
             'In JavaScript, we have these three methods as a part of Array.prototype method, but what are the differences between them, and what do they exactly do? so let’s dive into them!',
         publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
     },
     {
         title: 'Touchpad gestures in Linux (Persian)',

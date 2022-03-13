@@ -3,5 +3,6 @@ export interface ArticlesModel {
     url: string;
     imgUrl: string;
     summary: string;
-    publisher: 'Medium' | 'Virgool';
+    publisher: 'Medium' | 'Virgool' | 'Testfully';
+    publicationUrl: string;
 }
