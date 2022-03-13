@@ -44,5 +44,23 @@ export const Articles: Array<ArticlesModel> = [
         summary:
             "Unlike Windows or macOS, which provides us with great touchpad gestures, Linux does not. So let's implement touchpad gestures and configure them together.",
         publisher: 'Virgool',
+        publicationUrl: 'https://virgool.io',
+    },
+    {
+        title: 'Introduction to API Blueprint',
+        url: 'https://vrgl.ir/UPh81',
+        imgUrl: '../../../assets/images/apiBlueprint.jpg',
+        summary: 'API blueprint is a powerful high-level API design language for web APIs.',
+        publisher: 'Testfully',
+        publicationUrl: 'https://testfully.io/blog',
+    },
+    {
+        title: 'Top 7 Free & Paid mock API tools (2022 Review)',
+        url: 'https://testfully.io/blog/mock-api/',
+        imgUrl: '../../../assets/images/mockAPI.jpg',
+        summary:
+            'Sometimes called a fake API, A Mock API is when you build an API that returns the desired data. Still, it is not your actual API, and it all has been simulated for some use cases.',
+        publisher: 'Testfully',
+        publicationUrl: 'https://testfully.io/blog',
     },
 ];
