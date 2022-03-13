@@ -1,18 +1,18 @@
 <mat-card class="py-5 dark:bg-custom-purple-900 dark:text-white mat-elevation-z10">
     <mat-card-header>
         <div mat-card-avatar>
-            <a [href]="article.publisher === 'Medium' ? 'https://medium.com/' : 'https://virgool.io/'">
+            <a [href]="article.publicationUrl">
                 <img
-                    [src]="article.publisher === 'Medium' ? '../../../assets/images/medium.png' : '../../../assets/images/virgool.png'"
+                    [src]="'../../../assets/images/' + article.publisher.toLowerCase() + '.png'"
                     alt="Publisher Logo"
-                    matTooltip="Medium"
+                    [matTooltip]="article.publisher"
                     matTooltipPosition="below"
                 />
             </a>
         </div>
         <mat-card-title class="font-semibold">{{ article.title }}</mat-card-title>
         <mat-card-subtitle class="dark:text-custom-yellow-500">
-            <a [href]="article.publisher === 'Medium' ? 'https://medium.com/' : 'https://virgool.io/'">
+            <a [href]="article.publicationUrl">
                 {{ article.publisher }}
             </a>
         </mat-card-subtitle>
