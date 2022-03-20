@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { NavigationRoutes } from '../../const/navigationRoutes';
 
 @Component({
     selector: 'app-page-header',
@@ -11,4 +12,8 @@ export class PageHeaderComponent {
     @Input() pageTitle!: string;
 
     constructor() {}
+
+    public getProperIconForHeader(headerTitle: string): string {
+        return NavigationRoutes.find((route) => route.routeTitle === headerTitle)!.routeIcon;
+    }
 }
