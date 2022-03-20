@@ -19,11 +19,11 @@
 
     .input-text-area-light-theme {
         color: theme('colors.custom-grey.900');
-        background-color: theme('colors.custom-grey.200');
+        background-color: theme('colors.custom-blue.100');
 
         &:focus + label {
-            background-color: theme('colors.custom-purple.500');
-            color: theme('colors.custom-yellow.500');
+            background-color: theme('colors.custom-yellow.500');
+            color: theme('colors.custom-blue.600');
         }
     }
 
@@ -33,7 +33,7 @@
     }
 
     .input-icon-light-theme {
-        background-color: theme('colors.custom-grey.500');
-        color: theme('colors.custom-purple.900');
+        background-color: theme('colors.custom-blue.600');
+        color: theme('colors.custom-yellow.500');
     }
 }
