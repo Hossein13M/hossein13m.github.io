@@ -1,5 +1,6 @@
 .vertical-text {
     writing-mode: vertical-rl;
+    cursor: default;
 }
 
 .image-border {
@@ -12,7 +13,7 @@
 }
 
 .sidenav-background {
-    background: url('../assets/images/dot-background-vertical.png');
+    //background: url('../assets/images/dot-background-vertical.png');
 }
 
 ::ng-deep .mat-tooltip {

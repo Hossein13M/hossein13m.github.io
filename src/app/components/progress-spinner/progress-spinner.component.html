@@ -1,8 +1,8 @@
 <div>
     <mat-progress-spinner [diameter]="progressSpinnerSetting.spinnerDiameter" [value]="progressSpinnerSetting.progressValue" mode="determinate" strokeWidth="4">
     </mat-progress-spinner>
-    <div [style.bottom]="progressSpinnerSetting.bottomMargin" class="relative flex justify-center items-center dark:text-custom-grey-500 text-custom-grey-100">
+    <div [style.bottom]="progressSpinnerSetting.bottomMargin" class="relative flex justify-center items-center dark:text-custom-grey-500 text-black">
         {{ progressSpinnerSetting.insideText }}
     </div>
 </div>
-<label class="flex justify-center dark:text-custom-grey-500 text-custom-grey-100">{{ progressSpinnerSetting.labelText }}</label>
+<label class="flex justify-center dark:text-custom-grey-500 text-black">{{ progressSpinnerSetting.labelText }}</label>

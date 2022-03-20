@@ -17,6 +17,14 @@ const colors = {
         'custom-yellow': {
             500: '#FFC107',
         },
+        'custom-blue': {
+            100: '#dbecff',
+            200: '#89bcf5',
+            500: '#6ea9e3',
+            600: '#22619f',
+            700: '#c6daf8',
+            900: '#afc8ec',
+        },
     },
 };
 
