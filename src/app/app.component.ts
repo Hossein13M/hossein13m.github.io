@@ -51,7 +51,13 @@ export class AppComponent implements OnInit {
 
     private getCurrentRouteTitle(): void {
         this.router.events.subscribe((data) => {
-            if (data instanceof NavigationEnd) this.headerInfo = NavigationRoutes.find((navItem) => navItem.routeUrl === data.url.slice(1))!;
+            if (data instanceof NavigationEnd) {
+                this.headerInfo = NavigationRoutes.find((navItem) => navItem.routeUrl === data.url.slice(1)) ?? {
+                    routeTitle: 'You Have Been Lost!',
+                    routeUrl: 'not-found',
+                    routeIcon: 'fmd_bad',
+                };
+            }
         });
     }
 
