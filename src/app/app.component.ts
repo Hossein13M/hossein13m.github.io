@@ -1,4 +1,4 @@
-import { Component, HostListener, Inject, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
+import { Component, HostListener, Inject, InjectionToken, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { NavigationEnd, Router } from '@angular/router';
 import { ProgressSpinner } from './components/progress-spinner/progress-spinner.model';
@@ -23,7 +23,7 @@ export class AppComponent implements OnInit {
     @ViewChild('sidenav') sidenav!: MatSidenav;
     @ViewChild('infoSidenav') infoSidenav!: MatSidenav;
 
-    constructor(private readonly router: Router, private readonly appService: AppService, @Inject(PLATFORM_ID) private platformId: unknown) {}
+    constructor(private readonly router: Router, private readonly appService: AppService, @Inject(PLATFORM_ID) private platformId: InjectionToken<unknown>) {}
 
     @HostListener('window:resize', ['$event'])
     public onResize() {
@@ -46,7 +46,7 @@ export class AppComponent implements OnInit {
     }
 
     private applyChangesOnBrowserOnly(callback: () => void): void {
-        isPlatformBrowser(!!this.platformId) && callback();
+        isPlatformBrowser(this.platformId) && callback();
     }
 
     private getCurrentRouteTitle(): void {
