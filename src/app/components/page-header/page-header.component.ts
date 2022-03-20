@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { NavigationRoutes } from '../../const/navigationRoutes';
+import { NavigationRouteModel } from '../../models/navigationRoute.model';
 
 @Component({
     selector: 'app-page-header',
@@ -9,11 +9,7 @@ import { NavigationRoutes } from '../../const/navigationRoutes';
 export class PageHeaderComponent {
     public backgroundImagePath: string = 'space11.png';
     public publicationSubject: Array<string> = ['JavaScript.', 'TypeScript.', 'Angular.', 'Git.', 'Project Management.', 'Node.JS.'];
-    @Input() pageTitle!: string;
+    @Input() pageHeaderInfo!: NavigationRouteModel;
 
     constructor() {}
-
-    public getProperIconForHeader(headerTitle: string): string {
-        return NavigationRoutes.find((route) => route.routeTitle === headerTitle)!.routeIcon;
-    }
 }

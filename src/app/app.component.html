@@ -19,7 +19,7 @@
                         (click)="navigateToOtherPages(route.routeUrl)"
                         *ngFor="let route of navigationRoutes"
                         [routerLink]="route.routeUrl"
-                        class="flex items-center my-2 dark:hover:text-custom-yellow-500 hover:text-custom-yellow-500 dark:text-custom-grey-500 text-custom-blue-600 hover:text-custom-grey-500"
+                        class="flex items-center my-2 dark:hover:text-custom-yellow-500 hover:text-custom-yellow-500 dark:text-custom-grey-500 text-custom-blue-400 hover:text-custom-grey-500"
                         routerLinkActive="active"
                     >
                         <mat-icon>{{ route.routeIcon }}</mat-icon>
@@ -102,7 +102,7 @@
                 <div class="flex flex-col">
                     <div class="void-height w-full dark:bg-custom-purple-100 bg-custom-blue-100"></div>
 
-                    <app-page-header [pageTitle]="pageTitle" class="sticky-header"></app-page-header>
+                    <app-page-header [pageHeaderInfo]="headerInfo" class="sticky-header"></app-page-header>
 
                     <div class="mx-2 mb-5 px-2">
                         <router-outlet></router-outlet>
@@ -123,9 +123,9 @@
                 </header>
 
                 <section
-                    class="dark:bg-custom-purple-900 bg-custom-blue-900 vertical-text flex items-center pt-20 h-full sidenav-background dark:text-custom-grey-500 text-custom-blue-600"
+                    class="dark:bg-custom-purple-900 bg-custom-blue-900 vertical-text flex items-center pt-20 h-full sidenav-background dark:text-custom-grey-500 text-custom-blue-400"
                 >
-                    <h1>{{ pageTitle }}</h1>
+                    <h1>{{ headerInfo.routeTitle }}</h1>
                 </section>
 
                 <footer
