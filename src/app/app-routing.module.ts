@@ -4,13 +4,9 @@ import { RouterModule, Routes } from '@angular/router';
 const routes: Routes = [
     {
         path: '',
+        pathMatch: 'full',
         loadChildren: () => import('./modules/home/home.module').then((m) => m.HomeModule),
         data: { pageTitle: 'Home!' },
-    },
-    {
-        path: 'about-me',
-        loadChildren: () => import('./modules/about/about.module').then((m) => m.AboutModule),
-        data: { pageTitle: 'About Me!' },
     },
     {
         path: 'contact-me',
@@ -28,8 +24,14 @@ const routes: Routes = [
         data: { pageTitle: 'Expertises!' },
     },
     {
+        path: 'not-found',
+        loadChildren: () => import('./modules/not-found/not-found.module').then((m) => m.NotFoundModule),
+        data: { pageTitle: 'You Have Been Lost!' },
+    },
+    {
         path: '**',
-        redirectTo: '',
+        data: { pageTitle: 'You Have Been Lost!' },
+        redirectTo: 'not-found',
     },
 ];
 

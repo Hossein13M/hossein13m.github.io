@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
     public isDarkTheme: boolean = true;
     public languagesList: Array<ProgressSpinner> = [];
     public screenWidth: number = this.appService.windowInnerWidth;
-    public pageTitle!: string;
+    public headerInfo: NavigationRouteModel = { routeTitle: 'Home!', routeUrl: '', routeIcon: 'home' };
     public navigationRoutes: Array<NavigationRouteModel> = NavigationRoutes;
 
     @ViewChild('sidenav') sidenav!: MatSidenav;
@@ -51,7 +51,13 @@ export class AppComponent implements OnInit {
 
     private getCurrentRouteTitle(): void {
         this.router.events.subscribe((data) => {
-            if (data instanceof NavigationEnd) this.pageTitle = NavigationRoutes.find((navItem) => navItem.routeUrl === data.url.slice(1))!.routeTitle;
+            if (data instanceof NavigationEnd) {
+                this.headerInfo = NavigationRoutes.find((navItem) => navItem.routeUrl === data.url.slice(1)) ?? {
+                    routeTitle: 'You Have Been Lost!',
+                    routeUrl: 'not-found',
+                    routeIcon: 'fmd_bad',
+                };
+            }
         });
     }
 

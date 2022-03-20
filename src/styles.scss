@@ -3,6 +3,8 @@
 @import 'assets/scss/tailwinds-custom-configuration';
 @import 'assets/scss/scrollbar';
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 html,
 body {
     height: 100%;
@@ -10,5 +12,5 @@ body {
 
 body {
     margin: 0;
-    font-family: Roboto, 'Helvetica Neue', sans-serif;
+    font-family: 'Hurricane', cursive !important;
 }
