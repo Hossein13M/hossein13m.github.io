@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { HomeModel } from '../../models/home.model';
+import { HomeTitles } from '../../const/home';
 
 @Component({
     selector: 'app-home',
@@ -6,5 +8,7 @@ import { Component } from '@angular/core';
     styleUrls: ['./home.component.scss'],
 })
 export class HomeComponent {
+    public headerFooterTitles: Array<HomeModel> = HomeTitles;
+
     constructor() {}
 }
