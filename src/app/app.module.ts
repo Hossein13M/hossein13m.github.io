@@ -13,6 +13,7 @@ import { DirectivesModule } from './directives/directives.module';
 import { InfoSidenavReachMeModule } from './components/info-sidenav-reach-me/info-sidenav-reach-me.module';
 import { BaseInfoModule } from './components/base-info/base-info.module';
 import { PageHeaderModule } from './components/page-header/page-header.module';
+import { GoogleAnalyticsService } from './services/google-analytics.service';
 
 @NgModule({
     declarations: [AppComponent],
@@ -31,7 +32,7 @@ import { PageHeaderModule } from './components/page-header/page-header.module';
         BaseInfoModule,
         PageHeaderModule,
     ],
-    providers: [],
+    providers: [GoogleAnalyticsService],
     bootstrap: [AppComponent],
 })
 export class AppModule {}

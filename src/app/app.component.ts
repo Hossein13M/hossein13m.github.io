@@ -8,6 +8,9 @@ import { NavigationRouteModel } from './models/navigationRoute.model';
 import { AppService } from './services/app.service';
 import { isPlatformBrowser } from '@angular/common';
 
+// eslint-disable-next-line @typescript-eslint/ban-types
+declare let gtag: Function;
+
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
@@ -23,7 +26,13 @@ export class AppComponent implements OnInit {
     @ViewChild('sidenav') sidenav!: MatSidenav;
     @ViewChild('infoSidenav') infoSidenav!: MatSidenav;
 
-    constructor(private readonly router: Router, private readonly appService: AppService, @Inject(PLATFORM_ID) private platformId: InjectionToken<unknown>) {}
+    constructor(private readonly router: Router, private readonly appService: AppService, @Inject(PLATFORM_ID) private platformId: InjectionToken<unknown>) {
+        this.router.events.subscribe((event) => {
+            if (event instanceof NavigationEnd) {
+                gtag('config', 'xx-xxxxx-xx', { page_path: event.urlAfterRedirects });
+            }
+        });
+    }
 
     @HostListener('window:resize', ['$event'])
     public onResize() {
