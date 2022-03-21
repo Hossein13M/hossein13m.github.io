@@ -27,10 +27,8 @@ export class AppComponent implements OnInit {
     @ViewChild('infoSidenav') infoSidenav!: MatSidenav;
 
     constructor(private readonly router: Router, private readonly appService: AppService, @Inject(PLATFORM_ID) private platformId: InjectionToken<unknown>) {
-        this.router.events.subscribe((event) => {
-            if (event instanceof NavigationEnd) {
-                gtag('config', 'xx-xxxxx-xx', { page_path: event.urlAfterRedirects });
-            }
+        this.applyChangesOnBrowserOnly(() => {
+            this.router.events.subscribe((event) => event instanceof NavigationEnd && gtag('config', 'xx-xxxxx-xx', { page_path: event.urlAfterRedirects }));
         });
     }
 
