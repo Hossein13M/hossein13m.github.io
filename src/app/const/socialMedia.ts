@@ -61,12 +61,12 @@ export const SocialMedia: Array<SocialMediaModel> = [
         imageLink: 'assets/images/linkedin.png',
         type: 'social',
     },
-    {
-        name: 'Telegram',
-        url: 'https://t.me/m13hossein',
-        imageLink: 'assets/images/telegram.png',
-        type: 'social',
-    },
+    // {
+    //     name: 'Telegram',
+    //     url: 'https://t.me/m13hossein',
+    //     imageLink: 'assets/images/telegram.png',
+    //     type: 'social',
+    // },
     {
         name: 'Skype',
         url: 'https://join.skype.com/invite/taEFdksb9mlM',
@@ -81,7 +81,7 @@ export const SocialMedia: Array<SocialMediaModel> = [
     },
     {
         name: 'Whatsapp',
-        url: 'https://www.npmjs.com/~hossein13m',
+        url: 'https://api.whatsapp.com/send?phone=989396197609',
         imageLink: 'assets/images/whatsapp.png',
         type: 'social',
     },
