@@ -100,6 +100,8 @@
 
             <div class="h-full overflow-y-auto flex flex-col">
                 <div class="flex flex-col">
+                    <mat-progress-bar *ngIf="loading" color="primary" mode="indeterminate"> </mat-progress-bar>
+
                     <div class="void-height w-full dark:bg-custom-purple-100 bg-custom-blue-100"></div>
 
                     <app-page-header [pageHeaderInfo]="headerInfo" class="sticky-header"></app-page-header>

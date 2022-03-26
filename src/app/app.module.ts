@@ -14,6 +14,7 @@ import { InfoSidenavReachMeModule } from './components/info-sidenav-reach-me/inf
 import { BaseInfoModule } from './components/base-info/base-info.module';
 import { PageHeaderModule } from './components/page-header/page-header.module';
 import { GoogleAnalyticsService } from './services/google-analytics.service';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
 
 @NgModule({
     declarations: [AppComponent],
@@ -31,6 +32,7 @@ import { GoogleAnalyticsService } from './services/google-analytics.service';
         InfoSidenavReachMeModule,
         BaseInfoModule,
         PageHeaderModule,
+        MatProgressBarModule,
     ],
     providers: [GoogleAnalyticsService],
     bootstrap: [AppComponent],

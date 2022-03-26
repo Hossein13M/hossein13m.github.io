@@ -1,6 +1,6 @@
 import { Component, HostListener, Inject, InjectionToken, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
-import { NavigationEnd, Router } from '@angular/router';
+import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router } from '@angular/router';
 import { ProgressSpinner } from './components/progress-spinner/progress-spinner.model';
 import { Languages } from './const/languages';
 import { NavigationRoutes } from './const/navigationRoutes';
@@ -22,13 +22,17 @@ export class AppComponent implements OnInit {
     public screenWidth: number = this.appService.windowInnerWidth;
     public headerInfo: NavigationRouteModel = { routeTitle: 'Home!', routeUrl: '', routeIcon: 'home' };
     public navigationRoutes: Array<NavigationRouteModel> = NavigationRoutes;
+    public loading: boolean = false;
 
     @ViewChild('sidenav') sidenav!: MatSidenav;
     @ViewChild('infoSidenav') infoSidenav!: MatSidenav;
 
     constructor(private readonly router: Router, private readonly appService: AppService, @Inject(PLATFORM_ID) private platformId: InjectionToken<unknown>) {
         this.applyChangesOnBrowserOnly(() => {
-            this.router.events.subscribe((event) => event instanceof NavigationEnd && gtag('config', 'xx-xxxxx-xx', { page_path: event.urlAfterRedirects }));
+            this.router.events.subscribe((event) => {
+                event instanceof NavigationEnd && gtag('config', 'xx-xxxxx-xx', { page_path: event.urlAfterRedirects });
+                this.checkForLoadingBar(event);
+            });
         });
     }
 
@@ -37,16 +41,15 @@ export class AppComponent implements OnInit {
         this.screenWidth = this.appService.windowInnerWidth;
     }
 
-    public navigateToOtherPages(destinationRoute: string): void {
-        this.router.navigate([destinationRoute]).finally(() => this.sidenav.close().finally());
-    }
-
     ngOnInit(): void {
         this.applyChangesOnBrowserOnly(() => (this.isDarkTheme = localStorage.getItem('theme') === 'dark'));
         this.prepareLanguageListForSpinner();
         this.getCurrentRouteTitle();
     }
 
+    public navigateToOtherPages(destinationRoute: string): void {
+        this.router.navigate([destinationRoute]).finally(() => this.sidenav.close().finally());
+    }
     public changeTheme(): void {
         this.isDarkTheme = !this.isDarkTheme;
         this.applyChangesOnBrowserOnly(() => localStorage.setItem('theme', this.isDarkTheme ? 'dark' : 'light'));
@@ -79,5 +82,24 @@ export class AppComponent implements OnInit {
                 spinnerDiameter: 50,
             });
         });
+    }
+
+    private checkForLoadingBar(event: any): void {
+        switch (true) {
+            case event instanceof NavigationStart: {
+                this.loading = true;
+                break;
+            }
+
+            case event instanceof NavigationEnd:
+            case event instanceof NavigationCancel:
+            case event instanceof NavigationError: {
+                this.loading = false;
+                break;
+            }
+            default: {
+                break;
+            }
+        }
     }
 }
