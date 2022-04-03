@@ -29,6 +29,11 @@ const routes: Routes = [
         data: { pageTitle: 'You Have Been Lost!' },
     },
     {
+        path: 'contact-form-submission',
+        loadChildren: () => import('./modules/contact-form-submission/contact-form-submission.module').then((m) => m.ContactFormSubmissionModule),
+        data: { pageTitle: 'Contact Form Submission!' },
+    },
+    {
         path: '**',
         data: { pageTitle: 'You Have Been Lost!' },
         redirectTo: 'not-found',
