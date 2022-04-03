@@ -64,13 +64,15 @@ export class AppComponent implements OnInit {
     private getCurrentRouteTitle(): void {
         this.router.events.subscribe((data) => {
             if (data instanceof NavigationEnd) {
-                this.headerInfo = NavigationRoutes.find((navItem) => navItem.routeUrl === data.url.slice(1)) ?? {
-                    routeTitle: 'You Have Been Lost!',
-                    routeUrl: 'not-found',
-                    routeIcon: 'fmd_bad',
-                };
+                this.headerInfo = NavigationRoutes.find((navItem) => navItem.routeUrl === data.url.slice(1)) ?? this.getProperNavigationRoute();
             }
         });
+    }
+
+    private getProperNavigationRoute(): NavigationRouteModel {
+        return this.router.url === '/contact-form-submission'
+            ? { routeTitle: 'Contact Form Submitted!', routeUrl: 'contact-form-submission', routeIcon: 'done' }
+            : { routeTitle: 'You Have Been Lost!', routeUrl: 'not-found', routeIcon: 'fmd_bad' };
     }
 
     private prepareLanguageListForSpinner(): void {
