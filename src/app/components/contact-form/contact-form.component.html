@@ -6,33 +6,21 @@
         <mat-card-title class="font-semibold">You Can Also Send Me A Message!</mat-card-title>
     </mat-card-header>
 
-<!--    <mat-divider inset></mat-divider>-->
+    <!--    <mat-divider inset></mat-divider>-->
 
     <mat-card-content>
-        <div class="flex flex-col justify-around">
+        <form name="contact" method="POST" data-netlify="true" id="form" class="flex flex-col justify-around">
             <div class="flex items-center my-5">
-                <input
-                    class="order-last input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
-                    id="name"
-                    name="name"
-                    placeholder="Name"
-                    required
-                    type="text"
-                />
+                <input class="order-last input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
+                    id="name" name="name" placeholder="Name" required type="text" />
                 <label class="input-icon dark:input-icon-dark-theme input-icon-light-theme" for="name">
                     <mat-icon class="order-first">person_outline</mat-icon>
                 </label>
             </div>
 
             <div class="flex items-center my-5">
-                <input
-                    class="order-last input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                    type="email"
-                />
+                <input class="order-last input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
+                    id="email" name="email" placeholder="Email" required type="email" />
                 <label class="input-icon dark:input-icon-dark-theme input-icon-light-theme" for="email">
                     <mat-icon class="order-first">alternate_email</mat-icon>
                 </label>
@@ -41,25 +29,18 @@
             <div class="flex items-center my-5">
                 <textarea
                     class="order-last px-5 py-5 input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
-                    id="message"
-                    name="email"
-                    placeholder="Message"
-                    required
-                    type="text"
-                ></textarea>
+                    id="message" name="message" placeholder="Message" required type="text"></textarea>
 
                 <label class="textarea-icon dark:input-icon-dark-theme input-icon-light-theme" for="message">
                     <mat-icon class="order-first">email</mat-icon>
                 </label>
             </div>
-        </div>
+        </form>
     </mat-card-content>
     <mat-card-actions class="mx-1 flex justify-end">
         <button
             class="flex items-center dark:bg-custom-yellow-500 bg-custom-blue-600 dark:text-custom-purple-900 text-yellow-500"
-            disableRipple
-            mat-flat-button
-        >
+            type="submit" form="form" disableRipple mat-flat-button>
             <mat-icon class="mr-2"> check_circle</mat-icon>
             <span>Submit Message</span>
         </button>

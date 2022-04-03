@@ -2294,11 +2294,6 @@
     "require-from-string" "^2.0.2"
     "uri-js" "^4.2.2"
 
-"animejs@^3.2.1":
-  "integrity" "sha512-sWno3ugFryK5nhiDm/2BKeFCpZv7vzerWUcUPyAZLDhMek3+S/p418ldZJbJXo5ZUOpfm2kP2XRO4NJcULMy9A=="
-  "resolved" "https://registry.npmjs.org/animejs/-/animejs-3.2.1.tgz"
-  "version" "3.2.1"
-
 "ansi-colors@4.1.1":
   "integrity" "sha512-JoX0apGbHaUJBNl6yF+p6JAFYZ666/hhCGKN5t9QFjbJQKUU/g8MNbFDbvfrgKXvI1QpZplPOnwIo99lX/AAmA=="
   "resolved" "https://registry.npmjs.org/ansi-colors/-/ansi-colors-4.1.1.tgz"
