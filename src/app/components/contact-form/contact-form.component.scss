@@ -40,3 +40,7 @@ textarea {
 .mat-flat-button {
     border-radius: 0;
 }
+
+::ng-deep snack-bar-container simple-snack-bar .mat-simple-snackbar-action {
+    color: black !important;
+}
