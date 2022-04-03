@@ -42,7 +42,9 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.applyChangesOnBrowserOnly(() => (this.isDarkTheme = localStorage.getItem('theme') === 'dark'));
+        this.applyChangesOnBrowserOnly(() => {
+            localStorage.getItem('theme') ? (this.isDarkTheme = localStorage.getItem('theme') === 'dark') : (this.isDarkTheme = true);
+        });
         this.prepareLanguageListForSpinner();
         this.getCurrentRouteTitle();
     }
