@@ -85,6 +85,12 @@ export const SocialMedia: Array<SocialMediaModel> = [
         imageLink: 'assets/images/whatsapp.png',
         type: 'social',
     },
+    {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/hossein13.m',
+        imageLink: 'assets/images/instagram.png',
+        type: 'social',
+    },
 ];
 
 export const SocialMediaHeaders: Array<SocialMediaHeader> = [
