@@ -51,7 +51,7 @@ export const SocialMedia: Array<SocialMediaModel> = [
     },
     {
         name: 'Gmail',
-        url: 'mailto:hoseinjob13@gmail.com',
+        url: 'mailto:dev.hosseinmousavi@gmail.com',
         imageLink: 'assets/images/gmail.png',
         type: 'social',
     },
