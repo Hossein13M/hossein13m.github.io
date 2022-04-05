@@ -51,7 +51,7 @@ export const SocialMedia: Array<SocialMediaModel> = [
     },
     {
         name: 'Gmail',
-        url: 'mailto:hoseinjob13@gmail.com',
+        url: 'mailto:dev.hosseinmousavi@gmail.com',
         imageLink: 'assets/images/gmail.png',
         type: 'social',
     },
@@ -83,6 +83,12 @@ export const SocialMedia: Array<SocialMediaModel> = [
         name: 'Whatsapp',
         url: 'https://api.whatsapp.com/send?phone=989396197609',
         imageLink: 'assets/images/whatsapp.png',
+        type: 'social',
+    },
+    {
+        name: 'Instagram',
+        url: 'https://www.instagram.com/hossein13.m',
+        imageLink: 'assets/images/instagram.png',
         type: 'social',
     },
 ];
