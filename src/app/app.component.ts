@@ -28,12 +28,7 @@ export class AppComponent implements OnInit {
     @ViewChild('infoSidenav') infoSidenav!: MatSidenav;
 
     constructor(private readonly router: Router, private readonly appService: AppService, @Inject(PLATFORM_ID) private platformId: InjectionToken<unknown>) {
-        this.applyChangesOnBrowserOnly(() => {
-            this.router.events.subscribe((event) => {
-                event instanceof NavigationEnd && gtag('config', 'xx-xxxxx-xx', { page_path: event.urlAfterRedirects });
-                this.checkForLoadingBar(event);
-            });
-        });
+        this.applyChangesOnBrowserOnly(() => this.checkNavigationEvent());
     }
 
     @HostListener('window:resize', ['$event'])
@@ -42,11 +37,20 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.applyChangesOnBrowserOnly(() => {
-            localStorage.getItem('theme') ? (this.isDarkTheme = localStorage.getItem('theme') === 'dark') : (this.isDarkTheme = true);
-        });
+        this.applyChangesOnBrowserOnly(() => this.getThemeFromLocalStorage());
         this.prepareLanguageListForSpinner();
         this.getCurrentRouteTitle();
+    }
+
+    private checkNavigationEvent(): void {
+        this.router.events.subscribe((event) => {
+            event instanceof NavigationEnd && gtag('config', 'xx-xxxxx-xx', { page_path: event.urlAfterRedirects });
+            this.checkForLoadingBar(event);
+        });
+    }
+
+    private getThemeFromLocalStorage(): void {
+        localStorage.getItem('theme') ? (this.isDarkTheme = localStorage.getItem('theme') === 'dark') : (this.isDarkTheme = true);
     }
 
     public navigateToOtherPages(destinationRoute: string): void {
