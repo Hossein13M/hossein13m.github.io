@@ -17,7 +17,7 @@ export const Expertises: Array<ExpertiseModel> = [
     { name: 'ReactJS', icon: 'reactJS', type: 'framework', level: 'Experienced' },
     { name: 'NextJS', icon: 'nextJS', type: 'framework', level: 'Experienced' },
     { name: 'NodeJS', icon: 'nodeJS', type: 'framework', level: 'Experienced' },
-    { name: 'ExpressJS', icon: 'expressJS', type: 'framework', level: 'Experienced' },
+    { name: 'ExpressJS', icon: 'expressJS', type: 'framework', level: 'Familiar' },
     { name: 'NestJS', icon: 'nestJS', type: 'framework', level: 'Experienced' },
     { name: 'Tailwinds', icon: 'tailwindsCss', type: 'framework', level: 'Deep Knowledge' },
     { name: 'Bootstrap', icon: 'bootstrap', type: 'framework', level: 'Advanced' },
