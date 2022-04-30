@@ -28,7 +28,12 @@
                 </nav>
             </section>
 
-            <footer class="py-5 lg:py-1 mx-auto">
+            <footer class="py-5 lg:py-1 mx-auto flex">
+                <a href="https://old.hmousavi.dev" class="flex items-center" matTooltip="Click To Visit The Old Version">
+                    <mat-icon>web</mat-icon>
+                    <span class="mx-2">Old Website</span>
+                </a>
+
                 <button (click)="changeTheme()" class="lg:hidden" mat-icon-button>
                     <span class="flex flex-col items-center dark:text-custom-yellow-500">
                         <mat-icon>{{ isDarkTheme ? 'dark_mode' : 'light_mode' }}</mat-icon>
