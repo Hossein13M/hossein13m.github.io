@@ -1,0 +1,47 @@
+<mat-card class="flex flex-col p-0 md:flex-row dark:bg-custom-purple-900 dark:text-white bg-custom-blue-700 mat-elevation-z24">
+    <mat-card-header class="flex flex-col dark:bg-custom-yellow-500 bg-custom-blue-600 dark:text-custom-purple-900 text-custom-yellow-500 p-5">
+        <div class="order-last flex justify-center">
+            <a href="https://adventuresinangular.com/">
+                <img
+                    [src]="'../../../assets/images/' + podcast.imageUrl"
+                    [matTooltip]="podcast.organization"
+                    [alt]="podcast.organization"
+                    matTooltipPosition="below"
+                    class="main-img"
+                />
+            </a>
+        </div>
+        <mat-card-title class="font-semibold order-1 text-center">{{ podcast.subject }}</mat-card-title>
+        <mat-card-subtitle class="dark:text-custom-purple-900 text-custom-yellow-500 order-2 mb-0 text-center">
+            {{ podcast.organization }}
+        </mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-divider vertical></mat-divider>
+
+    <mat-card-content class="mb-0 mx-5 flex flex-col p-5">
+        <h1 class="flex items-center">
+            <mat-icon class="mr-2 dark:text-custom-yellow-500 text-custom-blue-600"> podcasts </mat-icon>
+            <span> Podcast</span>
+        </h1>
+
+        <h1 class="mb-0">{{ podcast.description }}</h1>
+    </mat-card-content>
+
+    <mat-divider vertical></mat-divider>
+
+    <mat-card-actions class="mx-1 flex flex-col justify-between items-start md:items-end p-5 mb-2 sm:mb-0">
+        <div *ngFor="let podcastLink of podcast.links">
+            <a
+                [href]="podcastLink.link"
+                class="flex items-center my-4 sm:my-0"
+                target="_blank"
+                [matTooltip]="'Listen On:' + podcastLink.name"
+                matTooltipPosition="below"
+            >
+                <span class="mx-4 order-last md:order-first"> {{ podcastLink.name }}</span>
+                <img [src]="'../../../assets/images/' + podcastLink.imageUrl" [alt]="podcastLink.name" class="podcast-item-img" />
+            </a>
+        </div>
+    </mat-card-actions>
+</mat-card>
