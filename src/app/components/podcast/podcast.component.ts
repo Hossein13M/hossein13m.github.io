@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { PodcastModel } from '../../models/podcast.model';
+import { HorizontalCardComponent, PodcastModel } from '../../models/podcast.model';
 
 @Component({
     selector: 'app-podcast',
@@ -8,5 +8,7 @@ import { PodcastModel } from '../../models/podcast.model';
 })
 export class PodcastComponent {
     @Input() podcast!: PodcastModel;
+    @Input() componentType!: HorizontalCardComponent;
+
     constructor() {}
 }
