@@ -1,8 +1,8 @@
-export type HorizontalCardComponentType = 'Podcast' | 'Project';
+export type HorizontalCardComponentName = 'Podcast' | 'Project';
 export type HorizontalCardComponentIcon = 'podcasts' | 'developer_mode';
 
-export interface HorizontalCardComponent {
-    type: HorizontalCardComponentType;
+export interface HorizontalCardComponentType {
+    type: HorizontalCardComponentName;
     icon: HorizontalCardComponentIcon;
 }
 
@@ -12,7 +12,7 @@ export interface PodcastLink {
     link: string;
 }
 
-export interface PodcastModel {
+export interface HorizontalComponentModel {
     organization: string;
     subject: string;
     imageUrl: string;

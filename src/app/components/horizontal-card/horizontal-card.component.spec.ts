@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PodcastComponent } from './podcast.component';
+import { HorizontalCardComponent } from './horizontal-card.component';
 
-describe('PodcastComponent', () => {
-    let component: PodcastComponent;
-    let fixture: ComponentFixture<PodcastComponent>;
+describe('HorizontalCardComponent', () => {
+    let component: HorizontalCardComponent;
+    let fixture: ComponentFixture<HorizontalCardComponent>;
 
     beforeEach(async () => {
         await TestBed.configureTestingModule({
-            declarations: [PodcastComponent],
+            declarations: [HorizontalCardComponent],
         }).compileComponents();
     });
 
     beforeEach(() => {
-        fixture = TestBed.createComponent(PodcastComponent);
+        fixture = TestBed.createComponent(HorizontalCardComponent);
         component = fixture.componentInstance;
         fixture.detectChanges();
     });

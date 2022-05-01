@@ -1,6 +1,6 @@
-import { PodcastModel } from '../models/podcast.model';
+import { HorizontalComponentModel } from '../models/horizontal-component.model';
 
-export const Podcasts: Array<PodcastModel> = [
+export const Podcasts: Array<HorizontalComponentModel> = [
     {
         organization: 'Adventure in Angular',
         subject: 'Reactive Forms in Angular',

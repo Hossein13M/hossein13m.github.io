@@ -3,17 +3,17 @@
         <div class="order-last flex justify-center">
             <a href="https://adventuresinangular.com/">
                 <img
-                    [src]="'../../../assets/images/' + podcast.imageUrl"
-                    [matTooltip]="podcast.organization"
-                    [alt]="podcast.organization"
+                    [src]="'../../../assets/images/' + componentInfo.imageUrl"
+                    [matTooltip]="componentInfo.organization"
+                    [alt]="componentInfo.organization"
                     matTooltipPosition="below"
                     class="main-img"
                 />
             </a>
         </div>
-        <mat-card-title class="font-semibold order-1 text-center">{{ podcast.subject }}</mat-card-title>
+        <mat-card-title class="font-semibold order-1 text-center">{{ componentInfo.subject }}</mat-card-title>
         <mat-card-subtitle class="dark:text-custom-purple-900 text-custom-yellow-500 order-2 mb-0 text-center">
-            {{ podcast.organization }}
+            {{ componentInfo.organization }}
         </mat-card-subtitle>
     </mat-card-header>
 
@@ -25,13 +25,13 @@
             <span> {{ componentType.type }}</span>
         </h1>
 
-        <h1 class="mb-0">{{ podcast.description }}</h1>
+        <h1 class="mb-0">{{ componentInfo.description }}</h1>
     </mat-card-content>
 
     <mat-divider vertical></mat-divider>
 
     <mat-card-actions class="mx-1 flex flex-col justify-between items-start md:items-end p-5 mb-2 sm:mb-0">
-        <div *ngFor="let podcastLink of podcast.links">
+        <div *ngFor="let podcastLink of componentInfo.links">
             <a
                 [href]="podcastLink.link"
                 class="flex items-center my-4 sm:my-0"
