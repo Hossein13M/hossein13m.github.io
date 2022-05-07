@@ -17,5 +17,6 @@ export interface HorizontalComponentModel {
     subject: string;
     imageUrl: string;
     description: string;
+    generalLink: string;
     links: Array<PodcastLink>;
 }
