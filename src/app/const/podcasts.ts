@@ -5,6 +5,7 @@ export const Podcasts: Array<HorizontalComponentModel> = [
         organization: 'Adventure in Angular',
         subject: 'Reactive Forms in Angular',
         imageUrl: 'adventure-in-angular.webp',
+        generalLink: 'https://adventuresinangular.com/template-driven-approach-vs-reactive-form-approach-with-hossein-mousavi-aia-346',
         description:
             'Hossein Mousavi shares his methodology to angular form by presenting his template driven approach vs. reactive form approach. They also discuss the differences between form control, form group, and form array, and how you can build upon the elements within Angular through modular patterns and object-oriented project paradigms.',
         links: [
