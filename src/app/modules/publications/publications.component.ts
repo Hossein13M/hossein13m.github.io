@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { ArticlesModel } from '../../models/articles.model';
+import { HorizontalComponentModel } from '../../models/horizontal-component.model';
 import { Articles } from '../../const/articles';
+import { Podcasts } from '../../const/podcasts';
 
 @Component({
     selector: 'app-publications',
@@ -9,6 +11,7 @@ import { Articles } from '../../const/articles';
 })
 export class PublicationsComponent {
     public articles: Array<ArticlesModel> = Articles;
+    public podcasts: Array<HorizontalComponentModel> = Podcasts;
 
     constructor() {}
 }
