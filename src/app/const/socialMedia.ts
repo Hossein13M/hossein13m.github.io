@@ -44,6 +44,12 @@ export const SocialMedia: Array<SocialMediaModel> = [
         type: 'blogging',
     },
     {
+        name: 'Spotify',
+        url: 'https://open.spotify.com/episode/5BoFoH3WNYU5khCOCqtogz?si=3ff40026916b4322',
+        imageLink: 'assets/images/spotify.png',
+        type: 'blogging',
+    },
+    {
         name: 'Virgool',
         url: 'https://virgool.io/@Hossein13M',
         imageLink: 'assets/images/virgool.png',
