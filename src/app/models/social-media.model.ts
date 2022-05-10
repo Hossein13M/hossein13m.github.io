@@ -1,4 +1,4 @@
-export type ContactTypes = 'social' | 'openSource' | 'blogging';
+export type ContactTypes = 'social' | 'openSource' | 'content';
 
 export interface SocialMediaModel {
     name: string;
