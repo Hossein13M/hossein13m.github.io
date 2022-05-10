@@ -35,19 +35,25 @@ export const SocialMedia: Array<SocialMediaModel> = [
         name: 'Google Dev',
         url: 'https://devlibrary.withgoogle.com/authors/hossein13m',
         imageLink: 'assets/images/google-dev.png',
-        type: 'blogging',
+        type: 'content',
     },
     {
         name: 'Medium',
         url: 'https://hossein13m.medium.com/',
         imageLink: 'assets/images/medium.png',
-        type: 'blogging',
+        type: 'content',
+    },
+    {
+        name: 'Spotify',
+        url: 'https://open.spotify.com/episode/5BoFoH3WNYU5khCOCqtogz?si=3ff40026916b4322',
+        imageLink: 'assets/images/spotify.png',
+        type: 'content',
     },
     {
         name: 'Virgool',
         url: 'https://virgool.io/@Hossein13M',
         imageLink: 'assets/images/virgool.png',
-        type: 'blogging',
+        type: 'content',
     },
     {
         name: 'Gmail',
@@ -96,5 +102,5 @@ export const SocialMedia: Array<SocialMediaModel> = [
 export const SocialMediaHeaders: Array<SocialMediaHeader> = [
     { type: 'openSource', title: 'Check My Open Source Contributions', icon: 'code' },
     { type: 'social', title: 'Reach Out To Me On Social Medias', icon: 'groups' },
-    { type: 'blogging', title: 'Find Out My Articles', icon: 'article' },
+    { type: 'content', title: 'Find Out My Contents', icon: 'article' },
 ];
