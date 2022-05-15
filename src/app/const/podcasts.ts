@@ -20,6 +20,11 @@ export const Podcasts: Array<HorizontalComponentModel> = [
                 imageUrl: 'apple-podcast.png',
                 link: 'https://podcasts.apple.com/ph/podcast/template-driven-approach-vs-reactive-form-approach/id1238024888?i=1000559786754',
             },
+            {
+                name: 'Amazon Music',
+                imageUrl: 'amazon-music.png',
+                link: 'https://www.amazon.com/Adventures-in-Angular/dp/B08JJS6SNP',
+            },
         ],
     },
 ];
