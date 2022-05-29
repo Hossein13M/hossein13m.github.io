@@ -29,11 +29,11 @@ export const Articles: Array<ArticlesModel> = [
         publicationUrl: 'https://medium.com',
     },
     {
-        title: 'Take a good look at filter, map, and reduce in JavaScript',
-        url: 'https://medium.com/codex/multiple-interceptors-in-angular-e0880b2f7d91',
+        title: 'A Detailed Look at filter(), map(), and reduce() in JavaScript',
+        url: 'https://medium.com/p/18d72f483ada',
         imgUrl: '../../../assets/images/articles/medium-javascript.webp',
         summary:
-            'In JavaScript, we have these three methods as a part of Array.prototype method, but what are the differences between them, and what do they exactly do? so let’s dive into them!',
+            'A deep dive into the world of filter(), map(), and reduce() methods in JavaScript. In JavaScript, we have these three methods as a part of the Array.prototype method, but what are the differences between them, and what do they exactly do? So let’s dive into them!',
         publisher: 'Medium',
         publicationUrl: 'https://medium.com',
     },
