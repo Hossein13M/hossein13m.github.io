@@ -44,7 +44,7 @@ export class AppComponent implements OnInit, AfterViewInit {
     }
 
     ngAfterViewInit() {
-        this.preloading = false;
+        setTimeout(() => (this.preloading = false), 2000);
     }
 
     private checkNavigationEvent(): void {
