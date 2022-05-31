@@ -1,5 +1,5 @@
-<app-loading-spinner *ngIf="preloading; else mainApp"></app-loading-spinner>
-<ng-template #mainApp>
+<app-loading-spinner *ngIf="preloading"></app-loading-spinner>
+<div *ngIf="!preloading">
     <mat-sidenav-container [ngClass]="isDarkTheme ? 'dark' : 'light'" class="h-screen flex flex-col">
         <mat-sidenav
             #sidenav
@@ -148,4 +148,4 @@
             </div>
         </mat-sidenav-content>
     </mat-sidenav-container>
-</ng-template>
+</div>
