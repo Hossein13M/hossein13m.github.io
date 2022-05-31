@@ -1,4 +1,4 @@
-import { Component, HostListener, Inject, InjectionToken, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, HostListener, Inject, InjectionToken, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router } from '@angular/router';
 import { ProgressSpinner } from './components/progress-spinner/progress-spinner.model';
@@ -16,13 +16,14 @@ declare let gtag: Function;
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
     public isDarkTheme: boolean = true;
     public languagesList: Array<ProgressSpinner> = [];
     public screenWidth: number = this.appService.windowInnerWidth;
     public headerInfo: NavigationRouteModel = { routeTitle: 'Home!', routeUrl: '', routeIcon: 'home' };
     public navigationRoutes: Array<NavigationRouteModel> = NavigationRoutes;
     public loading: boolean = false;
+    public preloading: boolean = true;
 
     @ViewChild('sidenav') sidenav!: MatSidenav;
     @ViewChild('infoSidenav') infoSidenav!: MatSidenav;
@@ -40,6 +41,10 @@ export class AppComponent implements OnInit {
         this.applyChangesOnBrowserOnly(() => this.getThemeFromLocalStorage());
         this.prepareLanguageListForSpinner();
         this.getCurrentRouteTitle();
+    }
+
+    ngAfterViewInit() {
+        this.preloading = false;
     }
 
     private checkNavigationEvent(): void {
