@@ -19,11 +19,11 @@ import { MatTooltipModule } from '@angular/material/tooltip';
 import { LoadingSpinnerModule } from './components/loading-spinner/loading-spinner.module';
 import { AppInitService } from './services/app-init.service';
 
-export function initializeApp(appInitService: AppInitService) {
-    return (): Promise<any> => {
-        return appInitService.Init();
-    };
-}
+// export function initializeApp(appInitService: AppInitService) {
+//     return (): Promise<any> => {
+//         return appInitService.Init();
+//     };
+// }
 
 @NgModule({
     declarations: [AppComponent],
@@ -45,7 +45,10 @@ export function initializeApp(appInitService: AppInitService) {
         MatTooltipModule,
         LoadingSpinnerModule,
     ],
-    providers: [GoogleAnalyticsService, { provide: APP_INITIALIZER, useFactory: initializeApp, deps: [AppInitService], multi: true }],
+    providers: [
+        GoogleAnalyticsService,
+        // { provide: APP_INITIALIZER, useFactory: initializeApp, deps: [AppInitService], multi: true }
+    ],
     bootstrap: [AppComponent],
 })
 export class AppModule {}
