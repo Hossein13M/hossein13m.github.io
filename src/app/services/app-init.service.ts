@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Overlay, OverlayRef } from '@angular/cdk/overlay';
 import { ComponentPortal } from '@angular/cdk/portal';
 import { LoadingSpinnerComponent } from '../components/loading-spinner/loading-spinner.component';
-import { AppComponent } from '../app.component';
 
 @Injectable({ providedIn: 'root' })
 export class AppInitService {
@@ -18,7 +17,6 @@ export class AppInitService {
             this.overlayRef.attach(new ComponentPortal(LoadingSpinnerComponent));
             setTimeout(() => {
                 this.overlayRef?.detach();
-                this.overlayRef?.attach(new ComponentPortal(AppComponent));
                 resolve();
             }, 3000);
         });
