@@ -1,4 +1,4 @@
-<div *ngIf="!preloading">
+<div [ngClass]="preloading ? 'd-none' : 'd-block'">
     <mat-sidenav-container [ngClass]="isDarkTheme ? 'dark' : 'light'" class="h-screen flex flex-col">
         <mat-sidenav
             #sidenav
