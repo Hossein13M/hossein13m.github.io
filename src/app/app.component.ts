@@ -7,7 +7,6 @@ import { NavigationRoutes } from './const/navigationRoutes';
 import { NavigationRouteModel } from './models/navigationRoute.model';
 import { AppService } from './services/app.service';
 import { isPlatformBrowser } from '@angular/common';
-import { AppInitService } from './services/app-init.service';
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 declare let gtag: Function;
@@ -24,18 +23,11 @@ export class AppComponent implements OnInit {
     public headerInfo: NavigationRouteModel = { routeTitle: 'Home!', routeUrl: '', routeIcon: 'home' };
     public navigationRoutes: Array<NavigationRouteModel> = NavigationRoutes;
     public loading: boolean = false;
-    public preloading: boolean = true;
 
     @ViewChild('sidenav') sidenav!: MatSidenav;
     @ViewChild('infoSidenav') infoSidenav!: MatSidenav;
 
-    constructor(
-        private readonly router: Router,
-        private readonly appService: AppService,
-        @Inject(PLATFORM_ID) private platformId: InjectionToken<unknown>,
-        private readonly appInitService: AppInitService
-    ) {
-        // this.appInitService.Init().then(() => (this.preloading = false));
+    constructor(private readonly router: Router, private readonly appService: AppService, @Inject(PLATFORM_ID) private platformId: InjectionToken<unknown>) {
         this.applyChangesOnBrowserOnly(() => this.checkNavigationEvent());
     }
 
