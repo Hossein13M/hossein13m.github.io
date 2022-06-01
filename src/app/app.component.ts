@@ -35,7 +35,7 @@ export class AppComponent implements OnInit {
         @Inject(PLATFORM_ID) private platformId: InjectionToken<unknown>,
         private readonly appInitService: AppInitService
     ) {
-        this.appInitService.Init().then(() => (this.preloading = false));
+        // this.appInitService.Init().then(() => (this.preloading = false));
         this.applyChangesOnBrowserOnly(() => this.checkNavigationEvent());
     }
 

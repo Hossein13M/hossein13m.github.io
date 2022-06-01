@@ -1,150 +1,148 @@
-<div [ngClass]="preloading ? 'd-none' : 'd-block'">
-    <mat-sidenav-container [ngClass]="isDarkTheme ? 'dark' : 'light'" class="h-screen flex flex-col">
-        <mat-sidenav
-            #sidenav
-            class="dark:text-custom-grey-500 text-custom-blue-600 fixed md:flex dark:bg-custom-purple-500 bg-custom-blue-700"
-            mode="side"
-            position="end"
-        >
-            <aside class="flex flex-col justify-between h-screen">
-                <header class="flex flex-col items-center py-6 lg:py-0">
-                    <button (click)="sidenav.toggle()" class="lg:hidden flex justify-start items-center w-full px-6 py-2" disableRipple mat-icon-button>
-                        <mat-icon>close</mat-icon>
-                    </button>
-                    <div class="sidenav-header hidden lg:block"></div>
-                </header>
+<mat-sidenav-container [ngClass]="isDarkTheme ? 'dark' : 'light'" class="h-screen flex flex-col">
+    <mat-sidenav
+        #sidenav
+        class="dark:text-custom-grey-500 text-custom-blue-600 fixed md:flex dark:bg-custom-purple-500 bg-custom-blue-700"
+        mode="side"
+        position="end"
+    >
+        <aside class="flex flex-col justify-between h-screen">
+            <header class="flex flex-col items-center py-6 lg:py-0">
+                <button (click)="sidenav.toggle()" class="lg:hidden flex justify-start items-center w-full px-6 py-2" disableRipple mat-icon-button>
+                    <mat-icon>close</mat-icon>
+                </button>
+                <div class="sidenav-header hidden lg:block"></div>
+            </header>
 
-                <section class="dark:bg-custom-purple-900 bg-custom-blue-900 justify-center flex flex-col items-center px-24 h-full">
-                    <nav class="flex flex-col">
-                        <a
-                            (click)="navigateToOtherPages(route.routeUrl)"
-                            *ngFor="let route of navigationRoutes"
-                            [routerLink]="route.routeUrl"
-                            class="flex items-center my-2 dark:hover:text-custom-yellow-500 hover:text-custom-yellow-500 dark:text-custom-grey-500 text-custom-blue-400 hover:text-custom-grey-500"
-                            routerLinkActive="active"
-                        >
-                            <mat-icon>{{ route.routeIcon }}</mat-icon>
-                            <h1 class="mx-2 my-0">{{ route.routeTitle }}</h1>
-                        </a>
-                    </nav>
-                </section>
-
-                <footer class="py-5 lg:py-1 mx-auto flex">
-                    <a href="https://old.hmousavi.dev" class="flex items-center" matTooltip="Click To Visit The Old Version">
-                        <mat-icon>web</mat-icon>
-                        <span class="mx-2">Old Website</span>
+            <section class="dark:bg-custom-purple-900 bg-custom-blue-900 justify-center flex flex-col items-center px-24 h-full">
+                <nav class="flex flex-col">
+                    <a
+                        (click)="navigateToOtherPages(route.routeUrl)"
+                        *ngFor="let route of navigationRoutes"
+                        [routerLink]="route.routeUrl"
+                        class="flex items-center my-2 dark:hover:text-custom-yellow-500 hover:text-custom-yellow-500 dark:text-custom-grey-500 text-custom-blue-400 hover:text-custom-grey-500"
+                        routerLinkActive="active"
+                    >
+                        <mat-icon>{{ route.routeIcon }}</mat-icon>
+                        <h1 class="mx-2 my-0">{{ route.routeTitle }}</h1>
                     </a>
+                </nav>
+            </section>
 
-                    <button (click)="changeTheme()" class="lg:hidden" mat-icon-button>
-                        <span class="flex flex-col items-center dark:text-custom-yellow-500">
-                            <mat-icon>{{ isDarkTheme ? 'dark_mode' : 'light_mode' }}</mat-icon>
-                        </span>
-                    </button>
-                    <div class="sidenav-header hidden lg:block"></div>
-                </footer>
-            </aside>
-        </mat-sidenav>
+            <footer class="py-5 lg:py-1 mx-auto flex">
+                <a href="https://old.hmousavi.dev" class="flex items-center" matTooltip="Click To Visit The Old Version">
+                    <mat-icon>web</mat-icon>
+                    <span class="mx-2">Old Website</span>
+                </a>
 
-        <mat-sidenav
-            #infoSidenav
-            [opened]="screenWidth > 1280"
-            class="dark:text-custom-grey-500 text-custom-grey-900 fixed md:flex dark:bg-custom-purple-500 bg-custom-blue-700 lg:w-1/5"
-            mode="side"
-            position="start"
-        >
-            <div class="flex flex-col justify-between h-screen">
-                <header class="flex flex-col items-center">
-                    <button (click)="infoSidenav.toggle()" class="md:hidden flex justify-end w-full px-6 py-2" disableRipple mat-icon-button>
-                        <mat-icon>close</mat-icon>
-                    </button>
+                <button (click)="changeTheme()" class="lg:hidden" mat-icon-button>
+                    <span class="flex flex-col items-center dark:text-custom-yellow-500">
+                        <mat-icon>{{ isDarkTheme ? 'dark_mode' : 'light_mode' }}</mat-icon>
+                    </span>
+                </button>
+                <div class="sidenav-header hidden lg:block"></div>
+            </footer>
+        </aside>
+    </mat-sidenav>
 
-                    <div class="flex flex-col items-center py-10">
-                        <img alt="hossein mousavi profile picture" class="image-border" src="../assets/images/profile-pic2.webp" />
-                        <h1 class="mb-0 mt-2 font-semibold">Hossein Mousavi</h1>
-                        <label class="text-custom-grey-500">Software Developer | Author</label>
-                    </div>
-                </header>
+    <mat-sidenav
+        #infoSidenav
+        [opened]="screenWidth > 1280"
+        class="dark:text-custom-grey-500 text-custom-grey-900 fixed md:flex dark:bg-custom-purple-500 bg-custom-blue-700 lg:w-1/5"
+        mode="side"
+        position="start"
+    >
+        <div class="flex flex-col justify-between h-screen">
+            <header class="flex flex-col items-center">
+                <button (click)="infoSidenav.toggle()" class="md:hidden flex justify-end w-full px-6 py-2" disableRipple mat-icon-button>
+                    <mat-icon>close</mat-icon>
+                </button>
 
-                <section class="dark:bg-custom-purple-900 bg-custom-blue-900 h-full flex flex-col items-center">
-                    <app-base-info class="w-4/5 mt-10"></app-base-info>
+                <div class="flex flex-col items-center py-10">
+                    <img alt="hossein mousavi profile picture" class="image-border" src="../assets/images/profile-pic2.webp" />
+                    <h1 class="mb-0 mt-2 font-semibold">Hossein Mousavi</h1>
+                    <label class="text-custom-grey-500">Software Developer | Author</label>
+                </div>
+            </header>
 
-                    <mat-divider class="bg-custom-grey-900 my-5"></mat-divider>
+            <section class="dark:bg-custom-purple-900 bg-custom-blue-900 h-full flex flex-col items-center">
+                <app-base-info class="w-4/5 mt-10"></app-base-info>
 
-                    <div class="flex justify-evenly w-full mt-2">
-                        <app-progress-spinner
-                            *ngFor="let language of languagesList"
-                            [color]="isDarkTheme ? '#FFC107' : '#FAFAFC'"
-                            [progressSpinnerSetting]="language"
-                            appProgressSpinner
-                            class="mt-2"
-                        ></app-progress-spinner>
-                    </div>
-                </section>
+                <mat-divider class="bg-custom-grey-900 my-5"></mat-divider>
 
-                <footer class="px-4 py-8">
-                    <p class="h-full flex items-center justify-center text-custom-grey-900">
-                        © 2022 Hossein Mousavi.
-                        <a href="https://creativecommons.org/licenses/by/4.0/" target="blank">All rights reserved.</a>
-                    </p>
-                </footer>
-            </div>
-        </mat-sidenav>
-
-        <mat-sidenav-content class="flex">
-            <section class="flex flex-col flex-1 justify-between dark:bg-custom-purple-100 bg-custom-blue-100">
-                <mat-toolbar
-                    class="sidenav-header flex justify-between xl:hidden sticky dark:bg-custom-purple-900 dark:text-custom-grey-500 bg-custom-yellow-500 text-custom-blue-600 py-11"
-                >
-                    <button (click)="infoSidenav.toggle()" mat-icon-button>
-                        <mat-icon>more_vert</mat-icon>
-                    </button>
-                    <h1 class="py-6">Hossein Mousavi</h1>
-                    <button (click)="sidenav.toggle()" mat-icon-button>
-                        <mat-icon>menu</mat-icon>
-                    </button>
-                </mat-toolbar>
-
-                <div class="h-full overflow-y-auto flex flex-col">
-                    <div class="flex flex-col">
-                        <mat-progress-bar *ngIf="loading" color="primary" mode="indeterminate"> </mat-progress-bar>
-
-                        <div class="void-height w-full dark:bg-custom-purple-100 bg-custom-blue-100"></div>
-
-                        <app-page-header [pageHeaderInfo]="headerInfo" class="sticky-header"></app-page-header>
-
-                        <div class="mx-2 mb-5 px-2">
-                            <router-outlet></router-outlet>
-                        </div>
-                    </div>
+                <div class="flex justify-evenly w-full mt-2">
+                    <app-progress-spinner
+                        *ngFor="let language of languagesList"
+                        [color]="isDarkTheme ? '#FFC107' : '#FAFAFC'"
+                        [progressSpinnerSetting]="language"
+                        appProgressSpinner
+                        class="mt-2"
+                    ></app-progress-spinner>
                 </div>
             </section>
 
-            <div class="h-screen flex flex-col items-center text-custom-grey-500 dark:bg-custom-purple-500 bg-custom-blue-700 hidden xl:block">
-                <aside class="flex flex-col justify-between h-screen dark:bg-custom-purple-500 bg-custom-blue-700">
-                    <header
-                        (click)="sidenav.toggle()"
-                        class="dark:hover:text-custom-grey-100 hover:text-custom-grey-900 py-5 flex items-center justify-center px-5 cursor-pointer"
-                    >
-                        <button mat-icon-button>
-                            <mat-icon>{{ sidenav.opened ? 'close' : 'menu' }}</mat-icon>
-                        </button>
-                    </header>
+            <footer class="px-4 py-8">
+                <p class="h-full flex items-center justify-center text-custom-grey-900">
+                    © 2022 Hossein Mousavi.
+                    <a href="https://creativecommons.org/licenses/by/4.0/" target="blank">All rights reserved.</a>
+                </p>
+            </footer>
+        </div>
+    </mat-sidenav>
 
-                    <section
-                        class="dark:bg-custom-purple-900 bg-custom-blue-900 vertical-text flex items-center pt-20 h-full dark:text-custom-grey-500 text-custom-blue-400"
-                    >
-                        <h1>{{ headerInfo.routeTitle }}</h1>
-                    </section>
+    <mat-sidenav-content class="flex">
+        <section class="flex flex-col flex-1 justify-between dark:bg-custom-purple-100 bg-custom-blue-100">
+            <mat-toolbar
+                class="sidenav-header flex justify-between xl:hidden sticky dark:bg-custom-purple-900 dark:text-custom-grey-500 bg-custom-yellow-500 text-custom-blue-600 py-11"
+            >
+                <button (click)="infoSidenav.toggle()" mat-icon-button>
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+                <h1 class="py-6">Hossein Mousavi</h1>
+                <button (click)="sidenav.toggle()" mat-icon-button>
+                    <mat-icon>menu</mat-icon>
+                </button>
+            </mat-toolbar>
 
-                    <footer
-                        class="text-custom-grey-500 w-full flex flex-col justify-center py-6 items-center dark:hover:text-custom-yellow-700 hover:text-custom-grey-900"
-                    >
-                        <button (click)="changeTheme()" mat-icon-button>
-                            <mat-icon> {{ isDarkTheme ? 'dark_mode' : 'light_mode' }} </mat-icon>
-                        </button>
-                    </footer>
-                </aside>
+            <div class="h-full overflow-y-auto flex flex-col">
+                <div class="flex flex-col">
+                    <mat-progress-bar *ngIf="loading" color="primary" mode="indeterminate"> </mat-progress-bar>
+
+                    <div class="void-height w-full dark:bg-custom-purple-100 bg-custom-blue-100"></div>
+
+                    <app-page-header [pageHeaderInfo]="headerInfo" class="sticky-header"></app-page-header>
+
+                    <div class="mx-2 mb-5 px-2">
+                        <router-outlet></router-outlet>
+                    </div>
+                </div>
             </div>
-        </mat-sidenav-content>
-    </mat-sidenav-container>
-</div>
+        </section>
+
+        <div class="h-screen flex flex-col items-center text-custom-grey-500 dark:bg-custom-purple-500 bg-custom-blue-700 hidden xl:block">
+            <aside class="flex flex-col justify-between h-screen dark:bg-custom-purple-500 bg-custom-blue-700">
+                <header
+                    (click)="sidenav.toggle()"
+                    class="dark:hover:text-custom-grey-100 hover:text-custom-grey-900 py-5 flex items-center justify-center px-5 cursor-pointer"
+                >
+                    <button mat-icon-button>
+                        <mat-icon>{{ sidenav.opened ? 'close' : 'menu' }}</mat-icon>
+                    </button>
+                </header>
+
+                <section
+                    class="dark:bg-custom-purple-900 bg-custom-blue-900 vertical-text flex items-center pt-20 h-full dark:text-custom-grey-500 text-custom-blue-400"
+                >
+                    <h1>{{ headerInfo.routeTitle }}</h1>
+                </section>
+
+                <footer
+                    class="text-custom-grey-500 w-full flex flex-col justify-center py-6 items-center dark:hover:text-custom-yellow-700 hover:text-custom-grey-900"
+                >
+                    <button (click)="changeTheme()" mat-icon-button>
+                        <mat-icon> {{ isDarkTheme ? 'dark_mode' : 'light_mode' }} </mat-icon>
+                    </button>
+                </footer>
+            </aside>
+        </div>
+    </mat-sidenav-content>
+</mat-sidenav-container>
