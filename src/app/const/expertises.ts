@@ -43,7 +43,7 @@ export const Expertises: Array<ExpertiseModel> = [
     { name: 'SOLID Principles', icon: 'solid', type: 'softwareDevelopment', level: 'Experienced' },
     { name: 'PWA', icon: 'pwa', type: 'softwareDevelopment', level: 'Experienced' },
     { name: 'WebPack', icon: 'webpack', type: 'softwareDevelopment', level: 'Familiar' },
-    { name: 'VIte', icon: 'vite', type: 'softwareDevelopment', level: 'Familiar' },
+    { name: 'Vite', icon: 'vite', type: 'softwareDevelopment', level: 'Familiar' },
 ];
 
 export const ExpertiseHeaders: Array<ExpertiseHeader> = [
