@@ -50,6 +50,24 @@ export const SocialMedia: Array<SocialMediaModel> = [
         type: 'content',
     },
     {
+        name: 'G Podcast',
+        url: 'https://podcasts.google.com/feed/aHR0cHM6Ly9hZHZlbnR1cmVzaW5hbmd1bGFyLmNvbS9yc3M/episode/MGM3ZGNlOTktYWU0ZC00M2ZlLTg4YzAtYTE3NWQyZGU2ZmU5?sa=X&ved=0CAYQuIEEahcKEwjQ8oLS1c33AhUAAAAAHQAAAAAQAQ',
+        imageLink: 'assets/images/google-podcast.png',
+        type: 'content',
+    },
+    {
+        name: 'Apple',
+        url: 'https://podcasts.apple.com/ph/podcast/template-driven-approach-vs-reactive-form-approach/id1238024888?i=1000559786754',
+        imageLink: 'assets/images/apple-podcast.png',
+        type: 'content',
+    },
+    {
+        name: 'Amazon',
+        url: 'https://www.amazon.com/Adventures-in-Angular/dp/B08JJS6SNP',
+        imageLink: 'assets/images/amazon-music.png',
+        type: 'content',
+    },
+    {
         name: 'Virgool',
         url: 'https://virgool.io/@Hossein13M',
         imageLink: 'assets/images/virgool.png',
