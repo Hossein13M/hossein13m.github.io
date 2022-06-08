@@ -2,6 +2,14 @@ import { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
     {
+        title: 'How to Implement Dark/Light Themes in a Next.js App Using Context Hook & TailwindCSS\n',
+        url: 'https://javascript.plainenglish.io/how-to-implement-dark-light-themes-in-a-next-js-app-using-context-hook-tailwindcss-336558dd4579',
+        imgUrl: '../../../assets/images/articles/nextjs-tailwind.webp',
+        summary: 'Initialize a Next.js application and then implement dark/light theme toggle for it using context hook and TailwindCSS',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+    },
+    {
         title: 'Multiple Interceptors in Angular',
         url: 'https://medium.com/codex/multiple-interceptors-in-angular-e0880b2f7d91',
         imgUrl: '../../../assets/images/articles/medium-interceptor.webp',
