@@ -21,7 +21,7 @@ export class ExpertiseCardComponent implements OnChanges {
 
     private getProperExpertise(): void {
         this.expertises = [];
-        Expertises.map((expertise) => expertise.type === this.expertiseType && this.expertises.push(expertise));
+        Expertises.forEach((expertise) => expertise.type === this.expertiseType && this.expertises.push(expertise));
         this.header = ExpertiseHeaders.find((expertise) => expertise.type === this.expertiseType)!;
     }
 }

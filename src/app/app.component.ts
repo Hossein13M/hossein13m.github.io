@@ -80,7 +80,7 @@ export class AppComponent implements OnInit {
     }
 
     private prepareLanguageListForSpinner(): void {
-        Languages.map((language) => {
+        Languages.forEach((language) => {
             this.languagesList.push({
                 tailwindsClass: 'text-red-500',
                 progressValue: language.proficiencyPercent,
