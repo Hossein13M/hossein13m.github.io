@@ -19,7 +19,7 @@ export class ContactLinkComponent implements OnInit {
     }
 
     private getComponentInfoBasedOnType(): void {
-        SocialMedia.map((socialMedia) => socialMedia.type === this.contactLinkType && this.socialMedias.push(socialMedia));
+        SocialMedia.forEach((socialMedia) => socialMedia.type === this.contactLinkType && this.socialMedias.push(socialMedia));
         this.header = SocialMediaHeaders.find((socialMediaHeader) => socialMediaHeader.type === this.contactLinkType)!;
     }
 }

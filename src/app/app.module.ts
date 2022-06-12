@@ -15,6 +15,8 @@ import { BaseInfoModule } from './components/base-info/base-info.module';
 import { PageHeaderModule } from './components/page-header/page-header.module';
 import { GoogleAnalyticsService } from './services/google-analytics.service';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { LoadingSpinnerModule } from './components/loading-spinner/loading-spinner.module';
 
 @NgModule({
     declarations: [AppComponent],
@@ -33,6 +35,8 @@ import { MatProgressBarModule } from '@angular/material/progress-bar';
         BaseInfoModule,
         PageHeaderModule,
         MatProgressBarModule,
+        MatTooltipModule,
+        LoadingSpinnerModule,
     ],
     providers: [GoogleAnalyticsService],
     bootstrap: [AppComponent],

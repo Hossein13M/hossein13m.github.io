@@ -1,0 +1,17 @@
+mat-card {
+    mat-card-header {
+        .main-img {
+            width: 150px;
+        }
+        flex: 1;
+    }
+    mat-card-content {
+        flex: 2;
+    }
+    mat-card-actions {
+        .podcast-item-img {
+            height: 40px;
+        }
+        flex: 1;
+    }
+}

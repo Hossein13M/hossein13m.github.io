@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { ExpertiseHeader, ExpertiseModel, ExpertiseType } from '../../models/expertise.model';
 import { ExpertiseHeaders, Expertises } from '../../const/expertises';
-import { FormBuilder } from '@angular/forms';
+import { FormBuilder, FormControl } from '@angular/forms';
 
 @Component({
     selector: 'app-expertises',
@@ -11,9 +11,7 @@ import { FormBuilder } from '@angular/forms';
 export class ExpertisesComponent {
     public readonly expertises: Array<ExpertiseModel> = Expertises;
     public readonly expertiseHeaders: Array<ExpertiseHeader> = ExpertiseHeaders;
-    public selected = this.fb.control('language');
-
-    public selectedExpertiseType: ExpertiseType = 'language';
+    public selected: FormControl<ExpertiseType> = this.fb.control<ExpertiseType>('language', { nonNullable: true });
 
     constructor(private readonly fb: FormBuilder) {}
 

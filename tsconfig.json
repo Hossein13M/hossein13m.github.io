@@ -14,12 +14,12 @@
         "experimentalDecorators": true,
         "moduleResolution": "node",
         "importHelpers": true,
-        "target": "es2017",
+        "target": "es2020",
         "module": "es2020",
         "lib": ["es2018", "dom"]
     },
-    "include": ["**/*.d.ts", "**/*.ts"],
-    "exclude": ["node_modules", "**/*.html", "**/*.scss", "**/*.css"],
+    "include": ["**/*.d.ts", "**/*.ts", "**/*.html", "**/*.scss", "**/*.css"],
+    "exclude": ["node_modules"],
     "angularCompilerOptions": {
         "enableI18nLegacyMessageIdFormat": false,
         "strictInjectionParameters": true,
