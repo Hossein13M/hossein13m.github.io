@@ -11,9 +11,7 @@ import { FormBuilder } from '@angular/forms';
 export class ExpertisesComponent {
     public readonly expertises: Array<ExpertiseModel> = Expertises;
     public readonly expertiseHeaders: Array<ExpertiseHeader> = ExpertiseHeaders;
-    public selected = this.fb.control('language');
-
-    public selectedExpertiseType: ExpertiseType = 'language';
+    public selected = this.fb.control<ExpertiseType>('language');
 
     constructor(private readonly fb: FormBuilder) {}
 
