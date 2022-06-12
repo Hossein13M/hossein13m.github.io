@@ -154,5 +154,7 @@
             }
         }
     },
-    "defaultProject": "hossein-mousavi"
+    "cli": {
+      "analytics": false
+    }
 }
