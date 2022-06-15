@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ProgressSpinner } from './progress-spinner.model';
+import { ProgressSpinner } from '../../models/progress-spinner.model';
 
 @Component({
     selector: 'app-progress-spinner',
