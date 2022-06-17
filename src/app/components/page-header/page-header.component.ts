@@ -11,8 +11,6 @@ import { NavigationRouteModel } from '../../models/navigationRoute.model';
     `,
 })
 export class PageHeaderComponent {
-    public backgroundImagePath: string = 'space11.png';
-    public publicationSubject: Array<string> = ['JavaScript.', 'TypeScript.', 'Angular.', 'Git.', 'Project Management.', 'Node.JS.'];
     @Input() pageHeaderInfo!: NavigationRouteModel;
 
     constructor() {}
