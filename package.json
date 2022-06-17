@@ -63,5 +63,27 @@
     "prettier": "2.6.2",
     "tailwindcss": "^3.1.2",
     "typescript": "~4.7.3"
-  }
+  },
+  "description": "## Link to the website [hmousavi.dev](https://hmousavi.dev)",
+  "main": "karma.conf.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hossein13m/hossein13m.github.io.git"
+  },
+  "keywords": [
+    "Hossein",
+    "Mousavi",
+    "Portfolio",
+    "Angular",
+    "JavaScript",
+    "TypeScript",
+    "SCSS",
+    "HTML"
+  ],
+  "author": "Hossein Mousavi <dev.hosseinmousavi.com> (https://hmousavi.dev/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hossein13m/hossein13m.github.io/issues"
+  },
+  "homepage": "https://github.com/hossein13m/hossein13m.github.io#readme"
 }
