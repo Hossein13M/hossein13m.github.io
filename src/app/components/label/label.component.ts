@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-label',
-    templateUrl: './label.component.html',
-    styleUrls: ['./label.component.scss'],
+    template: ``,
 })
 export class LabelComponent {
     constructor() {}
