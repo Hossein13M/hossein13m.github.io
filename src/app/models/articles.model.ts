@@ -5,4 +5,6 @@ export interface ArticlesModel {
     summary: string;
     publisher: 'Medium' | 'Virgool' | 'Testfully';
     publicationUrl: string;
+    language: 'Persian' | 'English';
+    category: 'Tech' | 'Personal Growth';
 }
