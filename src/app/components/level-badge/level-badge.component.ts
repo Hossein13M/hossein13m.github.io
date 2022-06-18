@@ -4,8 +4,7 @@ import { ExpertiseClasses } from '../../const/expertises';
 
 @Component({
     selector: 'app-level-badge',
-    templateUrl: './level-badge.component.html',
-    styleUrls: ['./level-badge.component.scss'],
+    template: ` <span [class]="class" class="rounded-3xl text-white text-xs p-2">{{ level }}</span> `,
 })
 export class LevelBadgeComponent implements OnInit {
     @Input() level!: ExpertiseLevel;
