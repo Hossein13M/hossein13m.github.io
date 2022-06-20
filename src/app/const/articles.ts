@@ -2,6 +2,16 @@ import { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
     {
+        title: 'A Complete Guide to the API-First Approach',
+        url: 'https://itnext.io/a-complete-guide-to-the-api-first-approach-ecd796dd0f10',
+        imgUrl: '../../../assets/images/articles/api-first.webp',
+        summary: 'One of the many approaches you might take to develop an application through your software development career is API-First Approach.',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: 'Tech',
+    },
+    {
         title: 'How to Implement Dark/Light Themes in a Next.js App Using Context Hook & TailwindCSS',
         url: 'https://javascript.plainenglish.io/how-to-implement-dark-light-themes-in-a-next-js-app-using-context-hook-tailwindcss-336558dd4579',
         imgUrl: '../../../assets/images/articles/nextjs-tailwind.webp',
