@@ -2,7 +2,7 @@ import { HomeModel } from '../models/home.model';
 
 export const HomeTitles: Array<HomeModel> = [
     { title: '+5 Years', subtitle: 'Experience In IT Industry' },
-    { title: '+30', subtitle: 'Open-Source Projects' },
+    { title: '+40', subtitle: 'Contribution To Open-Source' },
     { title: '+200K', subtitle: 'Reached My Contents' },
 ];
 
