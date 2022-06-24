@@ -8,8 +8,8 @@ export interface CompanyModel {
 
 export interface JobPositionModel {
     employmentType: 'Full-Time' | 'Part-Time' | 'Contract' | 'Freelance' | 'Self-Employed';
-    startDate: Date;
-    endDate: Date;
+    startDate: string;
+    endDate: string;
     jobTitle: string;
     jobDescription: string;
     jobRequiredSkills: Array<string>;
