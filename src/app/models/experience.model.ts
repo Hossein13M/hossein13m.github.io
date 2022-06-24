@@ -1,5 +1,3 @@
-import { ExpertiseModel } from './expertise.model';
-
 export interface CompanyModel {
     logoUrl: string;
     name: string;
@@ -14,7 +12,7 @@ export interface JobPositionModel {
     endDate: Date;
     jobTitle: string;
     jobDescription: string;
-    jobRequiredSkills: Array<ExpertiseModel>;
+    jobRequiredSkills: Array<string>;
 }
 
 export interface ExperienceModel {
