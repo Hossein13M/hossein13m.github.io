@@ -2,11 +2,11 @@ import { Component, Input } from '@angular/core';
 import { JobPositionModel } from '../../models/experience.model';
 
 @Component({
-    selector: 'app-experience-card',
-    templateUrl: './experience-card.component.html',
-    styleUrls: ['./experience-card.component.scss'],
+    selector: 'app-job-card',
+    templateUrl: './job-card.component.html',
+    styleUrls: ['./job-card.component.scss'],
 })
-export class ExperienceCardComponent {
+export class JobCardComponent {
     @Input() experience!: JobPositionModel;
     constructor() {}
 }
