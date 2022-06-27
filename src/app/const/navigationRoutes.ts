@@ -5,5 +5,5 @@ export const NavigationRoutes: Array<NavigationRouteModel> = [
     { routeTitle: 'Contact Me!', routeUrl: 'contact-me', routeIcon: 'phone_iphone' },
     { routeTitle: 'Publications!', routeUrl: 'publications', routeIcon: 'article' },
     { routeTitle: 'Expertises!', routeUrl: 'expertises', routeIcon: 'psychology' },
-    // { routeTitle: 'Projects!', routeUrl: 'experiences', routeIcon: 'design_services' },
+    // { routeTitle: 'Experiences!', routeUrl: 'experiences', routeIcon: 'work_history' },
 ];
