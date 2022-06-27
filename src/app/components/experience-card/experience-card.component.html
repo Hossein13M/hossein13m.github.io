@@ -24,8 +24,14 @@
     <mat-divider inset></mat-divider>
 
     <mat-card-content>
-        <p class="mt-3">{{ company.description }}</p>
-        <p>{{ job.jobDescription }}</p>
+        <div>
+            <span> {{ job.jobDescription }}</span>
+        </div>
+
+        <div class="mt-4">
+            <span class="text-custom-yellow-500 mr-2">About Company:</span>
+            <span>{{ company.description }}</span>
+        </div>
     </mat-card-content>
 
     <mat-divider class="border border-custom-purple-100 mb-2"></mat-divider>
