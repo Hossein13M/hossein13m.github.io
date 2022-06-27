@@ -1,3 +1,3 @@
-<div class="grid grid-cols-1 m-2 p-2">
-    <app-company-card *ngFor="let company of companies" class="my-4" [company]="company"> </app-company-card>
+<div *ngFor="let job of jobs" class="grid grid-cols-1 py-3 my-2">
+    <app-experience-card class="xp-card" [job]="job"></app-experience-card>
 </div>

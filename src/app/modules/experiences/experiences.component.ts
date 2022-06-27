@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { CompanyModel } from '../../models/experience.model';
-import { Companies } from '../../const/experiences';
+import { CompanyModel, JobPositionModel } from '../../models/experience.model';
+import { Companies, Experiences } from '../../const/experiences';
 
 @Component({
     selector: 'app-experiences',
@@ -9,5 +9,6 @@ import { Companies } from '../../const/experiences';
 })
 export class ExperiencesComponent {
     public companies: Array<CompanyModel> = Companies;
+    public jobs: Array<JobPositionModel> = Experiences;
     constructor() {}
 }
