@@ -1,10 +1,10 @@
 <mat-card class="py-5 dark:bg-custom-purple-900 dark:text-white bg-custom-blue-700 mat-elevation-z10">
     <mat-card-header class="mb-5">
         <div class="flex items-center">
-            <a [href]="company.website" class="mr-5">
+            <a [href]="company.website" class="mr-5" target="blank">
                 <img
                     [src]="'../../../assets/images/experience/' + company.logoUrl.toLowerCase() + '.png'"
-                    [matTooltip]="company.name"
+                    matTooltip="Click To Visit Website"
                     [alt]="company.name"
                     matTooltipPosition="below"
                     class="company-img dark:rounded-full dark:bg-white"
@@ -29,7 +29,7 @@
         </div>
 
         <div class="mt-4">
-            <span class="text-custom-yellow-500 mr-2">About Company:</span>
+            <span class="dark:text-custom-yellow-500 text-custom-blue-400 mr-2">About Company:</span>
             <span>{{ company.description }}</span>
         </div>
     </mat-card-content>
