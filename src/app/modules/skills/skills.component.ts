@@ -1,15 +1,14 @@
 import { Component } from '@angular/core';
-import { ExpertiseHeader, ExpertiseModel, ExpertiseType } from '../../models/expertise.model';
-import { ExpertiseHeaders, Expertises } from '../../const/expertises';
+import { ExpertiseHeader, ExpertiseType } from '../../models/expertise.model';
+import { ExpertiseHeaders } from '../../const/expertises';
 import { FormBuilder, FormControl } from '@angular/forms';
 
 @Component({
-    selector: 'app-expertises',
-    templateUrl: './expertises.component.html',
-    styleUrls: ['./expertises.component.scss'],
+    selector: 'app-skills',
+    templateUrl: './skills.component.html',
+    styleUrls: ['./skills.component.scss'],
 })
-export class ExpertisesComponent {
-    public readonly expertises: Array<ExpertiseModel> = Expertises;
+export class SkillsComponent {
     public readonly expertiseHeaders: Array<ExpertiseHeader> = ExpertiseHeaders;
     public selected: FormControl<ExpertiseType> = this.fb.control<ExpertiseType>('language', { nonNullable: true });
 

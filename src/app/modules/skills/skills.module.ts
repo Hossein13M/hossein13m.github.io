@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ExpertisesComponent } from './expertises.component';
-import { ExpertisesRoutingModule } from './expertises.routing.module';
+import { SkillsComponent } from './skills.component';
+import { SkillsRoutingModule } from './skills.routing.module';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatIconModule } from '@angular/material/icon';
 import { ExpertiseCardModule } from '../../components/expertise-card/expertise-card.module';
@@ -10,16 +10,7 @@ import { MatSelectModule } from '@angular/material/select';
 import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
-    declarations: [ExpertisesComponent],
-    imports: [
-        CommonModule,
-        ExpertisesRoutingModule,
-        MatTabsModule,
-        MatIconModule,
-        ExpertiseCardModule,
-        MatFormFieldModule,
-        MatSelectModule,
-        ReactiveFormsModule,
-    ],
+    declarations: [SkillsComponent],
+    imports: [CommonModule, SkillsRoutingModule, MatTabsModule, MatIconModule, ExpertiseCardModule, MatFormFieldModule, MatSelectModule, ReactiveFormsModule],
 })
-export class ExpertisesModule {}
+export class SkillsModule {}
