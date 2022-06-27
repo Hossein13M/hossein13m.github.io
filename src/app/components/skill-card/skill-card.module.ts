@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SkillsCardComponent } from './skills-card.component';
+import { SkillCardComponent } from './skill-card.component';
 import { MatCardModule } from '@angular/material/card';
 import { LabelModule } from '../label/label.module';
 import { MatDividerModule } from '@angular/material/divider';
 
 @NgModule({
-    declarations: [SkillsCardComponent],
+    declarations: [SkillCardComponent],
     imports: [CommonModule, MatCardModule, LabelModule, MatDividerModule],
-    exports: [SkillsCardComponent],
+    exports: [SkillCardComponent],
 })
-export class SkillsCardModule {}
+export class SkillCardModule {}
