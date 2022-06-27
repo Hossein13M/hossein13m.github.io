@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ExperienceModel } from '../../models/experience.model';
+import { JobPositionModel } from '../../models/experience.model';
 
 @Component({
     selector: 'app-experience-card',
@@ -7,6 +7,6 @@ import { ExperienceModel } from '../../models/experience.model';
     styleUrls: ['./experience-card.component.scss'],
 })
 export class ExperienceCardComponent {
-    @Input() experience!: ExperienceModel;
+    @Input() experience!: JobPositionModel;
     constructor() {}
 }
