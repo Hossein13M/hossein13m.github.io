@@ -1,9 +1,11 @@
 export interface CompanyModel {
+    companyId: number;
     logoUrl: string;
     name: string;
     industry: string;
     website: string;
     location: string;
+    description: string;
 }
 
 export interface JobPositionModel {
