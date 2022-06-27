@@ -58,7 +58,8 @@ export const Experiences: Array<JobPositionModel> = [
         startDate: 'May 2022',
         endDate: 'Present',
         jobTitle: 'Front End Engineer',
-        jobDescription: 'Software Engineer',
+        jobDescription:
+            "My daily routing in Iran's largest Travel arrangements company is to maintain and develop panels using Vue3, review other developers' code, attending to design meetings to ensure the best quality of work.",
         jobRequiredSkills: ['JavaScript', 'TypeScript', 'Git', 'VueJS', 'NuxtJS', 'HTML', 'CSS', 'Sass', 'Linux', 'Tailwinds'],
     },
     {
@@ -67,7 +68,8 @@ export const Experiences: Array<JobPositionModel> = [
         startDate: 'March 2022',
         endDate: 'Present',
         jobTitle: 'Software Engineer',
-        jobDescription: 'Software Engineer',
+        jobDescription:
+            'As a Software Engineer, I am responsible for designing high-quality software. Maintaining current software, developing and adding new features, and co-operating with other team-members is all part of my daily routine. I am using Angular and NestJS for this purpose.',
         jobRequiredSkills: ['JavaScript', 'TypeScript', 'Git', 'Angular', 'NestJS', 'HTML', 'CSS', 'Sass', 'Linux', 'Tailwinds', 'SQL', 'Docker'],
     },
     {
@@ -76,7 +78,8 @@ export const Experiences: Array<JobPositionModel> = [
         startDate: 'December 2020',
         endDate: 'March 2022',
         jobTitle: 'Software Engineer',
-        jobDescription: 'Software Engineer',
+        jobDescription:
+            'As a Software Engineer, I am responsible for designing high-quality software. Maintaining current software, developing and adding new features, and co-operating with other team-members is all part of my daily routine. I am using Angular and NestJS for this purpose.',
         jobRequiredSkills: ['JavaScript', 'TypeScript', 'Git', 'Angular', 'NestJS', 'HTML', 'CSS', 'Sass', 'Linux', 'Tailwinds', 'SQL', 'Docker'],
     },
     {
@@ -85,7 +88,8 @@ export const Experiences: Array<JobPositionModel> = [
         startDate: 'November 2021',
         endDate: 'February 2022',
         jobTitle: 'Technical Writer',
-        jobDescription: 'Technical Writer',
+        jobDescription:
+            'As a contract, I was responsible for writing technical articles about Testing and APIs to improve Testfully SEO. I have written multiple content for them during my contract.',
         jobRequiredSkills: ['API', 'SEO', 'Testing'],
     },
     {
@@ -94,7 +98,8 @@ export const Experiences: Array<JobPositionModel> = [
         startDate: 'December 2020',
         endDate: 'May 2021',
         jobTitle: 'Front End Engineer',
-        jobDescription: 'Front End Engineer',
+        jobDescription:
+            'As a Part of Tapsell Frontend developers, I am working with Angular in the MediaAd team. In addition, I am Responsible for developing and maintaining several panels for the MediaAd platform. The technologies that I am working with are Angular 8, GitFlow, Jenkins, etc.',
         jobRequiredSkills: ['JavaScript', 'TypeScript', 'Angular', 'Git', 'React', 'Gatsby', 'HTML', 'CSS'],
     },
     {
@@ -103,7 +108,8 @@ export const Experiences: Array<JobPositionModel> = [
         startDate: 'January 2020',
         endDate: 'December 2021',
         jobTitle: 'Front End Engineer',
-        jobDescription: 'Front End Engineer',
+        jobDescription:
+            'As a Part of Tapsell Frontend developers, I am working with Angular in the MediaAd team. In addition, I am Responsible for developing and maintaining several panels for the MediaAd platform. The technologies that I am working with are Angular 8, GitFlow, Jenkins, etc.',
         jobRequiredSkills: ['JavaScript', 'TypeScript', 'Angular', 'Git', 'React', 'Gatsby', 'HTML', 'CSS'],
     },
     {
@@ -112,7 +118,8 @@ export const Experiences: Array<JobPositionModel> = [
         startDate: 'May 2019',
         endDate: 'August 2019',
         jobTitle: 'Front End Developer',
-        jobDescription: 'Front End Developer',
+        jobDescription:
+            'I am working in a team consisting of three Front End developers and a team of Back End developers for implementing, designing, and maintaining the Fin-Tech software, Also Known As XE-Hospitality. Also have worked on an eCommerce project for designing a website for our customers.',
         jobRequiredSkills: ['JavaScript', 'TypeScript', 'Angular', 'Git', 'HTML', 'CSS'],
     },
     {
@@ -121,7 +128,8 @@ export const Experiences: Array<JobPositionModel> = [
         startDate: 'September 2018',
         endDate: 'May 2019',
         jobTitle: 'Technical Help Desk Lead',
-        jobDescription: 'Technical Help Desk Lead',
+        jobDescription:
+            "Responsible for teaching and organizing the support team consisting of twelve people. Responsible for PDQ card terminals and their integration with Gateways and being in touch with banks of the UK to cover their dependencies and integrate with our software and maintain, update and install the software and manipulate the customers' database. Create tasks and help developers to work with the POS software AKA XE-Convenience.",
         jobRequiredSkills: ['Team Management', 'SQL Server', 'Electron', 'DNS Server', 'WSUS', 'VPN', 'Linux'],
     },
     {
@@ -130,7 +138,8 @@ export const Experiences: Array<JobPositionModel> = [
         startDate: 'July 2018',
         endDate: 'September 2018',
         jobTitle: 'Technical Help Desk',
-        jobDescription: 'Front End Developer',
+        jobDescription:
+            'Help Desk and responsible for Network configuration. Responsible for supporting customers, installing, updating and maintaining their tills.',
         jobRequiredSkills: ['SQL Server', 'Electron', 'DNS Server', 'WSUS', 'VPN', 'Linux'],
     },
 ];
