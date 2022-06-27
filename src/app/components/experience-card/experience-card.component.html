@@ -1,0 +1,32 @@
+<mat-card class="py-5 dark:bg-custom-purple-900 dark:text-white bg-custom-blue-700 mat-elevation-z10">
+    <mat-card-header>
+        <div mat-card-avatar>
+            <a [href]="experience.company.website">
+                <img
+                    [src]="'../../../assets/images/' + experience.company.logoUrl.toLowerCase() + '.png'"
+                    [matTooltip]="experience.company.name"
+                    [alt]="experience.company.name"
+                    matTooltipPosition="below"
+                />
+            </a>
+        </div>
+        <mat-card-title class="font-semibold leading-snug">{{ experience.jobPosition.jobTitle }}</mat-card-title>
+        <mat-card-subtitle class="dark:text-custom-yellow-500 text-custom-blue-600">
+            <a [href]="experience.company.name">
+                {{ experience.company.name }}
+            </a>
+        </mat-card-subtitle>
+
+        <app-label
+            class="ml-auto"
+            [labelText]="experience.jobPosition.startDate + ' - ' + experience.jobPosition.endDate"
+            imageSrc="assets/images/expertise/angular.png"
+        ></app-label>
+    </mat-card-header>
+
+    <mat-divider inset></mat-divider>
+
+    <mat-card-content>
+        <p class="mt-3">{{ experience.jobPosition.jobDescription }}</p>
+    </mat-card-content>
+</mat-card>
