@@ -1,0 +1,16 @@
+<mat-card class="py-5 dark:bg-custom-purple-900 dark:text-white bg-custom-blue-700 mat-elevation-z10">
+    <mat-card-header>
+        <mat-card-title class="font-semibold leading-snug">{{ experience.jobTitle }}</mat-card-title>
+        <mat-card-subtitle class="dark:text-custom-yellow-500 text-custom-blue-600"> subtitle </mat-card-subtitle>
+
+        <app-label class="ml-auto" [labelText]="experience.startDate + ' - ' + experience.endDate"></app-label>
+    </mat-card-header>
+
+    <mat-divider inset></mat-divider>
+
+    <mat-card-content>
+        <p class="mt-3">{{ experience.jobDescription }}</p>
+    </mat-card-content>
+
+
+</mat-card>
