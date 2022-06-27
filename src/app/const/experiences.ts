@@ -1,4 +1,4 @@
-import { CompanyModel } from '../models/experience.model';
+import { CompanyModel, JobPositionModel } from '../models/experience.model';
 
 export const Companies: Array<CompanyModel> = [
     {
@@ -48,5 +48,89 @@ export const Companies: Array<CompanyModel> = [
         website: 'https://xepos.co.uk',
         location: 'Birmingham - United Kingdom',
         description: 'Our EPOS solutions can adapt to your environment Tell us your area of business, and find out how we’re the perfect fit',
+    },
+];
+
+export const Experiences: Array<JobPositionModel> = [
+    {
+        companyId: 0,
+        employmentType: 'Full-Time',
+        startDate: 'May 2022',
+        endDate: 'Present',
+        jobTitle: 'Front End Engineer',
+        jobDescription: 'Software Engineer',
+        jobRequiredSkills: ['JavaScript', 'TypeScript', 'Git', 'VueJS', 'NuxtJS', 'HTML', 'CSS', 'Sass', 'Linux', 'Tailwinds'],
+    },
+    {
+        companyId: 1,
+        employmentType: 'Part-Time',
+        startDate: 'March 2022',
+        endDate: 'Present',
+        jobTitle: 'Software Engineer',
+        jobDescription: 'Software Engineer',
+        jobRequiredSkills: ['JavaScript', 'TypeScript', 'Git', 'Angular', 'NestJS', 'HTML', 'CSS', 'Sass', 'Linux', 'Tailwinds', 'SQL', 'Docker'],
+    },
+    {
+        companyId: 1,
+        employmentType: 'Full-Time',
+        startDate: 'December 2020',
+        endDate: 'March 2022',
+        jobTitle: 'Software Engineer',
+        jobDescription: 'Software Engineer',
+        jobRequiredSkills: ['JavaScript', 'TypeScript', 'Git', 'Angular', 'NestJS', 'HTML', 'CSS', 'Sass', 'Linux', 'Tailwinds', 'SQL', 'Docker'],
+    },
+    {
+        companyId: 2,
+        employmentType: 'Contract',
+        startDate: 'November 2021',
+        endDate: 'February 2022',
+        jobTitle: 'Technical Writer',
+        jobDescription: 'Technical Writer',
+        jobRequiredSkills: ['API', 'SEO', 'Testing'],
+    },
+    {
+        companyId: 3,
+        employmentType: 'Part-Time',
+        startDate: 'December 2020',
+        endDate: 'May 2021',
+        jobTitle: 'Front End Engineer',
+        jobDescription: 'Front End Engineer',
+        jobRequiredSkills: ['JavaScript', 'TypeScript', 'Angular', 'Git', 'React', 'Gatsby', 'HTML', 'CSS'],
+    },
+    {
+        companyId: 3,
+        employmentType: 'Full-Time',
+        startDate: 'January 2020',
+        endDate: 'December 2021',
+        jobTitle: 'Front End Engineer',
+        jobDescription: 'Front End Engineer',
+        jobRequiredSkills: ['JavaScript', 'TypeScript', 'Angular', 'Git', 'React', 'Gatsby', 'HTML', 'CSS'],
+    },
+    {
+        companyId: 4,
+        employmentType: 'Full-Time',
+        startDate: 'May 2019',
+        endDate: 'August 2019',
+        jobTitle: 'Front End Developer',
+        jobDescription: 'Front End Developer',
+        jobRequiredSkills: ['JavaScript', 'TypeScript', 'Angular', 'Git', 'HTML', 'CSS'],
+    },
+    {
+        companyId: 4,
+        employmentType: 'Full-Time',
+        startDate: 'September 2018',
+        endDate: 'May 2019',
+        jobTitle: 'Technical Help Desk Lead',
+        jobDescription: 'Technical Help Desk Lead',
+        jobRequiredSkills: ['Team Management', 'SQL Server', 'Electron', 'DNS Server', 'WSUS', 'VPN', 'Linux'],
+    },
+    {
+        companyId: 4,
+        employmentType: 'Full-Time',
+        startDate: 'July 2018',
+        endDate: 'September 2018',
+        jobTitle: 'Technical Help Desk',
+        jobDescription: 'Front End Developer',
+        jobRequiredSkills: ['SQL Server', 'Electron', 'DNS Server', 'WSUS', 'VPN', 'Linux'],
     },
 ];
