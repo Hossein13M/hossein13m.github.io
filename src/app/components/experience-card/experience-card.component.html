@@ -1,5 +1,5 @@
 <mat-card class="py-5 dark:bg-custom-purple-900 dark:text-white bg-custom-blue-700 mat-elevation-z10">
-    <mat-card-header class="mb-5">
+    <mat-card-header>
         <div class="flex items-center">
             <a [href]="company.website" class="mr-5" target="blank">
                 <img
@@ -24,7 +24,7 @@
         <app-label class="ml-auto hidden sm:block" [labelText]="job.startDate + ' - ' + job.endDate"></app-label>
     </mat-card-header>
 
-    <mat-divider inset></mat-divider>
+    <mat-divider inset class="my-4"></mat-divider>
 
     <mat-card-content>
         <div>
@@ -32,7 +32,7 @@
         </div>
 
         <div class="mt-4">
-            <span class="dark:text-custom-yellow-500 text-custom-blue-400 mr-2">About Company:</span>
+            <span class="dark:text-custom-yellow-500 text-custom-blue-400 mr-2 font-bold">About Company:</span>
             <span>{{ company.description }}</span>
         </div>
     </mat-card-content>
