@@ -11,17 +11,17 @@ export class SkillCardComponent implements OnChanges {
     @Input() expertiseType!: ExpertiseType;
     @Input() componentMinHeight: string = '340px';
     public header!: ExpertiseHeader;
-    public expertises: Array<ExpertiseModel> = [];
+    public skills: Array<ExpertiseModel> = [];
 
     constructor() {}
 
     ngOnChanges(): void {
-        this.getProperExpertise();
+        this.getProperSkills();
     }
 
-    private getProperExpertise(): void {
-        this.expertises = [];
-        Expertises.forEach((expertise) => expertise.type === this.expertiseType && this.expertises.push(expertise));
+    private getProperSkills(): void {
+        this.skills = [];
+        Expertises.forEach((expertise) => expertise.type === this.expertiseType && this.skills.push(expertise));
         this.header = ExpertiseHeaders.find((expertise) => expertise.type === this.expertiseType)!;
     }
 }
