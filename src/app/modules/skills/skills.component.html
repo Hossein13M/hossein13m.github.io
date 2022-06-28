@@ -8,7 +8,7 @@
                 <mat-icon class="mx-2 dark:text-custom-yellow-500 text-custom-blue-600">{{ expertise.icon }}</mat-icon>
                 <span>{{ expertise.title }}</span>
             </ng-template>
-            <app-skill-card [componentMinHeight]="'700px'" [expertiseType]="expertise.type"></app-skill-card>
+            <app-skill-card [componentMinHeight]="'700px'" [skillType]="expertise.type"></app-skill-card>
         </mat-tab>
     </mat-tab-group>
 </div>
@@ -32,5 +32,5 @@
         </mat-select>
     </mat-form-field>
 
-    <app-skill-card [componentMinHeight]="'700px'" [expertiseType]="selected.value" class="md:hidden block"></app-skill-card>
+    <app-skill-card [componentMinHeight]="'700px'" [skillType]="selected.value" class="md:hidden block"></app-skill-card>
 </div>

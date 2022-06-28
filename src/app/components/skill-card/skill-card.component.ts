@@ -8,7 +8,7 @@ import { ExpertiseHeaders, Expertises } from '../../const/expertises';
     styleUrls: ['./skill-card.component.scss'],
 })
 export class SkillCardComponent implements OnChanges {
-    @Input() expertiseType!: ExpertiseType;
+    @Input() skillType!: ExpertiseType;
     @Input() componentMinHeight: string = '340px';
     public header!: ExpertiseHeader;
     public skills: Array<ExpertiseModel> = [];
@@ -21,7 +21,7 @@ export class SkillCardComponent implements OnChanges {
 
     private getProperSkills(): void {
         this.skills = [];
-        Expertises.forEach((expertise) => expertise.type === this.expertiseType && this.skills.push(expertise));
-        this.header = ExpertiseHeaders.find((expertise) => expertise.type === this.expertiseType)!;
+        Expertises.forEach((expertise) => expertise.type === this.skillType && this.skills.push(expertise));
+        this.header = ExpertiseHeaders.find((expertise) => expertise.type === this.skillType)!;
     }
 }
