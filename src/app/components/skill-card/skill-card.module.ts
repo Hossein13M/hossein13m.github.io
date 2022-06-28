@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ExpertiseCardComponent } from './expertise-card.component';
+import { SkillCardComponent } from './skill-card.component';
 import { MatCardModule } from '@angular/material/card';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
@@ -8,8 +8,8 @@ import { LevelBadgeModule } from '../level-badge/level-badge.module';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({
-    declarations: [ExpertiseCardComponent],
+    declarations: [SkillCardComponent],
     imports: [CommonModule, MatCardModule, MatIconModule, MatDividerModule, LevelBadgeModule, MatTooltipModule],
-    exports: [ExpertiseCardComponent],
+    exports: [SkillCardComponent],
 })
-export class ExpertiseCardModule {}
+export class SkillCardModule {}

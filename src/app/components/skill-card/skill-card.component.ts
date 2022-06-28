@@ -3,11 +3,11 @@ import { ExpertiseHeader, ExpertiseModel, ExpertiseType } from '../../models/exp
 import { ExpertiseHeaders, Expertises } from '../../const/expertises';
 
 @Component({
-    selector: 'app-expertise-card',
-    templateUrl: './expertise-card.component.html',
-    styleUrls: ['./expertise-card.component.scss'],
+    selector: 'app-skill-card',
+    templateUrl: './skill-card.component.html',
+    styleUrls: ['./skill-card.component.scss'],
 })
-export class ExpertiseCardComponent implements OnChanges {
+export class SkillCardComponent implements OnChanges {
     @Input() expertiseType!: ExpertiseType;
     @Input() componentMinHeight: string = '340px';
     public header!: ExpertiseHeader;
