@@ -21,7 +21,7 @@ const routes: Routes = [
     {
         path: 'skills',
         loadChildren: () => import('./modules/skills/skills.module').then((m) => m.SkillsModule),
-        data: { pageTitle: 'Expertises!' },
+        data: { pageTitle: 'Skills!' },
     },
     {
         path: 'experiences',
