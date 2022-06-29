@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ExpertiseHeader, ExpertiseType } from '../../models/skill.model';
+import { ExpertiseHeader, SkillType } from '../../models/skill.model';
 import { ExpertiseHeaders } from '../../const/expertises';
 import { FormBuilder, FormControl } from '@angular/forms';
 
@@ -10,7 +10,7 @@ import { FormBuilder, FormControl } from '@angular/forms';
 })
 export class SkillsComponent {
     public readonly expertiseHeaders: Array<ExpertiseHeader> = ExpertiseHeaders;
-    public selected: FormControl<ExpertiseType> = this.fb.control<ExpertiseType>('language', { nonNullable: true });
+    public selected: FormControl<SkillType> = this.fb.control<SkillType>('language', { nonNullable: true });
 
     constructor(private readonly fb: FormBuilder) {}
 
