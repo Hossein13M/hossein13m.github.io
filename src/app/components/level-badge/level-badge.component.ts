@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { SkillLevel } from '../../models/skill.model';
-import { ExpertiseClasses } from '../../const/expertises';
+import { ExpertiseClasses } from '../../const/skills';
 
 @Component({
     selector: 'app-level-badge',

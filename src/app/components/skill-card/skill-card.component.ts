@@ -1,6 +1,6 @@
 import { Component, Input, OnChanges } from '@angular/core';
 import { SkillHeader, SkillModel, SkillType } from '../../models/skill.model';
-import { ExpertiseHeaders, Expertises } from '../../const/expertises';
+import { ExpertiseHeaders, Skills } from '../../const/skills';
 
 @Component({
     selector: 'app-skill-card',
@@ -21,7 +21,7 @@ export class SkillCardComponent implements OnChanges {
 
     private getProperSkills(): void {
         this.skills = [];
-        Expertises.forEach((expertise) => expertise.type === this.skillType && this.skills.push(expertise));
+        Skills.forEach((expertise) => expertise.type === this.skillType && this.skills.push(expertise));
         this.header = ExpertiseHeaders.find((expertise) => expertise.type === this.skillType)!;
     }
 }

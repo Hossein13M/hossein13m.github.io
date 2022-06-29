@@ -1,6 +1,6 @@
 import { SkillClass, SkillHeader, SkillModel } from '../models/skill.model';
 
-export const Expertises: Array<SkillModel> = [
+export const Skills: Array<SkillModel> = [
     // languages
     { name: 'JavaScript', icon: 'javaScript', type: 'language', level: 'Deep Knowledge' },
     { name: 'TypeScript', icon: 'typeScript', type: 'language', level: 'Deep Knowledge' },

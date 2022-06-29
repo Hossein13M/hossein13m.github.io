@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { SkillHeader, SkillType } from '../../models/skill.model';
-import { ExpertiseHeaders } from '../../const/expertises';
+import { ExpertiseHeaders } from '../../const/skills';
 import { FormBuilder, FormControl } from '@angular/forms';
 
 @Component({
