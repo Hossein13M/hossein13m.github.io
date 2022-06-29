@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ExpertiseLevel } from '../../models/skill.model';
+import { SkillLevel } from '../../models/skill.model';
 import { ExpertiseClasses } from '../../const/expertises';
 
 @Component({
@@ -7,7 +7,7 @@ import { ExpertiseClasses } from '../../const/expertises';
     template: ` <span [class]="class" class="rounded-3xl text-white text-xs p-2">{{ level }}</span> `,
 })
 export class LevelBadgeComponent implements OnInit {
-    @Input() level!: ExpertiseLevel;
+    @Input() level!: SkillLevel;
     public class!: string;
 
     constructor() {}
