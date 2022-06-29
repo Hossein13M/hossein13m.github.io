@@ -9,7 +9,7 @@ export interface SkillModel {
     type: SkillType;
 }
 
-export interface ExpertiseHeader {
+export interface SkillHeader {
     type: SkillType;
     title: string;
     icon: string;

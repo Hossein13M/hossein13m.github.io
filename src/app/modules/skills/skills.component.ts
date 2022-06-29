@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ExpertiseHeader, SkillType } from '../../models/skill.model';
+import { SkillHeader, SkillType } from '../../models/skill.model';
 import { ExpertiseHeaders } from '../../const/expertises';
 import { FormBuilder, FormControl } from '@angular/forms';
 
@@ -9,7 +9,7 @@ import { FormBuilder, FormControl } from '@angular/forms';
     styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent {
-    public readonly expertiseHeaders: Array<ExpertiseHeader> = ExpertiseHeaders;
+    public readonly expertiseHeaders: Array<SkillHeader> = ExpertiseHeaders;
     public selected: FormControl<SkillType> = this.fb.control<SkillType>('language', { nonNullable: true });
 
     constructor(private readonly fb: FormBuilder) {}

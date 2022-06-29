@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges } from '@angular/core';
-import { ExpertiseHeader, SkillModel, SkillType } from '../../models/skill.model';
+import { SkillHeader, SkillModel, SkillType } from '../../models/skill.model';
 import { ExpertiseHeaders, Expertises } from '../../const/expertises';
 
 @Component({
@@ -10,7 +10,7 @@ import { ExpertiseHeaders, Expertises } from '../../const/expertises';
 export class SkillCardComponent implements OnChanges {
     @Input() skillType!: SkillType;
     @Input() componentMinHeight: string = '340px';
-    public header!: ExpertiseHeader;
+    public header!: SkillHeader;
     public skills: Array<SkillModel> = [];
 
     constructor() {}
