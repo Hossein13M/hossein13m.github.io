@@ -1,4 +1,4 @@
-import { ExpertiseClass, SkillHeader, SkillModel } from '../models/skill.model';
+import { SkillClass, SkillHeader, SkillModel } from '../models/skill.model';
 
 export const Expertises: Array<SkillModel> = [
     // languages
@@ -52,7 +52,7 @@ export const ExpertiseHeaders: Array<SkillHeader> = [
     { type: 'softwareDevelopment', title: 'Concepts and Tools', icon: 'design_services' },
 ];
 
-export const ExpertiseClasses: Array<ExpertiseClass> = [
+export const ExpertiseClasses: Array<SkillClass> = [
     { level: 'Familiar', className: 'bg-sky-700' },
     { level: 'Experienced', className: 'bg-lime-700' },
     { level: 'Advanced', className: 'bg-violet-700' },

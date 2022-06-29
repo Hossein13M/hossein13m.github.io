@@ -15,7 +15,7 @@ export interface SkillHeader {
     icon: string;
 }
 
-export interface ExpertiseClass {
+export interface SkillClass {
     level: SkillLevel;
     className: SkillLevelClassName;
 }
