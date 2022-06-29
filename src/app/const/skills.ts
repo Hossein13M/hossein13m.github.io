@@ -46,7 +46,7 @@ export const Skills: Array<SkillModel> = [
     { name: 'Vite', icon: 'vite', type: 'softwareDevelopment', level: 'Experienced' },
 ];
 
-export const ExpertiseHeaders: Array<SkillHeader> = [
+export const SkillHeaders: Array<SkillHeader> = [
     { type: 'language', title: 'Languages', icon: 'code' },
     { type: 'framework', title: 'Frameworks, and Libraries', icon: 'terminal' },
     { type: 'softwareDevelopment', title: 'Concepts and Tools', icon: 'design_services' },
