@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { SkillLevel } from '../../models/skill.model';
-import { ExpertiseClasses } from '../../const/skills';
+import { SkillClasses } from '../../const/skills';
 
 @Component({
     selector: 'app-level-badge',
@@ -13,6 +13,6 @@ export class LevelBadgeComponent implements OnInit {
     constructor() {}
 
     ngOnInit(): void {
-        this.class = ExpertiseClasses.find((expertiseClass) => expertiseClass.level === this.level)!.className;
+        this.class = SkillClasses.find((expertiseClass) => expertiseClass.level === this.level)!.className;
     }
 }
