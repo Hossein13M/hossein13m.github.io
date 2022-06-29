@@ -13,6 +13,6 @@ export class LevelBadgeComponent implements OnInit {
     constructor() {}
 
     ngOnInit(): void {
-        this.class = SkillClasses.find((expertiseClass) => expertiseClass.level === this.level)!.className;
+        this.class = SkillClasses.find((skillClass) => skillClass.level === this.level)!.className;
     }
 }
