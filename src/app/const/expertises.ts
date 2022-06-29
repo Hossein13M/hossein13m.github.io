@@ -1,6 +1,6 @@
-import { ExpertiseClass, ExpertiseHeader, ExpertiseModel } from '../models/expertise.model';
+import { ExpertiseClass, ExpertiseHeader, SkillModel } from '../models/skill.model';
 
-export const Expertises: Array<ExpertiseModel> = [
+export const Expertises: Array<SkillModel> = [
     // languages
     { name: 'JavaScript', icon: 'javaScript', type: 'language', level: 'Deep Knowledge' },
     { name: 'TypeScript', icon: 'typeScript', type: 'language', level: 'Deep Knowledge' },

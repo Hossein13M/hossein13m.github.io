@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ExpertiseLevel } from '../../models/expertise.model';
+import { ExpertiseLevel } from '../../models/skill.model';
 import { ExpertiseClasses } from '../../const/expertises';
 
 @Component({

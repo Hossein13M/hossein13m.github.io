@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ExpertiseHeader, ExpertiseType } from '../../models/expertise.model';
+import { ExpertiseHeader, ExpertiseType } from '../../models/skill.model';
 import { ExpertiseHeaders } from '../../const/expertises';
 import { FormBuilder, FormControl } from '@angular/forms';
 
