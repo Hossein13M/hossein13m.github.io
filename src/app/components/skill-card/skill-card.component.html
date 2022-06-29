@@ -10,10 +10,10 @@
         <section class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 my-5 w-full">
             <div
                 *ngFor="let skill of skills"
-                class="flex justify-between md:px-8 lg:px-10 items-center expertise-icons dark:text-custom-grey-500 dark:hover:text-custom-yellow-500 hover:text-custom-blue-600 cursor-default"
+                class="flex justify-between md:px-8 lg:px-10 items-center dark:text-custom-grey-500 dark:hover:text-custom-yellow-500 hover:text-custom-blue-600 cursor-default"
             >
                 <span class="flex items-center">
-                    <img [alt]="skill.name" [src]="'assets/images/expertise/' + skill['icon'] + '.png'" class="expertise-icon-img" />
+                    <img [alt]="skill.name" [src]="'assets/images/skills/' + skill['icon'] + '.png'" class='skill-icon-img' />
                     <span class="mx-2 text-2xl">{{ skill.name }}</span>
                 </span>
                 <app-level-badge [level]="skill.level"></app-level-badge>
