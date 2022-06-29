@@ -22,6 +22,6 @@ export class SkillCardComponent implements OnChanges {
     private getProperSkills(): void {
         this.skills = [];
         Skills.forEach((skill) => skill.type === this.skillType && this.skills.push(skill));
-        this.header = SkillHeaders.find((expertise) => expertise.type === this.skillType)!;
+        this.header = SkillHeaders.find((skill) => skill.type === this.skillType)!;
     }
 }
