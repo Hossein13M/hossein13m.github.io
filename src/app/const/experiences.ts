@@ -38,7 +38,7 @@ export const Companies: Array<CompanyModel> = [
         website: 'https://tapsell.ir/en',
         location: 'Tehran - Iran',
         description:
-            'From the beginning, we knew having the skills, knowledge and passion for developing new features and the foresight in the industry, would lead us well ahead of the curve. In a few years, we’ve become the most reputable and most trusted network in the industry. We take  pride in bringing advertisers and publishers together while providing not only the best offers on variety of tags and verticals and high-grade traffic to promote but also offerings of  high proficiency with well-designed creatives and the leading-edge monetization tools available on the market.',
+            'From the beginning, we knew having the expertise, knowledge and passion for developing new features and the foresight in the industry, would lead us well ahead of the curve. In a few years, we’ve become the most reputable and most trusted network in the industry. We take  pride in bringing advertisers and publishers together while providing not only the best offers on variety of tags and verticals and high-grade traffic to promote but also offerings of  high proficiency with well-designed creatives and the leading-edge monetization tools available on the market.',
     },
     {
         companyId: 4,
