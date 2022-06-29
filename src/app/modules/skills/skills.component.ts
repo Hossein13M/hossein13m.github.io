@@ -9,14 +9,14 @@ import { FormBuilder, FormControl } from '@angular/forms';
     styleUrls: ['./skills.component.scss'],
 })
 export class SkillsComponent {
-    public readonly expertiseHeaders: Array<SkillHeader> = SkillHeaders;
+    public readonly skillHeaders: Array<SkillHeader> = SkillHeaders;
     public selected: FormControl<SkillType> = this.fb.control<SkillType>('language', { nonNullable: true });
 
     constructor(private readonly fb: FormBuilder) {}
 
     public getProperNameForSelectBox(returnType: 'icon' | 'title'): string {
         return returnType === 'icon'
-            ? this.expertiseHeaders.find((item) => item.type === this.selected.value)!.icon
-            : this.expertiseHeaders.find((item) => item.type === this.selected.value)!.title;
+            ? this.skillHeaders.find((item) => item.type === this.selected.value)!.icon
+            : this.skillHeaders.find((item) => item.type === this.selected.value)!.title;
     }
 }

@@ -1,7 +1,7 @@
 <div>
     <mat-tab-group animationDuration="1000ms" class="mat-elevation-z10 hidden md:grid" dynamicHeight>
         <mat-tab
-            *ngFor="let expertise of expertiseHeaders"
+            *ngFor="let expertise of skillHeaders"
             labelClass="dark:bg-custom-purple-500 dark:text-custom-yellow-500 bg-custom-blue-700 text-custom-blue-600 w-1/3"
         >
             <ng-template class="flex-grow-0" mat-tab-label>
@@ -22,7 +22,7 @@
             </mat-select-trigger>
 
             <mat-option
-                *ngFor="let expertiseHeader of expertiseHeaders"
+                *ngFor="let expertiseHeader of skillHeaders"
                 [value]="expertiseHeader.type"
                 class="dark:bg-custom-purple-500 dark:text-custom-yellow-500 bg-custom-blue-700 text-custom-blue-600"
             >
