@@ -60,7 +60,7 @@ export const Experiences: Array<JobPositionModel> = [
         jobTitle: 'Front End Engineer',
         jobDescription:
             "My daily routing in Iran's largest Travel arrangements company is to maintain and develop panels using Vue3, review other developers' code, attending to design meetings to ensure the best quality of work.",
-        jobRequiredSkills: ['JavaScript', 'TypeScript', 'Git', 'VueJS', 'NuxtJS', 'HTML', 'CSS', 'Sass', 'Linux', 'Tailwinds'],
+        jobRequiredSkills: ['JavaScript', 'TypeScript', 'Git', 'VueJS', 'NuxtJS', 'HTML', 'CSS', 'Sass', 'Linux', 'Tailwind CSS'],
     },
     {
         companyId: 1,
@@ -70,7 +70,7 @@ export const Experiences: Array<JobPositionModel> = [
         jobTitle: 'Software Engineer',
         jobDescription:
             'As a Software Engineer, I am responsible for designing high-quality software. Maintaining current software, developing and adding new features, and co-operating with other team-members is all part of my daily routine. I am using Angular and NestJS for this purpose.',
-        jobRequiredSkills: ['JavaScript', 'TypeScript', 'Git', 'Angular', 'NestJS', 'HTML', 'CSS', 'Sass', 'Linux', 'Tailwinds', 'SQL', 'Docker'],
+        jobRequiredSkills: ['JavaScript', 'TypeScript', 'Git', 'Angular', 'NestJS', 'HTML', 'CSS', 'Sass', 'Linux', 'Tailwind CSS', 'SQL', 'Docker'],
     },
     {
         companyId: 1,
@@ -80,7 +80,7 @@ export const Experiences: Array<JobPositionModel> = [
         jobTitle: 'Software Engineer',
         jobDescription:
             'As a Software Engineer, I am responsible for designing high-quality software. Maintaining current software, developing and adding new features, and co-operating with other team-members is all part of my daily routine. I am using Angular and NestJS for this purpose.',
-        jobRequiredSkills: ['JavaScript', 'TypeScript', 'Git', 'Angular', 'NestJS', 'HTML', 'CSS', 'Sass', 'Linux', 'Tailwinds', 'SQL', 'Docker'],
+        jobRequiredSkills: ['JavaScript', 'TypeScript', 'Git', 'Angular', 'NestJS', 'HTML', 'CSS', 'Sass', 'Linux', 'Tailwind CSS', 'SQL', 'Docker'],
     },
     {
         companyId: 2,
