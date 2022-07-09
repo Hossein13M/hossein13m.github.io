@@ -1,5 +1,5 @@
 export interface ProgressSpinner {
-    tailwindsClass: string;
+    tailwindClass: string;
     progressValue: number;
     insideText?: string;
     labelText?: string;
