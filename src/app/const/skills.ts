@@ -23,7 +23,7 @@ export const Skills: Array<SkillModel> = [
     { name: 'Angular Material', icon: 'angularMaterial', type: 'framework', level: 'Deep Knowledge' },
     { name: 'Vuetify', icon: 'vuetify', type: 'framework', level: 'Experienced' },
     { name: 'MUI', icon: 'mui', type: 'framework', level: 'Experienced' },
-    { name: 'Tailwinds', icon: 'tailwindsCss', type: 'framework', level: 'Deep Knowledge' },
+    { name: 'Tailwind CSS', icon: 'tailwindsCss', type: 'framework', level: 'Deep Knowledge' },
     { name: 'Bootstrap', icon: 'bootstrap', type: 'framework', level: 'Advanced' },
 
     // software development tools
