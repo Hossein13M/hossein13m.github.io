@@ -2,6 +2,16 @@ import { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
     {
+        title: 'What does it mean to truly be a responsible person?',
+        url: 'https://byrslf.co/what-does-it-mean-to-truly-be-a-responsible-person-aea7c476d361',
+        imgUrl: '../../../assets/images/articles/responsibility.webp',
+        summary: 'What does it mean to be a responsible person indeed? How can you say you are a responsible person or not, and how you can improve it',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: 'Personal Growth',
+    },
+    {
         title: 'A Complete Guide to the API-First Approach',
         url: 'https://itnext.io/a-complete-guide-to-the-api-first-approach-ecd796dd0f10',
         imgUrl: '../../../assets/images/articles/api-first.webp',
