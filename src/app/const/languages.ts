@@ -10,8 +10,8 @@ export const Languages: Array<{ name: string; proficiencyPercent: number; profic
         proficiencyWithinText: 'A',
     },
     {
-        name: 'German',
-        proficiencyPercent: 20,
+        name: 'Deutsch',
+        proficiencyPercent: 30,
         proficiencyWithinText: 'C',
     },
     {
