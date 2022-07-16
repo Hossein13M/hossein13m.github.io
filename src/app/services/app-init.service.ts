@@ -8,7 +8,7 @@ export class AppInitService {
     private overlayRef?: OverlayRef;
     constructor(private overlay: Overlay) {}
 
-    Init() {
+    public Init(): Promise<void> {
         return new Promise<void>((resolve) => {
             this.overlayRef = this.overlay.create({
                 panelClass: ['bg-custom-purple-500', 'w-full', 'h-full', 'flex', 'justify-center'],

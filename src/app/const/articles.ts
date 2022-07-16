@@ -12,10 +12,11 @@ export const Articles: Array<ArticlesModel> = [
         category: 'Personal Growth',
     },
     {
-        title: 'A Complete Guide to the API-First Approach',
+        title: 'API-First Approach Complete Guide',
         url: 'https://itnext.io/a-complete-guide-to-the-api-first-approach-ecd796dd0f10',
         imgUrl: '../../../assets/images/articles/api-first.webp',
-        summary: 'One of the many approaches you might take to develop an application through your software development career is API-First Approach.',
+        summary:
+            "API-FIrst Approach ensures that you are building your software on a design based on the APIs that satisfy the stakeholder's desires and needs. ",
         publisher: 'Medium',
         publicationUrl: 'https://medium.com',
         language: 'English',
