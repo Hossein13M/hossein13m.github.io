@@ -14,8 +14,8 @@
 <a style="text-decoration: none !important" href="https://open.spotify.com/episode/5BoFoH3WNYU5khCOCqtogz?si=FZyWIcijSzK6QUocPujjsw" target="_blank"><img src="https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white" alt="Medium"/></a>
 
 ## About the project:
-### This project has been developed with Angular.
+>### This project has been developed with Angular.
 
 ## The old website version:
-### You can find the first version of website (Developed With NuxtJS) on [old.hmousavi.dev](https://old.hmousavi.dev)
+>### You can find the first version of website (Developed With NuxtJS) on [old.hmousavi.dev](https://old.hmousavi.dev)
 
