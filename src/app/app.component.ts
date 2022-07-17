@@ -44,7 +44,7 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        setTimeout(() => this.appInitService.Init().finally(() => (this.appLoading = true)), 0);
+        this.appInitService.Init().finally(() => (this.appLoading = true));
         this.applyChangesOnBrowserOnly(() => this.getThemeFromLocalStorage());
         this.prepareLanguageListForSpinner();
         this.getCurrentRouteTitle();
