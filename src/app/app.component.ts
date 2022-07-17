@@ -7,6 +7,7 @@ import { NavigationRoutes } from './const/navigationRoutes';
 import { NavigationRouteModel } from './models/navigationRoute.model';
 import { AppService } from './services/app.service';
 import { isPlatformBrowser } from '@angular/common';
+import { DOCUMENT } from '@angular/common';
 import { AppInitService } from './services/app-init.service';
 
 // eslint-disable-next-line @typescript-eslint/ban-types
@@ -33,7 +34,8 @@ export class AppComponent implements OnInit {
         private readonly router: Router,
         private readonly appService: AppService,
         @Inject(PLATFORM_ID) private platformId: InjectionToken<unknown>,
-        private readonly appInitService: AppInitService
+        private readonly appInitService: AppInitService,
+        @Inject(DOCUMENT) private document: Document
     ) {
         this.applyChangesOnBrowserOnly(() => this.checkNavigationEvent());
     }
@@ -44,7 +46,10 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.appInitService.Init().finally(() => (this.appLoading = true));
+        this.appInitService.Init().finally(() => {
+            this.appLoading = true;
+            this.document.getElementById('wrapper')!.classList.remove('invisible');
+        });
         this.applyChangesOnBrowserOnly(() => this.getThemeFromLocalStorage());
         this.prepareLanguageListForSpinner();
         this.getCurrentRouteTitle();
