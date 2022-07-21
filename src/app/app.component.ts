@@ -1,4 +1,4 @@
-import { Component, HostListener, Inject, InjectionToken, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, HostListener, Inject, InjectionToken, OnInit, PLATFORM_ID, Renderer2, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router } from '@angular/router';
 import { ProgressSpinner } from './models/progress-spinner.model';
@@ -6,9 +6,7 @@ import { Languages } from './const/languages';
 import { NavigationRoutes } from './const/navigationRoutes';
 import { NavigationRouteModel } from './models/navigationRoute.model';
 import { AppService } from './services/app.service';
-import { isPlatformBrowser } from '@angular/common';
-import { DOCUMENT } from '@angular/common';
-import { AppInitService } from './services/app-init.service';
+import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 
 // eslint-disable-next-line @typescript-eslint/ban-types
 declare let gtag: Function;
@@ -18,14 +16,13 @@ declare let gtag: Function;
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.scss'],
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
     public isDarkTheme: boolean = true;
     public languagesList: Array<ProgressSpinner> = [];
     public screenWidth: number = this.appService.windowInnerWidth;
     public headerInfo: NavigationRouteModel = { routeTitle: 'Home!', routeUrl: '', routeIcon: 'home' };
     public navigationRoutes: Array<NavigationRouteModel> = NavigationRoutes;
     public loading: boolean = false;
-    public appLoading: boolean = false;
 
     @ViewChild('sidenav') sidenav!: MatSidenav;
     @ViewChild('infoSidenav') infoSidenav!: MatSidenav;
@@ -34,10 +31,18 @@ export class AppComponent implements OnInit {
         private readonly router: Router,
         private readonly appService: AppService,
         @Inject(PLATFORM_ID) private platformId: InjectionToken<unknown>,
-        private readonly appInitService: AppInitService,
+        private readonly renderer: Renderer2,
         @Inject(DOCUMENT) private document: Document
     ) {
         this.applyChangesOnBrowserOnly(() => this.checkNavigationEvent());
+    }
+
+    ngAfterViewInit(): void {
+        if (isPlatformBrowser(this.platformId)) {
+            const loader = this.renderer.selectRootElement('#loader');
+            if (loader.style.display !== 'none') loader.style.display = 'none'; //hide loader
+            this.document.getElementById('wrapper')!.classList.remove('hidden');
+        }
     }
 
     @HostListener('window:resize', ['$event'])
@@ -46,10 +51,6 @@ export class AppComponent implements OnInit {
     }
 
     ngOnInit(): void {
-        this.appInitService.Init().finally(() => {
-            this.appLoading = true;
-            this.document.getElementById('wrapper')!.classList.remove('invisible');
-        });
         this.applyChangesOnBrowserOnly(() => this.getThemeFromLocalStorage());
         this.prepareLanguageListForSpinner();
         this.getCurrentRouteTitle();
