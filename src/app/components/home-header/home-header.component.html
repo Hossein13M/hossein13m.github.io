@@ -2,23 +2,29 @@
     <mat-card-header class="dark:text-custom-grey-500 text-custom-purple-900 flex-shrink-0 flex items-center"> </mat-card-header>
 
     <mat-card-content class="flex my-5 flex-grow overflow-auto">
-        <section class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-2 gap-6">
-            <div class="flex flex-col justify-between flex-1">
+        <section class="grid grid-cols-1 2xl:grid-cols-2 2xl:grid-cols-2">
+            <div class="flex flex-col sm:justify-between">
                 <div class="flex flex-col">
-                    <h1 class="dark:text-white font-black text-6xl">Discover My Skills, Works and Contact Me!</h1>
+                    <h1 class="dark:text-white font-black text-4xl md:text-6xl">Discover My Space And Hear My Story!</h1>
 
-                    <div class="hidden md:flex">
+                    <div>
                         <h1 class="dark:text-white font-black flex">
-                            <span class="dark:text-custom-yellow-500 text-custom-blue-400">&lt;code&gt;</span>
+                            <span class="hidden md:block dark:text-custom-yellow-500 text-custom-blue-400">&lt;code&gt;</span>
                             <h1 class="dark:text-white font-black" id="text"></h1>
-                            <span class="dark:text-custom-yellow-500 text-custom-blue-400">&lt;/code&gt;</span>
+                            <span class="hidden md:block dark:text-custom-yellow-500 text-custom-blue-400">&lt;/code&gt;</span>
                         </h1>
                     </div>
                 </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-3 2xl:grid-cols-3 gap-14">
+                <!--MOBILE ONLY-->
+                <div class="flex justify-center mt-10 sm:hidden">
+                    <app-animation-button [button]="selectedButton"></app-animation-button>
+                </div>
+                <!--MOBILE ONLY-->
+
+                <div class="grid grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 gap-14 hidden sm:grid">
                     <button
-                        class="flex items-center dark:bg-custom-yellow-500 bg-custom-blue-600 dark:text-custom-purple-500 text-yellow-500 font-semibold m-auto"
+                        class="flex items-center dark:bg-custom-yellow-500 bg-custom-blue-600 dark:text-custom-purple-500 text-yellow-500 font-semibold m-auto dark:hover:bg-custom-blue-400 dark:hover:text-custom-yellow-500 hover:bg-custom-yellow-500 hover:text-custom-blue-400"
                         disableRipple
                         mat-flat-button
                         routerLink="skills"
@@ -28,7 +34,7 @@
                     </button>
 
                     <button
-                        class="flex items-center dark:bg-custom-yellow-500 bg-custom-blue-600 dark:text-custom-purple-500 text-yellow-500 font-semibold m-auto"
+                        class="flex items-center dark:bg-custom-yellow-500 bg-custom-blue-600 dark:text-custom-purple-500 text-yellow-500 font-semibold m-auto dark:hover:bg-custom-blue-400 dark:hover:text-custom-yellow-500 hover:bg-custom-yellow-500 hover:text-custom-blue-400"
                         disableRipple
                         mat-flat-button
                         routerLink="contact-me"
@@ -37,13 +43,23 @@
                         <span>Contact Me!</span>
                     </button>
                     <button
-                        class="flex items-center dark:bg-custom-yellow-500 bg-custom-blue-600 dark:text-custom-purple-500 text-yellow-500 font-semibold m-auto"
+                        class="flex items-center dark:bg-custom-yellow-500 bg-custom-blue-600 dark:text-custom-purple-500 text-yellow-500 font-semibold m-auto dark:hover:bg-custom-blue-400 dark:hover:text-custom-yellow-500 hover:bg-custom-yellow-500 hover:text-custom-blue-400"
                         disableRipple
                         mat-flat-button
                         routerLink="publications"
                     >
                         <mat-icon class="mr-2"> article </mat-icon>
-                        <span>My Blog!</span>
+                        <span>My Content!</span>
+                    </button>
+
+                    <button
+                        class="flex items-center dark:bg-custom-yellow-500 bg-custom-blue-600 dark:text-custom-purple-500 text-yellow-500 font-semibold m-auto dark:hover:bg-custom-blue-400 dark:hover:text-custom-yellow-500 hover:bg-custom-yellow-500 hover:text-custom-blue-400"
+                        disableRipple
+                        mat-flat-button
+                        routerLink="experiences"
+                    >
+                        <mat-icon class="mr-2"> work_history </mat-icon>
+                        <span>Experiences!</span>
                     </button>
                 </div>
             </div>

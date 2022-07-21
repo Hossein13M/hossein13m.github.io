@@ -1,7 +1,15 @@
-.background-card {
-    section {
-        min-height: 560px;
+mat-card {
+    @media screen and (max-width: 767px) {
+        height: 400px;
     }
+}
+.background-card {
+    @media screen and (min-width: 767px) {
+        section {
+            min-height: 560px;
+        }
+    }
+
     &:before {
         content: '';
         background: url('../../../assets/images/mobile-header-back.webp') center;
@@ -30,9 +38,41 @@
 
 .mat-flat-button {
     border-radius: 0;
-    width: 150px;
+    width: 140px;
 }
 
 .mini-card {
     min-height: 170px;
+}
+
+.border-button {
+    animation-name: btn-border-top;
+    animation-duration: 2000ms;
+    @keyframes btn-border-top {
+        0% {
+            left: auto;
+            right: 0;
+            width: 0;
+        }
+        12.5% {
+            left: auto;
+            right: 0;
+            width: 100%;
+        }
+        12.6% {
+            left: 0;
+            right: auto;
+        }
+        50% {
+            width: 100%;
+        }
+        62.5% {
+            width: 0;
+        }
+        100% {
+            left: 0;
+            right: auto;
+            width: 0;
+        }
+    }
 }

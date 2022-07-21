@@ -7,10 +7,11 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { RouterModule } from '@angular/router';
+import { AnimationButtonModule } from '../animation-button/animation-button.module';
 
 @NgModule({
     declarations: [HomeHeaderComponent],
     exports: [HomeHeaderComponent],
-    imports: [CommonModule, MatCardModule, MatIconModule, MatDividerModule, MatButtonModule, MatTooltipModule, RouterModule],
+    imports: [CommonModule, MatCardModule, MatIconModule, MatDividerModule, MatButtonModule, MatTooltipModule, RouterModule, AnimationButtonModule],
 })
 export class HomeHeaderModule {}
