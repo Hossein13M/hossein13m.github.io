@@ -1,5 +1,6 @@
 import { Component, Inject, InjectionToken, OnInit, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
+import Typed from 'typed.js';
 import { HeaderTypeEffectItems } from '../../const/home';
 import Typed from 'typed.js';
 
