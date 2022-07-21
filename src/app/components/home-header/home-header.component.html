@@ -3,7 +3,7 @@
 
     <mat-card-content class="flex my-5 flex-grow overflow-auto">
         <section class="grid grid-cols-1 2xl:grid-cols-2 2xl:grid-cols-2">
-            <div class="flex flex-col justify-between">
+            <div class="flex flex-col sm:justify-between">
                 <div class="flex flex-col">
                     <h1 class="dark:text-white font-black text-4xl md:text-6xl">Discover My Space And Hear My Story!</h1>
 
@@ -16,7 +16,21 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 gap-14 hidden md:grid">
+                <!--MOBILE ONLY-->
+                <div class="flex mt-20 sm:hidden">
+                    <button
+                        class="flex items-center dark:bg-custom-yellow-500 bg-custom-blue-600 dark:text-custom-purple-500 text-yellow-500 font-semibold m-auto dark:hover:bg-custom-blue-400 dark:hover:text-custom-yellow-500 hover:bg-custom-yellow-500 hover:text-custom-blue-400"
+                        disableRipple
+                        mat-flat-button
+                        [routerLink]="selectedButton.routeUrl"
+                    >
+                        <mat-icon class="mr-2"> {{ selectedButton.routeIcon }}</mat-icon>
+                        <span>{{ selectedButton.routeTitle }}</span>
+                    </button>
+                </div>
+                <!--MOBILE ONLY-->
+
+                <div class="grid grid-cols-2 lg:grid-cols-4 2xl:grid-cols-4 gap-14 hidden sm:grid">
                     <button
                         class="flex items-center dark:bg-custom-yellow-500 bg-custom-blue-600 dark:text-custom-purple-500 text-yellow-500 font-semibold m-auto dark:hover:bg-custom-blue-400 dark:hover:text-custom-yellow-500 hover:bg-custom-yellow-500 hover:text-custom-blue-400"
                         disableRipple
