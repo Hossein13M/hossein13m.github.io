@@ -17,16 +17,8 @@
                 </div>
 
                 <!--MOBILE ONLY-->
-                <div class="flex mt-20 sm:hidden">
-                    <button
-                        class="flex items-center dark:bg-custom-yellow-500 bg-custom-blue-600 dark:text-custom-purple-500 text-yellow-500 font-semibold m-auto dark:hover:bg-custom-blue-400 dark:hover:text-custom-yellow-500 hover:bg-custom-yellow-500 hover:text-custom-blue-400"
-                        disableRipple
-                        mat-flat-button
-                        [routerLink]="selectedButton.routeUrl"
-                    >
-                        <mat-icon class="mr-2"> {{ selectedButton.routeIcon }}</mat-icon>
-                        <span>{{ selectedButton.routeTitle }}</span>
-                    </button>
+                <div class="flex justify-center mt-10 sm:hidden">
+                    <app-animation-button [button]="selectedButton"></app-animation-button>
                 </div>
                 <!--MOBILE ONLY-->
 
