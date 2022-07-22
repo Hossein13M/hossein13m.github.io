@@ -23,7 +23,9 @@ export class HomeHeaderComponent implements OnInit, AfterViewInit, OnDestroy {
     }
 
     ngAfterViewInit(): void {
-        this.intervalId = setInterval(() => this.changeButtonText(), 2000);
+        if (isPlatformBrowser(this.platformId)) {
+            this.intervalId = setInterval(() => this.changeButtonText(), 2000);
+        }
     }
 
     ngOnInit(): void {
