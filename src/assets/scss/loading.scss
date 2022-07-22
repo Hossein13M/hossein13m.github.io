@@ -16,7 +16,7 @@
         margin: 8px;
         border-radius: 50%;
         border: 6px solid #ffc107;
-        border-color: #ffc107 transparent #ffc107 transparent;
+        border-color: #ffc107 transparent;
         animation: app-loading 1.2s linear infinite;
     }
     @keyframes app-loading {
