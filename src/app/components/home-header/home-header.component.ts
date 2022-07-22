@@ -42,6 +42,7 @@ export class HomeHeaderComponent implements OnInit, AfterViewInit, OnDestroy {
     }
 
     public changeButtonText(): void {
-        this.selectedButton = this.buttons[Math.floor(Math.random() * 4)];
+        this.selectedButton =
+            this.buttons[this.buttons.indexOf(this.selectedButton) >= this.buttons.length - 1 ? 0 : this.buttons.indexOf(this.selectedButton) + 1];
     }
 }
