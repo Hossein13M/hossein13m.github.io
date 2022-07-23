@@ -31,7 +31,7 @@ export class HomeHeaderComponent implements OnInit, AfterViewInit, OnDestroy {
     ngOnInit(): void {
         const options = {
             strings: HeaderTypeEffectItems,
-            typeSpeed: 30,
+            typeSpeed: 60,
             backSpeed: 60,
             showCursor: true,
             cursorChar: '|',
