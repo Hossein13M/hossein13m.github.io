@@ -10,8 +10,8 @@ export const Services: Array<string> = ['Web Development', 'Technical Content Wr
 
 export const HeaderTypeEffectItems: Array<string> = [
     'I Build Web Applications.',
-    'I Am An UI/UX Designer.',
     'I Write Technical Contents.',
     'I Consult Teams To Grow.',
+    'I Contribute to Open-Source.',
     'I Am A Full Time Learner.',
 ];
