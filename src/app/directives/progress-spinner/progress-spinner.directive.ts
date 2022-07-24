@@ -6,10 +6,10 @@ import { AfterViewChecked, Directive, ElementRef, Input } from '@angular/core';
 export class ProgressSpinnerDirective implements AfterViewChecked {
     @Input() color!: string;
 
-    constructor(private elem: ElementRef) {}
+    constructor(private readonly elementRef: ElementRef) {}
 
-    ngAfterViewChecked() {
-        const element = this.elem.nativeElement as HTMLElement;
+    public ngAfterViewChecked(): void {
+        const element = this.elementRef.nativeElement as HTMLElement;
         const circle = element.querySelector('circle');
         circle!.style.stroke = this.color;
     }

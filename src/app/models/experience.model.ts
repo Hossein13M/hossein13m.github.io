@@ -17,8 +17,3 @@ export interface JobPositionModel {
     jobRequiredSkills: Array<string>;
     companyId: number;
 }
-
-export interface ExperienceModel {
-    company: CompanyModel;
-    jobPosition: JobPositionModel;
-}
