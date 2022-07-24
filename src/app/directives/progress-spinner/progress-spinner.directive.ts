@@ -8,7 +8,7 @@ export class ProgressSpinnerDirective implements AfterViewChecked {
 
     constructor(private elem: ElementRef) {}
 
-    ngAfterViewChecked() {
+    public ngAfterViewChecked(): void {
         const element = this.elem.nativeElement as HTMLElement;
         const circle = element.querySelector('circle');
         circle!.style.stroke = this.color;
