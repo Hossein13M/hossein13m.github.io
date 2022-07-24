@@ -4,7 +4,7 @@ import { Injectable } from '@angular/core';
 export class WindowService {
     constructor() {}
 
-    getWidth(): number {
+    public getWidth(): number {
         return 0;
     }
 }
