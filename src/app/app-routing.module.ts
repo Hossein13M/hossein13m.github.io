@@ -14,8 +14,8 @@ const routes: Routes = [
         data: { pageTitle: 'Contact Me!' },
     },
     {
-        path: 'publications',
-        loadChildren: () => import('./modules/publications/publications.module').then((m) => m.PublicationsModule),
+        path: 'contents',
+        loadChildren: () => import('./modules/contents/contents.module').then((m) => m.ContentsModule),
         data: { pageTitle: 'Publications!' },
     },
     {

@@ -12,7 +12,8 @@
     "dev:ssr": "ng run hossein-mousavi:serve-ssr",
     "serve:ssr": "node dist/hossein-mousavi/server/main.js",
     "build:ssr": "ng build && ng run hossein-mousavi:server",
-    "prerender": "ng run hossein-mousavi:prerender"
+    "prerender": "ng run hossein-mousavi:prerender",
+    "update:package": "yarn upgrade-interactive --latest"
   },
   "private": true,
   "dependencies": {
