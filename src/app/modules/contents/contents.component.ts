@@ -5,7 +5,7 @@ import { Articles } from '../../const/articles';
 import { Podcasts } from '../../const/podcasts';
 
 @Component({
-    selector: 'app-publications',
+    selector: 'app-contents',
     template: `
         <div *ngFor="let podcast of podcasts" class="mb-3">
             <app-horizontal-card [componentInfo]="podcast" [componentType]="{ type: 'Podcast', icon: 'podcasts' }"></app-horizontal-card>
@@ -16,7 +16,7 @@ import { Podcasts } from '../../const/podcasts';
         </div>
     `,
 })
-export class PublicationsComponent {
+export class ContentsComponent {
     public articles: Array<ArticlesModel> = Articles;
     public podcasts: Array<HorizontalComponentModel> = Podcasts;
 
