@@ -29,6 +29,11 @@ const routes: Routes = [
         data: { pageTitle: 'Projects!' },
     },
     {
+        path: 'about-me',
+        loadChildren: () => import('./modules/about-me/about-me.module').then((m) => m.AboutMeModule),
+        data: { pageTitle: 'Projects!' },
+    },
+    {
         path: 'not-found',
         loadChildren: () => import('./modules/not-found/not-found.module').then((m) => m.NotFoundModule),
         data: { pageTitle: 'You Have Been Lost!' },
