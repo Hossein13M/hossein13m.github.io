@@ -2,6 +2,17 @@ import { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
     {
+        title: 'How to Enlighten Yourself As A Developer Throughout Your Career',
+        url: 'https://itnext.io/how-to-enlighten-yourself-as-a-developer-throughout-your-career-c49d829b88ef',
+        imgUrl: '../../../assets/images/articles/enlightenment.webp',
+        summary:
+            'Compared to earlier, life has become more complex nowadays. Although technology has helped ease our life, the amount of data we have been involved in has increased tremendously, and this may lead us to lose our focus on a single area of expertise.',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: 'Personal Growth',
+    },
+    {
         title: 'What does it mean to truly be a responsible person?',
         url: 'https://byrslf.co/what-does-it-mean-to-truly-be-a-responsible-person-aea7c476d361',
         imgUrl: '../../../assets/images/articles/responsibility.webp',
