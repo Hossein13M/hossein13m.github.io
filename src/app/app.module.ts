@@ -6,16 +6,16 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatProgressBarModule } from '@angular/material/progress-bar';
+import { MatTooltipModule } from '@angular/material/tooltip';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { GoogleAnalyticsService } from './services/google-analytics.service';
 import { ProgressSpinnerModule } from './components/progress-spinner/progress-spinner.module';
-import { DirectivesModule } from './directives/directives.module';
 import { InfoSidenavReachMeModule } from './components/info-sidenav-reach-me/info-sidenav-reach-me.module';
 import { BaseInfoModule } from './components/base-info/base-info.module';
 import { PageHeaderModule } from './components/page-header/page-header.module';
-import { GoogleAnalyticsService } from './services/google-analytics.service';
-import { MatProgressBarModule } from '@angular/material/progress-bar';
-import { MatTooltipModule } from '@angular/material/tooltip';
+import { DirectivesModule } from './directives/directives.module';
 
 @NgModule({
     declarations: [AppComponent],
@@ -28,13 +28,13 @@ import { MatTooltipModule } from '@angular/material/tooltip';
         MatToolbarModule,
         MatButtonModule,
         MatDividerModule,
+        MatProgressBarModule,
+        MatTooltipModule,
         ProgressSpinnerModule,
         DirectivesModule,
         InfoSidenavReachMeModule,
         BaseInfoModule,
         PageHeaderModule,
-        MatProgressBarModule,
-        MatTooltipModule,
     ],
     providers: [GoogleAnalyticsService],
     bootstrap: [AppComponent],
