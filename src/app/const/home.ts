@@ -6,8 +6,6 @@ export const HomeTitles: Array<HomeModel> = [
     { title: '+300K', subtitle: 'My Contents Reach' },
 ];
 
-export const Services: Array<string> = ['Web Development', 'Technical Content Writing', 'UI/UX Design', 'Teaching', 'Project Management', 'IT Consulting'];
-
 export const HeaderTypeEffectItems: Array<string> = [
     'I Build Web Applications.',
     'I Write Technical Contents.',
