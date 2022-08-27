@@ -1,4 +1,4 @@
-import { AfterViewInit, Component, HostListener, Inject, InjectionToken, OnInit, PLATFORM_ID, Renderer2, ViewChild } from '@angular/core';
+import { OnInit, AfterViewInit, ViewChild, InjectionToken, HostListener, Component, Inject, Renderer2, PLATFORM_ID } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router } from '@angular/router';
 import { ProgressSpinner } from './models/progress-spinner.model';
