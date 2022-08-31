@@ -7,6 +7,8 @@ export const HomeTitles: Array<HomeModel> = [
 ];
 
 export const HeaderTypeEffectItems: Array<string> = [
+    'I Record Podcast',
+    'I Like to Know More About Universe',
     'I Build Web Applications.',
     'I Write Technical Contents.',
     'I Consult Teams To Grow.',
