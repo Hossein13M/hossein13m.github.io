@@ -3,7 +3,7 @@ import { HomeModel } from '../models/home.model';
 export const HomeTitles: Array<HomeModel> = [
     { title: '+5 Years', subtitle: 'IT Industry Experience' },
     { title: '+45', subtitle: 'Open-Source Contributions' },
-    { title: '+350K', subtitle: 'My Contents Reach' },
+    { title: '+300K', subtitle: 'My Contents Reach' },
 ];
 
 export const HeaderTypeEffectItems: Array<string> = [
