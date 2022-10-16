@@ -32,7 +32,7 @@ export const Skills: Array<SkillModel> = [
     { name: 'Linux', icon: 'linux', type: 'softwareDevelopment', level: 'Advanced' },
     { name: 'Git', icon: 'git', type: 'softwareDevelopment', level: 'Advanced' },
     { name: 'Docker', icon: 'docker', type: 'softwareDevelopment', level: 'Experienced' },
-    { name: 'Agile', icon: 'agile', type: 'softwareDevelopment', level: 'Deep Knowledge' },
+    { name: 'Agile Methodology', icon: 'agile', type: 'softwareDevelopment', level: 'Deep Knowledge' },
     { name: 'Adobe Photoshop', icon: 'adobePhotoshop', type: 'softwareDevelopment', level: 'Experienced' },
     { name: 'Clean Code', icon: 'cleanCode', type: 'softwareDevelopment', level: 'Advanced' },
     { name: 'Responsive Design', icon: 'responsiveDesign', type: 'softwareDevelopment', level: 'Advanced' },
