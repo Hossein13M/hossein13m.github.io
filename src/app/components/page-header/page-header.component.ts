@@ -20,6 +20,14 @@ import { NavigationRouteModel } from '../../models/navigationRoute.model';
             </a>
         </header>
     `,
+    styles: [
+        `
+            .blood-background {
+                background: url('https://www.freepnglogos.com/uploads/blood-png/bloods-photos-pic-28.png') center;
+                background-size: cover;
+            }
+        `,
+    ],
 })
 export class PageHeaderComponent {
     @Input() pageHeaderInfo!: NavigationRouteModel;
