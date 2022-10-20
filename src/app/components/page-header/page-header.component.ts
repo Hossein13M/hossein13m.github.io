@@ -11,13 +11,14 @@ import { NavigationRouteModel } from '../../models/navigationRoute.model';
                 <mat-icon class="mx-5 flex items-center text-2xl sm:text-4xl h-full min-w-min">{{ pageHeaderInfo.routeIcon }}</mat-icon>
                 <h1 class="m-0 text-2xl sm:text-4xl">{{ pageHeaderInfo.routeTitle }}</h1>
             </div>
-            <a href="https://twitter.com/search?q=%23mahsaAmini" target="_blank" class="flex justify-center my-0 sm:text-3xl font-bold">
-                <div class="hidden sm:flex">
+            <div class="flex justify-center my-0 sm:text-3xl font-bold">
+                <div class="hidden sm:flex mx-2">
                     <span>Iranian Lives Matter</span>
-                    <span class="text-blue-500 mx-2">#MahsaAmini</span>
                 </div>
-                <span class="block sm:hidden text-xl text-blue-500 font-bold">#MahsaAmini</span>
-            </a>
+                <a href="https://twitter.com/search?q=%23mahsaAmini" target="_blank">
+                    <span class="text-xl sm:text-3xl text-blue-500 font-bold">#MahsaAmini</span>
+                </a>
+            </div>
         </header>
     `,
 })
