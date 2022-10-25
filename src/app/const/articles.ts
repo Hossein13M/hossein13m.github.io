@@ -2,6 +2,17 @@ import { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
     {
+        title: 'The Freedom They Stole From Us',
+        url: 'https://hossein13m.medium.com/the-freedom-they-stole-from-us-55d4614f7af4',
+        imgUrl: '../../../assets/images/articles/freedom.webp',
+        summary:
+            'Throughout history, to rule over people, a lot of ideologies have been introduced and used by governments and organizations. It costs far less for them to control us instead of preparing an environment where human beings can live freely and happily.',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: 'Personal Growth',
+    },
+    {
         title: 'How to Enlighten Yourself As A Developer Throughout Your Career',
         url: 'https://itnext.io/how-to-enlighten-yourself-as-a-developer-throughout-your-career-c49d829b88ef',
         imgUrl: '../../../assets/images/articles/enlightenment.webp',
