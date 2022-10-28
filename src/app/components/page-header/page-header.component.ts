@@ -16,7 +16,7 @@ import { NavigationRouteModel } from '../../models/navigationRoute.model';
                     <span>Iranian Lives Matter</span>
                 </div>
                 <a href="https://twitter.com/search?q=%23mahsaAmini" target="_blank">
-                    <span class="text-xl sm:text-3xl text-blue-500 font-bold">#MahsaAmini</span>
+                    <span class="text-xl sm:text-3xl dark:text-blue-500 font-bold">#MahsaAmini</span>
                 </a>
             </div>
         </header>
