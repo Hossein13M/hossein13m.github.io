@@ -25,7 +25,6 @@ export const Skills: Array<SkillModel> = [
     { name: 'MUI', icon: 'mui', type: 'framework', level: 'Experienced' },
     { name: 'Tailwind CSS', icon: 'tailwindCss', type: 'framework', level: 'Deep Knowledge' },
     { name: 'Bootstrap', icon: 'bootstrap', type: 'framework', level: 'Advanced' },
-
     // software development tools
     { name: 'Network', icon: 'network', type: 'softwareDevelopment', level: 'Deep Knowledge' },
     { name: 'Windows Server', icon: 'windowsServer', type: 'softwareDevelopment', level: 'Advanced' },
@@ -44,6 +43,7 @@ export const Skills: Array<SkillModel> = [
     { name: 'PWA', icon: 'pwa', type: 'softwareDevelopment', level: 'Experienced' },
     { name: 'WebPack', icon: 'webpack', type: 'softwareDevelopment', level: 'Familiar' },
     { name: 'Vite', icon: 'vite', type: 'softwareDevelopment', level: 'Experienced' },
+    { name: 'Cypress', icon: 'cypress', type: 'softwareDevelopment', level: 'Familiar' },
 ];
 
 export const SkillHeaders: Array<SkillHeader> = [
