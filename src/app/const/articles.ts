@@ -66,7 +66,7 @@ export const Articles: Array<ArticlesModel> = [
         category: 'Tech',
     },
     {
-        title: 'Husky 6 Lint (prettier + eslint) and commitlint for JavaScript Projects',
+        title: 'Git Hook Husky 6 Lint (prettier + eslint) and commitlint for JavaScript Projects',
         url: 'https://medium.com/codex/multiple-interceptors-in-angular-e0880b2f7d91',
         imgUrl: '../../../assets/images/articles/medium-husky.webp',
         summary:
