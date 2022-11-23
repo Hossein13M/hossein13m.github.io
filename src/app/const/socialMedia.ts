@@ -103,12 +103,12 @@ export const SocialMedia: Array<SocialMediaModel> = [
         imageLink: 'assets/images/twitter.png',
         type: 'social',
     },
-    {
-        name: 'Whatsapp',
-        url: 'https://api.whatsapp.com/send?phone=989396197609',
-        imageLink: 'assets/images/whatsapp.png',
-        type: 'social',
-    },
+    // {
+    //     name: 'Whatsapp',
+    //     url: 'https://api.whatsapp.com/send?phone=989396197609',
+    //     imageLink: 'assets/images/whatsapp.png',
+    //     type: 'social',
+    // },
     {
         name: 'Instagram',
         url: 'https://www.instagram.com/hossein13.m',
