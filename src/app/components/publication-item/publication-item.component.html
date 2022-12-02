@@ -1,4 +1,4 @@
-<mat-card class="py-5 dark:bg-custom-purple-900 dark:text-white bg-custom-blue-700 mat-elevation-z10">
+<mat-card class="py-5 dark:bg-custom-purple-900 dark:text-white bg-custom-blue-700 mat-elevation-z10 flex flex-col items-stretch">
     <mat-card-header>
         <div mat-card-avatar>
             <a [href]="article.publicationUrl">
@@ -20,14 +20,16 @@
 
     <mat-divider inset></mat-divider>
 
-    <mat-card-content>
+    <mat-card-content class="flex-grow">
         <img [src]="article.imgUrl" alt="article image" class="article-image" />
         <p class="mt-3">{{ article.summary }}</p>
     </mat-card-content>
-    <mat-card-actions class="mt-3 mx-1 flex justify-between items-center">
-        <app-label class="mr-2 my-1" [labelText]="article.category" fontSize="12px"></app-label>
+    <mat-card-actions class="mx-1 flex flex-shrink-0 justify-between items-center">
+        <div class="flex">
+            <app-label class="mr-2" *ngFor="let articleCategory of article.category" [labelText]="articleCategory" fontSize="12px"></app-label>
+        </div>
 
-        <a [href]="article.url" class="mt-4" target="_blank">
+        <a [href]="article.url" target="_blank">
             <button
                 class="flex items-center dark:text-custom-yellow-500 text-custom-blue-600"
                 disableRipple

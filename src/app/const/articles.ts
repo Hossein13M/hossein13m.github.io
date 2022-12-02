@@ -10,7 +10,7 @@ export const Articles: Array<ArticlesModel> = [
         publisher: 'Medium',
         publicationUrl: 'https://medium.com',
         language: 'English',
-        category: 'Personal Growth',
+        category: ['Personal Growth'],
     },
     {
         title: 'How to Enlighten Yourself As A Developer Throughout Your Career',
@@ -21,7 +21,7 @@ export const Articles: Array<ArticlesModel> = [
         publisher: 'Medium',
         publicationUrl: 'https://medium.com',
         language: 'English',
-        category: 'Personal Growth',
+        category: ['Tech', 'Personal Growth'],
     },
     {
         title: 'What does it mean to truly be a responsible person?',
@@ -31,7 +31,7 @@ export const Articles: Array<ArticlesModel> = [
         publisher: 'Medium',
         publicationUrl: 'https://medium.com',
         language: 'English',
-        category: 'Personal Growth',
+        category: ['Personal Growth'],
     },
     {
         title: 'API-First Approach Complete Guide',
@@ -42,7 +42,7 @@ export const Articles: Array<ArticlesModel> = [
         publisher: 'Medium',
         publicationUrl: 'https://medium.com',
         language: 'English',
-        category: 'Tech',
+        category: ['Tech'],
     },
     {
         title: 'How to Implement Dark/Light Themes in a Next.js App Using Context Hook & TailwindCSS',
@@ -52,7 +52,7 @@ export const Articles: Array<ArticlesModel> = [
         publisher: 'Medium',
         publicationUrl: 'https://medium.com',
         language: 'English',
-        category: 'Tech',
+        category: ['Tech'],
     },
     {
         title: 'Multiple Interceptors in Angular',
@@ -63,7 +63,7 @@ export const Articles: Array<ArticlesModel> = [
         publisher: 'Medium',
         publicationUrl: 'https://medium.com',
         language: 'English',
-        category: 'Tech',
+        category: ['Tech'],
     },
     {
         title: 'Git Hook Husky 6 Lint (prettier + eslint) and commitlint for JavaScript Projects',
@@ -74,7 +74,7 @@ export const Articles: Array<ArticlesModel> = [
         publisher: 'Medium',
         publicationUrl: 'https://medium.com',
         language: 'English',
-        category: 'Tech',
+        category: ['Tech'],
     },
     {
         title: 'Angular Reactive Form including Angular Material and Custom Validation',
@@ -85,7 +85,7 @@ export const Articles: Array<ArticlesModel> = [
         publisher: 'Medium',
         publicationUrl: 'https://medium.com',
         language: 'English',
-        category: 'Tech',
+        category: ['Tech'],
     },
     {
         title: 'A Detailed Look at filter(), map(), and reduce() in JavaScript',
@@ -96,7 +96,7 @@ export const Articles: Array<ArticlesModel> = [
         publisher: 'Medium',
         publicationUrl: 'https://medium.com',
         language: 'English',
-        category: 'Tech',
+        category: ['Tech'],
     },
     {
         title: 'Touchpad gestures in Linux (Persian)',
@@ -107,7 +107,7 @@ export const Articles: Array<ArticlesModel> = [
         publisher: 'Virgool',
         publicationUrl: 'https://virgool.io',
         language: 'Persian',
-        category: 'Tech',
+        category: ['Tech'],
     },
     {
         title: 'Introduction to API Blueprint',
@@ -117,7 +117,7 @@ export const Articles: Array<ArticlesModel> = [
         publisher: 'Testfully',
         publicationUrl: 'https://testfully.io/blog',
         language: 'English',
-        category: 'Tech',
+        category: ['Tech'],
     },
     {
         title: 'Top 7 Free & Paid mock API tools (2022 Review)',
@@ -128,6 +128,6 @@ export const Articles: Array<ArticlesModel> = [
         publisher: 'Testfully',
         publicationUrl: 'https://testfully.io/blog',
         language: 'English',
-        category: 'Tech',
+        category: ['Tech'],
     },
 ];
