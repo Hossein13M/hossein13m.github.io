@@ -1,3 +1,5 @@
+type ArticleCategories = 'Tech' | 'Personal Growth';
+
 export interface ArticlesModel {
     title: string;
     url: string;
@@ -6,5 +8,5 @@ export interface ArticlesModel {
     publisher: 'Medium' | 'Virgool' | 'Testfully';
     publicationUrl: string;
     language: 'Persian' | 'English';
-    category: 'Tech' | 'Personal Growth';
+    category: Array<ArticleCategories>;
 }
