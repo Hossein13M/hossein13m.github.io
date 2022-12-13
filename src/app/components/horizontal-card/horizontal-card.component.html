@@ -17,7 +17,7 @@
         </mat-card-subtitle>
     </mat-card-header>
 
-    <mat-divider vertical></mat-divider>
+    <mat-divider class="border dark:border-gray-900 border-custom-blue-100" vertical></mat-divider>
 
     <mat-card-content class="mb-0 mx-5 flex flex-col p-5">
         <h1 class="flex items-center">
@@ -28,7 +28,7 @@
         <h1 class="mb-0 text-lg">{{ componentInfo.description }}</h1>
     </mat-card-content>
 
-    <mat-divider vertical></mat-divider>
+    <mat-divider class="border dark:border-gray-800 border-custom-blue-100" vertical></mat-divider>
 
     <mat-card-actions class="mx-1 flex flex-col justify-between items-start md:items-end p-5 mb-2 sm:mb-0">
         <div *ngFor="let componentLink of componentInfo.links">
