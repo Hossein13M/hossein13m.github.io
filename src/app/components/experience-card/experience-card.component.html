@@ -44,7 +44,7 @@
             <mat-icon class="dark:text-custom-yellow-500 text-custom-blue-600">design_services</mat-icon>
             <span class="mx-2">Required Skills For This Position</span>
         </div>
-        <div class="flex w-full mt-3">
+        <div class="flex flex-wrap w-full mt-3">
             <app-label *ngFor="let skill of job.jobRequiredSkills" class="mr-2 my-1" [labelText]="skill"></app-label>
         </div>
     </mat-card-actions>
