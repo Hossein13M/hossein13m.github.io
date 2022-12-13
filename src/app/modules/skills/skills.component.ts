@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 import { SkillHeader, SkillType } from '../../models/skill.model';
 import { SkillHeaders } from '../../const/skills';
 import { FormBuilder, FormControl } from '@angular/forms';
@@ -7,6 +7,7 @@ import { FormBuilder, FormControl } from '@angular/forms';
     selector: 'app-skills',
     templateUrl: './skills.component.html',
     styleUrls: ['./skills.component.scss'],
+    encapsulation: ViewEncapsulation.None,
 })
 export class SkillsComponent {
     public readonly skillHeaders: Array<SkillHeader> = SkillHeaders;
