@@ -1,16 +1,6 @@
-::ng-deep .mat-tab-group.mat-primary .mat-ink-bar {
-    background-color: theme('colors.custom-yellow.500') !important;
+.mat-mdc-form-field-subscript-wrapper {
+    display: none !important;
 }
-
-::ng-deep .mat-form-field-wrapper {
-    padding-bottom: 0 !important;
-}
-
-::ng-deep .mat-select-arrow {
-    color: theme('colors.custom-yellow.500');
-}
-
-.mat-button-toggle-checked {
-    background-color: theme('colors.custom-yellow.500') !important;
-    color: theme('colors.custom-purple.500') !important;
+.cdk-overlay-pane:not(.mat-mdc-select-panel-above) .mdc-menu-surface.mat-mdc-select-panel {
+    padding: 0 !important;
 }

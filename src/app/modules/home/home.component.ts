@@ -7,9 +7,9 @@ import { HomeTitles } from '../../const/home';
     template: `
         <app-home-header></app-home-header>
 
-        <div class="text-custom-yellow-500 mt-8">
-            <section class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-2">
-                <div class="flex" *ngFor="let headerItem of headerFooterTitles">
+        <div class="text-custom-yellow-500 mt-4 sm:mt-8">
+            <section class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-1">
+                <div class="flex" *ngFor="let headerItem of homeTitles">
                     <h1 class="dark:text-custom-yellow-500 text-custom-blue-400 mr-2">{{ headerItem.title }}</h1>
                     <h1 class="dark:text-custom-grey-500 text-custom-grey-900">{{ headerItem.subtitle }}</h1>
                 </div>
@@ -18,7 +18,7 @@ import { HomeTitles } from '../../const/home';
     `,
 })
 export class HomeComponent {
-    public headerFooterTitles: Array<HomeModel> = HomeTitles;
+    public homeTitles: Array<HomeModel> = HomeTitles;
 
     constructor() {}
 }
