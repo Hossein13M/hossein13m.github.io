@@ -1,12 +1,12 @@
 <div>
-    <mat-tab-group animationDuration="1000ms" class="mat-elevation-z10 hidden md:grid" dynamicHeight>
+    <mat-tab-group animationDuration="1000ms" class="mat-elevation-z10 hidden md:grid" dynamicHeight [backgroundColor]="'accent'">
         <mat-tab
             *ngFor="let skillHeader of skillHeaders"
             labelClass="dark:bg-custom-purple-500 dark:text-custom-yellow-500 bg-custom-blue-700 text-custom-blue-600 w-1/3"
         >
             <ng-template class="flex-grow-0" mat-tab-label>
                 <mat-icon class="mx-2 dark:text-custom-yellow-500 text-custom-blue-600">{{ skillHeader.icon }}</mat-icon>
-                <span>{{ skillHeader.title }}</span>
+                <span class="dark:text-custom-yellow-500 text-custom-blue-400">{{ skillHeader.title }}</span>
             </ng-template>
             <app-skill-card [componentMinHeight]="'700px'" [skillType]="skillHeader.type"></app-skill-card>
         </mat-tab>
