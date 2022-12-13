@@ -8,33 +8,37 @@
 
     <mat-card-content>
         <form name="contact-form" method="POST" data-netlify="true" id="contact-form" action="/contact-form-submission" class="flex flex-col justify-around">
-            <input type="hidden" name="form-name" value="contact-form" />
-            <div class="flex items-center my-5">
-                <input
-                    class="order-last input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
-                    id="name"
-                    name="name"
-                    placeholder="Name"
-                    required
-                    type="text"
-                />
-                <label class="input-icon dark:input-icon-dark-theme input-icon-light-theme" for="name">
-                    <mat-icon class="order-first">person_outline</mat-icon>
-                </label>
-            </div>
+            <div class="flex flex-col sm:flex-row justify-between gap-x-24">
+                <div class="flex-grow">
+                    <input type="hidden" name="form-name" value="contact-form" />
+                    <div class="flex items-center my-5">
+                        <input
+                            class="order-last input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
+                            id="name"
+                            name="name"
+                            placeholder="Name"
+                            required
+                            type="text"
+                        />
+                        <label class="input-icon dark:input-icon-dark-theme input-icon-light-theme" for="name">
+                            <mat-icon class="order-first">person_outline</mat-icon>
+                        </label>
+                    </div>
+                </div>
 
-            <div class="flex items-center my-5">
-                <input
-                    class="order-last input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
-                    id="email"
-                    name="email"
-                    placeholder="Email"
-                    required
-                    type="email"
-                />
-                <label class="input-icon dark:input-icon-dark-theme input-icon-light-theme" for="email">
-                    <mat-icon class="order-first">alternate_email</mat-icon>
-                </label>
+                <div class="flex items-center flex-grow my-5">
+                    <input
+                        class="order-last input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                        required
+                        type="email"
+                    />
+                    <label class="input-icon dark:input-icon-dark-theme input-icon-light-theme" for="email">
+                        <mat-icon class="order-first">alternate_email</mat-icon>
+                    </label>
+                </div>
             </div>
 
             <div class="flex items-center my-5">
@@ -55,11 +59,11 @@
     </mat-card-content>
     <mat-card-actions class="mx-1 flex justify-end">
         <button
-            class="flex items-center dark:bg-custom-yellow-500 bg-custom-blue-600 dark:text-custom-purple-900 text-yellow-500"
-            type="submit"
-            form="contact-form"
+            class="dark:bg-custom-yellow-500 bg-custom-blue-600 dark:text-custom-purple-500 text-yellow-500 font-semibold dark:hover:bg-custom-blue-400 dark:hover:text-custom-yellow-500 hover:bg-custom-yellow-500 hover:text-custom-blue-400"
             disableRipple
             mat-flat-button
+            type="submit"
+            form="contact-form"
         >
             <mat-icon class="mr-2"> check_circle</mat-icon>
             <span>Submit Message</span>
