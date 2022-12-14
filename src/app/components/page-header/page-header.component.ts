@@ -12,8 +12,8 @@ import { NavigationRouteModel } from '../../models/navigationRoute.model';
                 <h1 class="m-0 text-xl sm:text-4xl">{{ pageHeaderInfo.routeTitle }}</h1>
             </div>
             <div class="flex justify-center my-0 sm:text-3xl font-bold sm:mr-5 mr-4">
-                <a href="https://twitter.com/search?q=%23mahsaAmini" target="_blank">
-                    <span class="text-xl sm:text-3xl dark:text-blue-500 font-bold"> Woman Life Freedom </span>
+                <a href="https://twitter.com/search?q=%23mahsaAmini" class="text-xl sm:text-3xl dark:text-custom-purple-500 font-black" target="_blank">
+                    Woman Life Freedom
                 </a>
             </div>
         </header>
