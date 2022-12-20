@@ -7,7 +7,7 @@
     </mat-card-header>
 
     <mat-card-content class="flex mt-5 sm:my-5 flex-grow overflow-auto">
-        <section class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 mb-5">
+        <section class="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 mb-5 overflow-x-hidden">
             <button *ngFor="let socialMedia of socialMedias" class="flex contact-icons dark:text-custom-grey-500 dark:hover:text-custom-yellow-500">
                 <a [href]="socialMedia.url" class="flex items-center" target="_blank">
                     <img [alt]="socialMedia.name" [src]="socialMedia['imageLink']" />
