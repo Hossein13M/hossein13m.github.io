@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ContactTypes, SocialMediaHeader, SocialMediaModel } from '../../models/social-media.model';
+import type { ContactTypes, SocialMediaHeader, SocialMediaModel } from '../../models/social-media.model';
 import { SocialMedia, SocialMediaHeaders } from '../../const/socialMedia';
 
 @Component({

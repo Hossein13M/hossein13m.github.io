@@ -1,10 +1,10 @@
 import { OnInit, AfterViewInit, ViewChild, InjectionToken, HostListener, Component, Inject, Renderer2, PLATFORM_ID } from '@angular/core';
 import { MatSidenav } from '@angular/material/sidenav';
 import { NavigationCancel, NavigationEnd, NavigationError, NavigationStart, Router } from '@angular/router';
-import { ProgressSpinner } from './models/progress-spinner.model';
+import type { ProgressSpinner } from './models/progress-spinner.model';
 import { Languages } from './const/languages';
 import { NavigationRoutes } from './const/navigationRoutes';
-import { NavigationRouteModel } from './models/navigationRoute.model';
+import type { NavigationRouteModel } from './models/navigationRoute.model';
 import { AppService } from './services/app.service';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 

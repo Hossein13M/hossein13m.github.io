@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { HomeModel } from '../../models/home.model';
+import type { HomeModel } from '../../models/home.model';
 import { HomeTitles } from '../../const/home';
 
 @Component({

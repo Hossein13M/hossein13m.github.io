@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { SkillLevel } from '../../models/skill.model';
+import type { SkillLevel } from '../../models/skill.model';
 import { SkillClasses } from '../../const/skills';
 
 @Component({

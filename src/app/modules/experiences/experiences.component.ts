@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { JobPositionModel } from '../../models/experience.model';
+import type { JobPositionModel } from '../../models/experience.model';
 import { Experiences } from '../../const/experiences';
 
 @Component({

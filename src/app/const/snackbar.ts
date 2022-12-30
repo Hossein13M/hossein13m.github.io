@@ -1,4 +1,4 @@
-import { SnackBar } from '../models/snackbar.model';
+import type { SnackBar } from '../models/snackbar.model';
 
 export const Snackbar: SnackBar = {
     onSuccess: {

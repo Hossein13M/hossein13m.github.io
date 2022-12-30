@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { NavigationRouteModel } from '../../models/navigationRoute.model';
+import type { NavigationRouteModel } from '../../models/navigationRoute.model';
 
 @Component({
     selector: 'app-animation-button',

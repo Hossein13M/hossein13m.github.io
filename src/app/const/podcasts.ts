@@ -1,4 +1,4 @@
-import { HorizontalComponentModel } from '../models/horizontal-component.model';
+import type { HorizontalComponentModel } from '../models/horizontal-component.model';
 
 export const Podcasts: Array<HorizontalComponentModel> = [
     {

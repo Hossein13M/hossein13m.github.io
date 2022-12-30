@@ -1,4 +1,4 @@
-import { CompanyModel, JobPositionModel } from '../models/experience.model';
+import type { CompanyModel, JobPositionModel } from '../models/experience.model';
 
 export const Companies: Array<CompanyModel> = [
     {

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SocialMediaModel } from '../../models/social-media.model';
+import type { SocialMediaModel } from '../../models/social-media.model';
 import { SocialMedia } from '../../const/socialMedia';
 
 @Component({

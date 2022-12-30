@@ -1,4 +1,4 @@
-import { SkillClass, SkillHeader, SkillModel } from '../models/skill.model';
+import type { SkillClass, SkillHeader, SkillModel } from '../models/skill.model';
 
 export const Skills: Array<SkillModel> = [
     // languages

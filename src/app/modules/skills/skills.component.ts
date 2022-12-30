@@ -1,5 +1,5 @@
 import { Component, ViewEncapsulation } from '@angular/core';
-import { SkillHeader, SkillType } from '../../models/skill.model';
+import type { SkillHeader, SkillType } from '../../models/skill.model';
 import { SkillHeaders } from '../../const/skills';
 import { FormBuilder, FormControl } from '@angular/forms';
 

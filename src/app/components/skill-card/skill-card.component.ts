@@ -1,5 +1,5 @@
 import { Component, Input, OnChanges } from '@angular/core';
-import { SkillHeader, SkillModel, SkillType } from '../../models/skill.model';
+import type { SkillHeader, SkillModel, SkillType } from '../../models/skill.model';
 import { SkillHeaders, Skills } from '../../const/skills';
 
 @Component({
