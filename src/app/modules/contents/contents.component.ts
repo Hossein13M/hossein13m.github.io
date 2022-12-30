@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { ArticlesModel } from '../../models/articles.model';
-import { HorizontalComponentModel } from '../../models/horizontal-component.model';
+import type { ArticlesModel } from '../../models/articles.model';
+import type { HorizontalComponentModel } from '../../models/horizontal-component.model';
 import { Articles } from '../../const/articles';
 import { Podcasts } from '../../const/podcasts';
 
