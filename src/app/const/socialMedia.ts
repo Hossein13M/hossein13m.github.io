@@ -1,4 +1,4 @@
-import { SocialMediaHeader, SocialMediaModel } from '../models/social-media.model';
+import type { SocialMediaHeader, SocialMediaModel } from '../models/social-media.model';
 
 export const SocialMedia: Array<SocialMediaModel> = [
     {

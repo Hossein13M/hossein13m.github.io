@@ -1,4 +1,4 @@
-import { NavigationRouteModel } from '../models/navigationRoute.model';
+import type { NavigationRouteModel } from '../models/navigationRoute.model';
 
 export const NavigationRoutes: Array<NavigationRouteModel> = [
     { routeTitle: 'Home!', routeUrl: '', routeIcon: 'home' },

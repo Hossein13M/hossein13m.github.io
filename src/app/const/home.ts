@@ -1,4 +1,4 @@
-import { HomeModel } from '../models/home.model';
+import type { HomeModel } from '../models/home.model';
 
 export const HomeTitles: Array<HomeModel> = [
     { title: '+5 Years', subtitle: 'IT Industry Experience' },
