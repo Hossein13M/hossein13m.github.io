@@ -1,8 +1,8 @@
-import { AfterViewInit, Component, Inject, InjectionToken, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
+import { AfterViewInit, Component, Inject, type InjectionToken, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
 import { isPlatformBrowser } from '@angular/common';
 import Typed from 'typed.js';
 import { HeaderTypeEffectItems } from '../../const/home';
-import { NavigationRouteModel } from '../../models/navigationRoute.model';
+import type { NavigationRouteModel } from '../../models/navigationRoute.model';
 import { NavigationRoutes } from '../../const/navigationRoutes';
 
 @Component({

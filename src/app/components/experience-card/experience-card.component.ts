@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { CompanyModel, JobPositionModel } from '../../models/experience.model';
+import type { CompanyModel, JobPositionModel } from '../../models/experience.model';
 import { Companies } from '../../const/experiences';
 
 @Component({

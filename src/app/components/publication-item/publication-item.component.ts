@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ArticlesModel } from '../../models/articles.model';
+import type { ArticlesModel } from '../../models/articles.model';
 
 @Component({
     selector: 'app-publication-item',

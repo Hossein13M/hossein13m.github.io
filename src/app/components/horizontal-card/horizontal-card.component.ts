@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { HorizontalCardComponentType, HorizontalComponentModel } from '../../models/horizontal-component.model';
+import type { HorizontalCardComponentType, HorizontalComponentModel } from '../../models/horizontal-component.model';
 
 @Component({
     selector: 'app-horizontal-card',
