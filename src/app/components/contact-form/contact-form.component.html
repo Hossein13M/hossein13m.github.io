@@ -1,9 +1,9 @@
-<mat-card class="py-5 dark:bg-custom-purple-900 bg-custom-blue-700 dark:text-white mat-elevation-z10">
+<mat-card class="py-5 dark:bg-custom-purple-900 bg-custom-blue-700 dark:text-white mat-elevation-z10" *transloco="let t; read: 'contact.form'">
     <mat-card-header class="dark:text-custom-grey-500 text-custom-purple-900">
         <div class="px-2" mat-card-avatar>
             <mat-icon class="dark:text-custom-yellow-500 text-custom-blue-600">chat</mat-icon>
         </div>
-        <mat-card-title class="font-semibold">You Can Also Send Me A Message!</mat-card-title>
+        <mat-card-title class="font-semibold">{{ t('header') }}</mat-card-title>
     </mat-card-header>
 
     <mat-card-content>
@@ -16,7 +16,7 @@
                             class="order-last input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
                             id="name"
                             name="name"
-                            placeholder="Name"
+                            [placeholder]="t('name')"
                             required
                             type="text"
                         />
@@ -31,7 +31,7 @@
                         class="order-last input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
                         id="email"
                         name="email"
-                        placeholder="Email"
+                        [placeholder]="t('email')"
                         required
                         type="email"
                     />
@@ -46,7 +46,7 @@
                     class="order-last px-5 py-5 input-textarea dark:input-text-area-dark-theme input-text-area-light-theme"
                     id="message"
                     name="message"
-                    placeholder="Message"
+                    [placeholder]="t('message')"
                     required
                     type="text"
                 ></textarea>
@@ -66,7 +66,7 @@
             form="contact-form"
         >
             <mat-icon class="mr-2"> check_circle</mat-icon>
-            <span>Submit Message</span>
+            <span>{{ t('submitBtn') }}</span>
         </button>
     </mat-card-actions>
 </mat-card>
