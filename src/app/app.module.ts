@@ -16,6 +16,8 @@ import { InfoSidenavReachMeModule } from './components/info-sidenav-reach-me/inf
 import { BaseInfoModule } from './components/base-info/base-info.module';
 import { PageHeaderModule } from './components/page-header/page-header.module';
 import { DirectivesModule } from './directives/directives.module';
+import { HttpClientModule } from '@angular/common/http';
+import { TranslocoRootModule } from './transloco-root.module';
 
 @NgModule({
     declarations: [AppComponent],
@@ -35,6 +37,8 @@ import { DirectivesModule } from './directives/directives.module';
         InfoSidenavReachMeModule,
         BaseInfoModule,
         PageHeaderModule,
+        HttpClientModule,
+        TranslocoRootModule,
     ],
     providers: [GoogleAnalyticsService],
     bootstrap: [AppComponent],
