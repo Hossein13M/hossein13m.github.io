@@ -2,6 +2,17 @@ import type { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
     {
+        title: 'A Complete Guide To Angular Multilingual Application (i18n)',
+        url: 'https://medium.com/angular-in-depth/a-complete-guide-to-angular-multilingual-application-91f431f0f12c',
+        imgUrl: '../../../assets/images/articles/angular-multi-lingual.webp',
+        summary:
+            'Initialize and implement an Angular i18n Application. A guide to how to implement multilingual applications with Angular using Transloco! Including lazy loading translation.',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: ['Tech'],
+    },
+    {
         title: 'The Freedom They Stole From Us',
         url: 'https://hossein13m.medium.com/the-freedom-they-stole-from-us-55d4614f7af4',
         imgUrl: '../../../assets/images/articles/freedom.webp',
