@@ -1,10 +1,10 @@
 mat-card {
-    @media screen and (max-width: 767px) {
+    @media screen and (width <= 767px) {
         height: 500px;
     }
 }
 .background-card {
-    @media screen and (min-width: 767px) {
+    @media screen and (width >= 767px) {
         section {
             min-height: 600px;
         }
