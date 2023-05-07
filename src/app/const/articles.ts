@@ -42,7 +42,7 @@ export const Articles: Array<ArticlesModel> = [
         publisher: 'Medium',
         publicationUrl: 'https://medium.com',
         language: 'English',
-        category: ['Tech', 'Personal Growth'],
+        category: ['Personal Growth'],
     },
     {
         title: 'What does it mean to truly be a responsible person?',
