@@ -2,6 +2,16 @@ import type { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
     {
+        title: 'Refactor Your Vue Application By Using Setup Scripts',
+        url: 'https://hossein13m.medium.com/refactor-your-vue-application-by-using-setup-scripts-f4d68853d75e',
+        imgUrl: '../../../assets/images/articles/vue-setup.webp',
+        summary: 'A Guide To Enhance Your Vue3 Application Using Script Setup.',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: ['Tech'],
+    },
+    {
         title: 'A Complete Guide To Angular Multilingual Application (i18n)',
         url: 'https://medium.com/angular-in-depth/a-complete-guide-to-angular-multilingual-application-91f431f0f12c',
         imgUrl: '../../../assets/images/articles/angular-multi-lingual.webp',
