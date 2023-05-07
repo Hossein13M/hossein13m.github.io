@@ -21,5 +21,6 @@ export class LanguageComponent {
 
     public onLanguageChange(langCode: LanguageCode): void {
         this.translocoService.setActiveLang(langCode === 'per' ? 'fa' : langCode);
+        // langCode === 'per' ? document.body.setAttribute('dir', 'rtl') : document.body.setAttribute('dir', 'ltr');
     }
 }

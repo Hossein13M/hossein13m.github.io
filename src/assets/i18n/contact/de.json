@@ -1,3 +1,14 @@
 {
-    "hello": "Hallo Welt!"
+    "social": {
+        "openSource": "Überprüfen Sie meine Open-Source-Beiträge",
+        "social": "Kontaktieren Sie mich in den sozialen Medien",
+        "content": "Finden Sie meine Inhalte heraus"
+    },
+    "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Nachricht",
+        "submitBtn": "Nachricht abschicken",
+        "header": "Sie können mir auch eine Nachricht senden!"
+    }
 }
