@@ -12,6 +12,28 @@ export const Articles: Array<ArticlesModel> = [
         category: ['Tech'],
     },
     {
+        title: 'Linux Touchpad Gestures',
+        url: 'https://hossein13m.medium.com/linux-touchpad-gestures-2f0179d6e5b0',
+        imgUrl: '../../../assets/images/articles/linux-touchpad-gesture.webp',
+        summary:
+            'Unlike Windows and Mac, Linux does not support touchpad gestures correctly, and to use some of the built-in gestures of Windows, we may need to do some tricks',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: ['Tech'],
+    },
+    {
+        title: 'A Complete Guide To Angular Multilingual Application (i18n)',
+        url: 'https://medium.com/angular-in-depth/a-complete-guide-to-angular-multilingual-application-91f431f0f12c',
+        imgUrl: '../../../assets/images/articles/angular-multi-lingual.webp',
+        summary:
+            'Initialize and implement an Angular i18n Application. A guide to how to implement multilingual applications with Angular using Transloco! Including lazy loading translation.',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: ['Tech'],
+    },
+    {
         title: 'A Complete Guide To Angular Multilingual Application (i18n)',
         url: 'https://medium.com/angular-in-depth/a-complete-guide-to-angular-multilingual-application-91f431f0f12c',
         imgUrl: '../../../assets/images/articles/angular-multi-lingual.webp',
