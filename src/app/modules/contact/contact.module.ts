@@ -5,12 +5,24 @@ import { MatCardModule } from '@angular/material/card';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { ContactComponent } from './contact.component';
-import { ContactRoutingModule } from './contact.routing.module';
 import { ContactFormModule } from '../../components/contact-form/contact-form.module';
 import { ContactLinkModule } from '../../components/contact-link/contact-link.module';
+import { TRANSLOCO_SCOPE, TranslocoModule } from '@ngneat/transloco';
+import { ContactRoutingModule } from './contact.routing.module';
 
 @NgModule({
     declarations: [ContactComponent],
-    imports: [CommonModule, ContactRoutingModule, MatIconModule, MatCardModule, MatDividerModule, MatButtonModule, ContactFormModule, ContactLinkModule],
+    imports: [
+        ContactRoutingModule,
+        CommonModule,
+        MatIconModule,
+        MatCardModule,
+        MatDividerModule,
+        MatButtonModule,
+        ContactFormModule,
+        ContactLinkModule,
+        TranslocoModule,
+    ],
+    providers: [{ provide: TRANSLOCO_SCOPE, useValue: 'contact' }],
 })
 export class ContactModule {}

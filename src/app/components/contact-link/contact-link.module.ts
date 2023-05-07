@@ -6,10 +6,11 @@ import { MatDividerModule } from '@angular/material/divider';
 import { MatButtonModule } from '@angular/material/button';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { ContactLinkComponent } from './contact-link.component';
+import { TranslocoModule } from '@ngneat/transloco';
 
 @NgModule({
     declarations: [ContactLinkComponent],
-    imports: [CommonModule, MatCardModule, MatIconModule, MatDividerModule, MatButtonModule, MatTooltipModule],
+    imports: [CommonModule, MatCardModule, MatIconModule, MatDividerModule, MatButtonModule, MatTooltipModule, TranslocoModule],
     exports: [ContactLinkComponent],
 })
 export class ContactLinkModule {}

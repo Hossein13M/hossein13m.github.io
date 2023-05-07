@@ -14,7 +14,7 @@
             "files": ["*.ts", "*.component.html", "*.component.ts"],
             "parserOptions": {
                 "project": ["./tsconfig.json"],
-                "extraFileExtensions": [".html"]
+                "extraFileExtensions": [".html", ".json"]
             },
             "rules": { "@typescript-eslint/prefer-nullish-coalescing": "error" }
         }

@@ -2,6 +2,16 @@ import type { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
     {
+        title: 'Refactor Your Vue Application By Using Setup Scripts',
+        url: 'https://hossein13m.medium.com/refactor-your-vue-application-by-using-setup-scripts-f4d68853d75e',
+        imgUrl: '../../../assets/images/articles/vue-setup.webp',
+        summary: 'A Guide To Enhance Your Vue3 Application Using Script Setup.',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: ['Tech'],
+    },
+    {
         title: 'Linux Touchpad Gestures',
         url: 'https://hossein13m.medium.com/linux-touchpad-gestures-2f0179d6e5b0',
         imgUrl: '../../../assets/images/articles/linux-touchpad-gesture.webp',
@@ -43,7 +53,7 @@ export const Articles: Array<ArticlesModel> = [
         publisher: 'Medium',
         publicationUrl: 'https://medium.com',
         language: 'English',
-        category: ['Tech', 'Personal Growth'],
+        category: ['Personal Growth'],
     },
     {
         title: 'What does it mean to truly be a responsible person?',

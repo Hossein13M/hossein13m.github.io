@@ -80,9 +80,9 @@
                 <section class="dark:bg-custom-purple-900 bg-custom-blue-900 h-full flex flex-col items-center">
                     <app-base-info class="w-4/5 mt-10"></app-base-info>
 
-                    <mat-divider class="bg-custom-grey-900 my-5"></mat-divider>
+                    <mat-divider class="border w-full dark:border-custom-purple-500 border-custom-blue-100"></mat-divider>
 
-                    <div class="flex justify-evenly w-full mt-2">
+                    <div class="flex justify-evenly flex-grow w-full mt-2">
                         <app-progress-spinner
                             *ngFor="let language of languagesList"
                             [color]="isDarkTheme ? '#FFC107' : '#FAFAFC'"
@@ -91,6 +91,9 @@
                             class="mt-2"
                         ></app-progress-spinner>
                     </div>
+
+                    <!--TODO: here I need to start translating my website-->
+                    <!--<app-language class="mb-4 w-full"></app-language>-->
                 </section>
 
                 <footer class="px-4 py-8">
