@@ -2,6 +2,16 @@ import type { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
     {
+        title: 'Software Development Is Not All About Coding!',
+        url: 'https://hossein13m.medium.com/software-development-is-not-all-about-coding-b720cd680e98',
+        imgUrl: '../../../assets/images/articles/not-coding.webp',
+        summary: 'A Guide To Deliver Working Software Effectively With More Agility!',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: ['Tech'],
+    },
+    {
         title: 'Refactor Your Vue Application By Using Setup Scripts',
         url: 'https://hossein13m.medium.com/refactor-your-vue-application-by-using-setup-scripts-f4d68853d75e',
         imgUrl: '../../../assets/images/articles/vue-setup.webp',
