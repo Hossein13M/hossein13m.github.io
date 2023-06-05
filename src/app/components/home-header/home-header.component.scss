@@ -2,6 +2,8 @@ mat-card {
     @media screen and (width <= 767px) {
         height: 500px;
     }
+
+    height: calc(100vh - 220px);
 }
 .background-card {
     @media screen and (width >= 767px) {
