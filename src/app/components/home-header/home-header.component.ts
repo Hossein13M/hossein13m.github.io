@@ -12,7 +12,7 @@ import { NavigationRoutes } from '../../const/navigationRoutes';
 })
 export class HomeHeaderComponent implements OnInit, AfterViewInit, OnDestroy {
     public typed!: any;
-    public buttons: Array<NavigationRouteModel> = NavigationRoutes.filter((item) => item.routeTitle !== 'Home!');
+    public buttons: Array<NavigationRouteModel> = NavigationRoutes.filter((item) => item.routeTitle !== 'Home!' && item.routeTitle !== 'About Me!');
     public selectedButton: NavigationRouteModel = this.buttons[0];
     private intervalId!: ReturnType<typeof setInterval>;
 
