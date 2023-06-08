@@ -11,9 +11,10 @@
     "pre-commit": "lint-staged",
     "dev:ssr": "ng run hossein-mousavi:serve-ssr",
     "serve:ssr": "node dist/hossein-mousavi/server/main.js",
-    "build:ssr": "ng build && ng run hossein-mousavi:server",
+    "build:ssr": "ng build && ng run hossein-mousavi:server && yarn run header:copy",
     "prerender": "ng run hossein-mousavi:prerender",
-    "update:package": "yarn upgrade-interactive --latest"
+    "update:package": "yarn upgrade-interactive --latest",
+    "header:copy": "cp ./src/_headers ./dist/hossein-mousavi/browser/_headers"
   },
   "private": true,
   "dependencies": {
