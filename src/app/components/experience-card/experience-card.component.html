@@ -26,9 +26,9 @@
     <mat-divider inset class="my-4"></mat-divider>
 
     <mat-card-content>
-        <div>
-            <span> {{ job.jobDescription }}</span>
-        </div>
+        <ul *ngFor="let jobDesc of job.jobDescription">
+            <li class="list-disc ml-4">{{ jobDesc }}</li>
+        </ul>
 
         <div class="mt-4">
             <span class="dark:text-custom-yellow-500 text-custom-blue-400 mr-2 font-bold">About Company:</span>

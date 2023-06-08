@@ -13,7 +13,7 @@ export interface JobPositionModel {
     startDate: string;
     endDate: string;
     jobTitle: string;
-    jobDescription: string;
+    jobDescription: Array<string>;
     jobRequiredSkills: Array<string>;
     companyId: number;
 }

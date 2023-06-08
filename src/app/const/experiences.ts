@@ -57,9 +57,15 @@ export const Experiences: Array<JobPositionModel> = [
         employmentType: 'Full-Time',
         startDate: 'May 2022',
         endDate: 'Present',
-        jobTitle: 'Front End Engineer',
-        jobDescription:
-            "My daily routing in Iran's largest Travel arrangements company is to maintain and develop panels using Vue3, review other developers' code, attending to design meetings to ensure the best quality of work.",
+        jobTitle: 'Front End Engineer / Front End Mentor',
+        jobDescription: [
+            'Led the successful migration of the Tour product from the legacy website to the new website, resulting in a 25% performance enhancement.',
+            'Achieved an 85% increase in TypeScript coverage for the website.',
+            'Added new features and maintained the main website using VueJS, and NuxtJs.',
+            'Reviewed and provided feedback on code submissions as a member of a 20-person front-end development team, promoting code quality and best practices.',
+            'Collaborated closely with a 12-member cross-functional team in an Agile environment to consistently deliver high-quality solutions.',
+            'Mentored and guided 8 mentees on JavaScript, TypeScript, Git, Vue.js, and software engineering principles, fostering their professional growth',
+        ],
         jobRequiredSkills: ['JavaScript', 'TypeScript', 'Git', 'VueJS', 'NuxtJS', 'HTML', 'CSS', 'Sass', 'Linux', 'Tailwind CSS'],
     },
     {
@@ -67,9 +73,11 @@ export const Experiences: Array<JobPositionModel> = [
         employmentType: 'Part-Time',
         startDate: 'March 2022',
         endDate: 'Present',
-        jobTitle: 'Software Engineer',
-        jobDescription:
-            'As a Software Engineer, I am responsible for designing high-quality software. Maintaining current software, developing and adding new features, and co-operating with other team-members is all part of my daily routine. I am using Angular and NestJS for this purpose.',
+        jobTitle: 'Front End Consultant',
+        jobDescription: [
+            'Developed 7 panels using Angular and Angular Material, ensuring efficient and user-friendly interfaces.',
+            'Collaborated within an Agile team to refactor legacy code, improving code quality and maintainability.',
+        ],
         jobRequiredSkills: ['JavaScript', 'TypeScript', 'Git', 'Angular', 'NestJS', 'HTML', 'CSS', 'Sass', 'Linux', 'Tailwind CSS', 'SQL', 'Docker'],
     },
     {
@@ -77,9 +85,11 @@ export const Experiences: Array<JobPositionModel> = [
         employmentType: 'Full-Time',
         startDate: 'December 2020',
         endDate: 'March 2022',
-        jobTitle: 'Software Engineer',
-        jobDescription:
-            'As a Software Engineer, I am responsible for designing high-quality software. Maintaining current software, developing and adding new features, and co-operating with other team-members is all part of my daily routine. I am using Angular and NestJS for this purpose.',
+        jobTitle: 'Front End Engineer',
+        jobDescription: [
+            'Developed 7 panels using Angular and Angular Material, ensuring efficient and user-friendly interfaces.',
+            'Collaborated within an Agile team to refactor legacy code, improving code quality and maintainability.',
+        ],
         jobRequiredSkills: ['JavaScript', 'TypeScript', 'Git', 'Angular', 'NestJS', 'HTML', 'CSS', 'Sass', 'Linux', 'Tailwind CSS', 'SQL', 'Docker'],
     },
     {
@@ -87,9 +97,14 @@ export const Experiences: Array<JobPositionModel> = [
         employmentType: 'Contract',
         startDate: 'November 2021',
         endDate: 'February 2022',
-        jobTitle: 'Technical Writer',
-        jobDescription:
-            'As a contract, I was responsible for writing technical articles about Testing and APIs to improve Testfully SEO. I have written multiple content for them during my contract.',
+        jobTitle: 'Technical Author',
+        jobDescription: [
+            'Authoring comprehensive technical documentation on software testing methodologies and best practices',
+            'Creating in-depth guides and tutorials for API testing techniques and tools',
+            'Developing clear and concise documentation for test plans, test cases, and test scripts',
+            'Collaborating with cross-functional teams to ensure the accuracy and clarity of technical documentation',
+            'Conducting research and staying updated with the latest trends and advancements in software testing and API testing',
+        ],
         jobRequiredSkills: ['API', 'SEO', 'Testing'],
     },
     {
@@ -98,8 +113,13 @@ export const Experiences: Array<JobPositionModel> = [
         startDate: 'December 2020',
         endDate: 'May 2021',
         jobTitle: 'Front End Engineer',
-        jobDescription:
-            'As a Part of Tapsell Frontend developers, I am working with Angular in the MediaAd team. In addition, I am Responsible for developing and maintaining several panels for the MediaAd platform. The technologies that I am working with are Angular 8, GitFlow, Jenkins, etc.',
+        jobDescription: [
+            'Engineered a B2C panel using technologies like Angular, Angular Material, and TypeScript, to deliver a user-friendly and interactive interface.',
+            'Led the efforts for rewriting the foundation of the new website.',
+            'Managed and maintained the Admin panel using Angular, ensuring its stability.',
+            'Implemented GitFlow methodology to facilitate effective collaboration and version control.',
+            'Successfully launched 3 landing pages using Angular and Gatsby.',
+        ],
         jobRequiredSkills: ['JavaScript', 'TypeScript', 'Angular', 'Git', 'React', 'Gatsby', 'HTML', 'CSS'],
     },
     {
@@ -108,8 +128,13 @@ export const Experiences: Array<JobPositionModel> = [
         startDate: 'January 2020',
         endDate: 'December 2021',
         jobTitle: 'Front End Engineer',
-        jobDescription:
-            'As a Part of Tapsell Frontend developers, I am working with Angular in the MediaAd team. In addition, I am Responsible for developing and maintaining several panels for the MediaAd platform. The technologies that I am working with are Angular 8, GitFlow, Jenkins, etc.',
+        jobDescription: [
+            'Engineered a B2C panel using technologies like Angular, Angular Material, and TypeScript, to deliver a user-friendly and interactive interface.',
+            'Led the efforts for rewriting the foundation of the new website.',
+            'Managed and maintained the Admin panel using Angular, ensuring its stability.',
+            'Implemented GitFlow methodology to facilitate effective collaboration and version control.',
+            'Successfully launched 3 landing pages using Angular and Gatsby.',
+        ],
         jobRequiredSkills: ['JavaScript', 'TypeScript', 'Angular', 'Git', 'React', 'Gatsby', 'HTML', 'CSS'],
     },
     {
@@ -118,8 +143,10 @@ export const Experiences: Array<JobPositionModel> = [
         startDate: 'May 2019',
         endDate: 'August 2019',
         jobTitle: 'Front End Developer',
-        jobDescription:
-            'I am working in a team consisting of three Front End developers and a team of Back End developers for implementing, designing, and maintaining the Fin-Tech software, Also Known As XE-Hospitality. Also have worked on an eCommerce project for designing a website for our customers.',
+        jobDescription: [
+            'Actively participated in the development process of a shopping panel using Angular and Bootstrap, creating a visually appealing and responsive web presence.',
+            'Launched a landing page using Angular, Bootstrap, and SCSS.',
+        ],
         jobRequiredSkills: ['JavaScript', 'TypeScript', 'Angular', 'Git', 'HTML', 'CSS'],
     },
     {
@@ -128,8 +155,13 @@ export const Experiences: Array<JobPositionModel> = [
         startDate: 'September 2018',
         endDate: 'May 2019',
         jobTitle: 'Technical Help Desk Lead',
-        jobDescription:
-            "Responsible for teaching and organizing the support team consisting of twelve people. Responsible for PDQ card terminals and their integration with Gateways and being in touch with banks of the UK to cover their dependencies and integrate with our software and maintain, update and install the software and manipulate the customers' database. Create tasks and help developers to work with the POS software AKA XE-Convenience.",
+        jobDescription: [
+            'Teaching and organizing a support team of twelve people',
+            'Managing PDQ card terminals integration with Gateways and communication with UK banks',
+            'Maintaining, updating, and installing software',
+            "Manipulating customers' database",
+            'Creating tasks and providing assistance to developers working with the POS software (XE-Convenience)',
+        ],
         jobRequiredSkills: ['Team Management', 'SQL Server', 'Electron', 'DNS Server', 'WSUS', 'VPN', 'Linux'],
     },
     {
@@ -138,8 +170,13 @@ export const Experiences: Array<JobPositionModel> = [
         startDate: 'July 2018',
         endDate: 'September 2018',
         jobTitle: 'Technical Help Desk',
-        jobDescription:
-            'Help Desk and responsible for Network configuration. Responsible for supporting customers, installing, updating and maintaining their tills.',
+        jobDescription: [
+            'Provided Help Desk support for customers, resolving technical issues and addressing inquiries',
+            'Configured and maintained network infrastructure to ensure smooth operations and connectivity',
+            'Installed and updated tills for customers, ensuring they are up-to-date with the latest software versions',
+            'Supported customers in troubleshooting and resolving issues related to till systems',
+            'Conducted regular maintenance activities to optimize till performance and ensure system stability',
+        ],
         jobRequiredSkills: ['SQL Server', 'Electron', 'DNS Server', 'WSUS', 'VPN', 'Linux'],
     },
 ];
