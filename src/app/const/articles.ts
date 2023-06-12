@@ -2,6 +2,16 @@ import type { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
     {
+        title: 'How JavaScript Proxy Works Under The Hood?',
+        url: 'https://hossein13m.medium.com/how-javascript-proxy-works-under-the-hood-e707f8c14aad',
+        imgUrl: '../../../assets/images/articles/proxy.webp',
+        summary: 'Unleashing the Power of JavaScript Proxy: A Dive into Customizing Object Operations',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: ['Tech'],
+    },
+    {
         title: 'Software Development Is Not All About Coding!',
         url: 'https://hossein13m.medium.com/software-development-is-not-all-about-coding-b720cd680e98',
         imgUrl: '../../../assets/images/articles/not-coding.webp',
