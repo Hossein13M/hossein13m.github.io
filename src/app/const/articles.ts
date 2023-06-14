@@ -2,6 +2,16 @@ import type { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
     {
+        title: 'JavaScript’s Garbage Collector',
+        url: 'https://hossein13m.medium.com/javascripts-garbage-collector-8f0807ef438c',
+        imgUrl: '../../../assets/images/articles/garbage-collector.webp',
+        summary: 'Efficient Memory Management for enhancing the performance',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: ['Tech'],
+    },
+    {
         title: 'How JavaScript Proxy Works Under The Hood?',
         url: 'https://hossein13m.medium.com/how-javascript-proxy-works-under-the-hood-e707f8c14aad',
         imgUrl: '../../../assets/images/articles/proxy.webp',
