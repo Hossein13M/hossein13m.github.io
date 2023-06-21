@@ -2,6 +2,16 @@ import type { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
     {
+        title: 'Understanding the Importance of Coupling in Software Development',
+        url: 'https://hossein13m.medium.com/understanding-the-importance-of-coupling-in-software-development-dfe7f9aab04',
+        imgUrl: '../../../assets/images/articles/coupling.webp',
+        summary: 'Building Flexible and Maintainable Systems for Long-Term Success',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: ['Tech'],
+    },
+    {
         title: 'JavaScript’s Garbage Collector',
         url: 'https://hossein13m.medium.com/javascripts-garbage-collector-8f0807ef438c',
         imgUrl: '../../../assets/images/articles/garbage-collector.webp',
