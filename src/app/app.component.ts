@@ -39,8 +39,10 @@ export class AppComponent implements OnInit, AfterViewInit {
 
     ngAfterViewInit(): void {
         if (isPlatformBrowser(this.platformId)) {
-            const loader = this.renderer.selectRootElement('#loader');
-            if (loader.style.display !== 'none') loader.style.display = 'none'; //hide loader
+            // const loader = this.renderer.selectRootElement('#loader');
+            // if (loader.style.display !== 'none') loader.style.display = 'none'; //hide loader
+            const loading = this.renderer.selectRootElement('#loading');
+            if (loading.style.display !== 'none') loading.style.display = 'none'; //hide loader
             this.document.getElementById('wrapper')!.classList.remove('hidden');
         }
     }

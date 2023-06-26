@@ -33,3 +33,153 @@
         line-height: 1;
     }
 }
+#loading {
+    background: #242430;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.circle {
+    position: absolute;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #ffc107;
+    border-radius: 50%;
+    animation-duration: 2s;
+    animation-timing-function: cubic-bezier(0.36, 0.07, 0.19, 0.97);
+    animation-iteration-count: infinite;
+}
+.circle:nth-child(2n) {
+    border-style: dotted;
+    border-color: #dcd1ad;
+}
+
+.circle:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    animation-name: rotate-1;
+    animation-delay: 0s;
+}
+
+.circle:nth-child(2) {
+    width: 80px;
+    height: 80px;
+    animation-name: rotate-2;
+    animation-delay: 0.1s;
+}
+
+.circle:nth-child(3) {
+    width: 120px;
+    height: 120px;
+    animation-name: rotate-3;
+    animation-delay: 0.2s;
+}
+
+.circle:nth-child(4) {
+    width: 160px;
+    height: 160px;
+    animation-name: rotate-4;
+    animation-delay: 0.3s;
+}
+
+.circle:nth-child(5) {
+    width: 200px;
+    height: 200px;
+    animation-name: rotate-5;
+    animation-delay: 0.4s;
+}
+
+.circle:nth-child(6) {
+    width: 240px;
+    height: 240px;
+    animation-name: rotate-6;
+    animation-delay: 0.5s;
+}
+
+.circle:nth-child(7) {
+    width: 280px;
+    height: 280px;
+    animation-name: rotate-7;
+    animation-delay: 0.6s;
+}
+
+.circle:nth-child(8) {
+    width: 320px;
+    height: 320px;
+    animation-name: rotate-8;
+    animation-delay: 0.7s;
+}
+
+@keyframes rotate-1 {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@keyframes rotate-2 {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@keyframes rotate-3 {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@keyframes rotate-4 {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@keyframes rotate-5 {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@keyframes rotate-6 {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@keyframes rotate-7 {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
+
+@keyframes rotate-8 {
+    0% {
+        transform: rotate3d(1, 1, 1, 0deg);
+    }
+    100% {
+        transform: rotate3d(1, 1, 1, 360deg);
+    }
+}
