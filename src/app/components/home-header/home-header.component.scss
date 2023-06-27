@@ -13,8 +13,9 @@ mat-card {
     }
     &:before {
         content: '';
-        background: url('../../../assets/images/mobile-header-back.webp') center;
+        background: url('../../../assets/images/mobile-header-back2.webp') center;
         background-size: cover;
+        object-fit: contain;
         position: absolute;
         top: 0;
         right: 0;
