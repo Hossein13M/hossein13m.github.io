@@ -8,13 +8,14 @@ mat-card {
 .background-card {
     @media screen and (width >= 767px) {
         section {
-            min-height: 600px;
+            min-height: 550px;
         }
     }
     &:before {
         content: '';
-        background: url('../../../assets/images/mobile-header-back.webp') center;
+        background: url('../../../assets/images/mobile-header-back2.webp') center;
         background-size: cover;
+        object-fit: contain;
         position: absolute;
         top: 0;
         right: 0;
