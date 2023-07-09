@@ -8,10 +8,10 @@ import { Component } from '@angular/core';
             disableRipple
             mat-flat-button
         >
-            <div class="flex items-center">
+            <a class="flex items-center" href="https://adplist.org/mentors/hossein-mousavi" target="_blank">
                 <img src="/assets/images/adplist.png" width="35px" alt="" />
                 <span> Book A Free Session With Me </span>
-            </div>
+            </a>
         </button>
     `,
     styles: [
