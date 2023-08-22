@@ -2,6 +2,16 @@ import type { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
     {
+        title: 'Cracking The Code Smells',
+        url: 'https://hossein13m.medium.com/cracking-the-code-smells-a1260093e9e7',
+        imgUrl: '../../../assets/images/articles/codeSmells.webp',
+        summary: 'How to detect code smells and refactor our codebase to a cleaner and leaner code!',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: ['Tech'],
+    },
+    {
         title: 'Understanding the Importance of Coupling in Software Development',
         url: 'https://hossein13m.medium.com/understanding-the-importance-of-coupling-in-software-development-dfe7f9aab04',
         imgUrl: '../../../assets/images/articles/coupling.webp',
