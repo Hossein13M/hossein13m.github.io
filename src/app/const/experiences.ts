@@ -55,7 +55,7 @@ export const Experiences: Array<JobPositionModel> = [
     {
         companyId: 0,
         employmentType: 'Full-Time',
-        startDate: 'March 2020',
+        startDate: 'january 2021',
         endDate: 'Present',
         jobTitle: 'Front End Engineer / Front End Mentor',
         jobDescription: [
@@ -130,7 +130,7 @@ export const Experiences: Array<JobPositionModel> = [
         companyId: 3,
         employmentType: 'Full-Time',
         startDate: 'September 2019',
-        endDate: 'February 2020',
+        endDate: 'December 2020',
         jobTitle: 'Front End Engineer',
         jobDescription: [
             'Engineered a B2C panel using technologies like Angular, Angular Material, and TypeScript, to deliver a user-friendly and interactive interface',
