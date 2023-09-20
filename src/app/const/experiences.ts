@@ -57,7 +57,7 @@ export const Experiences: Array<JobPositionModel> = [
         employmentType: 'Full-Time',
         startDate: 'january 2021',
         endDate: 'Present',
-        jobTitle: 'Front End Engineer / Front End Mentor',
+        jobTitle: 'Front End Developer / Front End Mentor',
         jobDescription: [
             'As a part of Iran’s biggest travel agency I have Increased tour product convention rate from 1.5% to 4% by implementing the A/B test infrastructure plugin and applying it to the PLP and PDP product redesign',
             'Led the migration of the Tour product to the new website, resulting in a 10% performance boost by lazy loading images, using async components, and using lifecycle hooks properly',
@@ -131,7 +131,7 @@ export const Experiences: Array<JobPositionModel> = [
         employmentType: 'Full-Time',
         startDate: 'September 2019',
         endDate: 'December 2020',
-        jobTitle: 'Front End Engineer',
+        jobTitle: 'Front End Developer',
         jobDescription: [
             'Engineered a B2C panel using technologies like Angular, Angular Material, and TypeScript, to deliver a user-friendly and interactive interface',
             'Led the efforts for rewriting the foundation of the new website',
