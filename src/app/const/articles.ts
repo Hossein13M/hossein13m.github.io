@@ -2,6 +2,16 @@ import type { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
     {
+        title: 'The Ultimate Design Principles Guide For Developers',
+        url: 'https://hossein13m.medium.com/the-ultimate-design-principles-guide-for-developers-d4aa58937283',
+        imgUrl: '../../../assets/images/articles/design.webp',
+        summary: 'Bridging The Gap Between The Designers and Developers',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: ['Tech'],
+    },
+    {
         title: 'Cracking The Code Smells',
         url: 'https://hossein13m.medium.com/cracking-the-code-smells-a1260093e9e7',
         imgUrl: '../../../assets/images/articles/codeSmells.webp',
