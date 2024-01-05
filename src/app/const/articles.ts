@@ -2,6 +2,16 @@ import type { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
     {
+        title: 'Vue Reactivity In-Depth',
+        url: 'https://medium.com/itnext/vue-reactivity-in-depth-720b466a36a',
+        imgUrl: '../../../assets/images/articles/vue-reactivity.webp',
+        summary: 'How Vue Handles Reactivity',
+        publisher: 'Medium',
+        publicationUrl: 'https://medium.com',
+        language: 'English',
+        category: ['Tech'],
+    },
+    {
         title: 'The Ultimate Design Principles Guide For Developers',
         url: 'https://hossein13m.medium.com/the-ultimate-design-principles-guide-for-developers-d4aa58937283',
         imgUrl: '../../../assets/images/articles/design.webp',
