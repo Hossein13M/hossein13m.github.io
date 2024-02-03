@@ -1,16 +1,16 @@
 import type { ArticlesModel } from '../models/articles.model';
 
 export const Articles: Array<ArticlesModel> = [
-    {
-        title: 'Being Smart May Hurt You!',
-        url: 'https://hossein13m.medium.com/being-smart-may-hurt-you-759575e5100e',
-        imgUrl: '../../../assets/images/articles/smart.webp',
-        summary: 'Intelligence is always considered an advantage in any human’s life, but have you ever considered it among the things that can hurt a person?',
-        publisher: 'Medium',
-        publicationUrl: 'https://medium.com',
-        language: 'English',
-        category: ['Personal Growth'],
-    },
+    // {
+    //     title: 'Being Smart May Hurt You!',
+    //     url: 'https://hossein13m.medium.com/being-smart-may-hurt-you-759575e5100e',
+    //     imgUrl: '../../../assets/images/articles/smart.webp',
+    //     summary: 'Intelligence is always considered an advantage in any human’s life, but have you ever considered it among the things that can hurt a person?',
+    //     publisher: 'Medium',
+    //     publicationUrl: 'https://medium.com',
+    //     language: 'English',
+    //     category: ['Personal Growth'],
+    // },
     {
         title: 'Vue Reactivity In-Depth',
         url: 'https://medium.com/itnext/vue-reactivity-in-depth-720b466a36a',
