@@ -85,12 +85,12 @@ export const SocialMedia: Array<SocialMediaModel> = [
         imageLink: 'assets/images/linkedin.png',
         type: 'social',
     },
-    // {
-    //     name: 'Telegram',
-    //     url: 'https://t.me/m13hossein',
-    //     imageLink: 'assets/images/telegram.png',
-    //     type: 'social',
-    // },
+    {
+        name: 'Telegram',
+        url: 'https://t.me/DevDastan',
+        imageLink: 'assets/images/telegram.png',
+        type: 'social',
+    },
     {
         name: 'Skype',
         url: 'https://join.skype.com/invite/taEFdksb9mlM',
