@@ -11,6 +11,7 @@
     "publish": "nuxt build && nuxt preview"
   },
   "dependencies": {
+    "@netlify/plugin-nextjs": "^5.7.1",
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-router": "latest"
