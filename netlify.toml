@@ -1,6 +1,11 @@
 [build]
-command = "pnpm run build"
-publish = ".output/public"
+command = "pnpm run generate"   # Command to generate static files
+publish = "dist"                # Directory where the static files are generated
 
-[functions]
-directory = ".output/server"
+[context.production.environment]
+# environment variables
+NUXT_PUBLIC_API_URL = "https://new.hossein.dev"
+
+[context.deploy-preview.environment]
+# Optionally add environment variables for deploy previews
+# NUXT_PUBLIC_API_URL = "https://staging-api.example.com"
