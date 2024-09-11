@@ -1,12 +1,11 @@
-# The following redirect is intended for use with most SPAs that handle
-# routing internally.
-[[redirects]]
-from = "/*"
-to = "/index.html"
-status = 200
+[build]
+command = "pnpm run generate"   # Command to generate static files
+publish = "dist"                # Directory where the static files are generated
 
-[[headers]]
-# Define which paths this specific [[headers]] block will cover.
-for = "/*"
-[headers.values]
-Access-Control-Allow-Origin = "*"
+[context.production.environment]
+# environment variables
+NUXT_PUBLIC_API_URL = "https://new.hossein.dev"
+
+[context.deploy-preview.environment]
+# Optionally add environment variables for deploy previews
+# NUXT_PUBLIC_API_URL = "https://staging-api.example.com"

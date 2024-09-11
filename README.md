@@ -1,19 +1,75 @@
-# Hossein Mousavi Portfolio ([hmousavi.dev](https://hmousavi.dev))
+# Nuxt 3 Minimal Starter
 
-![Website preview](./src/assets/images/preview.png)
+Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
-## Get In Touch with me:
-<a style="text-decoration: none !important" href="https://www.linkedin.com/in/hossein13m" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
-<a style="text-decoration: none !important" href="https://github.com/hossein13m/" target="_blank"><img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
-<a style="text-decoration: none !important" href="https://stackoverflow.com/users/10341207/hossein-mousavi" target="_blank"><img src="https://img.shields.io/badge/Stack_Overflow-D64A17?style=for-the-badge&logo=stack-overflow&logoColor=white" alt="StackOverFlow"/></a>
-<a style="text-decoration: none !important" href="https://twitter.com/hossein13m" target="_blank"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"/></a>
-<a style="text-decoration: none !important" href="mailto:dev.hosseinmousavi@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/></a>
-<a style="text-decoration: none !important" href="https://medium.com/@hossein13m" target="_blank"><img src="https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white" alt="Medium"/></a>
-<a style="text-decoration: none !important" href="https://open.spotify.com/episode/5BoFoH3WNYU5khCOCqtogz?si=FZyWIcijSzK6QUocPujjsw" target="_blank"><img src="https://img.shields.io/badge/Spotify-1ED760?&style=for-the-badge&logo=spotify&logoColor=white" alt="Medium"/></a>
+## Setup
 
-## About the project:
->### This project has been developed with Angular.
+Make sure to install the dependencies:
 
-## The old website version:
->### You can find the first version of website (Developed With NuxtJS) on [old.hmousavi.dev](https://old.hmousavi.dev)
+```bash
+# npm
+npm install
 
+# pnpm
+pnpm install
+
+# yarn
+yarn install
+
+# bun
+bun install
+```
+
+## Development Server
+
+Start the development server on `http://localhost:3000`:
+
+```bash
+# npm
+npm run dev
+
+# pnpm
+pnpm run dev
+
+# yarn
+yarn dev
+
+# bun
+bun run dev
+```
+
+## Production
+
+Build the application for production:
+
+```bash
+# npm
+npm run build
+
+# pnpm
+pnpm run build
+
+# yarn
+yarn build
+
+# bun
+bun run build
+```
+
+Locally preview production build:
+
+```bash
+# npm
+npm run preview
+
+# pnpm
+pnpm run preview
+
+# yarn
+yarn preview
+
+# bun
+bun run preview
+```
+
+Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
