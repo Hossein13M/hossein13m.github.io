@@ -7,11 +7,9 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "publish": "nuxt build && nuxt preview"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@netlify/plugin-nextjs": "^5.7.1",
     "nuxt": "^3.13.0",
     "vue": "latest",
     "vue-router": "latest"
