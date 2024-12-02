@@ -4,4 +4,5 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   ssr: false,
   target: 'static',
-})
+  srcDir: 'src/',
+});
