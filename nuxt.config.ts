@@ -11,5 +11,6 @@ export default defineNuxtConfig({
   alias: {
     '@': path.resolve(__dirname, 'src'),
     '@components': path.resolve(__dirname, 'src/components'),
+    '@types': path.resolve(__dirname, 'src/types'),
   },
 });
