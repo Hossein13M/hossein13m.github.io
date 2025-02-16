@@ -3,4 +3,5 @@ export interface NavRouteItem {
   url: string;
   icon: string;
   isActive?: boolean;
+  urlType: 'internal' | 'external';
 }
