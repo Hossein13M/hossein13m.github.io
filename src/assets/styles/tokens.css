@@ -1,0 +1,34 @@
+:root {
+  --color-bg: #fff;
+  --color-fg-light: #888;
+  --color-fg: #555;
+  --color-fg-deep: #222;
+  --color-fg-deeper: #000;
+  --color-muted: #6b6b6b;
+  --color-accent: #3b82f6;
+  --color-accent-warm: #d97706;
+  --color-border: rgba(120, 120, 120, 0.22);
+  --color-card: rgba(255, 255, 255, 0.72);
+  --color-scrollbar: #e5e5e5;
+  --color-scrollbar-hover: #c4c4c4;
+  --color-tree-stroke: #88888818;
+  --content-max-width: calc(52rem + 100px);
+  color-scheme: light;
+}
+
+html.dark {
+  --color-bg: #050505;
+  --color-fg-light: #888;
+  --color-fg: #bbb;
+  --color-fg-deep: #ddd;
+  --color-fg-deeper: #fff;
+  --color-muted: #a3a3a3;
+  --color-accent: #60a5fa;
+  --color-accent-warm: #fbbf24;
+  --color-border: rgba(255, 255, 255, 0.1);
+  --color-card: rgba(18, 18, 18, 0.65);
+  --color-scrollbar: #222;
+  --color-scrollbar-hover: #444;
+  --color-tree-stroke: #88888825;
+  color-scheme: dark;
+}
