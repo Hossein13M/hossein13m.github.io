@@ -1,3 +1,10 @@
+<script setup lang="ts">
+usePageMeta({ title: 'Home' });
+usePersonJsonLd();
+</script>
+
 <template>
-  <h1>this is the home page</h1>
+  <div class="slide-enter-content">
+    <SectionsHomeIntro />
+  </div>
 </template>

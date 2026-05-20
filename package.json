@@ -10,7 +10,8 @@
     "postinstall": "nuxt prepare",
     "prepare": "husky",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "typecheck": "nuxt prepare && vue-tsc --noEmit"
   },
   "lint-staged": {
     "**/*.{js,ts,vue}": [
@@ -20,6 +21,8 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.6",
+    "@vueuse/core": "^14.3.0",
+    "@vueuse/nuxt": "^14.2.1",
     "nuxt": "^3.13.0",
     "tailwindcss": "^4.0.6",
     "vue": "latest",
@@ -31,10 +34,14 @@
     "@commitlint/config-conventional": "^19.6.0",
     "@eslint/js": "^9.16.0",
     "eslint": "^9.16.0",
+    "eslint-plugin-vue": "^10.9.1",
     "globals": "^15.13.0",
     "husky": "^9.1.7",
     "lint-staged": "^15.2.10",
     "prettier": "3.4.1",
-    "typescript-eslint": "^8.17.0"
+    "typescript": "^5.7.2",
+    "typescript-eslint": "^8.17.0",
+    "vue-eslint-parser": "^10.4.0",
+    "vue-tsc": "^2.1.10"
   }
 }
