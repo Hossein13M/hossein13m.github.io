@@ -220,26 +220,26 @@ export const articles: Article[] = [
     language: 'English',
     category: ['Tech'],
   },
-  {
-    title: 'Introduction to API Blueprint',
-    url: 'https://testfully.io/blog/api-blueprint/',
-    image: img('testfully-apiBlueprint.webp'),
-    summary: 'API blueprint — a high-level API design language for web APIs',
-    publisher: 'Testfully',
-    publicationUrl: 'https://testfully.io/blog',
-    language: 'English',
-    category: ['Tech'],
-  },
-  {
-    title: 'Top 7 Free & Paid mock API tools (2022 Review)',
-    url: 'https://testfully.io/blog/mock-api/',
-    image: img('testfully-mockAPI.webp'),
-    summary: 'Overview of mock API tools for development and testing',
-    publisher: 'Testfully',
-    publicationUrl: 'https://testfully.io/blog',
-    language: 'English',
-    category: ['Tech'],
-  },
+  // {
+  //   title: 'Introduction to API Blueprint',
+  //   url: 'https://testfully.io/blog/api-blueprint/',
+  //   image: img('testfully-apiBlueprint.webp'),
+  //   summary: 'API blueprint — a high-level API design language for web APIs',
+  //   publisher: 'Testfully',
+  //   publicationUrl: 'https://testfully.io/blog',
+  //   language: 'English',
+  //   category: ['Tech'],
+  // },
+  // {
+  //   title: 'Top 7 Free & Paid mock API tools (2022 Review)',
+  //   url: 'https://testfully.io/blog/mock-api/',
+  //   image: img('testfully-mockAPI.webp'),
+  //   summary: 'Overview of mock API tools for development and testing',
+  //   publisher: 'Testfully',
+  //   publicationUrl: 'https://testfully.io/blog',
+  //   language: 'English',
+  //   category: ['Tech'],
+  // },
 ];
 
 export const podcasts: Podcast[] = [
@@ -258,14 +258,14 @@ export const podcasts: Podcast[] = [
         link: 'https://open.spotify.com/episode/5BoFoH3WNYU5khCOCqtogz?si=QBVzySKXQkWZ_wbwP9ay8Q',
       },
       {
-        name: 'Google Podcast',
-        icon: '/images/social/google-podcast.png',
-        link: 'https://podcasts.google.com/feed/aHR0cHM6Ly9hZHZlbnR1cmVzaW5hbmd1bGFyLmNvbS9yc3M/episode/MGM3ZGNlOTktYWU0ZC00M2ZlLTg4YzAtYTE3NWQyZGU2ZmU5',
-      },
-      {
         name: 'Apple Podcast',
         icon: '/images/social/apple-podcast.png',
         link: 'https://podcasts.apple.com/ph/podcast/template-driven-approach-vs-reactive-form-approach/id1238024888?i=1000559786754',
+      },
+      {
+        name: 'Google Podcast',
+        icon: '/images/social/google-podcast.png',
+        link: 'https://podcasts.google.com/feed/aHR0cHM6Ly9hZHZlbnR1cmVzaW5hbmd1bGFyLmNvbS9yc3M/episode/MGM3ZGNlOTktYWU0ZC00M2ZlLTg4YzAtYTE3NWQyZGU2ZmU5',
       },
       {
         name: 'Amazon Music',

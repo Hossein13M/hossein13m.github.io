@@ -62,18 +62,42 @@ body {
     animation-delay: calc(var(--enter-stage) * var(--enter-step));
   }
 
-  .slide-enter-content > *:nth-child(1) { --enter-stage: 1; }
-  .slide-enter-content > *:nth-child(2) { --enter-stage: 2; }
-  .slide-enter-content > *:nth-child(3) { --enter-stage: 3; }
-  .slide-enter-content > *:nth-child(4) { --enter-stage: 4; }
-  .slide-enter-content > *:nth-child(5) { --enter-stage: 5; }
-  .slide-enter-content > *:nth-child(6) { --enter-stage: 6; }
-  .slide-enter-content > *:nth-child(7) { --enter-stage: 7; }
-  .slide-enter-content > *:nth-child(8) { --enter-stage: 8; }
-  .slide-enter-content > *:nth-child(9) { --enter-stage: 9; }
-  .slide-enter-content > *:nth-child(10) { --enter-stage: 10; }
-  .slide-enter-content > *:nth-child(11) { --enter-stage: 11; }
-  .slide-enter-content > *:nth-child(12) { --enter-stage: 12; }
+  .slide-enter-content > *:nth-child(1) {
+    --enter-stage: 1;
+  }
+  .slide-enter-content > *:nth-child(2) {
+    --enter-stage: 2;
+  }
+  .slide-enter-content > *:nth-child(3) {
+    --enter-stage: 3;
+  }
+  .slide-enter-content > *:nth-child(4) {
+    --enter-stage: 4;
+  }
+  .slide-enter-content > *:nth-child(5) {
+    --enter-stage: 5;
+  }
+  .slide-enter-content > *:nth-child(6) {
+    --enter-stage: 6;
+  }
+  .slide-enter-content > *:nth-child(7) {
+    --enter-stage: 7;
+  }
+  .slide-enter-content > *:nth-child(8) {
+    --enter-stage: 8;
+  }
+  .slide-enter-content > *:nth-child(9) {
+    --enter-stage: 9;
+  }
+  .slide-enter-content > *:nth-child(10) {
+    --enter-stage: 10;
+  }
+  .slide-enter-content > *:nth-child(11) {
+    --enter-stage: 11;
+  }
+  .slide-enter-content > *:nth-child(12) {
+    --enter-stage: 12;
+  }
 }
 
 /* Page transitions */
@@ -203,6 +227,10 @@ html.dark::view-transition-new(root) {
   color: var(--color-fg);
 }
 
+.skill-badge {
+  margin: 4px;
+}
+
 .skill-row-label {
   color: var(--color-fg);
   margin-right: 0.35rem;
@@ -210,6 +238,11 @@ html.dark::view-transition-new(root) {
 
 .skill-row-chips {
   display: inline;
+}
+
+.skill-row-item {
+  display: inline-flex;
+  align-items: center;
 }
 
 .skill-row-sep {
