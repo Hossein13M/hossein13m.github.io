@@ -1,10 +1,4 @@
-<script setup lang="ts">
-const { y: scroll } = useWindowScroll();
-
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <header class="app-header print:hidden">
@@ -12,25 +6,6 @@ function scrollToTop() {
       <LayoutAppLogo />
       <LayoutAppNav />
     </div>
-
-    <button
-      type="button"
-      title="Scroll to top"
-      class="scroll-top-btn print:hidden"
-      :class="scroll > 300 ? 'is-visible' : ''"
-      aria-label="Scroll to top"
-      @click="scrollToTop"
-    >
-      <svg
-        viewBox="0 0 24 24"
-        width="18"
-        height="18"
-        fill="currentColor"
-        aria-hidden="true"
-      >
-        <path d="M12 8l-6 6h12l-6-6z" />
-      </svg>
-    </button>
   </header>
 </template>
 
