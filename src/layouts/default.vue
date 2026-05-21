@@ -1,13 +1,11 @@
 <template>
-  <div class="relative flex h-dvh flex-col overflow-hidden">
+  <div class="relative flex min-h-dvh flex-col">
     <LayoutAppHeader />
     <main
-      class="page-content prose-antfu relative z-10 flex min-h-0 flex-1 flex-col overflow-y-auto overscroll-contain px-6 py-10 sm:px-8"
+      class="page-content prose-site relative z-10 flex-1 px-6 py-10 sm:px-8 sm:py-10"
     >
-      <div class="flex-1">
-        <slot />
-      </div>
-      <LayoutAppFooter />
+      <slot />
     </main>
+    <LayoutAppFooter />
   </div>
 </template>

@@ -1,7 +1,4 @@
 <script setup lang="ts">
-/**
- * Generative branch background — adapted from antfu.me ArtPlum (MIT).
- */
 import type { Fn } from '@vueuse/core';
 
 const r180 = Math.PI;
