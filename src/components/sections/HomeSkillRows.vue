@@ -7,11 +7,9 @@ import { skillRows } from '@/data/home';
     <p v-for="row in skillRows" :key="row.label" class="skill-row">
       <span class="skill-row-label">{{ row.label }}</span>
       <span class="skill-row-chips">
-        <template v-for="(item, index) in row.items" :key="item.name">
-          <span v-if="index > 0" class="skill-row-sep" aria-hidden="true"
-            >/</span
-          >
+        <template v-for="item in row.items" :key="item.name">
           <UiTechChip
+            class="skill-badge"
             :label="item.name"
             :href="item.href"
             :icon-url="item.iconUrl"

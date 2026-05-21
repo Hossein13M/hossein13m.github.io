@@ -1,10 +1,4 @@
-<script setup lang="ts">
-const { y: scroll } = useWindowScroll();
-
-function scrollToTop() {
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-</script>
+<script setup lang="ts"></script>
 
 <template>
   <header class="app-header print:hidden">
@@ -12,38 +6,15 @@ function scrollToTop() {
       <LayoutAppLogo />
       <LayoutAppNav />
     </div>
-
-    <button
-      type="button"
-      title="Scroll to top"
-      class="scroll-top-btn print:hidden"
-      :class="scroll > 300 ? 'is-visible' : ''"
-      aria-label="Scroll to top"
-      @click="scrollToTop"
-    >
-      <svg
-        viewBox="0 0 24 24"
-        width="18"
-        height="18"
-        fill="currentColor"
-        aria-hidden="true"
-      >
-        <path d="M12 8l-6 6h12l-6-6z" />
-      </svg>
-    </button>
   </header>
 </template>
 
 <style scoped>
 .app-header {
-  position: sticky;
-  top: 0;
   z-index: 40;
   width: 100%;
   border-bottom: 1px solid var(--color-border);
-  background: color-mix(in srgb, var(--color-bg) 88%, transparent);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: transparent;
 }
 
 .app-header-inner {
@@ -64,33 +35,9 @@ function scrollToTop() {
   }
 }
 
-.scroll-top-btn {
-  position: fixed;
-  right: 0.75rem;
-  bottom: 0.75rem;
-  z-index: 50;
-  display: flex;
-  height: 2.5rem;
-  width: 2.5rem;
-  align-items: center;
-  justify-content: center;
-  border-radius: 9999px;
-  border: 1px solid var(--color-border);
-  background: var(--color-card);
-  color: inherit;
-  opacity: 0;
-  pointer-events: none;
-  transition:
-    opacity 0.3s ease,
-    background-color 0.2s ease;
-}
-
-.scroll-top-btn.is-visible {
-  opacity: 0.35;
-  pointer-events: auto;
-}
-
-.scroll-top-btn.is-visible:hover {
-  opacity: 1;
+@media (max-width: 639px) {
+  .app-header-inner {
+    padding-inline: 1rem;
+  }
 }
 </style>

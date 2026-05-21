@@ -15,7 +15,6 @@ defineProps<{
         {{ formatDateRange(role.startDate, role.endDate) }}
       </time>
     </div>
-    <p class="role-meta">{{ role.employmentType }}</p>
     <p class="role-summary">
       {{ role.jobSummary }}
     </p>

@@ -12,7 +12,6 @@ const year = new Date().getFullYear();
     <p>
       © {{ year }}
       <a :href="site.url" class="hover:opacity-100">{{ site.name }}</a>
-      — {{ site.jobTitle }}
     </p>
   </footer>
 </template>
