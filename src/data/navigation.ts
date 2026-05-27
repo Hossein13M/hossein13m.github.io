@@ -9,5 +9,4 @@ export const navigation: NavItem[] = [
 export const externalNav = [
   { title: 'GitHub', url: site.github, icon: 'github' },
   { title: 'LinkedIn', url: site.linkedin, icon: 'linkedin' },
-  { title: 'Medium', url: site.medium, icon: 'medium' },
 ];
