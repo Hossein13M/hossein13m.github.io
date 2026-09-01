@@ -2,7 +2,7 @@ import type { HomeStat } from '@/types/portfolio';
 import { site } from './site';
 
 export const homeStats: HomeStat[] = [
-  { title: '8+ Years', subtitle: 'Software Engineering Experience' },
+  { title: '10+ Years', subtitle: 'Experience in Tech' },
   { title: '20+', subtitle: 'Technical Articles' },
   { title: '4,000+', subtitle: 'Stack Overflow Reputation' },
   { title: '200+', subtitle: 'Code Reviews' },
@@ -24,19 +24,24 @@ export const skillRows: SkillRow[] = [
     label: 'Working at',
     items: [
       {
-        name: 'AIHR',
-        href: 'https://www.aihr.com',
-        iconUrl: '/images/companies/aihr.png',
+        name: 'NN',
+        href: 'https://www.nn.nl',
+        iconUrl: '/images/companies/nn.png',
       },
     ],
   },
   {
     label: 'Worked with',
     items: [
+      { name: 'Docker' },
+      { name: 'Kubernetes' },
+      { name: 'AWS' },
+      { name: 'CI/CD' },
+      { name: 'Git' },
+      { name: 'Bash Script' },
       { name: 'JavaScript' },
       { name: 'TypeScript' },
       { name: 'C#' },
-      { name: 'Bash Script' },
       { name: 'Node.js' },
       { name: 'Angular' },
       { name: 'VueJS' },
@@ -47,11 +52,6 @@ export const skillRows: SkillRow[] = [
       { name: 'dotnet' },
       { name: 'SQL' },
       { name: 'MongoDB' },
-      { name: 'Docker' },
-      { name: 'Kubernetes' },
-      { name: 'AWS' },
-      { name: 'CI/CD' },
-      { name: 'Git' },
       { name: 'Nx' },
       { name: 'Vite' },
       { name: 'Cypress' },

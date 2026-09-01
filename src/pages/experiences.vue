@@ -4,7 +4,7 @@ import { companies, getExperiencesForCompany } from '@/data/experience';
 usePageMeta({
   title: 'Experiences',
   description:
-    'Professional work experience at AIHR, Eurowings, Alibaba Travels, Tapsell, XEPOS, and MFT.',
+    'Professional work experience at NN, AIHR, Eurowings, Alibaba Travels, Tapsell, XEPOS, and MFT.',
 });
 
 const companiesWithRoles = computed(() =>
