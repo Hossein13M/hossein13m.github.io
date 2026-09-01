@@ -1,9 +1,9 @@
 export const site = {
   name: 'Hossein Mousavi',
-  jobTitle: 'Senior Software Engineer',
-  title: 'Hossein Mousavi — Senior Software Engineer',
+  jobTitle: 'Senior DevOps Engineer',
+  title: 'Hossein Mousavi — Senior DevOps Engineer',
   description:
-    'Senior Software Engineer with 8+ years of experience building scalable web applications with Angular, Vue, Nuxt, Node.js, and TypeScript. Author of 20+ technical articles.',
+    'Senior DevOps Engineer with 10+ years of experience in tech. Background in infrastructure, software engineering, and platform delivery with Docker, Kubernetes, AWS, and CI/CD.',
   url: 'https://hossein.dev',
   ogImage: '/images/pictures/profile-pic.webp',
   email: 'dev.hosseinmousavi@gmail.com',

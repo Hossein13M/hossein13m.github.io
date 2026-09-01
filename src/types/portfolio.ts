@@ -52,7 +52,7 @@ export type JobExperience = {
   startDate: string;
   endDate: string;
   jobTitle: string;
-  jobSummary: string;
+  jobSummary?: string;
   jobRequiredSkills: string[];
 };
 

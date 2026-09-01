@@ -2,6 +2,16 @@ import type { Company, JobExperience } from '@/types/portfolio';
 
 export const companies: Company[] = [
   {
+    companyId: 6,
+    logo: 'nn',
+    name: 'NN',
+    industry: 'Financial Services',
+    website: 'https://www.nn.nl',
+    location: 'The Netherlands',
+    description:
+      'Leading Dutch financial services provider offering insurance, pensions, and banking to millions of customers across the Netherlands.',
+  },
+  {
     companyId: 0,
     logo: 'aihr',
     name: 'AIHR',
@@ -65,10 +75,27 @@ export const companies: Company[] = [
 
 export const experiences: JobExperience[] = [
   {
+    companyId: 6,
+    employmentType: 'Full-Time',
+    startDate: 'September 2026',
+    endDate: 'Present',
+    jobTitle: 'Senior DevOps Engineer',
+    jobRequiredSkills: [
+      'Docker',
+      'Kubernetes',
+      'AWS',
+      'CI/CD',
+      'Git',
+      'Bash Script',
+      'JavaScript',
+      'Node.js',
+    ],
+  },
+  {
     companyId: 0,
     employmentType: 'Full-Time',
     startDate: 'February 2025',
-    endDate: 'Present',
+    endDate: 'September 2026',
     jobTitle: 'Senior Software Engineer',
     jobSummary:
       'I brought several Angular codebases together into one Nx monorepo and introduced a shared design system and component library. I helped move the team from Bitbucket to GitHub, set up delivery with GitHub Actions and AWS, and shaped frontend architecture practices across projects. I used AI-assisted tools for exploration and refactoring and shipped a new reporting experience for the product.',
