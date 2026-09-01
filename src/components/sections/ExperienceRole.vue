@@ -15,7 +15,7 @@ defineProps<{
         {{ formatDateRange(role.startDate, role.endDate) }}
       </time>
     </div>
-    <p v-if="role.jobSummary" class="role-summary">
+    <p class="role-summary">
       {{ role.jobSummary }}
     </p>
     <UiTechChipGroup
