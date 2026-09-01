@@ -9,7 +9,7 @@ export const companies: Company[] = [
     website: 'https://www.nn.nl',
     location: 'The Netherlands',
     description:
-      'Leading Dutch financial services provider offering insurance, pensions, and banking to millions of customers across the Netherlands.',
+      'Leading Dutch financial services company providing insurance, pensions, and banking.',
   },
   {
     companyId: 0,
@@ -80,6 +80,8 @@ export const experiences: JobExperience[] = [
     startDate: 'September 2026',
     endDate: 'Present',
     jobTitle: 'Senior DevOps Engineer',
+    jobSummary:
+      'As part of the CIAM team, I work on cloud infrastructure, CI/CD pipelines, and Kubernetes-based platform delivery.',
     jobRequiredSkills: [
       'Docker',
       'Kubernetes',
