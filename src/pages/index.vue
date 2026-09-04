@@ -1,5 +1,6 @@
 <script setup lang="ts">
-usePageMeta({ title: 'Home' });
+// Keep the site title (no "Home —" prefix) so shared link previews stay clean.
+usePageMeta();
 usePersonJsonLd();
 </script>
 
