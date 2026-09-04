@@ -81,7 +81,7 @@ export const experiences: JobExperience[] = [
     endDate: 'Present',
     jobTitle: 'Senior DevOps Engineer',
     jobSummary:
-      'As part of the CIAM team, I work on cloud infrastructure, CI/CD pipelines, and Kubernetes-based platform delivery.',
+      'As part of the Customer Identity and Access Management (CIAM) team, I help design and operate the identity platform—pairing application and API delivery with cloud infrastructure, CI/CD, and reliable platform operations.',
     jobRequiredSkills: [
       'Docker',
       'Kubernetes',
