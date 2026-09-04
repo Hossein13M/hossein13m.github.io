@@ -5,7 +5,7 @@ export const site = {
   description:
     'Senior DevOps Engineer with 10+ years of experience in tech. Background in infrastructure, software engineering, and platform delivery with Docker, Kubernetes, AWS, and CI/CD.',
   url: 'https://hossein.dev',
-  ogImage: '/images/pictures/profile-pic.webp',
+  ogImage: '/images/social/og-preview.png',
   email: 'dev.hosseinmousavi@gmail.com',
   location: 'The Netherlands',
   github: 'https://github.com/hossein13m',
