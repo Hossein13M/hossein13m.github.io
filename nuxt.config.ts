@@ -38,7 +38,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'Senior DevOps Engineer with 10+ years of experience in tech. Background in infrastructure, software engineering, and platform delivery with Docker, Kubernetes, AWS, and CI/CD.',
+            'Senior DevOps Engineer with 10+ years of experience in tech. Background in infrastructure, automation, and platform delivery with Docker, Kubernetes, AWS, CI/CD, and cloud-native tooling.',
         },
         { property: 'og:type', content: 'website' },
         { property: 'og:site_name', content: 'Hossein Mousavi' },
@@ -49,7 +49,7 @@ export default defineNuxtConfig({
         {
           property: 'og:description',
           content:
-            'Senior DevOps Engineer with 10+ years of experience in tech. Background in infrastructure, software engineering, and platform delivery with Docker, Kubernetes, AWS, and CI/CD.',
+            'Senior DevOps Engineer with 10+ years of experience in tech. Background in infrastructure, automation, and platform delivery with Docker, Kubernetes, AWS, CI/CD, and cloud-native tooling.',
         },
         {
           property: 'og:url',
@@ -73,7 +73,7 @@ export default defineNuxtConfig({
         {
           name: 'twitter:description',
           content:
-            'Senior DevOps Engineer with 10+ years of experience in tech. Background in infrastructure, software engineering, and platform delivery with Docker, Kubernetes, AWS, and CI/CD.',
+            'Senior DevOps Engineer with 10+ years of experience in tech. Background in infrastructure, automation, and platform delivery with Docker, Kubernetes, AWS, CI/CD, and cloud-native tooling.',
         },
         {
           name: 'twitter:image',
