@@ -21,6 +21,18 @@ const SKILL_PNG_ICONS: Record<string, string> = {
   Git: '/images/skills/git.png',
   Vite: '/images/skills/vite.png',
   AWS: '/images/skills/aws.png',
+  'Argo CD': '/images/skills/argoCd.png',
+  ArgoCD: '/images/skills/argoCd.png',
+  Helm: '/images/skills/helm.png',
+  Terraform: '/images/skills/terraform.png',
+  Ansible: '/images/skills/ansible.png',
+  Kafka: '/images/skills/kafka.png',
+  Python: '/images/skills/python.png',
+  Prometheus: '/images/skills/prometheus.png',
+  Grafana: '/images/skills/grafana.png',
+  Datadog: '/images/skills/datadog.png',
+  Splunk: '/images/skills/splunk.png',
+  OpenTelemetry: '/images/skills/openTelemetry.png',
 };
 
 /** Maps display labels to simple-icons slug (public/icons/tech/{slug}.svg) */
