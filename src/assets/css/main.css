@@ -177,7 +177,7 @@ html.dark::view-transition-new(root) {
 }
 
 .prose-site h1,
-.prose-site :deep(.section-title h1) {
+.prose-site .section-title h1 {
   color: var(--color-fg-deeper);
   font-size: 2.25rem;
   font-weight: 700;
