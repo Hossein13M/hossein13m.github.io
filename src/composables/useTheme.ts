@@ -16,7 +16,8 @@ export function toggleTheme(event?: MouseEvent) {
       ready: Promise<void>;
     };
   };
-  const canTransition = doc.startViewTransition && !prefersReduced;
+  const canTransition =
+    typeof doc.startViewTransition === 'function' && !prefersReduced;
 
   if (!canTransition || !event) {
     colorMode.value = next;
