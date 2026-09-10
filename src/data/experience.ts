@@ -104,7 +104,7 @@ export const experiences: JobExperience[] = [
     companyId: 0,
     employmentType: 'Full-Time',
     startDate: 'February 2025',
-    endDate: 'September 2026',
+    endDate: 'August 2026',
     jobTitle: 'Senior Software Engineer',
     jobSummary:
       'I brought several Angular codebases together into one Nx monorepo and introduced a shared design system and component library. I helped move the team from Bitbucket to GitHub, set up delivery with GitHub Actions and AWS, and shaped frontend architecture practices across projects. I used AI-assisted tools for exploration and refactoring and shipped a new reporting experience for the product.',
