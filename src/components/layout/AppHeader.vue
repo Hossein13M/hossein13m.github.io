@@ -11,14 +11,13 @@
 
 <style scoped>
 .app-header {
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 40;
+  flex-shrink: 0;
   width: 100%;
+  padding-top: env(safe-area-inset-top);
   border-bottom: 1px solid var(--color-border);
-  background: color-mix(in srgb, var(--color-bg) 88%, transparent);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: transparent;
 }
 
 .app-header-inner {

@@ -180,7 +180,7 @@ const maskStyle = 'radial-gradient(circle, transparent, black)';
     class="tree-background pointer-events-none fixed inset-0 print:hidden"
     aria-hidden="true"
     :style="{
-      zIndex: -1,
+      zIndex: 0,
       maskImage: maskStyle,
       WebkitMaskImage: maskStyle,
     }"

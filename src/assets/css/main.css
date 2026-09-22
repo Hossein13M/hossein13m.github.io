@@ -12,12 +12,21 @@ html {
   font-family: var(--font-sans);
   font-size: 1rem;
   line-height: 1.75;
-  overflow-x: hidden;
+  overflow: hidden;
   scroll-behavior: smooth;
 }
 
 body {
   min-height: 100dvh;
+  overflow: hidden;
+}
+
+@media print {
+  html,
+  body {
+    height: auto;
+    overflow: visible;
+  }
 }
 
 ::selection {
