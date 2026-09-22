@@ -145,11 +145,23 @@ html.dark::view-transition-new(root) {
   z-index: 1;
 }
 
+/* Shared page shell — header and body use the same box */
+.site-container {
+  width: 100%;
+  max-width: var(--content-max-width);
+  margin-inline: auto;
+  padding-inline: 1.5rem;
+  box-sizing: border-box;
+}
+
+@media (min-width: 640px) {
+  .site-container {
+    padding-inline: 2rem;
+  }
+}
+
 /* Site prose typography */
 .prose-site {
-  max-width: var(--content-max-width);
-  width: 100%;
-  margin-inline: auto;
   color: var(--color-fg);
   font-size: 1rem;
   line-height: 1.75;
@@ -167,9 +179,13 @@ html.dark::view-transition-new(root) {
   border-bottom-color: var(--color-fg);
 }
 
-/* Card links — no prose underline styling */
+/* Card links — keep the card box border, skip the prose underline */
 .prose-site a.publication-card,
-.prose-site a.publication-card:hover,
+.prose-site a.publication-card:hover {
+  text-decoration: none;
+  border-bottom: 1px solid var(--color-border);
+}
+
 .prose-site .podcast-card a,
 .prose-site .podcast-card a:hover {
   border-bottom: none;

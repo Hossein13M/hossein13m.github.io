@@ -2,7 +2,7 @@
 
 <template>
   <header class="app-header print:hidden">
-    <div class="app-header-inner">
+    <div class="site-container app-header-inner">
       <LayoutAppLogo />
       <LayoutAppNav />
     </div>
@@ -26,22 +26,12 @@
   align-items: center;
   justify-content: space-between;
   gap: 0.75rem 1rem;
-  width: 100%;
-  max-width: var(--content-max-width);
-  margin-inline: auto;
-  padding: 0.75rem 1.25rem;
-  box-sizing: border-box;
+  padding-block: 0.75rem;
 }
 
 @media (min-width: 640px) {
   .app-header-inner {
-    padding: 0.875rem 1.5rem;
-  }
-}
-
-@media (max-width: 639px) {
-  .app-header-inner {
-    padding-inline: 1rem;
+    padding-block: 0.875rem;
   }
 }
 </style>

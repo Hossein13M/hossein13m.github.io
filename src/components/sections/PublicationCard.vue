@@ -41,7 +41,6 @@ defineProps<{
   border: 1px solid var(--color-border);
   background: transparent;
   text-decoration: none;
-  border-bottom: none;
   color: inherit;
   transition: background-color 0.2s ease;
   height: 100%;
@@ -50,7 +49,6 @@ defineProps<{
 .publication-card:hover {
   background: color-mix(in srgb, var(--color-fg) 5%, transparent);
   text-decoration: none;
-  border-bottom: none;
 }
 
 .publication-card-title {

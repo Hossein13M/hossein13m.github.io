@@ -1,4 +1,6 @@
 import type { HomeStat } from '@/types/portfolio';
+import { companyLogoSrc } from '@/utils/companyLogo';
+import { getCurrentCompany } from './experience';
 import { site } from './site';
 
 export const homeStats: HomeStat[] = [
@@ -19,33 +21,40 @@ export type SkillRow = {
   items: SkillChipItem[];
 };
 
+const currentCompany = getCurrentCompany();
+
+const currentWorkplaceItems: SkillChipItem[] = currentCompany
+  ? [
+      {
+        name: currentCompany.alias || currentCompany.name,
+        href: currentCompany.website || undefined,
+        iconUrl: companyLogoSrc(currentCompany.logo),
+      },
+    ]
+  : [];
+
 export const skillRows: SkillRow[] = [
   {
     label: 'Working at',
-    items: [
-      {
-        name: 'NN',
-        href: 'https://www.nn.nl',
-        iconUrl: '/images/companies/nn.png',
-      },
-    ],
+    items: currentWorkplaceItems,
   },
   {
     label: 'Worked with',
     items: [
       { name: 'Docker' },
       { name: 'Kubernetes' },
+      { name: 'System Design' },
       { name: 'AWS' },
+      { name: 'Azure' },
+      { name: 'Linux' },
       { name: 'CI/CD' },
       { name: 'Argo CD' },
       { name: 'Helm' },
       { name: 'Terraform' },
-      { name: 'Ansible' },
       { name: 'Kafka' },
-      { name: 'Python' },
+      { name: 'Elasticsearch' },
       { name: 'Prometheus' },
       { name: 'Grafana' },
-      { name: 'Datadog' },
       { name: 'Splunk' },
       { name: 'OpenTelemetry' },
       { name: 'Git' },
@@ -53,19 +62,17 @@ export const skillRows: SkillRow[] = [
       { name: 'JavaScript' },
       { name: 'TypeScript' },
       { name: 'C#' },
+      { name: 'Python' },
       { name: 'Node.js' },
+      { name: 'SQL' },
+      { name: 'MongoDB' },
+      { name: 'PostgreSQL' },
       { name: 'Angular' },
       { name: 'VueJS' },
-      { name: 'NuxtJS' },
       { name: 'React' },
       { name: 'ExpressJS' },
       { name: 'NestJS' },
       { name: 'dotnet' },
-      { name: 'SQL' },
-      { name: 'MongoDB' },
-      { name: 'Nx' },
-      { name: 'Vite' },
-      { name: 'Cypress' },
       { name: 'Agile' },
     ],
   },

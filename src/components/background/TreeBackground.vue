@@ -5,7 +5,7 @@ const r180 = Math.PI;
 const r90 = Math.PI / 2;
 const r15 = Math.PI / 12;
 const canvasRef = ref<HTMLCanvasElement | null>(null);
-const size = reactive(useWindowSize());
+const { width: windowWidth } = useWindowSize();
 const { random } = Math;
 
 const start = ref<Fn>(() => {});
@@ -16,7 +16,8 @@ const prefersReducedMotion = usePreferredReducedMotion();
 const showTree = computed(() => prefersReducedMotion.value !== 'reduce');
 
 let controls: ReturnType<typeof useRafFn> | undefined;
-let restartTimer: ReturnType<typeof setTimeout> | undefined;
+let lastSetupWidth = 0;
+const MIN_CYCLE_MS = 30_000;
 
 function initCanvas(canvas: HTMLCanvasElement, width: number, height: number) {
   const ctx = canvas.getContext('2d')!;
@@ -37,14 +38,16 @@ function setup() {
   const canvas = canvasRef.value;
   if (!canvas || !showTree.value) return;
 
-  const w = size.width;
-  const h = size.height;
+  const w = window.innerWidth;
+  const h = window.innerHeight;
   if (w <= 0 || h <= 0) return;
+  lastSetupWidth = w;
 
   const { ctx, width, height } = initCanvas(canvas, w, h);
 
   let steps: Fn[] = [];
   let prevSteps: Fn[] = [];
+  let cycleStarted = performance.now();
 
   const step = (x: number, y: number, rad: number, counter = { value: 0 }) => {
     const length = random() * branchLen.value;
@@ -66,6 +69,29 @@ function setup() {
     if (random() < rate) steps.push(() => step(nx, ny, rad2, counter));
   };
 
+  const randomMiddle = () => random() * 0.6 + 0.2;
+
+  const seedGrowth = () => {
+    const seeds = [
+      () => step(randomMiddle() * w, -5, r90),
+      () => step(randomMiddle() * w, h + 5, -r90),
+      () => step(-5, randomMiddle() * h, 0),
+      () => step(w + 5, randomMiddle() * h, r180),
+    ];
+    steps.push(...(w < 500 ? seeds.slice(0, 2) : seeds));
+  };
+
+  const fadeSoftly = () => {
+    ctx.save();
+    ctx.globalAlpha = 0.16;
+    ctx.fillStyle =
+      getComputedStyle(document.documentElement)
+        .getPropertyValue('--color-bg')
+        .trim() || '#000';
+    ctx.fillRect(0, 0, width, height);
+    ctx.restore();
+  };
+
   const interval = 1000 / 40;
   let lastTime = performance.now();
 
@@ -75,10 +101,14 @@ function setup() {
     steps = [];
     lastTime = performance.now();
 
+    if (performance.now() - cycleStarted >= MIN_CYCLE_MS) {
+      fadeSoftly();
+      cycleStarted = performance.now();
+    }
+
     if (!prevSteps.length) {
-      controls?.pause();
-      stopped.value = true;
-      scheduleRestart();
+      seedGrowth();
+      stopped.value = false;
       return;
     }
 
@@ -91,13 +121,7 @@ function setup() {
   controls?.pause();
   controls = useRafFn(frame, { immediate: false });
 
-  const randomMiddle = () => random() * 0.6 + 0.2;
-
   start.value = () => {
-    if (restartTimer) {
-      clearTimeout(restartTimer);
-      restartTimer = undefined;
-    }
     controls?.pause();
     ctx.clearRect(0, 0, width, height);
     ctx.lineWidth = 1;
@@ -106,13 +130,9 @@ function setup() {
         .getPropertyValue('--color-tree-stroke')
         .trim() || '#88888825';
     prevSteps = [];
-    steps = [
-      () => step(randomMiddle() * w, -5, r90),
-      () => step(randomMiddle() * w, h + 5, -r90),
-      () => step(-5, randomMiddle() * h, 0),
-      () => step(w + 5, randomMiddle() * h, r180),
-    ];
-    if (w < 500) steps = steps.slice(0, 2);
+    steps = [];
+    cycleStarted = performance.now();
+    seedGrowth();
     controls?.resume();
     stopped.value = false;
   };
@@ -120,18 +140,7 @@ function setup() {
   start.value();
 }
 
-function scheduleRestart() {
-  if (restartTimer) clearTimeout(restartTimer);
-  restartTimer = setTimeout(() => {
-    if (showTree.value && canvasRef.value) start.value();
-  }, 1200);
-}
-
 function teardown() {
-  if (restartTimer) {
-    clearTimeout(restartTimer);
-    restartTimer = undefined;
-  }
   controls?.pause();
 }
 
@@ -139,16 +148,26 @@ onMounted(() => {
   if (showTree.value) nextTick(() => setup());
 });
 
-watch(
-  () => [size.width, size.height, showTree.value],
-  () => {
-    if (!showTree.value) {
-      teardown();
-      return;
-    }
-    nextTick(() => setup());
+const resizeForWidth = useDebounceFn((nextWidth: number) => {
+  if (!showTree.value) {
+    teardown();
+    return;
   }
-);
+  if (Math.abs(nextWidth - lastSetupWidth) < 12) return;
+  nextTick(() => setup());
+}, 200);
+
+watch(windowWidth, (nextWidth) => {
+  resizeForWidth(nextWidth);
+});
+
+watch(showTree, (visible) => {
+  if (!visible) {
+    teardown();
+    return;
+  }
+  nextTick(() => setup());
+});
 
 onUnmounted(() => teardown());
 
