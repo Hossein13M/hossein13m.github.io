@@ -21,6 +21,12 @@ const SKILL_PNG_ICONS: Record<string, string> = {
   Git: '/images/skills/git.png',
   Vite: '/images/skills/vite.png',
   AWS: '/images/skills/aws.png',
+  Azure: '/images/skills/azure.png',
+  Linux: '/images/skills/linux.png',
+  'System Design': '/images/skills/systemDesign.png',
+  Elasticsearch: '/images/skills/elasticsearch.png',
+  PostgreSQL: '/images/skills/postgreSQL.png',
+  MongoDB: '/images/skills/mongoDB.png',
   'Argo CD': '/images/skills/argoCd.png',
   ArgoCD: '/images/skills/argoCd.png',
   Helm: '/images/skills/helm.png',
@@ -33,6 +39,14 @@ const SKILL_PNG_ICONS: Record<string, string> = {
   Datadog: '/images/skills/datadog.png',
   Splunk: '/images/skills/splunk.png',
   OpenTelemetry: '/images/skills/openTelemetry.png',
+  DHCP: '/images/skills/dhcp.png',
+  DNS: '/images/skills/dns.png',
+  'Active Directory': '/images/skills/activeDirectory.png',
+  'TCP/IP': '/images/skills/tcpIp.png',
+  Routing: '/images/skills/routing.png',
+  Switching: '/images/skills/switching.png',
+  Subnetting: '/images/skills/subnetting.png',
+  MikroTik: '/images/skills/mikroTik.png',
 };
 
 /** Maps display labels to simple-icons slug (public/icons/tech/{slug}.svg) */

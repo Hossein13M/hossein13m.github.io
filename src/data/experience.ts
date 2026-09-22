@@ -4,7 +4,8 @@ export const companies: Company[] = [
   {
     companyId: 6,
     logo: 'nn',
-    name: 'NN',
+    name: 'Nationale-Nederlanden',
+    alias: 'NN',
     industry: 'Financial Services',
     website: 'https://www.nn.nl',
     location: 'The Netherlands',
@@ -85,19 +86,21 @@ export const experiences: JobExperience[] = [
     jobRequiredSkills: [
       'Docker',
       'Kubernetes',
+      'System Design',
       'AWS',
+      'Azure',
       'CI/CD',
-      'Argo CD',
       'Helm',
-      'Terraform',
-      'Ansible',
       'Kafka',
-      'Python',
       'Splunk',
+      'Prometheus',
+      'Grafana',
       'Git',
       'Bash Script',
       'JavaScript',
       'Node.js',
+      'Python',
+      'Agile',
     ],
   },
   {
@@ -124,6 +127,7 @@ export const experiences: JobExperience[] = [
       'Grafana',
       'Datadog',
       'AI',
+      'Agile',
     ],
   },
   {
@@ -137,12 +141,17 @@ export const experiences: JobExperience[] = [
     jobRequiredSkills: [
       'JavaScript',
       'TypeScript',
+      'C#',
       'Angular',
       'Node.js',
-      'NestJS',
-      'Git',
+      'dotnet',
+      'System Design',
+      'Docker',
+      'Kubernetes',
       'CI/CD',
       'Azure',
+      'Git',
+      'Agile',
     ],
   },
   {
@@ -160,6 +169,7 @@ export const experiences: JobExperience[] = [
       'NuxtJS',
       'Node.js',
       'NestJS',
+      'Docker',
       'CI/CD',
       'Agile',
     ],
@@ -178,6 +188,7 @@ export const experiences: JobExperience[] = [
       'Angular',
       'Node.js',
       'Express',
+      'Docker',
       'CI/CD',
       'Agile',
     ],
@@ -198,6 +209,7 @@ export const experiences: JobExperience[] = [
       'NextJS',
       'Node.js',
       'Express',
+      'Docker',
       'CI/CD',
       'Agile',
     ],
@@ -240,4 +252,9 @@ export function getCompanyById(id: number) {
 
 export function getExperiencesForCompany(companyId: number) {
   return experiences.filter((e) => e.companyId === companyId);
+}
+
+export function getCurrentCompany() {
+  const currentRole = experiences.find((role) => role.endDate === 'Present');
+  return currentRole ? getCompanyById(currentRole.companyId) : undefined;
 }

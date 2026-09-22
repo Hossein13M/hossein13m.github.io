@@ -48,6 +48,7 @@ export default [
         usePageMeta: 'readonly',
         usePersonJsonLd: 'readonly',
         useWindowSize: 'readonly',
+        useDebounceFn: 'readonly',
         useRafFn: 'readonly',
         usePreferredReducedMotion: 'readonly',
         reactive: 'readonly',
