@@ -6,7 +6,7 @@ const year = new Date().getFullYear();
 
 <template>
   <footer
-    class="mt-16 border-t py-8 text-center text-sm opacity-60"
+    class="mt-auto shrink-0 border-t py-4 text-center text-sm opacity-60"
     style="border-color: var(--color-border)"
   >
     <p>
