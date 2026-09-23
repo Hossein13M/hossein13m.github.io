@@ -21,6 +21,8 @@
 }
 
 .app-scroll {
+  display: flex;
+  flex-direction: column;
   min-height: 0;
   overflow-x: hidden;
   overflow-y: auto;

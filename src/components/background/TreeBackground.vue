@@ -18,6 +18,7 @@ const showTree = computed(() => prefersReducedMotion.value !== 'reduce');
 let controls: ReturnType<typeof useRafFn> | undefined;
 let lastSetupWidth = 0;
 const MIN_CYCLE_MS = 30_000;
+const SLOW_AFTER_MS = 45_000;
 
 function initCanvas(canvas: HTMLCanvasElement, width: number, height: number) {
   const ctx = canvas.getContext('2d')!;
@@ -48,6 +49,7 @@ function setup() {
   let steps: Fn[] = [];
   let prevSteps: Fn[] = [];
   let cycleStarted = performance.now();
+  let slowed = false;
 
   const step = (x: number, y: number, rad: number, counter = { value: 0 }) => {
     const length = random() * branchLen.value;
@@ -64,7 +66,13 @@ function setup() {
 
     if (nx < -100 || nx > w + 100 || ny < -100 || ny > h + 100) return;
 
-    const rate = counter.value <= 30 ? 0.8 : 0.5;
+    const rate = slowed
+      ? counter.value <= 30
+        ? 0.45
+        : 0.28
+      : counter.value <= 30
+        ? 0.8
+        : 0.5;
     if (random() < rate) steps.push(() => step(nx, ny, rad1, counter));
     if (random() < rate) steps.push(() => step(nx, ny, rad2, counter));
   };
@@ -92,18 +100,23 @@ function setup() {
     ctx.restore();
   };
 
-  const interval = 1000 / 40;
+  const fastInterval = 1000 / 40;
+  const slowInterval = 1000 / 12;
   let lastTime = performance.now();
 
   const frame = () => {
-    if (performance.now() - lastTime < interval) return;
+    const now = performance.now();
+    const elapsed = now - cycleStarted;
+    slowed = elapsed >= SLOW_AFTER_MS;
+    const interval = slowed ? slowInterval : fastInterval;
+    if (now - lastTime < interval) return;
     prevSteps = steps;
     steps = [];
-    lastTime = performance.now();
+    lastTime = now;
 
-    if (performance.now() - cycleStarted >= MIN_CYCLE_MS) {
+    if (elapsed >= MIN_CYCLE_MS) {
       fadeSoftly();
-      cycleStarted = performance.now();
+      cycleStarted = now;
     }
 
     if (!prevSteps.length) {
@@ -112,8 +125,9 @@ function setup() {
       return;
     }
 
+    const continueChance = slowed ? 0.22 : 0.5;
     prevSteps.forEach((fn) => {
-      if (random() < 0.5) steps.push(fn);
+      if (random() < continueChance) steps.push(fn);
       else fn();
     });
   };
