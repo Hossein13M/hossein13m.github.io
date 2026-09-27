@@ -32,7 +32,7 @@ const route = useRoute();
         <IconsNavIcon :name="item.icon" />
       </a>
 
-      <LayoutThemeToggle />
+      <!--      <LayoutThemeToggle />-->
     </div>
   </nav>
 </template>
