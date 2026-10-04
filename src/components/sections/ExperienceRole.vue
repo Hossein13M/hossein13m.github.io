@@ -9,7 +9,7 @@ defineProps<{
 
 <template>
   <article class="experience-role">
-    <div class="flex flex-wrap items-baseline justify-between gap-2">
+    <div class="role-heading">
       <h3 class="role-title">{{ role.jobTitle }}</h3>
       <time class="role-date font-mono">
         {{ formatDateRange(role.startDate, role.endDate) }}
@@ -27,14 +27,26 @@ defineProps<{
 </template>
 
 <style scoped>
+.role-heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
 .role-title {
+  margin: 0;
   font-size: 1.25rem;
   font-weight: 600;
+  line-height: 1.25;
   color: var(--color-fg-deep);
 }
 
 .role-date {
+  margin: 0;
   font-size: 0.875rem;
+  line-height: 1.25;
   color: var(--color-fg-light);
 }
 
@@ -55,5 +67,28 @@ defineProps<{
   margin-top: 1.5rem;
   padding-top: 1.5rem;
   border-top: 1px solid var(--color-border);
+}
+
+@media (max-width: 639px) {
+  .role-heading {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+
+  .role-date {
+    font-size: 0.75rem;
+  }
+
+  .role-summary {
+    font-size: 0.875rem;
+    line-height: 1.65;
+  }
+
+  :deep(.tech-chip) {
+    font-size: 0.75rem;
+    padding: 0.15rem 0.38rem;
+    gap: 0.2rem;
+  }
 }
 </style>

@@ -195,10 +195,21 @@ html.dark::view-transition-new(root) {
   border-bottom: 1px solid var(--color-border);
 }
 
-.prose-site .podcast-card a,
-.prose-site .podcast-card a:hover {
+.prose-site .podcast-card a.podcast-card-title-link,
+.prose-site .podcast-card a.podcast-card-title-link:hover {
   border-bottom: none;
   text-decoration: none;
+}
+
+.prose-site .podcast-card a.podcast-platform {
+  border: none;
+  text-decoration: none;
+}
+
+@media (min-width: 640px) {
+  .prose-site .podcast-card a.podcast-platform {
+    border: 1px solid var(--color-border);
+  }
 }
 
 .prose-site h1,
@@ -232,6 +243,11 @@ html.dark::view-transition-new(root) {
   line-height: 1.2;
   color: var(--color-fg-deeper);
   margin: 0;
+}
+
+.prose-home-lastname {
+  color: var(--color-muted);
+  font-weight: inherit;
 }
 
 .prose-home-greeting {
@@ -337,11 +353,29 @@ html.dark::view-transition-new(root) {
   font-family: var(--font-mono);
 }
 
+@media (max-width: 639px) {
+  .skill-row .tech-chip {
+    font-size: 0.875rem;
+  }
+
+  .home-link-row {
+    font-size: 0.875rem;
+  }
+
+  .home-email .home-inline-link {
+    font-size: 0.875rem;
+  }
+
+  .home-inline-link-icon {
+    width: 0.875rem;
+    height: 0.875rem;
+  }
+}
+
 /* Interactive cursor */
 a[href],
 button:not(:disabled),
 .nav-link,
-.tech-chip,
 .theme-toggle,
 .scroll-top-btn,
 .home-inline-link,
