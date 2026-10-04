@@ -327,14 +327,7 @@ html.dark::view-transition-new(root) {
 }
 
 .home-link-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 0.5rem 1.25rem;
-  margin: 0;
-  font-size: 1rem;
-  flex: 1 1 12rem;
-  min-width: min(100%, 12rem);
+  display: contents;
 }
 
 .home-inline-link {
@@ -368,7 +361,7 @@ html.dark::view-transition-new(root) {
     font-size: 0.875rem;
   }
 
-  .home-link-row {
+  .home-find-row .home-inline-link {
     font-size: 0.875rem;
   }
 
