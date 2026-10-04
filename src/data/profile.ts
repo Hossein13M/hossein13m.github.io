@@ -7,7 +7,7 @@ import type {
 } from '@/types/portfolio';
 
 export const heroSummary =
-  'I’m a Senior DevOps Engineer with 10+ years of experience in tech, having grown through roles in infrastructure, software engineering, and platform delivery. I care about reliable systems, clean automation, and infrastructure teams can depend on. I also enjoy mentoring engineers and helping teams move with more clarity and confidence.';
+  'I’m a Senior DevOps Engineer with 10+ years of experience in tech, having grown through roles in infrastructure, software engineering, and platform delivery. I care about reliable systems, clean automation, and infrastructure teams can depend on. I enjoy mentoring engineers and helping teams move with more clarity and confidence.';
 
 export const aboutSummary =
   'Senior Software Engineer with 8+ years of experience building scalable web applications. Strong background in Angular, VueJS, NuxtJS, Node.js/NestJS, .NET, TypeScript, JavaScript, architecture, design systems, performance optimization, and maintainable product platforms. Experienced in leading technical initiatives, mentoring engineers, owning features across the software development lifecycle, and collaborating with product, design, and backend teams. Author of 20+ technical articles with 4,000+ Stack Overflow reputation.';
@@ -59,7 +59,7 @@ export const volunteering: Volunteering[] = [
     url: 'https://devlibrary.withgoogle.com/authors/hossein13m',
   },
   {
-    role: 'Angular Podcast Guest Of Honor',
+    role: 'Angular Podcast Guest',
     organization: 'Adventures in Angular (Spotify)',
     url: 'https://open.spotify.com/episode/5BoFoH3WNYU5khCOCqtogz',
   },

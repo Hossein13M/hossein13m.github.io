@@ -20,8 +20,8 @@ usePageMeta({ title: 'Not Found' });
       <p class="mt-2 opacity-60">{{ error.message }}</p>
       <NuxtLink
         to="/"
-        class="mt-8 rounded-lg px-6 py-2.5 font-medium text-white"
-        style="background: var(--color-accent)"
+        class="mt-8 rounded-lg px-6 py-2.5 font-medium"
+        style="background: var(--color-accent); color: var(--color-fg-deeper)"
       >
         Go Home
       </NuxtLink>

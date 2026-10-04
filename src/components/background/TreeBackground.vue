@@ -5,7 +5,7 @@ const r180 = Math.PI;
 const r90 = Math.PI / 2;
 const r15 = Math.PI / 12;
 const canvasRef = ref<HTMLCanvasElement | null>(null);
-const { width: windowWidth } = useWindowSize();
+const rootRef = ref<HTMLElement | null>(null);
 const { random } = Math;
 
 const start = ref<Fn>(() => {});
@@ -17,34 +17,74 @@ const showTree = computed(() => prefersReducedMotion.value !== 'reduce');
 
 let controls: ReturnType<typeof useRafFn> | undefined;
 let lastSetupWidth = 0;
+let lastSetupHeight = 0;
+let bounds = { w: 0, h: 0 };
+let drawCtx: CanvasRenderingContext2D | null = null;
+let seedFromBottom: Fn | null = null;
+let resizeObserver: ResizeObserver | null = null;
 const MIN_CYCLE_MS = 30_000;
 const SLOW_AFTER_MS = 45_000;
+const HEIGHT_JITTER_PX = 64;
 
-function initCanvas(canvas: HTMLCanvasElement, width: number, height: number) {
-  const ctx = canvas.getContext('2d')!;
+function viewportSize() {
+  const visual = window.visualViewport;
+  const w = Math.max(
+    window.innerWidth,
+    document.documentElement.clientWidth,
+    Math.round(visual?.width ?? 0)
+  );
+  const h = Math.max(
+    window.innerHeight,
+    document.documentElement.clientHeight,
+    Math.round(visual?.height ?? 0)
+  );
+  return { w, h };
+}
+
+function backingStore(
+  canvas: HTMLCanvasElement,
+  width: number,
+  height: number,
+  preserve?: HTMLCanvasElement
+) {
   const dpr = Math.min(window.devicePixelRatio || 1, 2);
-  canvas.style.width = `${width}px`;
-  canvas.style.height = `${height}px`;
-  canvas.width = dpr * width;
-  canvas.height = dpr * height;
-  ctx.scale(dpr, dpr);
-  return { ctx, width, height };
+  canvas.width = Math.max(1, Math.round(dpr * width));
+  canvas.height = Math.max(1, Math.round(dpr * height));
+  const ctx = canvas.getContext('2d')!;
+  if (preserve) {
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+    ctx.drawImage(preserve, 0, 0);
+  }
+  ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  return ctx;
 }
 
 function polar2cart(x: number, y: number, r: number, theta: number) {
   return [x + r * Math.cos(theta), y + r * Math.sin(theta)] as const;
 }
 
+function strokeColor() {
+  return (
+    getComputedStyle(document.documentElement)
+      .getPropertyValue('--color-tree-stroke')
+      .trim() || '#88888825'
+  );
+}
+
 function setup() {
   const canvas = canvasRef.value;
   if (!canvas || !showTree.value) return;
 
-  const w = window.innerWidth;
-  const h = window.innerHeight;
+  const { w, h } = viewportSize();
   if (w <= 0 || h <= 0) return;
   lastSetupWidth = w;
+  lastSetupHeight = h;
+  bounds = { w, h };
 
-  const { ctx, width, height } = initCanvas(canvas, w, h);
+  const ctx = backingStore(canvas, w, h);
+  drawCtx = ctx;
+  ctx.lineWidth = 1;
+  ctx.strokeStyle = strokeColor();
 
   let steps: Fn[] = [];
   let prevSteps: Fn[] = [];
@@ -52,6 +92,8 @@ function setup() {
   let slowed = false;
 
   const step = (x: number, y: number, rad: number, counter = { value: 0 }) => {
+    const ctx = drawCtx;
+    if (!ctx) return;
     const length = random() * branchLen.value;
     counter.value += 1;
     const [nx, ny] = polar2cart(x, y, length, rad);
@@ -64,7 +106,8 @@ function setup() {
     const rad1 = rad + random() * r15;
     const rad2 = rad - random() * r15;
 
-    if (nx < -100 || nx > w + 100 || ny < -100 || ny > h + 100) return;
+    if (nx < -100 || nx > bounds.w + 100 || ny < -100 || ny > bounds.h + 100)
+      return;
 
     const rate = slowed
       ? counter.value <= 30
@@ -81,22 +124,28 @@ function setup() {
 
   const seedGrowth = () => {
     const seeds = [
-      () => step(randomMiddle() * w, -5, r90),
-      () => step(randomMiddle() * w, h + 5, -r90),
-      () => step(-5, randomMiddle() * h, 0),
-      () => step(w + 5, randomMiddle() * h, r180),
+      () => step(randomMiddle() * bounds.w, -5, r90),
+      () => step(randomMiddle() * bounds.w, bounds.h + 5, -r90),
+      () => step(-5, randomMiddle() * bounds.h, 0),
+      () => step(bounds.w + 5, randomMiddle() * bounds.h, r180),
     ];
-    steps.push(...(w < 500 ? seeds.slice(0, 2) : seeds));
+    steps.push(...(bounds.w < 500 ? seeds.slice(0, 2) : seeds));
+  };
+
+  seedFromBottom = () => {
+    steps.push(() => step(randomMiddle() * bounds.w, bounds.h + 5, -r90));
   };
 
   const fadeSoftly = () => {
+    const ctx = drawCtx;
+    if (!ctx) return;
     ctx.save();
     ctx.globalAlpha = 0.16;
     ctx.fillStyle =
       getComputedStyle(document.documentElement)
         .getPropertyValue('--color-bg')
         .trim() || '#000';
-    ctx.fillRect(0, 0, width, height);
+    ctx.fillRect(0, 0, bounds.w, bounds.h);
     ctx.restore();
   };
 
@@ -136,13 +185,12 @@ function setup() {
   controls = useRafFn(frame, { immediate: false });
 
   start.value = () => {
+    const ctx = drawCtx;
+    if (!ctx) return;
     controls?.pause();
-    ctx.clearRect(0, 0, width, height);
+    ctx.clearRect(0, 0, bounds.w, bounds.h);
     ctx.lineWidth = 1;
-    ctx.strokeStyle =
-      getComputedStyle(document.documentElement)
-        .getPropertyValue('--color-tree-stroke')
-        .trim() || '#88888825';
+    ctx.strokeStyle = strokeColor();
     prevSteps = [];
     steps = [];
     cycleStarted = performance.now();
@@ -154,25 +202,58 @@ function setup() {
   start.value();
 }
 
-function teardown() {
-  controls?.pause();
+function expandHeight(nextH: number) {
+  const canvas = canvasRef.value;
+  const ctx = drawCtx;
+  if (!canvas || !ctx || nextH <= bounds.h) return;
+
+  const copy = document.createElement('canvas');
+  copy.width = canvas.width;
+  copy.height = canvas.height;
+  copy.getContext('2d')!.drawImage(canvas, 0, 0);
+
+  bounds.h = nextH;
+  lastSetupHeight = nextH;
+  drawCtx = backingStore(canvas, bounds.w, bounds.h, copy);
+  drawCtx.lineWidth = 1;
+  drawCtx.strokeStyle = strokeColor();
+  seedFromBottom?.();
 }
 
-onMounted(() => {
-  if (showTree.value) nextTick(() => setup());
-});
-
-const resizeForWidth = useDebounceFn((nextWidth: number) => {
+const onViewportChange = useDebounceFn(() => {
   if (!showTree.value) {
     teardown();
     return;
   }
-  if (Math.abs(nextWidth - lastSetupWidth) < 12) return;
-  nextTick(() => setup());
-}, 200);
+  const { w, h } = viewportSize();
+  if (Math.abs(w - lastSetupWidth) >= 12) {
+    nextTick(() => setup());
+    return;
+  }
+  if (h - lastSetupHeight >= HEIGHT_JITTER_PX) {
+    expandHeight(h);
+  }
+}, 150);
 
-watch(windowWidth, (nextWidth) => {
-  resizeForWidth(nextWidth);
+function teardown() {
+  controls?.pause();
+  resizeObserver?.disconnect();
+  resizeObserver = null;
+  window.visualViewport?.removeEventListener('resize', onViewportChange);
+}
+
+onMounted(() => {
+  if (showTree.value) nextTick(() => setup());
+
+  resizeObserver = new ResizeObserver(() => onViewportChange());
+  if (rootRef.value) resizeObserver.observe(rootRef.value);
+  window.visualViewport?.addEventListener('resize', onViewportChange);
+  window.addEventListener('resize', onViewportChange);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('resize', onViewportChange);
+  teardown();
 });
 
 watch(showTree, (visible) => {
@@ -183,15 +264,14 @@ watch(showTree, (visible) => {
   nextTick(() => setup());
 });
 
-onUnmounted(() => teardown());
-
 const maskStyle = 'radial-gradient(circle, transparent, black)';
 </script>
 
 <template>
   <div
     v-show="showTree"
-    class="tree-background pointer-events-none fixed inset-0 print:hidden"
+    ref="rootRef"
+    class="tree-background pointer-events-none fixed inset-0 overflow-hidden print:hidden"
     aria-hidden="true"
     :style="{
       zIndex: 0,
@@ -199,6 +279,6 @@ const maskStyle = 'radial-gradient(circle, transparent, black)';
       WebkitMaskImage: maskStyle,
     }"
   >
-    <canvas ref="canvasRef" class="h-full w-full" />
+    <canvas ref="canvasRef" class="block h-full w-full" />
   </div>
 </template>

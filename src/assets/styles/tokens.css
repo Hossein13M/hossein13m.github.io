@@ -17,18 +17,18 @@
 }
 
 html.dark {
-  --color-bg: #050505;
-  --color-fg-light: #888;
-  --color-fg: #bbb;
-  --color-fg-deep: #ddd;
-  --color-fg-deeper: #fff;
-  --color-muted: #a3a3a3;
+  --color-bg: #0c0c0c;
+  --color-fg-light: #6b6b6b;
+  --color-fg: #a3a3a3;
+  --color-fg-deep: #bbb;
+  --color-fg-deeper: #ddd;
+  --color-muted: #888;
   --color-accent: #60a5fa;
   --color-accent-warm: #fbbf24;
-  --color-border: rgba(255, 255, 255, 0.1);
-  --color-card: rgba(18, 18, 18, 0.65);
-  --color-scrollbar: #222;
-  --color-scrollbar-hover: #444;
+  --color-border: rgba(221, 221, 221, 0.12);
+  --color-card: rgba(24, 24, 24, 0.72);
+  --color-scrollbar: #2a2a2a;
+  --color-scrollbar-hover: #4a4a4a;
   --color-tree-stroke: #88888825;
   color-scheme: dark;
 }

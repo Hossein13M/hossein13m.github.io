@@ -56,7 +56,7 @@ watch(
   background: color-mix(in srgb, var(--color-fg) 13%, transparent);
   color: var(--color-fg-light);
   text-decoration: none;
-  cursor: pointer;
+  cursor: default;
   transform: translateY(2px);
   transition:
     background-color 0.2s ease,
@@ -66,6 +66,10 @@ watch(
 .tech-chip:hover {
   background: color-mix(in srgb, var(--color-fg) 20%, transparent);
   color: var(--color-fg);
+}
+
+a.tech-chip {
+  cursor: pointer;
 }
 
 .tech-chip-icon {
