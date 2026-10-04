@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" fill="none">
+  <rect
+    x="12"
+    y="38"
+    width="72"
+    height="62"
+    rx="22"
+    stroke="#7BCBE2"
+    stroke-width="14"
+    opacity="0.95"
+  />
+  <rect
+    x="44"
+    y="18"
+    width="72"
+    height="62"
+    rx="22"
+    stroke="#B44A78"
+    stroke-width="14"
+    opacity="0.92"
+  />
+</svg>
