@@ -159,7 +159,7 @@ export const articles: Article[] = [
   },
   {
     title: 'What does it mean to truly be a responsible person?',
-    url: 'https://byrslf.co/what-does-it-mean-to-truly-be-a-responsible-person-aea7c476d361',
+    url: 'https://medium.com/life-tips/what-does-it-mean-to-truly-be-a-responsible-person-aea7c476d361',
     image: img('responsibility.webp'),
     summary: 'What responsibility means and how to improve it',
     publisher: 'Medium',
