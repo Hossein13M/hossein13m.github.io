@@ -91,7 +91,7 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
   height: 3.5rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  border: 1px solid var(--color-border);
+  border: none;
   background: color-mix(in srgb, var(--color-fg) 4%, transparent);
 }
 
@@ -104,7 +104,7 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
 }
 
 .experience-card:hover .company-logo-img {
-  transform: scale(1.08);
+  transform: scale(1.15);
 }
 
 .company-copy {
