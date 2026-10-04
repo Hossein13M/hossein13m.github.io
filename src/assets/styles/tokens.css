@@ -17,7 +17,16 @@
 }
 
 html.dark {
-  --color-bg: #0c0c0c;
+  --color-bg: #0c1014;
+  --color-fg-light: #6b6b6b;
+  --color-fg: #a3a3a3;
+  --color-fg-deep: #bbb;
+  --color-fg-deeper: #ddd;
+  --color-muted: #888;
+  --color-accent: #60a5fa;
+  --color-accent-warm: #fbbf24;
+  --color-border: rgba(221, 221, 221, 0.12);
+  --color-card: rgba(4, 28, 42, 0.72);
   --color-fg-light: #6b6b6b;
   --color-fg: #a3a3a3;
   --color-fg-deep: #bbb;

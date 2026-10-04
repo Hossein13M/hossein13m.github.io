@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { colorMode, toggleTheme } from '@/composables/useTheme';
+import { uiImage } from '@/utils/assets';
 </script>
 
 <template>
@@ -13,11 +14,7 @@ import { colorMode, toggleTheme } from '@/composables/useTheme';
     @click="toggleTheme"
   >
     <img
-      :src="
-        colorMode === 'dark'
-          ? '/assets/images/pictures/sun.png'
-          : '/assets/images/pictures/moon.png'
-      "
+      :src="colorMode === 'dark' ? uiImage('sun.png') : uiImage('moon.png')"
       :alt="
         colorMode === 'dark' ? 'Switch to light mode' : 'Switch to dark mode'
       "

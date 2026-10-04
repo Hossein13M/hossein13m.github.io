@@ -20,7 +20,7 @@ defineProps<{
     </p>
     <UiTechChipGroup
       v-if="role.jobRequiredSkills.length"
-      class="mt-4"
+      class="role-skills"
       :items="role.jobRequiredSkills"
     />
   </article>
@@ -61,6 +61,12 @@ defineProps<{
   font-size: 1rem;
   line-height: 1.75;
   color: color-mix(in srgb, var(--color-fg) 58%, var(--color-fg-light));
+}
+
+.role-skills {
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px solid color-mix(in srgb, var(--color-fg) 8%, transparent);
 }
 
 .experience-role + .experience-role {

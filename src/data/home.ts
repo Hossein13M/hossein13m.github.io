@@ -1,4 +1,5 @@
 import type { HomeStat } from '@/types/portfolio';
+import { socialImage } from '@/utils/assets';
 import { companyLogoSrc } from '@/utils/companyLogo';
 import { getCurrentCompany } from './experience';
 import { site } from './site';
@@ -82,8 +83,6 @@ export const skillRows: SkillRow[] = [
   },
 ];
 
-const socialIcon = (name: string) => `/images/social/${name}.png`;
-
 export type FindMeLink = {
   label: string;
   url: string;
@@ -91,13 +90,13 @@ export type FindMeLink = {
 };
 
 export const findMeOnLinks: FindMeLink[] = [
-  { label: 'GitHub', url: site.github, icon: socialIcon('github') },
-  { label: 'LinkedIn', url: site.linkedin, icon: socialIcon('linkedin') },
-  { label: 'Medium', url: site.medium, icon: socialIcon('medium') },
+  { label: 'GitHub', url: site.github, icon: socialImage('github.png') },
+  { label: 'LinkedIn', url: site.linkedin, icon: socialImage('linkedin.png') },
+  { label: 'Medium', url: site.medium, icon: socialImage('medium.png') },
   {
     label: 'Stack Overflow',
     url: site.stackoverflow,
-    icon: socialIcon('stackoverflow'),
+    icon: socialImage('stackoverflow.png'),
   },
-  { label: 'Telegram', url: site.telegram, icon: socialIcon('telegram') },
+  { label: 'Telegram', url: site.telegram, icon: socialImage('telegram.png') },
 ];

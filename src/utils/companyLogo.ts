@@ -1,4 +1,6 @@
+import { companyImage } from '@/utils/assets';
+
 export function companyLogoSrc(logo: string): string {
-  if (logo.includes('.')) return `/images/companies/${logo}`;
-  return `/images/companies/${logo}.png`;
+  const file = logo.includes('.') ? logo : `${logo}.png`;
+  return companyImage(file);
 }

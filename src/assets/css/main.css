@@ -54,7 +54,7 @@ body {
 /* Page entry animation */
 @keyframes slide-enter {
   0% {
-    transform: translateY(10px);
+    transform: translateY(16px);
     opacity: 0;
   }
   to {
@@ -66,8 +66,8 @@ body {
 @media (prefers-reduced-motion: no-preference) {
   .slide-enter-content > * {
     --enter-stage: 0;
-    --enter-step: 70ms;
-    animation: slide-enter 0.65s both;
+    --enter-step: 120ms;
+    animation: slide-enter 1.05s cubic-bezier(0.22, 0.61, 0.36, 1) both;
     animation-delay: calc(var(--enter-stage) * var(--enter-step));
   }
 
@@ -113,14 +113,14 @@ body {
 .page-enter-active,
 .page-leave-active {
   transition:
-    opacity 0.2s ease,
-    transform 0.2s ease;
+    opacity 0.35s cubic-bezier(0.22, 0.61, 0.36, 1),
+    transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .page-enter-from,
 .page-leave-to {
   opacity: 0;
-  transform: translateY(6px);
+  transform: translateY(10px);
 }
 
 @media (prefers-reduced-motion: reduce) {
