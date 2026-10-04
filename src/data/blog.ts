@@ -245,7 +245,7 @@ export const articles: Article[] = [
 export const podcasts: Podcast[] = [
   {
     organization: 'Adventures in Angular',
-    subject: 'Angular Podcast Guest Of Honor — Reactive Forms in Angular',
+    subject: 'Angular podcast guest: Reactive Forms in Angular',
     image: '/images/social/adventure-in-angular.webp',
     generalLink:
       'https://adventuresinangular.com/template-driven-approach-vs-reactive-form-approach-with-hossein-mousavi-aia-346',
