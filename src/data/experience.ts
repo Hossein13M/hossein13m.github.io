@@ -40,7 +40,7 @@ export const companies: Company[] = [
     website: 'https://www.alibaba.ir',
     location: 'Iran',
     description:
-      "Iran's leading travel platform for flights, trains, tours, transfers, and stays.",
+      "Iran's leading travel platform for flights, trains, buses, tours, and accommodation.",
   },
   {
     companyId: 3,
@@ -50,13 +50,13 @@ export const companies: Company[] = [
     website: 'https://tapsell.ir/en',
     location: 'Iran',
     description:
-      'Advertising network in Iran connecting advertisers and publishers.',
+      "Iran's leading advertising network connecting advertisers and publishers.",
   },
   {
     companyId: 4,
     logo: 'xepos',
     name: 'XEPOS LTD',
-    industry: 'Retail Technology',
+    industry: 'Retail Software',
     website: 'https://xepos.co.uk',
     location: 'United Kingdom',
     description:
@@ -67,7 +67,7 @@ export const companies: Company[] = [
     logo: 'mft',
     name: 'MFT',
     industry: 'Network Infrastructure',
-    website: '',
+    website: 'https://mftplus.com/',
     location: 'Iran',
     description:
       'Business network provider focused on Linux, routing, and core infrastructure services.',

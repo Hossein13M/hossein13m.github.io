@@ -6,7 +6,7 @@ export const articles: Article[] = [
   {
     title: 'What Is Observability In Software Engineering?',
     url: 'https://medium.com/eurowingsdigital/what-is-observability-in-software-engineering-45397cb9b3c8',
-    image: img('api-first.webp'),
+    image: img('observability.webp'),
     summary:
       'A simple guide to understanding logs, metrics, and traces, and how Eurowings Digital implements observability.',
     publisher: 'Eurowings Digital',
@@ -264,7 +264,7 @@ export const podcasts: Podcast[] = [
     generalLink:
       'https://adventuresinangular.com/template-driven-approach-vs-reactive-form-approach-with-hossein-mousavi-aia-346',
     description:
-      'Template driven vs reactive form approach in Angular, covering form control, form group, and form array patterns.',
+      'I talked about template-driven forms versus reactive forms in Angular.',
     links: [
       {
         name: 'Spotify',
