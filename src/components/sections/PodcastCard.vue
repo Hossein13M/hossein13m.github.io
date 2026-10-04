@@ -7,7 +7,7 @@ defineProps<{
 </script>
 
 <template>
-  <UiCard class="podcast-card">
+  <UiCard class="podcast-card backdrop-blur-none">
     <img
       :src="podcast.image"
       :alt="podcast.organization"
@@ -53,7 +53,13 @@ defineProps<{
   align-items: center;
   gap: 1rem;
   text-align: center;
-  --card-surface: color-mix(in srgb, var(--color-card) 42%, transparent);
+  --card-surface: transparent;
+  backdrop-filter: none;
+  transition: background-color 0.2s ease;
+}
+
+.podcast-card:hover {
+  --card-surface: color-mix(in srgb, var(--color-fg) 5%, transparent);
 }
 
 .podcast-cover {

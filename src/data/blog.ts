@@ -1,6 +1,7 @@
 import type { Article, Podcast } from '@/types/portfolio';
+import { publicationImage, socialImage } from '@/utils/assets';
 
-const img = (file: string) => `/images/publications/${file}`;
+const img = (file: string) => publicationImage(file);
 
 export const articles: Article[] = [
   {
@@ -260,30 +261,30 @@ export const podcasts: Podcast[] = [
   {
     organization: 'Adventures in Angular',
     subject: 'Angular Podcast Guest: Reactive Forms in Angular',
-    image: '/images/social/adventure-in-angular.webp',
+    image: socialImage('adventure-in-angular.webp'),
     generalLink:
       'https://adventuresinangular.com/template-driven-approach-vs-reactive-form-approach-with-hossein-mousavi-aia-346',
     description:
-      'I talked about template-driven forms versus reactive forms in Angular.',
+      'I talked about template driven and reactive forms in Angular.',
     links: [
       {
         name: 'Spotify',
-        icon: '/images/social/spotify.png',
+        icon: socialImage('spotify.png'),
         link: 'https://open.spotify.com/episode/5BoFoH3WNYU5khCOCqtogz?si=QBVzySKXQkWZ_wbwP9ay8Q',
       },
       {
         name: 'Apple Podcast',
-        icon: '/images/social/apple-podcast.png',
+        icon: socialImage('apple-podcast.png'),
         link: 'https://podcasts.apple.com/ph/podcast/template-driven-approach-vs-reactive-form-approach/id1238024888?i=1000559786754',
       },
       {
         name: 'Google Podcast',
-        icon: '/images/social/google-podcast.png',
+        icon: socialImage('google-podcast.png'),
         link: 'https://podcasts.google.com/feed/aHR0cHM6Ly9hZHZlbnR1cmVzaW5hbmd1bGFyLmNvbS9yc3M/episode/MGM3ZGNlOTktYWU0ZC00M2ZlLTg4YzAtYTE3NWQyZGU2ZmU5',
       },
       {
         name: 'Amazon Music',
-        icon: '/images/social/amazon-music.png',
+        icon: socialImage('amazon-music.png'),
         link: 'https://www.amazon.com/Adventures-in-Angular/dp/B08JJS6SNP',
       },
     ],

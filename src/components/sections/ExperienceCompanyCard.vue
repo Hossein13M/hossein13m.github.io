@@ -62,12 +62,12 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
   padding: 1.375rem;
   border-radius: 0.75rem;
   border: 1px solid var(--color-border);
-  background: color-mix(in srgb, var(--color-card) 90%, transparent);
+  background: transparent;
   transition: background-color 0.2s ease;
 }
 
 .experience-card:hover {
-  background: color-mix(in srgb, var(--color-fg) 3%, var(--color-card));
+  background: color-mix(in srgb, var(--color-fg) 5%, transparent);
 }
 
 .company-top {
@@ -103,8 +103,8 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
   transition: transform 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
-.company-logo:hover .company-logo-img {
-  transform: scale(1.22);
+.experience-card:hover .company-logo-img {
+  transform: scale(1.08);
 }
 
 .company-copy {
@@ -170,9 +170,9 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
   }
 
   .company-logo {
-    flex: 0 0 6.25rem;
-    width: 6.25rem;
-    height: 6.25rem;
+    flex: 0 0 7.5rem;
+    width: 7.5rem;
+    height: 7.5rem;
   }
 
   .company-copy {
@@ -181,7 +181,7 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
     justify-content: center;
     flex: 1;
     min-width: 0;
-    min-height: 6.25rem;
+    min-height: 7.5rem;
   }
 
   .company-heading {
