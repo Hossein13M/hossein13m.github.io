@@ -146,7 +146,8 @@ defineProps<{
 
   .podcast-platform {
     border-radius: 0.5rem;
-    border: 1px solid var(--color-border);
+    border: none;
+    background: color-mix(in srgb, var(--color-fg) 4%, transparent);
     padding: 0.375rem 0.75rem;
     opacity: 0.7;
   }
