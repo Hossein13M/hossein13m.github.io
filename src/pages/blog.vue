@@ -26,7 +26,7 @@ const sortedArticles = computed(() => {
     </section>
 
     <section>
-      <div class="grid gap-x-4 gap-y-8 sm:grid-cols-2">
+      <div class="grid gap-x-6 gap-y-10 sm:grid-cols-2">
         <SectionsPublicationCard
           v-for="article in sortedArticles"
           :key="article.url"

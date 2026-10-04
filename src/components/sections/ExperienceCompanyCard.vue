@@ -100,7 +100,7 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
   height: 100%;
   object-fit: contain;
   border-radius: 0.25rem;
-  transition: transform 0.25s ease;
+  transition: transform 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
 .company-logo:hover .company-logo-img {
@@ -155,7 +155,7 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
 
 @media (min-width: 640px) {
   .experience-card {
-    padding: 1.125rem;
+    padding: 1.375rem;
   }
 
   .company-roles {
@@ -178,6 +178,7 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
   .company-copy {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     flex: 1;
     min-width: 0;
     min-height: 6.25rem;

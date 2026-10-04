@@ -312,6 +312,31 @@ html.dark::view-transition-new(root) {
   margin: 0 0 0.25rem;
 }
 
+.home-find-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.home-find-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+@media (min-width: 640px) {
+  .home-find-row {
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1.25rem;
+  }
+
+  .home-find-row .home-muted-label {
+    margin: 0;
+  }
+}
+
 .home-link-row {
   display: flex;
   flex-wrap: wrap;
@@ -343,12 +368,6 @@ html.dark::view-transition-new(root) {
   object-fit: contain;
 }
 
-.home-email {
-  margin: 1rem 0 0;
-  font-size: 1rem;
-  color: var(--color-fg);
-}
-
 .home-email-mono {
   font-family: var(--font-mono);
 }
@@ -362,7 +381,7 @@ html.dark::view-transition-new(root) {
     font-size: 0.875rem;
   }
 
-  .home-email .home-inline-link {
+  .home-email-mono {
     font-size: 0.875rem;
   }
 

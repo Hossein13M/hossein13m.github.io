@@ -60,7 +60,7 @@ defineProps<{
   margin-top: 1rem;
   font-size: 1rem;
   line-height: 1.75;
-  color: var(--color-fg);
+  color: color-mix(in srgb, var(--color-fg) 58%, var(--color-fg-light));
 }
 
 .experience-role + .experience-role {
