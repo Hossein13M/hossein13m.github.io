@@ -3,20 +3,20 @@ import type { Company, JobExperience } from '@/types/portfolio';
 export const companies: Company[] = [
   {
     companyId: 6,
-    logo: 'nn',
+    logo: 'nn.svg',
     name: 'Nationale Nederlanden',
     alias: 'NN',
     industry: 'Financial Services',
     website: 'https://www.nn.nl',
     location: 'The Netherlands',
     description:
-      'Dutch financial services company with an international presence, providing insurance, pensions, and banking.',
+      'Dutch financial services company offering insurance, pensions, and banking globally.',
   },
   {
     companyId: 0,
-    logo: 'aihr',
+    logo: 'aihr.svg',
     name: 'AIHR',
-    industry: 'HR Technology',
+    industry: 'E-Learning',
     website: 'https://www.aihr.com',
     location: 'The Netherlands',
     description:
@@ -24,9 +24,9 @@ export const companies: Company[] = [
   },
   {
     companyId: 1,
-    logo: 'eurowings',
+    logo: 'eurowings.svg',
     name: 'Eurowings',
-    industry: 'Aviation / Travel',
+    industry: 'Aviation',
     website: 'https://www.eurowings.com',
     location: 'Germany',
     description:
@@ -36,11 +36,11 @@ export const companies: Company[] = [
     companyId: 2,
     logo: 'alibaba',
     name: 'Alibaba Travels.Co',
-    industry: 'Travel Arrangements',
+    industry: 'Travel & Tourism',
     website: 'https://www.alibaba.ir',
     location: 'Iran',
     description:
-      'Pioneer of online travel services in Iran, providing innovative services for domestic and international travelers.',
+      "Iran's leading travel platform for flights, trains, tours, transfers, and stays.",
   },
   {
     companyId: 3,
@@ -56,7 +56,7 @@ export const companies: Company[] = [
     companyId: 4,
     logo: 'xepos',
     name: 'XEPOS LTD',
-    industry: 'IT Services',
+    industry: 'Retail Technology',
     website: 'https://xepos.co.uk',
     location: 'United Kingdom',
     description:
@@ -70,7 +70,7 @@ export const companies: Company[] = [
     website: '',
     location: 'Iran',
     description:
-      'Low-level network infrastructure for businesses, covering OSI networking, Linux users, and core services.',
+      'Business network provider focused on Linux, routing, and core infrastructure services.',
   },
 ];
 
