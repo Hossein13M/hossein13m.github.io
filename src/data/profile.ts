@@ -59,7 +59,7 @@ export const volunteering: Volunteering[] = [
     url: 'https://devlibrary.withgoogle.com/authors/hossein13m',
   },
   {
-    role: 'Angular Podcast Guest Of Honor',
+    role: 'Angular Podcast Guest',
     organization: 'Adventures in Angular (Spotify)',
     url: 'https://open.spotify.com/episode/5BoFoH3WNYU5khCOCqtogz',
   },

@@ -47,6 +47,18 @@ const SKILL_PNG_ICONS: Record<string, string> = {
   Switching: '/images/skills/switching.png',
   Subnetting: '/images/skills/subnetting.png',
   MikroTik: '/images/skills/mikroTik.png',
+  Apache: '/images/skills/apache.png',
+  Firewall: '/images/skills/firewall.png',
+  SSH: '/images/skills/ssh.png',
+  LDAP: '/images/skills/ldap.png',
+  Samba: '/images/skills/samba.png',
+  VLAN: '/images/skills/vlan.png',
+  NAT: '/images/skills/nat.png',
+  OSPF: '/images/skills/ospf.png',
+  VPN: '/images/skills/vpn.png',
+  systemd: '/images/skills/systemd.png',
+  LVM: '/images/skills/lvm.png',
+  Winbox: '/images/skills/winbox.png',
 };
 
 /** Maps display labels to simple-icons slug (public/icons/tech/{slug}.svg) */

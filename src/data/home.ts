@@ -35,11 +35,11 @@ const currentWorkplaceItems: SkillChipItem[] = currentCompany
 
 export const skillRows: SkillRow[] = [
   {
-    label: 'Working at',
+    label: 'Currently working at',
     items: currentWorkplaceItems,
   },
   {
-    label: 'Worked with',
+    label: 'Experienced in',
     items: [
       { name: 'Docker' },
       { name: 'Kubernetes' },
@@ -72,7 +72,11 @@ export const skillRows: SkillRow[] = [
       { name: 'React' },
       { name: 'ExpressJS' },
       { name: 'NestJS' },
-      { name: 'dotnet' },
+      { name: '.NET' },
+      { name: 'TCP/IP' },
+      { name: 'Routing' },
+      { name: 'VLAN' },
+      { name: 'OSPF' },
       { name: 'Agile' },
     ],
   },
