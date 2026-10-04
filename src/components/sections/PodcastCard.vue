@@ -53,6 +53,7 @@ defineProps<{
   align-items: center;
   gap: 1rem;
   text-align: center;
+  --card-surface: color-mix(in srgb, var(--color-card) 42%, transparent);
 }
 
 .podcast-cover {

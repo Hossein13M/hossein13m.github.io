@@ -55,6 +55,7 @@ defineProps<{
 
 .publication-card-title {
   margin: 0;
+  font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.375;
   text-decoration: none;
@@ -110,7 +111,7 @@ defineProps<{
 .publication-card-summary {
   flex: 1;
   margin: 0;
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
   line-height: 1.55;
   opacity: 0.55;
   display: -webkit-box;
