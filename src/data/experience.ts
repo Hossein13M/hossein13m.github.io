@@ -35,7 +35,7 @@ export const companies: Company[] = [
   {
     companyId: 2,
     logo: 'alibaba',
-    name: 'Alibaba Travels.Co',
+    name: 'Alibaba travels',
     industry: 'Travel & Tourism',
     website: 'https://www.alibaba.ir',
     location: 'Iran',
