@@ -68,6 +68,13 @@ defineProps<{
   flex-shrink: 0;
   border-radius: 0.5rem;
   object-fit: cover;
+  transform: scale(1);
+  transform-origin: center;
+  transition: transform 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.podcast-card:hover .podcast-cover {
+  transform: scale(1.15);
 }
 
 .podcast-org {
@@ -127,6 +134,12 @@ defineProps<{
 
 .podcast-platform:hover {
   opacity: 1;
+}
+
+@media (max-width: 639px) {
+  .podcast-org {
+    display: none;
+  }
 }
 
 @media (min-width: 640px) {
