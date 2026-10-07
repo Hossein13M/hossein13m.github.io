@@ -260,7 +260,7 @@ export const articles: Article[] = [
 export const podcasts: Podcast[] = [
   {
     organization: 'Adventures in Angular',
-    subject: 'Podcast Guest: Template-Driven VS Reactive Forms in Angular',
+    subject: 'Podcast Guest: Template Driven VS Reactive Forms',
     image: socialImage('adventure-in-angular.webp'),
     generalLink:
       'https://adventuresinangular.com/template-driven-approach-vs-reactive-form-approach-with-hossein-mousavi-aia-346',
