@@ -63,7 +63,17 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
   border-radius: 0.75rem;
   border: 1px solid var(--color-border);
   background: transparent;
+  cursor: default;
   transition: background-color 0.2s ease;
+}
+
+.experience-card * {
+  cursor: default;
+}
+
+.experience-card a,
+.experience-card a * {
+  cursor: pointer;
 }
 
 .experience-card:hover {

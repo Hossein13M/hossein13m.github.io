@@ -53,9 +53,14 @@ defineProps<{
   align-items: center;
   gap: 1rem;
   text-align: center;
+  cursor: default;
   --card-surface: transparent;
   backdrop-filter: none;
   transition: background-color 0.2s ease;
+}
+
+.podcast-card * {
+  cursor: default;
 }
 
 .podcast-card:hover {
@@ -68,6 +73,13 @@ defineProps<{
   flex-shrink: 0;
   border-radius: 0.5rem;
   object-fit: cover;
+  transform: scale(1);
+  transform-origin: center;
+  transition: transform 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.podcast-card:hover .podcast-cover {
+  transform: scale(1.15);
 }
 
 .podcast-org {
@@ -85,6 +97,11 @@ defineProps<{
   color: var(--color-fg-deeper);
   text-decoration: none;
   border-bottom: none;
+  cursor: pointer;
+}
+
+.podcast-card-title-link * {
+  cursor: pointer;
 }
 
 .podcast-card-title-link:hover {
@@ -112,7 +129,12 @@ defineProps<{
   opacity: 0.85;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
   transition: opacity 0.2s ease;
+}
+
+.podcast-platform * {
+  cursor: pointer;
 }
 
 .podcast-platform img {
@@ -127,6 +149,12 @@ defineProps<{
 
 .podcast-platform:hover {
   opacity: 1;
+}
+
+@media (max-width: 639px) {
+  .podcast-org {
+    display: none;
+  }
 }
 
 @media (min-width: 640px) {

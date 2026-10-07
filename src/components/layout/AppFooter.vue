@@ -6,12 +6,27 @@ const year = new Date().getFullYear();
 
 <template>
   <footer
-    class="mt-auto shrink-0 border-t py-4 text-center text-sm opacity-60"
+    class="app-footer mt-auto shrink-0 border-t py-4 text-center text-sm"
     style="border-color: var(--color-border)"
   >
     <p>
       © {{ year }}
-      <a :href="site.url" class="hover:opacity-100">{{ site.name }}</a>
+      <a :href="site.url">{{ site.name }}</a>
     </p>
   </footer>
 </template>
+
+<style scoped>
+.app-footer {
+  color: var(--color-fg-light);
+}
+
+.app-footer a {
+  color: inherit;
+  transition: color 0.2s ease;
+}
+
+.app-footer a:hover {
+  color: var(--color-fg);
+}
+</style>
