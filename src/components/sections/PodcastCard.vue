@@ -53,9 +53,14 @@ defineProps<{
   align-items: center;
   gap: 1rem;
   text-align: center;
+  cursor: default;
   --card-surface: transparent;
   backdrop-filter: none;
   transition: background-color 0.2s ease;
+}
+
+.podcast-card * {
+  cursor: default;
 }
 
 .podcast-card:hover {
@@ -92,6 +97,11 @@ defineProps<{
   color: var(--color-fg-deeper);
   text-decoration: none;
   border-bottom: none;
+  cursor: pointer;
+}
+
+.podcast-card-title-link * {
+  cursor: pointer;
 }
 
 .podcast-card-title-link:hover {
@@ -119,7 +129,12 @@ defineProps<{
   opacity: 0.85;
   text-decoration: none;
   color: inherit;
+  cursor: pointer;
   transition: opacity 0.2s ease;
+}
+
+.podcast-platform * {
+  cursor: pointer;
 }
 
 .podcast-platform img {
