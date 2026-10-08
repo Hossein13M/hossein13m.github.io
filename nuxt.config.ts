@@ -6,7 +6,7 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineNuxtConfig({
   compatibilityDate: '2024-04-03',
   devtools: { enabled: process.env.NODE_ENV === 'development' },
-  ssr: false,
+  ssr: true,
   experimental: {
     appManifest: false,
   },
@@ -31,7 +31,7 @@ export default defineNuxtConfig({
   modules: ['@vueuse/nuxt'],
   app: {
     head: {
-      htmlAttrs: { lang: 'en' },
+      htmlAttrs: { lang: 'en', class: 'dark' },
       // Static SEO tags so crawlers that skip SPA JS still get a preview image.
       title: 'Hossein Mousavi — Senior DevOps Engineer',
       meta: [
@@ -108,30 +108,6 @@ export default defineNuxtConfig({
           href: '/apple-touch-icon.png',
         },
         { rel: 'manifest', href: '/site.webmanifest' },
-        { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
-        {
-          rel: 'preconnect',
-          href: 'https://fonts.gstatic.com',
-          crossorigin: '',
-        },
-        {
-          rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css2?family=DM+Mono&family=Inter:wght@400;500;600;700&display=swap',
-        },
-      ],
-      script: [
-        {
-          src: 'https://www.googletagmanager.com/gtag/js?id=G-1QNEEEHF99',
-          async: true,
-        },
-        {
-          innerHTML: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-1QNEEEHF99');
-          `,
-        },
       ],
     },
   },

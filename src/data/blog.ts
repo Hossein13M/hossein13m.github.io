@@ -269,22 +269,22 @@ export const podcasts: Podcast[] = [
     links: [
       {
         name: 'Spotify',
-        icon: socialImage('spotify.png'),
+        icon: socialImage('spotify.svg'),
         link: 'https://open.spotify.com/episode/5BoFoH3WNYU5khCOCqtogz?si=QBVzySKXQkWZ_wbwP9ay8Q',
       },
       {
         name: 'Apple Podcast',
-        icon: socialImage('apple-podcast.png'),
+        icon: socialImage('apple-podcast.svg'),
         link: 'https://podcasts.apple.com/ph/podcast/template-driven-approach-vs-reactive-form-approach/id1238024888?i=1000559786754',
       },
       {
         name: 'Google Podcast',
-        icon: socialImage('google-podcast.png'),
+        icon: socialImage('google-podcast.svg'),
         link: 'https://podcasts.google.com/feed/aHR0cHM6Ly9hZHZlbnR1cmVzaW5hbmd1bGFyLmNvbS9yc3M/episode/MGM3ZGNlOTktYWU0ZC00M2ZlLTg4YzAtYTE3NWQyZGU2ZmU5',
       },
       {
         name: 'Amazon Music',
-        icon: socialImage('amazon-music.png'),
+        icon: socialImage('amazon-music.svg'),
         link: 'https://www.amazon.com/Adventures-in-Angular/dp/B08JJS6SNP',
       },
     ],

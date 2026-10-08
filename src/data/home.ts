@@ -90,13 +90,13 @@ export type FindMeLink = {
 };
 
 export const findMeOnLinks: FindMeLink[] = [
-  { label: 'GitHub', url: site.github, icon: socialImage('github.png') },
-  { label: 'LinkedIn', url: site.linkedin, icon: socialImage('linkedin.png') },
-  { label: 'Medium', url: site.medium, icon: socialImage('medium.png') },
+  { label: 'GitHub', url: site.github, icon: socialImage('github.svg') },
+  { label: 'LinkedIn', url: site.linkedin, icon: socialImage('linkedin.svg') },
+  { label: 'Medium', url: site.medium, icon: socialImage('medium.svg') },
   {
     label: 'Stack Overflow',
     url: site.stackoverflow,
-    icon: socialImage('stackoverflow.png'),
+    icon: socialImage('stackoverflow.svg'),
   },
-  { label: 'Telegram', url: site.telegram, icon: socialImage('telegram.png') },
+  { label: 'Telegram', url: site.telegram, icon: socialImage('telegram.svg') },
 ];

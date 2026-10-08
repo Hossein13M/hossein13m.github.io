@@ -1,7 +1,7 @@
 import type { SocialHeader, SocialLink } from '@/types/portfolio';
 import { socialImage } from '@/utils/assets';
 
-const socialIcon = (name: string) => socialImage(`${name}.png`);
+const socialIcon = (name: string) => socialImage(`${name}.svg`);
 
 export const socialLinks: SocialLink[] = [
   {
