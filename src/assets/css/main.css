@@ -346,6 +346,12 @@ html.dark::view-transition-new(root) {
   object-fit: contain;
 }
 
+html.dark img[src*='/github.svg'],
+html.dark img[src*='/medium.svg'],
+html.dark img[src*='/twitter.svg'] {
+  filter: invert(1);
+}
+
 .home-email-mono {
   font-family: var(--font-mono);
 }
