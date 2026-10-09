@@ -273,6 +273,7 @@ export const experiences: JobExperience[] = [
     jobSummary:
       'I kept network and core IT services running across the OSI layers, administered Windows and Linux environments, and managed users and access. I configured MikroTik routers with DHCP, DNS, and subnetting, troubleshot LAN and WAN issues, and worked to keep services reliable for the business.',
     jobRequiredSkills: [
+      'Bash Script',
       'Linux',
       'systemd',
       'SSH',
