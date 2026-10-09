@@ -54,7 +54,7 @@ watch(
   border-radius: 0.25rem;
   border: none;
   background: color-mix(in srgb, var(--color-fg) 13%, transparent);
-  color: var(--color-fg-light);
+  color: var(--color-fg);
   text-decoration: none;
   cursor: default;
   transform: translateY(2px);
@@ -65,7 +65,7 @@ watch(
 
 .tech-chip:hover {
   background: color-mix(in srgb, var(--color-fg) 20%, transparent);
-  color: var(--color-fg);
+  color: var(--color-fg-deep);
 }
 
 a.tech-chip {
