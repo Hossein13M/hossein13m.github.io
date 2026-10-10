@@ -54,20 +54,20 @@ body {
 }
 
 /* Page entry animation */
-@keyframes slide-enter {
-  0% {
-    transform: translateY(16px);
+@keyframes page-content-enter {
+  from {
+    opacity: 0;
   }
   to {
-    transform: translateY(0);
+    opacity: 1;
   }
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .slide-enter-content > * {
     --enter-stage: 0;
-    --enter-step: 120ms;
-    animation: slide-enter 1.05s cubic-bezier(0.22, 0.61, 0.36, 1) both;
+    --enter-step: 75ms;
+    animation: page-content-enter 0.7s ease-out both;
     animation-delay: calc(var(--enter-stage) * var(--enter-step));
   }
 
@@ -109,26 +109,9 @@ body {
   }
 }
 
-/* Page transitions */
-.page-enter-active,
-.page-leave-active {
-  transition:
-    opacity 0.35s cubic-bezier(0.22, 0.61, 0.36, 1),
-    transform 0.35s cubic-bezier(0.22, 0.61, 0.36, 1);
-}
-
-.page-enter-from,
-.page-leave-to {
-  opacity: 0;
-  transform: translateY(10px);
-}
-
 @media (prefers-reduced-motion: reduce) {
-  .slide-enter-content > *,
-  .page-enter-active,
-  .page-leave-active {
+  .slide-enter-content > * {
     animation: none !important;
-    transition: none !important;
   }
 }
 

@@ -1,18 +1,13 @@
 <template>
   <BackgroundTreeBackground />
   <NuxtLayout>
-    <NuxtPage
-      :transition="{
-        name: 'page',
-        mode: 'out-in',
-        onAfterLeave: scrollPageToTop,
-        onBeforeEnter: scrollPageToTop,
-      }"
-    />
+    <NuxtPage />
   </NuxtLayout>
 </template>
 
 <script setup lang="ts">
+const route = useRoute();
+
 function scrollPageToTop() {
   document.querySelector('.app-scroll')?.scrollTo({
     top: 0,
@@ -21,4 +16,6 @@ function scrollPageToTop() {
   });
   window.scrollTo({ top: 0, left: 0, behavior: 'auto' });
 }
+
+watch(() => route.fullPath, scrollPageToTop, { flush: 'sync' });
 </script>
