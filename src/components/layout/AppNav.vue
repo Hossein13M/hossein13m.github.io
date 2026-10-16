@@ -31,8 +31,6 @@ const route = useRoute();
       >
         <IconsNavIcon :name="item.icon" />
       </a>
-
-      <!--      <LayoutThemeToggle />-->
     </div>
   </nav>
 </template>

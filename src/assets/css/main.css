@@ -115,28 +115,6 @@ body {
   }
 }
 
-::view-transition-old(root),
-::view-transition-new(root) {
-  animation: none;
-  mix-blend-mode: normal;
-}
-
-::view-transition-old(root) {
-  z-index: 1;
-}
-
-::view-transition-new(root) {
-  z-index: 9999;
-}
-
-html.dark::view-transition-old(root) {
-  z-index: 9999;
-}
-
-html.dark::view-transition-new(root) {
-  z-index: 1;
-}
-
 /* Shared page shell — header and body use the same box */
 .site-container {
   width: 100%;
@@ -329,9 +307,9 @@ html.dark::view-transition-new(root) {
   object-fit: contain;
 }
 
-html.dark img[src*='/github.svg'],
-html.dark img[src*='/medium.svg'],
-html.dark img[src*='/twitter.svg'] {
+img[src*='/github.svg'],
+img[src*='/medium.svg'],
+img[src*='/twitter.svg'] {
   filter: invert(1);
 }
 
@@ -362,7 +340,6 @@ html.dark img[src*='/twitter.svg'] {
 a[href],
 button:not(:disabled),
 .nav-link,
-.theme-toggle,
 .scroll-top-btn,
 .home-inline-link,
 .publication-card {
