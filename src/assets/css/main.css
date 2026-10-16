@@ -121,7 +121,6 @@ body {
   max-width: var(--content-max-width);
   margin-inline: auto;
   padding-inline: 1.5rem;
-  box-sizing: border-box;
 }
 
 @media (min-width: 640px) {
@@ -130,17 +129,8 @@ body {
   }
 }
 
-/* Site prose typography */
-.prose-site {
-  color: var(--color-fg);
-  font-size: 1rem;
-  line-height: 1.75;
-}
-
 .prose-site a {
   color: var(--color-fg-deeper);
-  font-weight: inherit;
-  text-decoration: none;
   border-bottom: 1px solid rgba(125, 125, 125, 0.3);
   transition: border-color 0.3s ease;
 }
@@ -149,26 +139,7 @@ body {
   border-bottom-color: var(--color-fg);
 }
 
-/* Card links — keep the card box border, skip the prose underline */
-.prose-site a.publication-card,
-.prose-site a.publication-card:hover {
-  text-decoration: none;
-  border-bottom: 1px solid var(--color-border);
-}
-
-.prose-site .podcast-card a.podcast-card-title-link,
-.prose-site .podcast-card a.podcast-card-title-link:hover {
-  border-bottom: none;
-  text-decoration: none;
-}
-
-.prose-site .podcast-card a.podcast-platform {
-  border: none;
-  text-decoration: none;
-}
-
-.prose-site h1,
-.prose-site .section-title h1 {
+.prose-site h1 {
   color: var(--color-fg-deeper);
   font-size: 2.25rem;
   font-weight: 700;
@@ -191,25 +162,9 @@ body {
 }
 
 /* Home */
-.prose-home-title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-  color: var(--color-fg-deeper);
-  margin: 0;
-}
-
 .prose-home-lastname {
   color: var(--color-muted);
   font-weight: inherit;
-}
-
-.prose-home-greeting {
-  margin: 0.75rem 0 0;
-  font-size: 1rem;
-  line-height: 1.75;
-  color: var(--color-fg);
 }
 
 .skill-rows {
@@ -218,40 +173,18 @@ body {
 
 .skill-row {
   margin: 0.35rem 0 0;
-  font-size: 1rem;
-  line-height: 1.75;
-  color: var(--color-fg);
 }
 
-.skill-badge {
+.skill-row .tech-chip {
   margin: 4px;
 }
 
 .skill-row-label {
-  color: var(--color-fg);
   margin-right: 0.35rem;
-}
-
-.skill-row-chips {
-  display: inline;
-}
-
-.skill-row-item {
-  display: inline-flex;
-  align-items: center;
-}
-
-.skill-row-sep {
-  margin: 0 0.35rem;
-  color: var(--color-fg-light);
-  user-select: none;
 }
 
 .prose-home-lead {
   margin-top: 1.25rem;
-  font-size: 1rem;
-  line-height: 1.75;
-  color: var(--color-fg);
 }
 
 /* Home social blocks */
@@ -259,12 +192,6 @@ body {
   margin: 2.5rem 0 1.5rem;
   border: none;
   border-top: 1px solid var(--color-border);
-}
-
-.home-muted-label {
-  font-size: 1rem;
-  color: var(--color-fg);
-  margin: 0;
 }
 
 .home-find-stack {
@@ -281,24 +208,16 @@ body {
   row-gap: 0.5rem;
 }
 
-.home-link-row {
-  display: contents;
-}
-
 .home-inline-link {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
   color: var(--color-fg);
-  text-decoration: none;
   border-bottom: 1px solid rgba(125, 125, 125, 0.3);
-  text-underline-offset: 3px;
-  cursor: pointer;
   transition: border-color 0.3s ease;
 }
 
 .home-inline-link:hover {
-  border-bottom-color: var(--color-fg);
   color: var(--color-fg-deeper);
 }
 
@@ -308,8 +227,7 @@ body {
 }
 
 img[src*='/github.svg'],
-img[src*='/medium.svg'],
-img[src*='/twitter.svg'] {
+img[src*='/medium.svg'] {
   filter: invert(1);
 }
 
@@ -338,10 +256,6 @@ img[src*='/twitter.svg'] {
 
 /* Interactive cursor */
 a[href],
-button:not(:disabled),
-.nav-link,
-.scroll-top-btn,
-.home-inline-link,
-.publication-card {
+button:not(:disabled) {
   cursor: pointer;
 }

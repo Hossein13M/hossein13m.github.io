@@ -271,7 +271,7 @@ const maskStyle = 'radial-gradient(circle, transparent, black)';
   <div
     v-show="showTree"
     ref="rootRef"
-    class="tree-background pointer-events-none fixed inset-0 overflow-hidden print:hidden"
+    class="pointer-events-none fixed inset-0 overflow-hidden print:hidden"
     aria-hidden="true"
     :style="{
       zIndex: 0,

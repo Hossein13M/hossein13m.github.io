@@ -55,7 +55,6 @@ watch(
   border: none;
   background: color-mix(in srgb, var(--color-fg) 13%, transparent);
   color: var(--color-fg);
-  text-decoration: none;
   cursor: default;
   transform: translateY(2px);
   transition:

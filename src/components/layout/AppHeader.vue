@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <header class="app-header print:hidden">
     <div class="site-container app-header-inner">
@@ -17,7 +15,6 @@
   width: 100%;
   padding-top: env(safe-area-inset-top);
   border-bottom: 1px solid var(--color-border);
-  background: transparent;
 }
 
 .app-header-inner {

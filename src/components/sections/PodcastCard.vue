@@ -7,7 +7,13 @@ defineProps<{
 </script>
 
 <template>
-  <UiCard class="podcast-card backdrop-blur-none">
+  <div
+    class="podcast-card rounded-xl border p-5"
+    style="
+      border-color: var(--color-border);
+      background: var(--card-surface, var(--color-card));
+    "
+  >
     <img
       :src="podcast.image"
       :alt="podcast.organization"
@@ -16,7 +22,7 @@ defineProps<{
       class="podcast-cover"
       loading="lazy"
     />
-    <div class="podcast-body">
+    <div>
       <p class="podcast-org">{{ podcast.organization }}</p>
       <h3 class="text-lg font-semibold mt-1">
         <a
@@ -43,7 +49,7 @@ defineProps<{
         </a>
       </div>
     </div>
-  </UiCard>
+  </div>
 </template>
 
 <style scoped>
@@ -53,14 +59,8 @@ defineProps<{
   align-items: center;
   gap: 1rem;
   text-align: center;
-  cursor: default;
   --card-surface: transparent;
-  backdrop-filter: none;
   transition: background-color 0.2s ease;
-}
-
-.podcast-card * {
-  cursor: default;
 }
 
 .podcast-card:hover {
@@ -73,8 +73,6 @@ defineProps<{
   flex-shrink: 0;
   border-radius: 0.5rem;
   object-fit: cover;
-  transform: scale(1);
-  transform-origin: center;
   transition: transform 0.75s cubic-bezier(0.22, 0.61, 0.36, 1);
 }
 
@@ -95,13 +93,7 @@ defineProps<{
 
 .podcast-card-title-link {
   color: var(--color-fg-deeper);
-  text-decoration: none;
   border-bottom: none;
-  cursor: pointer;
-}
-
-.podcast-card-title-link * {
-  cursor: pointer;
 }
 
 .podcast-card-title-link:hover {
@@ -124,17 +116,10 @@ defineProps<{
   justify-content: center;
   gap: 0.5rem;
   border: none;
-  padding: 0;
   font-size: 0.875rem;
   opacity: 0.85;
-  text-decoration: none;
   color: inherit;
-  cursor: pointer;
   transition: opacity 0.2s ease;
-}
-
-.podcast-platform * {
-  cursor: pointer;
 }
 
 .podcast-platform img {
@@ -165,7 +150,6 @@ defineProps<{
   }
 
   .podcast-links {
-    display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
     width: auto;
@@ -174,7 +158,6 @@ defineProps<{
 
   .podcast-platform {
     border-radius: 0.5rem;
-    border: none;
     background: color-mix(in srgb, var(--color-fg) 4%, transparent);
     padding: 0.375rem 0.75rem;
     opacity: 0.7;

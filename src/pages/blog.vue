@@ -15,7 +15,7 @@ const sortedArticles = computed(() => {
 
 <template>
   <div class="slide-enter-content space-y-10">
-    <UiSectionTitle title="Blog" as="h1" />
+    <h1 class="mb-8">Blog</h1>
 
     <section class="space-y-4">
       <SectionsPodcastCard

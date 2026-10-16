@@ -18,11 +18,17 @@ defineProps<{
     <p class="role-summary">
       {{ role.jobSummary }}
     </p>
-    <UiTechChipGroup
+    <div
       v-if="role.jobRequiredSkills.length"
-      class="role-skills"
-      :items="role.jobRequiredSkills"
-    />
+      class="role-skills flex flex-wrap gap-2"
+      aria-label="Technologies"
+    >
+      <UiTechChip
+        v-for="skill in role.jobRequiredSkills"
+        :key="skill"
+        :label="skill"
+      />
+    </div>
   </article>
 </template>
 
@@ -36,7 +42,6 @@ defineProps<{
 }
 
 .role-title {
-  margin: 0;
   font-size: 1.25rem;
   font-weight: 600;
   line-height: 1.25;
@@ -44,15 +49,8 @@ defineProps<{
 }
 
 .role-date {
-  margin: 0;
   font-size: 0.875rem;
   line-height: 1.25;
-  color: var(--color-fg-light);
-}
-
-.role-meta {
-  margin-top: 0.25rem;
-  font-size: 0.875rem;
   color: var(--color-fg-light);
 }
 

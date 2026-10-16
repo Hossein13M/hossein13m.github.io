@@ -55,10 +55,7 @@ const route = useRoute();
 .nav-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
   font-size: 0.875rem;
-  text-decoration: none;
-  color: inherit;
   color: var(--color-fg);
   opacity: 0.6;
   cursor: pointer;
