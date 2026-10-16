@@ -11,7 +11,7 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
 </script>
 
 <template>
-  <article class="experience-card slide-enter-item">
+  <article class="experience-card">
     <div class="company-top">
       <div class="company-logo">
         <img
@@ -62,7 +62,6 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
   padding: 1.375rem;
   border-radius: 0.75rem;
   border: 1px solid var(--color-border);
-  background: transparent;
   cursor: default;
   transition: background-color 0.2s ease;
 }
@@ -93,7 +92,6 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
 
 .company-logo {
   grid-area: logo;
-  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,7 +99,6 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
   height: 3.5rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  border: none;
   background: color-mix(in srgb, var(--color-fg) 4%, transparent);
 }
 
@@ -146,7 +143,6 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
 
 .company-description {
   grid-area: description;
-  margin: 0;
   font-size: 0.875rem;
   line-height: 1.625;
   opacity: 0.7;
@@ -164,10 +160,6 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
 }
 
 @media (min-width: 640px) {
-  .experience-card {
-    padding: 1.375rem;
-  }
-
   .company-roles {
     margin-top: 1.5rem;
   }
@@ -176,7 +168,6 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
     display: flex;
     align-items: stretch;
     column-gap: 1.25rem;
-    row-gap: 0;
   }
 
   .company-logo {
@@ -194,12 +185,7 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
     min-height: 7.5rem;
   }
 
-  .company-heading {
-    grid-area: unset;
-  }
-
   .company-description {
-    grid-area: unset;
     margin-top: 0.5rem;
   }
 }

@@ -41,8 +41,6 @@ defineProps<{
   overflow: hidden;
   border-radius: 0.5rem;
   border: 1px solid var(--color-border);
-  background: transparent;
-  text-decoration: none;
   color: inherit;
   transition: background-color 0.2s ease;
   height: 100%;
@@ -50,15 +48,12 @@ defineProps<{
 
 .publication-card:hover {
   background: color-mix(in srgb, var(--color-fg) 5%, transparent);
-  text-decoration: none;
 }
 
 .publication-card-title {
-  margin: 0;
   font-size: 1.125rem;
   font-weight: 600;
   line-height: 1.375;
-  text-decoration: none;
   min-height: 2lh;
   display: flex;
   align-items: center;
@@ -78,8 +73,6 @@ defineProps<{
   object-fit: cover;
   object-position: center;
   opacity: 0.95;
-  transform: scale(1);
-  transform-origin: center;
   transition:
     transform 0.75s cubic-bezier(0.22, 0.61, 0.36, 1),
     opacity 0.5s ease;
@@ -110,7 +103,6 @@ defineProps<{
 
 .publication-card-summary {
   flex: 1;
-  margin: 0;
   font-size: 0.875rem;
   line-height: 1.55;
   opacity: 0.55;

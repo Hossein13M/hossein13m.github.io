@@ -31,7 +31,7 @@ export default defineNuxtConfig({
   modules: ['@vueuse/nuxt'],
   app: {
     head: {
-      htmlAttrs: { lang: 'en', class: 'dark' },
+      htmlAttrs: { lang: 'en' },
       // Static SEO tags so crawlers that skip SPA JS still get a preview image.
       title: 'Hossein Mousavi — Senior DevOps Engineer',
       meta: [

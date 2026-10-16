@@ -2,9 +2,7 @@
   <div class="app-shell">
     <LayoutAppHeader />
     <div class="app-scroll">
-      <main
-        class="page-content prose-site site-container relative flex-1 py-10"
-      >
+      <main class="prose-site site-container flex-1 py-10">
         <slot />
       </main>
       <LayoutAppFooter />

@@ -21,9 +21,7 @@ import { site } from '@/data/site';
   font-weight: 500;
   line-height: 1;
   color: var(--color-fg);
-  text-decoration: none;
   opacity: 0.6;
-  cursor: pointer;
   transition: opacity 0.2s ease;
 }
 

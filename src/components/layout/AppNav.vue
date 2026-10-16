@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { navigation, externalNav } from '@/data/navigation';
+import { socialIconPath } from '@/utils/socialIcon';
 
 const route = useRoute();
 </script>
@@ -29,10 +30,15 @@ const route = useRoute();
         :title="item.title"
         :aria-label="item.title"
       >
-        <IconsNavIcon :name="item.icon" />
+        <img
+          :src="socialIconPath(item.icon)"
+          alt=""
+          width="18"
+          height="18"
+          class="nav-icon"
+          aria-hidden="true"
+        />
       </a>
-
-      <!--      <LayoutThemeToggle />-->
     </div>
   </nav>
 </template>
@@ -57,10 +63,7 @@ const route = useRoute();
 .nav-link {
   display: inline-flex;
   align-items: center;
-  gap: 0.35rem;
   font-size: 0.875rem;
-  text-decoration: none;
-  color: inherit;
   color: var(--color-fg);
   opacity: 0.6;
   cursor: pointer;
@@ -73,8 +76,8 @@ const route = useRoute();
   opacity: 1;
 }
 
-.nav-link:hover :deep(.nav-icon),
-.nav-link.is-active :deep(.nav-icon) {
+.nav-link:hover .nav-icon,
+.nav-link.is-active .nav-icon {
   opacity: 1;
 }
 
@@ -84,5 +87,14 @@ const route = useRoute();
 
 .nav-link-icon-only {
   padding: 0.15rem;
+}
+
+.nav-icon {
+  display: block;
+  width: 1.125rem;
+  height: 1.125rem;
+  flex-shrink: 0;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
 }
 </style>

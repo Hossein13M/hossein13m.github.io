@@ -7,8 +7,8 @@ const lastName = lastNameParts.join(' ');
 </script>
 
 <template>
-  <section class="prose-home">
-    <h1 class="prose-home-title">
+  <section>
+    <h1>
       {{ firstName }}
       <span class="prose-home-lastname">{{ lastName }}</span>
     </h1>

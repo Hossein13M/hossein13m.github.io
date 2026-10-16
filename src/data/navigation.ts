@@ -1,4 +1,5 @@
 import type { NavItem } from '@/types/portfolio';
+import type { SocialIconName } from '@/utils/socialIcon';
 import { site } from './site';
 
 export const navigation: NavItem[] = [
@@ -6,7 +7,11 @@ export const navigation: NavItem[] = [
   { title: 'Blog', path: '/blog' },
 ];
 
-export const externalNav = [
-  { title: 'GitHub', url: site.github, icon: 'github' },
-  { title: 'LinkedIn', url: site.linkedin, icon: 'linkedin' },
+export const externalNav: Array<{
+  title: string;
+  url: string;
+  icon: SocialIconName;
+}> = [
+  { title: 'GitHub', url: site.github, icon: 'GitHub' },
+  { title: 'LinkedIn', url: site.linkedin, icon: 'LinkedIn' },
 ];

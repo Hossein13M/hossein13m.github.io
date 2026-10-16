@@ -1,6 +1,6 @@
 import type { HomeStat } from '@/types/portfolio';
-import { socialImage } from '@/utils/assets';
 import { companyLogoSrc } from '@/utils/companyLogo';
+import { socialIconPath } from '@/utils/socialIcon';
 import { getCurrentCompany } from './experience';
 import { site } from './site';
 
@@ -90,13 +90,13 @@ export type FindMeLink = {
 };
 
 export const findMeOnLinks: FindMeLink[] = [
-  { label: 'GitHub', url: site.github, icon: socialImage('github.svg') },
-  { label: 'LinkedIn', url: site.linkedin, icon: socialImage('linkedin.svg') },
-  { label: 'Medium', url: site.medium, icon: socialImage('medium.svg') },
+  { label: 'GitHub', url: site.github, icon: socialIconPath('GitHub') },
+  { label: 'LinkedIn', url: site.linkedin, icon: socialIconPath('LinkedIn') },
+  { label: 'Medium', url: site.medium, icon: socialIconPath('Medium') },
   {
     label: 'Stack Overflow',
     url: site.stackoverflow,
-    icon: socialImage('stackoverflow.svg'),
+    icon: socialIconPath('Stack Overflow'),
   },
-  { label: 'Telegram', url: site.telegram, icon: socialImage('telegram.svg') },
+  { label: 'Telegram', url: site.telegram, icon: socialIconPath('Telegram') },
 ];
