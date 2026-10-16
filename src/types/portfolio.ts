@@ -1,7 +1,6 @@
 export type NavItem = {
   title: string;
   path: string;
-  icon?: string;
 };
 
 export type HomeStat = {
@@ -55,20 +54,6 @@ export type JobExperience = {
   jobTitle: string;
   jobSummary: string;
   jobRequiredSkills: string[];
-};
-
-export type SocialType = 'openSource' | 'social' | 'content';
-
-export type SocialLink = {
-  name: string;
-  url: string;
-  icon: string;
-  type: SocialType;
-};
-
-export type SocialHeader = {
-  type: SocialType;
-  title: string;
 };
 
 export type Article = {
