@@ -21,6 +21,7 @@ const SKILL_ICONS: Record<string, string> = {
   ExpressJS: 'expressJS.svg',
   'Bash Script': 'bashScript.svg',
   Docker: 'docker.svg',
+  Kubernetes: 'kubernetes.svg',
   Cypress: 'cypress.svg',
   Jest: 'jest.svg',
   Testing: 'testing.svg',
