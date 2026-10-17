@@ -28,7 +28,6 @@ export default defineNuxtConfig({
     public: path.resolve(__dirname, 'public'),
   },
   css: ['~/assets/css/main.css'],
-  modules: ['@vueuse/nuxt'],
   app: {
     head: {
       htmlAttrs: { lang: 'en' },
