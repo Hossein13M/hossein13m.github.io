@@ -1,3 +1,9 @@
+declare global {
+  interface Window {
+    dataLayer?: unknown[][];
+  }
+}
+
 const MEASUREMENT_ID = 'G-1QNEEEHF99';
 
 export default defineNuxtPlugin(() => {
@@ -31,9 +37,3 @@ export default defineNuxtPlugin(() => {
     })
   );
 });
-
-declare global {
-  interface Window {
-    dataLayer?: unknown[][];
-  }
-}

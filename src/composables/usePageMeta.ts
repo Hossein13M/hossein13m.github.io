@@ -34,8 +34,6 @@ export function usePageMeta(options: PageMetaOptions = {}) {
   useHead({
     link: [{ rel: 'canonical', href: url }],
   });
-
-  return { title, description };
 }
 
 export function usePersonJsonLd() {

@@ -12,6 +12,7 @@ const route = useRoute();
         v-for="item in navigation"
         :key="item.path"
         :to="item.path"
+        prefetch-on="interaction"
         class="nav-link"
         :class="{ 'is-active': route.path === item.path }"
         :title="item.title"

@@ -199,9 +199,6 @@ importers:
       vue:
         specifier: 3.5.44
         version: 3.5.44(typescript@5.9.3)
-      vue-router:
-        specifier: 5.4.0
-        version: 5.4.0(@vue/compiler-sfc@3.5.42)(esbuild@0.28.2)(rolldown@1.2.14)(rollup@4.63.1)(vite@8.3.4(@types/node@24.19.2)(esbuild@0.28.2)(jiti@2.7.0)(terser@5.32.0)(yaml@2.9.1))(vue@3.5.44(typescript@5.9.3))
     devDependencies:
       '@commitlint/cli':
         specifier: 21.2.3

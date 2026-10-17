@@ -11,23 +11,6 @@ export const articles: Article[] = [
     image: img('observability.webp'),
     summary:
       'A simple guide to understanding logs, metrics, and traces, and how Eurowings Digital implements observability.',
-    publisher: 'Eurowings Digital',
-    publicationUrl: 'https://medium.com/eurowingsdigital',
-    language: 'English',
-    category: ['Tech'],
-    featured: true,
-  },
-  {
-    title: 'How to Implement Dark/Light Themes in a Next.js App',
-    url: 'https://javascript.plainenglish.io/how-to-implement-dark-light-themes-in-a-next-js-app-using-context-hook-tailwindcss-336558dd4579',
-    image: img('nextjs-tailwind.webp'),
-    summary:
-      'Initialize a Next.js application and then implement a dark and light theme toggle using the context hook and TailwindCSS.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
-    featured: true,
   },
   {
     title: 'Vue Reactivity In-Depth',
@@ -35,11 +18,6 @@ export const articles: Article[] = [
     image: img('vue-reactivity.webp'),
     summary:
       'How Vue handles reactivity, from ref and reactive to proxies, computed properties, and watchers behind the scenes.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
-    featured: true,
   },
   {
     title: 'The Ultimate Design Principles Guide For Developers',
@@ -47,11 +25,6 @@ export const articles: Article[] = [
     image: img('design.webp'),
     summary:
       'Bridging the gap between designers and developers, covering visual design basics and the fundamentals developers need to learn.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
-    featured: true,
   },
   {
     title: 'Cracking The Code Smells',
@@ -59,11 +32,6 @@ export const articles: Article[] = [
     image: img('codeSmells.webp'),
     summary:
       'Learn about code smells like long methods and spaghetti code, with real examples and ways to refactor toward cleaner code.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
-    featured: true,
   },
   {
     title: 'Understanding the Importance of Coupling in Software Development',
@@ -71,11 +39,6 @@ export const articles: Article[] = [
     image: img('coupling.webp'),
     summary:
       'Building flexible and maintainable systems for long term success by understanding coupling between software modules.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
-    featured: true,
   },
   {
     title: 'JavaScript’s Garbage Collector',
@@ -83,11 +46,6 @@ export const articles: Article[] = [
     image: img('garbage-collector.webp'),
     summary:
       'Efficient memory management for enhancing performance, including how JavaScript garbage collection and the mark and sweep algorithm work.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
-    featured: true,
   },
   {
     title: 'How JavaScript Proxy Works Under The Hood?',
@@ -95,10 +53,6 @@ export const articles: Article[] = [
     image: img('proxy.webp'),
     summary:
       'Uncover the power of JavaScript Proxy to customize object operations, enhance control, and add validation and security.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
   },
   {
     title: 'Software Development Is Not All About Coding!',
@@ -106,10 +60,6 @@ export const articles: Article[] = [
     image: img('not-coding.webp'),
     summary:
       'A guide to delivering working software effectively with more agility, beyond writing code, through estimation, teamwork, and simplicity.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
   },
   {
     title: 'Refactor Your Vue Application By Using Setup Scripts',
@@ -117,10 +67,6 @@ export const articles: Article[] = [
     image: img('vue-setup.webp'),
     summary:
       'A guide to enhance your Vue 3 application using script setup, refactoring from Options API to Composition API and then to script setup.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
   },
   {
     title: 'Linux Touchpad Gestures',
@@ -128,11 +74,6 @@ export const articles: Article[] = [
     image: img('linux-touchpad-gesture.webp'),
     summary:
       'Implement touchpad gestures for Linux by using the libinput gesture tool. Install and configure it for proper touchpad gestures.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
-    featured: true,
   },
   {
     title: 'A Complete Guide To Angular Multilingual Application (i18n)',
@@ -140,11 +81,6 @@ export const articles: Article[] = [
     image: img('angular-multi-lingual.webp'),
     summary:
       'Initialize and implement an Angular i18n application with Transloco, including lazy loaded translations in templates and TypeScript.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
-    featured: true,
   },
   {
     title: 'The Freedom They Stole From Us',
@@ -152,10 +88,6 @@ export const articles: Article[] = [
     image: img('freedom.webp'),
     summary:
       'Throughout history, ideologies have been used by governments and organizations to rule over people. Some are against freedom.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Personal Growth'],
   },
   {
     title: 'How to Enlighten Yourself As A Developer Throughout Your Career',
@@ -163,10 +95,6 @@ export const articles: Article[] = [
     image: img('enlightenment.webp'),
     summary:
       'Making progress toward your career and avoiding burning down is vital in any software developer career. We will discuss this in this Medium story.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Personal Growth'],
   },
   {
     title: 'What does it mean to truly be a responsible person?',
@@ -174,10 +102,6 @@ export const articles: Article[] = [
     image: img('responsibility.webp'),
     summary:
       'What it means to truly be a responsible person, built on knowledge and will, and how to accept the results of your choices.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Personal Growth'],
   },
   {
     title: 'API-First Approach Complete Guide',
@@ -185,11 +109,13 @@ export const articles: Article[] = [
     image: img('api-first.webp'),
     summary:
       'A complete look at the API first approach: design APIs as first class citizens so the product matches stakeholder needs before code takes over.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
-    featured: true,
+  },
+  {
+    title: 'How to Implement Dark/Light Themes in a Next.js App',
+    url: 'https://javascript.plainenglish.io/how-to-implement-dark-light-themes-in-a-next-js-app-using-context-hook-tailwindcss-336558dd4579',
+    image: img('nextjs-tailwind.webp'),
+    summary:
+      'Initialize a Next.js application and then implement a dark and light theme toggle using the context hook and TailwindCSS.',
   },
   {
     title: 'Multiple Interceptors in Angular',
@@ -197,10 +123,6 @@ export const articles: Article[] = [
     image: img('medium-interceptor.webp'),
     summary:
       'What interceptors do in Angular, how they sit between HttpClient and the server, and how to implement more than one of them.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
   },
   {
     title: 'Git Hook Husky 6 Lint and commitlint for JavaScript Projects',
@@ -208,11 +130,6 @@ export const articles: Article[] = [
     image: img('medium-husky.webp'),
     summary:
       'Use Git hooks with Husky to lint commit messages, format the project with Prettier and ESLint, and keep JavaScript commits consistent.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
-    featured: true,
   },
   {
     title: 'Angular Reactive Form with Angular Material and Custom Validation',
@@ -220,10 +137,6 @@ export const articles: Article[] = [
     image: img('medium-form.webp'),
     summary:
       'Implement a reactive Angular form with Angular Material and a custom, dynamic validator that changes with the selected role.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
   },
   {
     title: 'A Detailed Look at filter(), map(), and reduce() in JavaScript',
@@ -231,31 +144,7 @@ export const articles: Article[] = [
     image: img('medium-javascript.webp'),
     summary:
       'A deep dive into filter, map, and reduce on Array.prototype in JavaScript, what each method does, and how they differ.',
-    publisher: 'Medium',
-    publicationUrl: 'https://medium.com',
-    language: 'English',
-    category: ['Tech'],
   },
-  // {
-  //   title: 'Introduction to API Blueprint',
-  //   url: 'https://testfully.io/blog/api-blueprint/',
-  //   image: img('testfully-apiBlueprint.webp'),
-  //   summary: 'API blueprint — a high-level API design language for web APIs',
-  //   publisher: 'Testfully',
-  //   publicationUrl: 'https://testfully.io/blog',
-  //   language: 'English',
-  //   category: ['Tech'],
-  // },
-  // {
-  //   title: 'Top 7 Free & Paid mock API tools (2022 Review)',
-  //   url: 'https://testfully.io/blog/mock-api/',
-  //   image: img('testfully-mockAPI.webp'),
-  //   summary: 'Overview of mock API tools for development and testing',
-  //   publisher: 'Testfully',
-  //   publicationUrl: 'https://testfully.io/blog',
-  //   language: 'English',
-  //   category: ['Tech'],
-  // },
 ];
 
 export const podcasts: Podcast[] = [

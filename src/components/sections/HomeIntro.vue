@@ -1,6 +1,6 @@
 <script setup lang="ts">
+import { homeIntroduction } from '@/data/home';
 import { site } from '@/data/site';
-import { heroSummary } from '@/data/profile';
 
 const [firstName, ...lastNameParts] = site.name.split(' ');
 const lastName = lastNameParts.join(' ');
@@ -13,7 +13,7 @@ const lastName = lastNameParts.join(' ');
       <span class="prose-home-lastname">{{ lastName }}</span>
     </h1>
 
-    <p class="prose-home-lead">{{ heroSummary }}</p>
+    <p class="prose-home-lead">{{ homeIntroduction }}</p>
 
     <SectionsHomeSkillRows />
 

@@ -3,38 +3,6 @@ export type NavItem = {
   path: string;
 };
 
-export type HomeStat = {
-  title: string;
-  subtitle: string;
-};
-
-export type ProfileInfo = {
-  subject: string;
-  answer: string;
-};
-
-export type SpokenLanguage = {
-  name: string;
-  proficiency: string;
-};
-
-export type Education = {
-  degree: string;
-  institution: string;
-  period: string;
-};
-
-export type Certification = {
-  name: string;
-  issuer: string;
-};
-
-export type Volunteering = {
-  role: string;
-  organization: string;
-  url?: string;
-};
-
 export type Company = {
   companyId: number;
   logo: string;
@@ -48,7 +16,6 @@ export type Company = {
 
 export type JobExperience = {
   companyId: number;
-  employmentType: string;
   startDate: string;
   endDate: string;
   jobTitle: string;
@@ -61,14 +28,9 @@ export type Article = {
   url: string;
   image: string;
   summary: string;
-  publisher: string;
-  publicationUrl: string;
-  language: string;
-  category: string[];
-  featured?: boolean;
 };
 
-export type PodcastLink = {
+type PodcastLink = {
   name: string;
   icon: string;
   link: string;
