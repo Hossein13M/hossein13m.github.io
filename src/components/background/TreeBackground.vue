@@ -1,5 +1,10 @@
 <script setup lang="ts">
-import type { Fn } from '@vueuse/core';
+type Fn = () => void;
+
+type AnimationControls = {
+  pause: Fn;
+  resume: Fn;
+};
 
 const r180 = Math.PI;
 const r90 = Math.PI / 2;
@@ -10,11 +15,12 @@ const { random } = Math;
 
 const start = ref<Fn>(() => {});
 const branchLen = ref(6);
-const prefersReducedMotion = usePreferredReducedMotion();
+const prefersReducedMotion = ref(false);
+const showTree = computed(() => !prefersReducedMotion.value);
 
-const showTree = computed(() => prefersReducedMotion.value !== 'reduce');
-
-let controls: ReturnType<typeof useRafFn> | undefined;
+let controls: AnimationControls | undefined;
+let reducedMotionQuery: MediaQueryList | undefined;
+let viewportChangeTimer: ReturnType<typeof setTimeout> | undefined;
 let lastSetupWidth = 0;
 let lastSetupHeight = 0;
 let bounds = { w: 0, h: 0 };
@@ -68,6 +74,30 @@ function strokeColor() {
       .getPropertyValue('--color-tree-stroke')
       .trim() || '#88888825'
   );
+}
+
+function createAnimationLoop(callback: Fn): AnimationControls {
+  let frameId: number | undefined;
+  let running = false;
+
+  const tick = () => {
+    if (!running) return;
+    callback();
+    frameId = requestAnimationFrame(tick);
+  };
+
+  return {
+    pause() {
+      running = false;
+      if (frameId !== undefined) cancelAnimationFrame(frameId);
+      frameId = undefined;
+    },
+    resume() {
+      if (running) return;
+      running = true;
+      frameId = requestAnimationFrame(tick);
+    },
+  };
 }
 
 function setup() {
@@ -180,7 +210,7 @@ function setup() {
   };
 
   controls?.pause();
-  controls = useRafFn(frame, { immediate: false });
+  controls = createAnimationLoop(frame);
 
   start.value = () => {
     const ctx = drawCtx;
@@ -217,7 +247,7 @@ function expandHeight(nextH: number) {
   seedFromBottom?.();
 }
 
-const onViewportChange = useDebounceFn(() => {
+function handleViewportChange() {
   if (!showTree.value) {
     teardown();
     return;
@@ -230,26 +260,48 @@ const onViewportChange = useDebounceFn(() => {
   if (h - lastSetupHeight >= HEIGHT_JITTER_PX) {
     expandHeight(h);
   }
-}, 150);
-
-function teardown() {
-  controls?.pause();
-  resizeObserver?.disconnect();
-  resizeObserver = null;
-  window.visualViewport?.removeEventListener('resize', onViewportChange);
 }
 
-onMounted(() => {
-  if (showTree.value) nextTick(() => setup());
+function onViewportChange() {
+  if (viewportChangeTimer !== undefined) clearTimeout(viewportChangeTimer);
+  viewportChangeTimer = setTimeout(handleViewportChange, 150);
+}
 
+function updateReducedMotion() {
+  prefersReducedMotion.value = reducedMotionQuery?.matches ?? false;
+}
+
+function observeViewport() {
   resizeObserver = new ResizeObserver(() => onViewportChange());
   if (rootRef.value) resizeObserver.observe(rootRef.value);
   window.visualViewport?.addEventListener('resize', onViewportChange);
   window.addEventListener('resize', onViewportChange);
+}
+
+function teardown() {
+  controls?.pause();
+  if (viewportChangeTimer !== undefined) clearTimeout(viewportChangeTimer);
+  viewportChangeTimer = undefined;
+  resizeObserver?.disconnect();
+  resizeObserver = null;
+  window.visualViewport?.removeEventListener('resize', onViewportChange);
+  window.removeEventListener('resize', onViewportChange);
+}
+
+onMounted(() => {
+  reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
+  updateReducedMotion();
+  reducedMotionQuery.addEventListener('change', updateReducedMotion);
+
+  if (showTree.value)
+    nextTick(() => {
+      setup();
+      observeViewport();
+    });
 });
 
 onUnmounted(() => {
-  window.removeEventListener('resize', onViewportChange);
+  reducedMotionQuery?.removeEventListener('change', updateReducedMotion);
   teardown();
 });
 
@@ -258,7 +310,10 @@ watch(showTree, (visible) => {
     teardown();
     return;
   }
-  nextTick(() => setup());
+  nextTick(() => {
+    setup();
+    observeViewport();
+  });
 });
 
 const maskStyle = 'radial-gradient(circle, transparent, black)';
