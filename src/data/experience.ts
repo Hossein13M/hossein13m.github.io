@@ -106,7 +106,7 @@ export const experiences: JobExperience[] = [
       'Prometheus',
       'Grafana',
       'Git',
-      'Bash Script',
+      'Bash',
       'JavaScript',
       'Node.js',
       'Python',
@@ -155,7 +155,7 @@ export const experiences: JobExperience[] = [
       'C#',
       'Java',
       'Angular',
-      'VueJS',
+      'Vue',
       'Node.js',
       '.NET',
       'Spring',
@@ -181,7 +181,7 @@ export const experiences: JobExperience[] = [
     jobRequiredSkills: [
       'JavaScript',
       'TypeScript',
-      'VueJS',
+      'Vue',
       'NuxtJS',
       'Node.js',
       'Docker',
@@ -273,7 +273,7 @@ export const experiences: JobExperience[] = [
     jobSummary:
       'I kept network and core IT services running across the OSI layers, administered Windows and Linux environments, and managed users and access. I configured MikroTik routers with DHCP, DNS, and subnetting, troubleshot LAN and WAN issues, and worked to keep services reliable for the business.',
     jobRequiredSkills: [
-      'Bash Script',
+      'Bash',
       'Linux',
       'systemd',
       'SSH',
