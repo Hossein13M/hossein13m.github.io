@@ -19,7 +19,7 @@ const companiesWithRoles = computed(() =>
 
 <template>
   <div class="slide-enter-content space-y-6">
-    <h1 class="mb-8">Experiences</h1>
+    <h1 class="page-title">Experiences</h1>
 
     <SectionsExperienceCompanyCard
       v-for="{ company, roles } in companiesWithRoles"
