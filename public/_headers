@@ -1,3 +1,11 @@
+/*
+  Cross-Origin-Opener-Policy: same-origin
+  Permissions-Policy: camera=(), geolocation=(), microphone=()
+  Referrer-Policy: strict-origin-when-cross-origin
+  Strict-Transport-Security: max-age=31536000
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+
 /_nuxt/*
   Cache-Control: public, max-age=31536000, immutable
 
@@ -6,3 +14,4 @@
 
 /site.webmanifest
   Cache-Control: public, max-age=86400
+  Content-Type: application/manifest+json; charset=utf-8
