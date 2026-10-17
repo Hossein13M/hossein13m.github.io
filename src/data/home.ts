@@ -1,25 +1,23 @@
-import type { HomeStat } from '@/types/portfolio';
 import { companyLogoSrc } from '@/utils/companyLogo';
 import { socialIconPath } from '@/utils/socialIcon';
 import { getCurrentCompany } from './experience';
 import { site } from './site';
 
-export const homeStats: HomeStat[] = [
-  { title: '10+ Years', subtitle: 'Experience in Tech' },
-  { title: '20+', subtitle: 'Technical Articles' },
-  { title: '4,000+', subtitle: 'Stack Overflow Reputation' },
-  { title: '200+', subtitle: 'Code Reviews' },
-];
-
-export type SkillChipItem = {
+type SkillChipItem = {
   name: string;
   href?: string;
   iconUrl?: string;
 };
 
-export type SkillRow = {
+type SkillRow = {
   label: string;
   items: SkillChipItem[];
+};
+
+type FindMeLink = {
+  label: string;
+  url: string;
+  icon: string;
 };
 
 const currentCompany = getCurrentCompany();
@@ -76,11 +74,8 @@ export const skillRows: SkillRow[] = [
   },
 ];
 
-export type FindMeLink = {
-  label: string;
-  url: string;
-  icon: string;
-};
+export const homeIntroduction =
+  'I’m a Senior DevOps Engineer with 10+ years of experience in tech, having grown through roles in infrastructure, software engineering, and platform delivery. I care about reliable systems, clean automation, and infrastructure teams can depend on. I enjoy mentoring engineers and helping teams move with more clarity and confidence.';
 
 export const findMeOnLinks: FindMeLink[] = [
   { label: 'GitHub', url: site.github, icon: socialIconPath('GitHub') },

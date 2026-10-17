@@ -5,12 +5,6 @@ usePageMeta({
   title: 'Blog',
   description: 'Technical articles, publications, and podcast appearances.',
 });
-
-const sortedArticles = computed(() => {
-  const featured = articles.filter((a) => a.featured);
-  const rest = articles.filter((a) => !a.featured);
-  return [...featured, ...rest];
-});
 </script>
 
 <template>
@@ -28,7 +22,7 @@ const sortedArticles = computed(() => {
     <section>
       <div class="grid gap-x-6 gap-y-10 sm:grid-cols-2">
         <SectionsPublicationCard
-          v-for="article in sortedArticles"
+          v-for="article in articles"
           :key="article.url"
           :article="article"
         />

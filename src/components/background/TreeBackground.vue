@@ -10,7 +10,6 @@ const { random } = Math;
 
 const start = ref<Fn>(() => {});
 const branchLen = ref(6);
-const stopped = ref(true);
 const prefersReducedMotion = usePreferredReducedMotion();
 
 const showTree = computed(() => prefersReducedMotion.value !== 'reduce');
@@ -170,7 +169,6 @@ function setup() {
 
     if (!prevSteps.length) {
       seedGrowth();
-      stopped.value = false;
       return;
     }
 
@@ -196,7 +194,6 @@ function setup() {
     cycleStarted = performance.now();
     seedGrowth();
     controls?.resume();
-    stopped.value = false;
   };
 
   start.value();

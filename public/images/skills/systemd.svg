@@ -1,1 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200"><g transform="translate(60 -831.61)"><path fill="#201a26" d="M-60 831.611h300v200H-60z"/><path fill="#fff" d="M4 905.61v52h20v-8H12v-36h12v-8zm152 0v8h12v36h-12v8h20v-52z" color="#000" font-family="sans-serif" font-weight="400" overflow="visible" style="line-height:normal;font-variant-ligatures:normal;font-variant-position:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-alternates:normal;font-feature-settings:normal;text-indent:0;text-align:start;text-decoration-line:none;text-decoration-style:solid;text-decoration-color:#000;text-transform:none;text-orientation:mixed;white-space:normal;shape-padding:0;isolation:auto;mix-blend-mode:normal;solid-color:#000;solid-opacity:1"/><path fill="#30d475" d="m94 931.61 36-20v40z"/><circle cx="64.002" cy="931.611" r="18" fill="#30d475"/></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="200">
+  <g transform="translate(60 -831.61)">
+    <path fill="#201a26" d="M-60 831.611h300v200H-60z" />
+    <path
+      fill="#fff"
+      d="M4 905.61v52h20v-8H12v-36h12v-8zm152 0v8h12v36h-12v8h20v-52z"
+    />
+    <path fill="#30d475" d="m94 931.61 36-20v40z" />
+    <circle cx="64.002" cy="931.611" r="18" fill="#30d475" />
+  </g>
+</svg>

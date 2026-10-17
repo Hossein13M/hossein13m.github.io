@@ -1,5 +1,7 @@
 import { socialImage } from '@/utils/assets';
 
+export type SocialIconName = keyof typeof SOCIAL_ICONS;
+
 const SOCIAL_ICONS = {
   'Amazon Music': 'amazon-music.svg',
   'Apple Podcast': 'apple-podcast.svg',
@@ -11,8 +13,6 @@ const SOCIAL_ICONS = {
   'Stack Overflow': 'stackoverflow.svg',
   Telegram: 'telegram.svg',
 } as const;
-
-export type SocialIconName = keyof typeof SOCIAL_ICONS;
 
 export function socialIconPath(name: SocialIconName): string {
   return socialImage(SOCIAL_ICONS[name]);

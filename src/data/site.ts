@@ -9,7 +9,6 @@ export const site = {
   url: 'https://hossein.dev',
   ogImage: socialImage('og-preview.png'),
   email: 'dev.hosseinmousavi@gmail.com',
-  location: 'The Netherlands',
   github: 'https://github.com/hossein13m',
   linkedin: 'https://www.linkedin.com/in/hossein13m',
   stackoverflow: 'https://stackoverflow.com/users/10341207/hossein-mousavi',

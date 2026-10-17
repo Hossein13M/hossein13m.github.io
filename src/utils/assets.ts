@@ -1,4 +1,4 @@
-export const IMAGE_ROOT = '/images';
+const IMAGE_ROOT = '/images';
 
 export const companyImage = (file: string) => `${IMAGE_ROOT}/companies/${file}`;
 export const skillImage = (file: string) => `${IMAGE_ROOT}/skills/${file}`;

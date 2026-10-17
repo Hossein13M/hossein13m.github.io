@@ -84,10 +84,9 @@ export const companies: Company[] = [
   },
 ];
 
-export const experiences: JobExperience[] = [
+const experiences: JobExperience[] = [
   {
     companyId: 6,
-    employmentType: 'Full-Time',
     startDate: 'September 2026',
     endDate: 'Present',
     jobTitle: 'Senior DevOps Engineer',
@@ -116,7 +115,6 @@ export const experiences: JobExperience[] = [
   },
   {
     companyId: 0,
-    employmentType: 'Full-Time',
     startDate: 'February 2025',
     endDate: 'August 2026',
     jobTitle: 'Senior Software Engineer',
@@ -143,7 +141,6 @@ export const experiences: JobExperience[] = [
   },
   {
     companyId: 1,
-    employmentType: 'Full-Time',
     startDate: 'August 2024',
     endDate: 'January 2025',
     jobTitle: 'Senior Software Engineer',
@@ -172,7 +169,6 @@ export const experiences: JobExperience[] = [
   },
   {
     companyId: 2,
-    employmentType: 'Full-Time',
     startDate: 'December 2020',
     endDate: 'July 2024',
     jobTitle: 'Senior Front End Engineer',
@@ -192,7 +188,6 @@ export const experiences: JobExperience[] = [
   },
   {
     companyId: 7,
-    employmentType: 'Contract',
     startDate: 'November 2021',
     endDate: 'February 2022',
     jobTitle: 'Technical Author',
@@ -214,7 +209,6 @@ export const experiences: JobExperience[] = [
   },
   {
     companyId: 3,
-    employmentType: 'Full-Time',
     startDate: 'December 2019',
     endDate: 'December 2020',
     jobTitle: 'Front End Team Lead',
@@ -234,7 +228,6 @@ export const experiences: JobExperience[] = [
   },
   {
     companyId: 3,
-    employmentType: 'Full-Time',
     startDate: 'September 2019',
     endDate: 'December 2019',
     jobTitle: 'Front End Developer',
@@ -256,7 +249,6 @@ export const experiences: JobExperience[] = [
   },
   {
     companyId: 4,
-    employmentType: 'Full-Time',
     startDate: 'July 2018',
     endDate: 'August 2019',
     jobTitle: 'Front End Developer',
@@ -266,7 +258,6 @@ export const experiences: JobExperience[] = [
   },
   {
     companyId: 5,
-    employmentType: 'Full-Time',
     startDate: 'January 2016',
     endDate: 'July 2018',
     jobTitle: 'Network Infrastructure Engineer',
@@ -295,7 +286,7 @@ export const experiences: JobExperience[] = [
   },
 ];
 
-export function getCompanyById(id: number) {
+function getCompanyById(id: number) {
   return companies.find((c) => c.companyId === id);
 }
 
