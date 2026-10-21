@@ -1,0 +1,19 @@
+# Hossein Mousavi
+
+> Personal site of Hossein Mousavi, a Senior DevOps Engineer. Use this file to understand the site structure, then follow the links for the pages you need.
+
+This site is a static portfolio at https://hossein.dev. It covers work experience, writing, and contact links. There are no accounts, forms, or authenticated areas.
+
+## Pages
+
+- [Home](https://hossein.dev/): Introduction, current workplace, skills, and contact links
+- [Experiences](https://hossein.dev/experiences): Roles at NN, AIHR, Eurowings, Alibaba Travels, Testfully, Tapsell, XEPOS, and MFT
+- [Blog](https://hossein.dev/blog): Technical articles and a podcast appearance
+
+## Profiles
+
+- [GitHub](https://github.com/hossein13m): Open source and public repositories
+- [LinkedIn](https://www.linkedin.com/in/hossein13m): Professional profile
+- [Medium](https://hossein13m.medium.com/): Long-form writing
+- [Stack Overflow](https://stackoverflow.com/users/10341207/hossein-mousavi): Q&A profile
+- [Telegram](https://t.me/DevDastan): Direct contact

@@ -107,6 +107,7 @@ export default defineNuxtConfig({
           href: '/apple-touch-icon.png',
         },
         { rel: 'manifest', href: '/site.webmanifest' },
+        { rel: 'describedby', href: '/llms.txt', type: 'text/markdown' },
       ],
     },
   },
