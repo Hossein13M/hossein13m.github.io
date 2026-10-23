@@ -48,6 +48,7 @@ defineProps<{
 
 .publication-card:hover {
   background: color-mix(in srgb, var(--color-fg) 5%, transparent);
+  border-bottom-color: var(--color-border);
 }
 
 .publication-card-title {
