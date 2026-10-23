@@ -1,13 +1,14 @@
 <script setup lang="ts">
-import type { Company, JobExperience } from '@/types/portfolio';
-import { companyLogoSrc } from '@/utils/companyLogo';
+import type { Company } from '@/types/company';
+import type { Role } from '@/types/role';
+import { companyLogoUrl } from '@/utils/companyLogo';
 
 const props = defineProps<{
   company: Company;
-  roles: JobExperience[];
+  roles: Role[];
 }>();
 
-const imgSrc = computed(() => companyLogoSrc(props.company.logo));
+const imgSrc = computed(() => companyLogoUrl(props.company.logo));
 </script>
 
 <template>
@@ -48,9 +49,9 @@ const imgSrc = computed(() => companyLogoSrc(props.company.logo));
     </div>
 
     <div class="company-roles">
-      <SectionsExperienceRole
+      <RoleCard
         v-for="role in roles"
-        :key="`${role.jobTitle}-${role.startDate}`"
+        :key="`${role.title}-${role.startDate}`"
         :role="role"
       />
     </div>

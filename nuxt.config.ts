@@ -11,6 +11,7 @@ export default defineNuxtConfig({
     appManifest: false,
   },
   srcDir: 'src/',
+  components: [{ path: '~/components', pathPrefix: false }],
   nitro: {
     preset: 'netlify-static',
     prerender: {

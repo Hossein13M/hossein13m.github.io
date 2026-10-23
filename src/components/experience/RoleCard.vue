@@ -1,33 +1,29 @@
 <script setup lang="ts">
-import type { JobExperience } from '@/types/portfolio';
+import type { Role } from '@/types/role';
 import { formatDateRange } from '@/utils/formatDate';
 
 defineProps<{
-  role: JobExperience;
+  role: Role;
 }>();
 </script>
 
 <template>
   <article class="experience-role">
     <div class="role-heading">
-      <h3 class="role-title">{{ role.jobTitle }}</h3>
+      <h3 class="role-title">{{ role.title }}</h3>
       <time class="role-date font-mono">
         {{ formatDateRange(role.startDate, role.endDate) }}
       </time>
     </div>
     <p class="role-summary">
-      {{ role.jobSummary }}
+      {{ role.summary }}
     </p>
     <div
-      v-if="role.jobRequiredSkills.length"
+      v-if="role.skills.length"
       class="role-skills flex flex-wrap gap-2"
       aria-label="Technologies"
     >
-      <UiTechChip
-        v-for="skill in role.jobRequiredSkills"
-        :key="skill"
-        :label="skill"
-      />
+      <TechChip v-for="skill in role.skills" :key="skill" :label="skill" />
     </div>
   </article>
 </template>

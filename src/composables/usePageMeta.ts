@@ -1,12 +1,12 @@
 import { site } from '@/data/site';
 
-type PageMetaOptions = {
+type PageMeta = {
   title?: string;
   description?: string;
   image?: string;
 };
 
-export function usePageMeta(options: PageMetaOptions = {}) {
+export function usePageMeta(options: PageMeta = {}) {
   const config = useRuntimeConfig();
   const title = options.title ? `${options.title} — ${site.name}` : site.title;
   const description = options.description ?? site.description;

@@ -1,39 +1,39 @@
 <script setup lang="ts">
-import { findMeOnLinks, mentoringLinks } from '@/data/home';
+import { mentoringLinks, socialLinks } from '@/data/home';
 import { site } from '@/data/site';
-import { socialIconPath } from '@/utils/socialIcon';
+import { socialIconUrl } from '@/utils/socialIcon';
 </script>
 
 <template>
   <section>
     <hr class="home-divider" />
-    <div class="home-find-stack">
-      <div class="home-find-row">
+    <div class="contact-stack">
+      <div class="contact-row">
         <p>Find me on</p>
-        <UiHomeInlineLink
-          v-for="link in findMeOnLinks"
-          :key="link.url"
-          :href="link.url"
+        <InlineLink
+          v-for="link in socialLinks"
+          :key="link.href"
+          :href="link.href"
           :label="link.label"
           :icon="link.icon"
         />
       </div>
-      <div class="home-find-row">
+      <div class="contact-row">
         <p>I’m mentoring at</p>
-        <UiHomeInlineLink
+        <InlineLink
           v-for="link in mentoringLinks"
-          :key="link.url"
-          :href="link.url"
+          :key="link.href"
+          :href="link.href"
           :label="link.label"
           :icon="link.icon"
         />
       </div>
-      <div class="home-find-row">
+      <div class="contact-row">
         <p>Mail me at</p>
-        <UiHomeInlineLink
+        <InlineLink
           :href="`mailto:${site.email}`"
           :label="site.email"
-          :icon="socialIconPath('Gmail')"
+          :icon="socialIconUrl('Gmail')"
           mono
         />
       </div>

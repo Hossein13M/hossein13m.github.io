@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { companies, getExperiencesForCompany } from '@/data/experience';
+import { companies, getRolesForCompany } from '@/data/experience';
 
 usePageMeta({
   title: 'Experiences',
@@ -11,7 +11,7 @@ const companiesWithRoles = computed(() =>
   companies
     .map((company) => ({
       company,
-      roles: getExperiencesForCompany(company.companyId),
+      roles: getRolesForCompany(company.id),
     }))
     .filter((entry) => entry.roles.length > 0)
 );
@@ -21,9 +21,9 @@ const companiesWithRoles = computed(() =>
   <div class="slide-enter-content space-y-6">
     <h1 class="page-title">Experiences</h1>
 
-    <SectionsExperienceCompanyCard
+    <CompanyCard
       v-for="{ company, roles } in companiesWithRoles"
-      :key="company.companyId"
+      :key="company.id"
       :company="company"
       :roles="roles"
     />

@@ -1,7 +1,7 @@
 import { skillImage } from '@/utils/assets';
 
 /** Custom skill icons in public/images/skills/ */
-const SKILL_ICONS: Record<string, string> = {
+const SKILL_ICON_FILES: Record<string, string> = {
   Angular: 'angular.svg',
   Vue: 'vueJS.svg',
   NuxtJS: 'nuxtJS.svg',
@@ -63,7 +63,7 @@ const SKILL_ICONS: Record<string, string> = {
   systemd: 'systemd.svg',
 };
 
-export function techIconPath(label: string): string | undefined {
-  const icon = SKILL_ICONS[label];
+export function skillIconUrl(label: string): string | undefined {
+  const icon = SKILL_ICON_FILES[label];
   return icon ? skillImage(icon) : undefined;
 }

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { homeIntroduction } from '@/data/home';
+import { introduction } from '@/data/home';
 import { site } from '@/data/site';
 
 const [firstName, ...lastNameParts] = site.name.split(' ');
@@ -13,10 +13,10 @@ const lastName = lastNameParts.join(' ');
       <span class="prose-home-lastname">{{ lastName }}</span>
     </h1>
 
-    <p class="prose-home-lead">{{ homeIntroduction }}</p>
+    <p class="prose-home-lead">{{ introduction }}</p>
 
-    <SectionsHomeSkillRows />
+    <SkillGroups />
 
-    <SectionsHomeFindMe />
+    <ContactLinks />
   </section>
 </template>

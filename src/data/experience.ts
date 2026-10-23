@@ -1,8 +1,9 @@
-import type { Company, JobExperience } from '@/types/portfolio';
+import type { Company } from '@/types/company';
+import type { Role } from '@/types/role';
 
 export const companies: Company[] = [
   {
-    companyId: 6,
+    id: 6,
     logo: 'nn.svg',
     name: 'Nationale Nederlanden',
     alias: 'NN',
@@ -13,7 +14,7 @@ export const companies: Company[] = [
       'Dutch financial services company offering insurance, pensions, and banking globally.',
   },
   {
-    companyId: 0,
+    id: 0,
     logo: 'aihr.svg',
     name: 'AIHR',
     industry: 'E-Learning',
@@ -23,7 +24,7 @@ export const companies: Company[] = [
       'Global leader in HR training and resources, building digital products for HR professionals worldwide.',
   },
   {
-    companyId: 1,
+    id: 1,
     logo: 'eurowings.svg',
     name: 'Eurowings',
     industry: 'Aviation',
@@ -33,7 +34,7 @@ export const companies: Company[] = [
       'Airline subsidiary of the Lufthansa Group, operating flights across Europe.',
   },
   {
-    companyId: 2,
+    id: 2,
     logo: 'alibaba',
     name: 'Alibaba Travels',
     industry: 'Travel & Tourism',
@@ -43,7 +44,7 @@ export const companies: Company[] = [
       "Iran's leading travel platform for flights, trains, buses, tours, and accommodation.",
   },
   {
-    companyId: 7,
+    id: 7,
     logo: 'testfully.png',
     name: 'Testfully',
     industry: 'Software Development',
@@ -53,7 +54,7 @@ export const companies: Company[] = [
       'API platform for building, testing, documenting, and monitoring APIs.',
   },
   {
-    companyId: 3,
+    id: 3,
     logo: 'tapsell',
     name: 'Tapsell',
     industry: 'Advertising Services',
@@ -63,7 +64,7 @@ export const companies: Company[] = [
       "Iran's leading advertising network connecting advertisers and publishers.",
   },
   {
-    companyId: 4,
+    id: 4,
     logo: 'xepos',
     name: 'XEPOS LTD',
     industry: 'Retail Software',
@@ -73,7 +74,7 @@ export const companies: Company[] = [
       'EPOS and retail technology solutions for restaurants and retailers across the UK.',
   },
   {
-    companyId: 5,
+    id: 5,
     logo: 'mft',
     name: 'MFT',
     industry: 'Network Infrastructure',
@@ -84,15 +85,15 @@ export const companies: Company[] = [
   },
 ];
 
-const experiences: JobExperience[] = [
+const roles: Role[] = [
   {
     companyId: 6,
     startDate: 'September 2026',
     endDate: 'Present',
-    jobTitle: 'Senior DevOps Engineer',
-    jobSummary:
+    title: 'Senior DevOps Engineer',
+    summary:
       'As part of the Customer Identity and Access Management (CIAM) team, I help design and implement the identity platform system on cloud infrastructure.',
-    jobRequiredSkills: [
+    skills: [
       'Docker',
       'Kubernetes',
       'System Design',
@@ -117,10 +118,10 @@ const experiences: JobExperience[] = [
     companyId: 0,
     startDate: 'February 2025',
     endDate: 'August 2026',
-    jobTitle: 'Senior Software Engineer',
-    jobSummary:
+    title: 'Senior Software Engineer',
+    summary:
       'I brought several Angular codebases together into one Nx monorepo and introduced a shared design system and component library. I helped move the team from Bitbucket to GitHub, set up delivery with GitHub Actions and AWS, and shaped frontend architecture practices across projects. I used AI-assisted tools for exploration and refactoring and shipped a new reporting experience for the product.',
-    jobRequiredSkills: [
+    skills: [
       'JavaScript',
       'TypeScript',
       'C#',
@@ -143,10 +144,10 @@ const experiences: JobExperience[] = [
     companyId: 1,
     startDate: 'August 2024',
     endDate: 'January 2025',
-    jobTitle: 'Senior Software Engineer',
-    jobSummary:
+    title: 'Senior Software Engineer',
+    summary:
       'I worked on strengthening checkout and payment flows with PCI tokenization and spent time raising code quality through reviews and frontend best-practice sessions. I documented infrastructure and architecture so new engineers could onboard more easily, and wrote about observability in production systems.',
-    jobRequiredSkills: [
+    skills: [
       'JavaScript',
       'TypeScript',
       'C#',
@@ -171,10 +172,10 @@ const experiences: JobExperience[] = [
     companyId: 2,
     startDate: 'December 2020',
     endDate: 'July 2024',
-    jobTitle: 'Senior Front End Engineer',
-    jobSummary:
+    title: 'Senior Front End Engineer',
+    summary:
       'I focused on the tour product and conversion through experimentation and A/B testing. I led the migration from Vue 2 to Vue 3, improved day-to-day developer experience with auto-imports and a pnpm-based monorepo, and built the rate-and-review module. I worked closely with product and backend in an agile squad on features that supported steady growth in sales.',
-    jobRequiredSkills: [
+    skills: [
       'JavaScript',
       'TypeScript',
       'Vue',
@@ -190,10 +191,10 @@ const experiences: JobExperience[] = [
     companyId: 7,
     startDate: 'November 2021',
     endDate: 'February 2022',
-    jobTitle: 'Technical Author',
-    jobSummary:
+    title: 'Technical Author',
+    summary:
       'I wrote technical documentation on software testing methods and API testing, including guides, tutorials, and material for test plans, cases, and scripts. I worked with the product team to keep the docs accurate and stayed current on API testing and monitoring practices.',
-    jobRequiredSkills: [
+    skills: [
       'Testing',
       'API Testing',
       'Smoke Testing',
@@ -211,10 +212,10 @@ const experiences: JobExperience[] = [
     companyId: 3,
     startDate: 'December 2019',
     endDate: 'December 2020',
-    jobTitle: 'Front End Team Lead',
-    jobSummary:
+    title: 'Front End Team Lead',
+    summary:
       'I led a small frontend team through a full website rewrite and the rollout of a design system that made new features easier and faster to build. I stayed hands-on in the codebase with regular code reviews and helped the team keep a consistent, high standard of quality.',
-    jobRequiredSkills: [
+    skills: [
       'JavaScript',
       'TypeScript',
       'Angular',
@@ -230,10 +231,10 @@ const experiences: JobExperience[] = [
     companyId: 3,
     startDate: 'September 2019',
     endDate: 'December 2019',
-    jobTitle: 'Front End Developer',
-    jobSummary:
+    title: 'Front End Developer',
+    summary:
       'I rebuilt the landing experience from WordPress to Angular and put more emphasis on testing and TypeScript across the frontend. I tuned performance and Core Web Vitals so the page felt faster and more stable for users.',
-    jobRequiredSkills: [
+    skills: [
       'JavaScript',
       'TypeScript',
       'Angular',
@@ -251,19 +252,19 @@ const experiences: JobExperience[] = [
     companyId: 4,
     startDate: 'July 2018',
     endDate: 'August 2019',
-    jobTitle: 'Front End Developer',
-    jobSummary:
+    title: 'Front End Developer',
+    summary:
       'I built a BPMN-based web application that replaced a lot of manual, paper-heavy workflows. I contributed to a widely used product for restaurants and retailers across the UK and chipped away at technical debt by tightening component boundaries and structure.',
-    jobRequiredSkills: ['JavaScript', 'TypeScript', 'Angular', 'Git', 'Agile'],
+    skills: ['JavaScript', 'TypeScript', 'Angular', 'Git', 'Agile'],
   },
   {
     companyId: 5,
     startDate: 'January 2016',
     endDate: 'July 2018',
-    jobTitle: 'Network Infrastructure Engineer',
-    jobSummary:
+    title: 'Network Infrastructure Engineer',
+    summary:
       'I kept network and core IT services running across the OSI layers, administered Windows and Linux environments, and managed users and access. I configured MikroTik routers with DHCP, DNS, and subnetting, troubleshot LAN and WAN issues, and worked to keep services reliable for the business.',
-    jobRequiredSkills: [
+    skills: [
       'Bash',
       'Linux',
       'systemd',
@@ -287,14 +288,14 @@ const experiences: JobExperience[] = [
 ];
 
 function getCompanyById(id: number) {
-  return companies.find((c) => c.companyId === id);
+  return companies.find((c) => c.id === id);
 }
 
-export function getExperiencesForCompany(companyId: number) {
-  return experiences.filter((e) => e.companyId === companyId);
+export function getRolesForCompany(companyId: number) {
+  return roles.filter((e) => e.companyId === companyId);
 }
 
 export function getCurrentCompany() {
-  const currentRole = experiences.find((role) => role.endDate === 'Present');
+  const currentRole = roles.find((role) => role.endDate === 'Present');
   return currentRole ? getCompanyById(currentRole.companyId) : undefined;
 }
