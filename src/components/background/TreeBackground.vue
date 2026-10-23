@@ -1,19 +1,19 @@
 <script setup lang="ts">
-type Fn = () => void;
+type VoidCallback = () => void;
 
 type AnimationControls = {
-  pause: Fn;
-  resume: Fn;
+  pause: VoidCallback;
+  resume: VoidCallback;
 };
 
-const r180 = Math.PI;
-const r90 = Math.PI / 2;
-const r15 = Math.PI / 12;
+const RADIANS_180 = Math.PI;
+const RADIANS_90 = Math.PI / 2;
+const RADIANS_15 = Math.PI / 12;
 const canvasRef = ref<HTMLCanvasElement | null>(null);
 const rootRef = ref<HTMLElement | null>(null);
 const { random } = Math;
 
-const start = ref<Fn>(() => {});
+const start = ref<VoidCallback>(() => {});
 const branchLen = ref(6);
 const prefersReducedMotion = ref(false);
 const showTree = computed(() => !prefersReducedMotion.value);
@@ -25,7 +25,7 @@ let lastSetupWidth = 0;
 let lastSetupHeight = 0;
 let bounds = { w: 0, h: 0 };
 let drawCtx: CanvasRenderingContext2D | null = null;
-let seedFromBottom: Fn | null = null;
+let seedFromBottom: VoidCallback | null = null;
 let resizeObserver: ResizeObserver | null = null;
 const MIN_CYCLE_MS = 30_000;
 const SLOW_AFTER_MS = 45_000;
@@ -64,7 +64,7 @@ function backingStore(
   return ctx;
 }
 
-function polar2cart(x: number, y: number, r: number, theta: number) {
+function polarToCartesian(x: number, y: number, r: number, theta: number) {
   return [x + r * Math.cos(theta), y + r * Math.sin(theta)] as const;
 }
 
@@ -76,7 +76,7 @@ function strokeColor() {
   );
 }
 
-function createAnimationLoop(callback: Fn): AnimationControls {
+function createAnimationLoop(callback: VoidCallback): AnimationControls {
   let frameId: number | undefined;
   let running = false;
 
@@ -115,8 +115,8 @@ function setup() {
   ctx.lineWidth = 1;
   ctx.strokeStyle = strokeColor();
 
-  let steps: Fn[] = [];
-  let prevSteps: Fn[] = [];
+  let steps: VoidCallback[] = [];
+  let prevSteps: VoidCallback[] = [];
   let cycleStarted = performance.now();
   let slowed = false;
 
@@ -125,15 +125,15 @@ function setup() {
     if (!ctx) return;
     const length = random() * branchLen.value;
     counter.value += 1;
-    const [nx, ny] = polar2cart(x, y, length, rad);
+    const [nx, ny] = polarToCartesian(x, y, length, rad);
 
     ctx.beginPath();
     ctx.moveTo(x, y);
     ctx.lineTo(nx, ny);
     ctx.stroke();
 
-    const rad1 = rad + random() * r15;
-    const rad2 = rad - random() * r15;
+    const rad1 = rad + random() * RADIANS_15;
+    const rad2 = rad - random() * RADIANS_15;
 
     if (nx < -100 || nx > bounds.w + 100 || ny < -100 || ny > bounds.h + 100)
       return;
@@ -153,16 +153,18 @@ function setup() {
 
   const seedGrowth = () => {
     const seeds = [
-      () => step(randomMiddle() * bounds.w, -5, r90),
-      () => step(randomMiddle() * bounds.w, bounds.h + 5, -r90),
+      () => step(randomMiddle() * bounds.w, -5, RADIANS_90),
+      () => step(randomMiddle() * bounds.w, bounds.h + 5, -RADIANS_90),
       () => step(-5, randomMiddle() * bounds.h, 0),
-      () => step(bounds.w + 5, randomMiddle() * bounds.h, r180),
+      () => step(bounds.w + 5, randomMiddle() * bounds.h, RADIANS_180),
     ];
     steps.push(...(bounds.w < 500 ? seeds.slice(0, 2) : seeds));
   };
 
   seedFromBottom = () => {
-    steps.push(() => step(randomMiddle() * bounds.w, bounds.h + 5, -r90));
+    steps.push(() =>
+      step(randomMiddle() * bounds.w, bounds.h + 5, -RADIANS_90)
+    );
   };
 
   const fadeSoftly = () => {

@@ -1,41 +1,36 @@
-import { companyLogoSrc } from '@/utils/companyLogo';
-import { socialIconPath } from '@/utils/socialIcon';
+import type { SocialLink } from '@/types/social-link';
+import { companyLogoUrl } from '@/utils/companyLogo';
+import { socialIconUrl } from '@/utils/socialIcon';
 import { getCurrentCompany } from './experience';
 import { site } from './site';
 
-type SkillChipItem = {
+type SkillChip = {
   name: string;
   href?: string;
   iconUrl?: string;
 };
 
-type SkillRow = {
+type SkillGroup = {
   label: string;
-  items: SkillChipItem[];
-};
-
-type FindMeLink = {
-  label: string;
-  url: string;
-  icon: string;
+  items: SkillChip[];
 };
 
 const currentCompany = getCurrentCompany();
 
-const currentWorkplaceItems: SkillChipItem[] = currentCompany
+const currentWorkplaceChips: SkillChip[] = currentCompany
   ? [
       {
         name: currentCompany.alias || currentCompany.name,
         href: currentCompany.website || undefined,
-        iconUrl: companyLogoSrc(currentCompany.logo),
+        iconUrl: companyLogoUrl(currentCompany.logo),
       },
     ]
   : [];
 
-export const skillRows: SkillRow[] = [
+export const skillGroups: SkillGroup[] = [
   {
     label: 'Currently working at',
-    items: currentWorkplaceItems,
+    items: currentWorkplaceChips,
   },
   {
     label: 'Experienced in',
@@ -74,17 +69,25 @@ export const skillRows: SkillRow[] = [
   },
 ];
 
-export const homeIntroduction =
+export const introduction =
   'I’m a Senior DevOps Engineer with 10+ years of experience in tech, having grown through roles in infrastructure, software engineering, and platform delivery. I care about reliable systems, clean automation, and infrastructure teams can depend on. I enjoy mentoring engineers and helping teams move with more clarity and confidence.';
 
-export const findMeOnLinks: FindMeLink[] = [
-  { label: 'GitHub', url: site.github, icon: socialIconPath('GitHub') },
-  { label: 'LinkedIn', url: site.linkedin, icon: socialIconPath('LinkedIn') },
-  { label: 'Medium', url: site.medium, icon: socialIconPath('Medium') },
+export const socialLinks: SocialLink[] = [
+  { label: 'GitHub', href: site.github, icon: socialIconUrl('GitHub') },
+  { label: 'LinkedIn', href: site.linkedin, icon: socialIconUrl('LinkedIn') },
+  { label: 'Medium', href: site.medium, icon: socialIconUrl('Medium') },
   {
     label: 'Stack Overflow',
-    url: site.stackoverflow,
-    icon: socialIconPath('Stack Overflow'),
+    href: site.stackoverflow,
+    icon: socialIconUrl('Stack Overflow'),
   },
-  { label: 'Telegram', url: site.telegram, icon: socialIconPath('Telegram') },
+  { label: 'Telegram', href: site.telegram, icon: socialIconUrl('Telegram') },
+];
+
+export const mentoringLinks: SocialLink[] = [
+  {
+    label: 'MentorCruise',
+    href: site.mentorcruise,
+    icon: socialIconUrl('MentorCruise'),
+  },
 ];

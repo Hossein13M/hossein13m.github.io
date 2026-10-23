@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { navigation, externalNav } from '@/data/navigation';
-import { socialIconPath } from '@/utils/socialIcon';
+import { mainNav, socialNav } from '@/data/navigation';
+import { socialIconUrl } from '@/utils/socialIcon';
 
 const route = useRoute();
 </script>
@@ -9,7 +9,7 @@ const route = useRoute();
   <nav class="app-nav" aria-label="Main">
     <div class="nav-links">
       <NuxtLink
-        v-for="item in navigation"
+        v-for="item in mainNav"
         :key="item.path"
         :to="item.path"
         prefetch-on="interaction"
@@ -22,7 +22,7 @@ const route = useRoute();
       </NuxtLink>
 
       <a
-        v-for="item in externalNav"
+        v-for="item in socialNav"
         :key="item.url"
         :href="item.url"
         target="_blank"
@@ -32,7 +32,7 @@ const route = useRoute();
         :aria-label="item.title"
       >
         <img
-          :src="socialIconPath(item.icon)"
+          :src="socialIconUrl(item.icon)"
           alt=""
           width="18"
           height="18"

@@ -1,8 +1,8 @@
 <script setup lang="ts">
-import type { Article } from '@/types/portfolio';
+import type { Publication } from '@/types/publication';
 
 defineProps<{
-  article: Article;
+  article: Publication;
 }>();
 </script>
 

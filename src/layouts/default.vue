@@ -1,11 +1,11 @@
 <template>
   <div class="app-shell">
-    <LayoutAppHeader />
+    <Header />
     <div class="app-scroll">
       <main class="prose-site site-container flex-1 py-10">
         <slot />
       </main>
-      <LayoutAppFooter />
+      <Footer />
     </div>
   </div>
 </template>

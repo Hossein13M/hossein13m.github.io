@@ -1,8 +1,8 @@
 <template>
   <header class="app-header print:hidden">
     <div class="site-container app-header-inner">
-      <LayoutAppLogo />
-      <LayoutAppNav />
+      <Logo />
+      <Nav />
     </div>
   </header>
 </template>

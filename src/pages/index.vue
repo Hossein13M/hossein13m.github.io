@@ -6,6 +6,6 @@ usePersonJsonLd();
 
 <template>
   <div class="slide-enter-content">
-    <SectionsHomeIntro />
+    <Intro />
   </div>
 </template>

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { techIconPath } from '@/utils/techIcon';
+import { skillIconUrl } from '@/utils/skillIcon';
 
 const props = defineProps<{
   label: string;
@@ -7,7 +7,7 @@ const props = defineProps<{
   iconUrl?: string;
 }>();
 
-const resolvedIcon = computed(() => props.iconUrl || techIconPath(props.label));
+const resolvedIcon = computed(() => props.iconUrl || skillIconUrl(props.label));
 const iconFailed = ref(false);
 
 const showIcon = computed(() => resolvedIcon.value && !iconFailed.value);

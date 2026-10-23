@@ -11,7 +11,7 @@ usePageMeta({ title: 'Not Found' });
 
 <template>
   <div class="flex min-h-dvh flex-col">
-    <LayoutAppHeader />
+    <Header />
     <main
       class="mx-auto flex max-w-5xl flex-1 flex-col items-center justify-center px-5 py-20 text-center"
     >
@@ -26,6 +26,6 @@ usePageMeta({ title: 'Not Found' });
         Go Home
       </NuxtLink>
     </main>
-    <LayoutAppFooter />
+    <Footer />
   </div>
 </template>

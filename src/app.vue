@@ -1,5 +1,5 @@
 <template>
-  <BackgroundTreeBackground />
+  <TreeBackground />
   <NuxtLayout>
     <NuxtPage />
   </NuxtLayout>

@@ -14,4 +14,5 @@ export const site = {
   stackoverflow: 'https://stackoverflow.com/users/10341207/hossein-mousavi',
   medium: 'https://hossein13m.medium.com/',
   telegram: 'https://t.me/DevDastan',
+  mentorcruise: 'https://mentorcruise.com/mentor/hosseinmousavi/?source=embed',
 } as const;

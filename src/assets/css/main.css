@@ -171,19 +171,19 @@ body {
   font-weight: inherit;
 }
 
-.skill-rows {
+.skill-groups {
   margin: 0.75rem 0 0;
 }
 
-.skill-row {
+.skill-group {
   margin: 0.35rem 0 0;
 }
 
-.skill-row .tech-chip {
+.skill-group .tech-chip {
   margin: 4px;
 }
 
-.skill-row-label {
+.skill-group-label {
   margin-right: 0.35rem;
 }
 
@@ -198,13 +198,13 @@ body {
   border-top: 1px solid var(--color-border);
 }
 
-.home-find-stack {
+.contact-stack {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
-.home-find-row {
+.contact-row {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -212,7 +212,7 @@ body {
   row-gap: 0.5rem;
 }
 
-.home-inline-link {
+.inline-link {
   display: inline-flex;
   align-items: center;
   gap: 0.35rem;
@@ -221,11 +221,11 @@ body {
   transition: border-color 0.3s ease;
 }
 
-.home-inline-link:hover {
+.inline-link:hover {
   color: var(--color-fg-deeper);
 }
 
-.home-inline-link-icon {
+.inline-link-icon {
   opacity: 0.75;
   object-fit: contain;
 }
@@ -235,24 +235,24 @@ img[src*='/medium.svg'] {
   filter: invert(1);
 }
 
-.home-email-mono {
+.email-mono {
   font-family: var(--font-mono), monospace;
 }
 
 @media (max-width: 639px) {
-  .skill-row .tech-chip {
+  .skill-group .tech-chip {
     font-size: 0.875rem;
   }
 
-  .home-find-row .home-inline-link {
+  .contact-row .inline-link {
     font-size: 0.875rem;
   }
 
-  .home-email-mono {
+  .email-mono {
     font-size: 0.875rem;
   }
 
-  .home-inline-link-icon {
+  .inline-link-icon {
     width: 0.875rem;
     height: 0.875rem;
   }

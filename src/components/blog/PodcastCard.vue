@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { Podcast } from '@/types/portfolio';
+import type { Podcast } from '@/types/podcast';
 
 defineProps<{
   podcast: Podcast;
@@ -26,12 +26,12 @@ defineProps<{
       <p class="podcast-org">{{ podcast.organization }}</p>
       <h3 class="text-lg font-semibold mt-1">
         <a
-          :href="podcast.generalLink"
+          :href="podcast.url"
           target="_blank"
           rel="noopener noreferrer"
           class="podcast-card-title-link"
         >
-          {{ podcast.subject }}
+          {{ podcast.title }}
         </a>
       </h3>
       <p class="podcast-description">{{ podcast.description }}</p>
@@ -39,7 +39,7 @@ defineProps<{
         <a
           v-for="link in podcast.links"
           :key="link.name"
-          :href="link.link"
+          :href="link.url"
           target="_blank"
           rel="noopener noreferrer"
           class="podcast-platform"
