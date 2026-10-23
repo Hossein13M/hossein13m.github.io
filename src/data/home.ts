@@ -88,3 +88,11 @@ export const findMeOnLinks: FindMeLink[] = [
   },
   { label: 'Telegram', url: site.telegram, icon: socialIconPath('Telegram') },
 ];
+
+export const mentoringLinks: FindMeLink[] = [
+  {
+    label: 'MentorCruise',
+    url: site.mentorcruise,
+    icon: socialIconPath('MentorCruise'),
+  },
+];
