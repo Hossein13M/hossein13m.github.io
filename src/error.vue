@@ -1,31 +1,46 @@
 <script setup lang="ts">
-defineProps<{
+const props = defineProps<{
   error: {
     statusCode: number;
     message: string;
   };
 }>();
 
-usePageMeta({ title: 'Not Found' });
+usePageMeta({
+  title: props.error.statusCode === 404 ? 'Not Found' : 'Error',
+  index: false,
+});
 </script>
 
 <template>
-  <div class="flex min-h-dvh flex-col">
-    <Header />
-    <main
-      class="mx-auto flex max-w-5xl flex-1 flex-col items-center justify-center px-5 py-20 text-center"
-    >
-      <h1 class="text-6xl font-bold opacity-30">{{ error.statusCode }}</h1>
-      <p class="mt-4 text-xl font-medium">You have been lost!</p>
-      <p class="mt-2 opacity-60">{{ error.message }}</p>
-      <NuxtLink
-        to="/"
-        class="mt-8 rounded-lg px-6 py-2.5 font-medium"
-        style="background: var(--color-accent); color: var(--color-fg-deeper)"
-      >
-        Go Home
-      </NuxtLink>
+  <div class="error-page">
+    <TreeBackground />
+    <main class="prose-site error-main">
+      <h1>You have been lost!</h1>
+      <a href="/">Go home</a>
     </main>
-    <Footer />
   </div>
 </template>
+
+<style scoped>
+.error-page {
+  min-height: 100dvh;
+}
+
+.error-main {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  min-height: 100dvh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  padding: 2.5rem 1.5rem;
+  text-align: center;
+}
+
+.error-main h1 {
+  margin: 0;
+}
+</style>
