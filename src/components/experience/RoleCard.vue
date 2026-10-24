@@ -29,6 +29,8 @@ defineProps<{
 </template>
 
 <style scoped>
+@reference '../../assets/css/main.css';
+
 .role-heading {
   display: flex;
   flex-wrap: wrap;
@@ -69,7 +71,7 @@ defineProps<{
   border-top: 1px solid var(--color-border);
 }
 
-@media (max-width: 639px) {
+@variant max-sm {
   .role-heading {
     flex-direction: column;
     align-items: flex-start;

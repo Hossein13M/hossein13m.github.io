@@ -32,53 +32,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       htmlAttrs: { lang: 'en' },
-      // Static SEO tags so crawlers that skip SPA JS still get a preview image.
-      title: 'Hossein Mousavi — Senior DevOps Engineer',
       meta: [
-        {
-          name: 'description',
-          content:
-            'Senior DevOps Engineer with 10+ years of experience in tech. Background in infrastructure, software engineering, and platform delivery with Docker, Kubernetes, AWS, and CI/CD.',
-        },
-        { property: 'og:type', content: 'website' },
-        { property: 'og:site_name', content: 'Hossein Mousavi' },
-        {
-          property: 'og:title',
-          content: 'Hossein Mousavi — Senior DevOps Engineer',
-        },
-        {
-          property: 'og:description',
-          content:
-            'Senior DevOps Engineer with 10+ years of experience in tech. Background in infrastructure, software engineering, and platform delivery with Docker, Kubernetes, AWS, and CI/CD.',
-        },
-        {
-          property: 'og:url',
-          content: 'https://hossein.dev',
-        },
-        {
-          property: 'og:image',
-          content: 'https://hossein.dev/images/social/og-preview.png',
-        },
-        { property: 'og:image:width', content: '1200' },
-        { property: 'og:image:height', content: '630' },
-        {
-          property: 'og:image:alt',
-          content: 'Hossein Mousavi portfolio homepage',
-        },
-        { name: 'twitter:card', content: 'summary_large_image' },
-        {
-          name: 'twitter:title',
-          content: 'Hossein Mousavi — Senior DevOps Engineer',
-        },
-        {
-          name: 'twitter:description',
-          content:
-            'Senior DevOps Engineer with 10+ years of experience in tech. Background in infrastructure, software engineering, and platform delivery with Docker, Kubernetes, AWS, and CI/CD.',
-        },
-        {
-          name: 'twitter:image',
-          content: 'https://hossein.dev/images/social/og-preview.png',
-        },
         { name: 'theme-color', content: '#0c1014' },
         { name: 'msapplication-TileColor', content: '#0c1014' },
         {

@@ -53,6 +53,8 @@ defineProps<{
 </template>
 
 <style scoped>
+@reference '../../assets/css/main.css';
+
 .podcast-card {
   display: flex;
   flex-direction: column;
@@ -136,13 +138,13 @@ defineProps<{
   opacity: 1;
 }
 
-@media (max-width: 639px) {
+@variant max-sm {
   .podcast-org {
     display: none;
   }
 }
 
-@media (min-width: 640px) {
+@variant sm {
   .podcast-card {
     flex-direction: row;
     align-items: flex-start;

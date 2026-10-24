@@ -59,6 +59,8 @@ const imgSrc = computed(() => companyLogoUrl(props.company.logo));
 </template>
 
 <style scoped>
+@reference '../../assets/css/main.css';
+
 .experience-card {
   padding: 1.375rem;
   border-radius: 0.75rem;
@@ -136,12 +138,6 @@ const imgSrc = computed(() => companyLogoUrl(props.company.logo));
   opacity: 0.5;
 }
 
-@media (max-width: 639px) {
-  .company-meta {
-    font-size: 0.75rem;
-  }
-}
-
 .company-description {
   grid-area: description;
   font-size: 0.875rem;
@@ -153,14 +149,18 @@ const imgSrc = computed(() => companyLogoUrl(props.company.logo));
   margin-top: 1.25rem;
 }
 
-@media (max-width: 639px) {
+@variant max-sm {
+  .company-meta {
+    font-size: 0.75rem;
+  }
+
   .company-description {
     font-size: 0.75rem;
     line-height: 1.5;
   }
 }
 
-@media (min-width: 640px) {
+@variant sm {
   .company-roles {
     margin-top: 1.5rem;
   }

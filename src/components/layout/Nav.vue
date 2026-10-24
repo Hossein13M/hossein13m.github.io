@@ -69,16 +69,22 @@ const route = useRoute();
   opacity: 0.6;
   cursor: pointer;
   transition: opacity 0.2s ease;
-  outline: none;
 }
 
 .nav-link:hover,
-.nav-link.is-active {
+.nav-link.is-active,
+.nav-link:focus-visible {
   opacity: 1;
 }
 
+.nav-link:focus-visible {
+  outline: 2px solid var(--color-fg-deeper);
+  outline-offset: 3px;
+}
+
 .nav-link:hover .nav-icon,
-.nav-link.is-active .nav-icon {
+.nav-link.is-active .nav-icon,
+.nav-link:focus-visible .nav-icon {
   opacity: 1;
 }
 
