@@ -29,11 +29,10 @@ for (const entry of readdirSync(outputDirectory, {
 const scriptHashes = [...hashes].sort().join(' ');
 if (!scriptHashes) throw new Error('No inline scripts found for CSP hashing.');
 
-const policy = [
+const directives = [
   "default-src 'self'",
   "base-uri 'self'",
   "object-src 'none'",
-  "frame-ancestors 'none'",
   "frame-src 'none'",
   "form-action 'self'",
   `script-src 'self' https://www.googletagmanager.com ${scriptHashes}`,
@@ -45,7 +44,11 @@ const policy = [
   "manifest-src 'self'",
   "worker-src 'self'",
   'upgrade-insecure-requests',
-].join('; ');
+];
+
+// frame-ancestors is valid only in an HTTP header. A meta tag logs a console error and Lighthouse fails Best Practices.
+const headerPolicy = [...directives, "frame-ancestors 'none'"].join('; ');
+const metaPolicy = directives.join('; ');
 
 const headers = readFileSync(headersPath, 'utf8');
 if (!headers.startsWith('/*\n')) {
@@ -54,11 +57,11 @@ if (!headers.startsWith('/*\n')) {
 
 writeFileSync(
   headersPath,
-  headers.replace('/*\n', `/*\n  Content-Security-Policy: ${policy}\n`)
+  headers.replace('/*\n', `/*\n  Content-Security-Policy: ${headerPolicy}\n`)
 );
 
 // GitHub Pages ignores _headers. A meta tag is what the browser actually receives.
-const metaTag = `<meta http-equiv="Content-Security-Policy" content="${policy}">`;
+const metaTag = `<meta http-equiv="Content-Security-Policy" content="${metaPolicy}">`;
 
 for (const filePath of htmlFiles) {
   const html = readFileSync(filePath, 'utf8');
