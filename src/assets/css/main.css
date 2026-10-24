@@ -244,17 +244,14 @@ img[src*='/medium.svg'] {
     font-size: 0.875rem;
   }
 
-  .contact-row .inline-link {
-    font-size: 0.875rem;
-  }
-
-  .email-mono {
-    font-size: 0.875rem;
+  .inline-link {
+    font-size: 0.75rem;
+    white-space: nowrap;
   }
 
   .inline-link-icon {
-    width: 0.875rem;
-    height: 0.875rem;
+    width: 0.75rem;
+    height: 0.75rem;
   }
 }
 
