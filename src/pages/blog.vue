@@ -5,6 +5,17 @@ usePageMeta({
   title: 'Blog',
   description: 'Technical articles, publications, and podcast appearances.',
 });
+
+useItemListJsonLd('Writing and talks', [
+  ...podcasts.map((podcast) => ({
+    name: podcast.title,
+    url: podcast.url,
+  })),
+  ...publications.map((article) => ({
+    name: article.title,
+    url: article.url,
+  })),
+]);
 </script>
 
 <template>

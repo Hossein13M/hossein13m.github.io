@@ -47,6 +47,7 @@ export default [
         useColorMode: 'readonly',
         usePageMeta: 'readonly',
         usePersonJsonLd: 'readonly',
+        useItemListJsonLd: 'readonly',
         useWindowSize: 'readonly',
         useDebounceFn: 'readonly',
         useRafFn: 'readonly',
