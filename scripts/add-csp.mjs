@@ -6,6 +6,7 @@ const outputDirectory = new URL('../dist/', import.meta.url);
 const headersPath = new URL('_headers', outputDirectory);
 const scriptPattern = /<script\b([^>]*)>([\s\S]*?)<\/script>/gi;
 const hashes = new Set();
+const htmlFiles = [];
 
 for (const entry of readdirSync(outputDirectory, {
   recursive: true,
@@ -13,7 +14,9 @@ for (const entry of readdirSync(outputDirectory, {
 })) {
   if (!entry.isFile() || !entry.name.endsWith('.html')) continue;
 
-  const html = readFileSync(join(entry.parentPath, entry.name), 'utf8');
+  const filePath = join(entry.parentPath, entry.name);
+  htmlFiles.push(filePath);
+  const html = readFileSync(filePath, 'utf8');
   for (const match of html.matchAll(scriptPattern)) {
     const [, attributes, content] = match;
     if (/\bsrc\s*=/.test(attributes) || !content) continue;
@@ -53,3 +56,24 @@ writeFileSync(
   headersPath,
   headers.replace('/*\n', `/*\n  Content-Security-Policy: ${policy}\n`)
 );
+
+// GitHub Pages ignores _headers. A meta tag is what the browser actually receives.
+const metaTag = `<meta http-equiv="Content-Security-Policy" content="${policy}">`;
+
+for (const filePath of htmlFiles) {
+  const html = readFileSync(filePath, 'utf8');
+  if (html.includes('http-equiv="Content-Security-Policy"')) continue;
+
+  const head = html.match(/<head[^>]*>/i);
+  if (!head) throw new Error(`No <head> in ${filePath}`);
+
+  // Nuxt writes 404.html as an empty client shell, so the error-page meta never lands in it.
+  const notFoundTags = filePath.endsWith('/404.html')
+    ? '\n    <title>Not Found — Hossein Mousavi</title>\n    <meta name="robots" content="noindex, nofollow">'
+    : '';
+
+  writeFileSync(
+    filePath,
+    html.replace(head[0], `${head[0]}\n    ${metaTag}${notFoundTags}`)
+  );
+}
