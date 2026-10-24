@@ -1,6 +1,8 @@
 @import 'tailwindcss';
 @import '../styles/tokens.css';
 
+/* Breakpoint mixins: @variant sm|md|lg|xl|2xl and max-sm|max-md|max-lg|max-xl|max-2xl */
+
 @theme {
   --font-sans:
     ui-sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
@@ -121,10 +123,8 @@ body {
   max-width: var(--content-max-width);
   margin-inline: auto;
   padding-inline: 1.5rem;
-}
 
-@media (min-width: 640px) {
-  .site-container {
+  @variant sm {
     padding-inline: 2rem;
   }
 }
@@ -239,7 +239,7 @@ img[src*='/medium.svg'] {
   font-family: var(--font-mono), monospace;
 }
 
-@media (max-width: 639px) {
+@variant max-sm {
   .skill-group .tech-chip {
     font-size: 0.875rem;
   }

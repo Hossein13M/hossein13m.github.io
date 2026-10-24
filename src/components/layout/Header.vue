@@ -8,6 +8,8 @@
 </template>
 
 <style scoped>
+@reference '../../assets/css/main.css';
+
 .app-header {
   position: relative;
   z-index: 40;
@@ -22,10 +24,8 @@
   justify-content: space-between;
   gap: 0.75rem 1rem;
   padding-block: 0.75rem;
-}
 
-@media (min-width: 640px) {
-  .app-header-inner {
+  @variant sm {
     padding-block: 0.875rem;
   }
 }
