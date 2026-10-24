@@ -1,5 +1,6 @@
 <template>
   <header class="app-header print:hidden">
+    <a class="skip-link" href="#main-content">Skip to content</a>
     <div class="site-container app-header-inner">
       <Logo />
       <Nav />
@@ -16,6 +17,22 @@
   flex-shrink: 0;
   width: 100%;
   padding-top: env(safe-area-inset-top);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1.5rem;
+  top: 0.75rem;
+  z-index: 50;
+  padding: 0.35rem 0.7rem;
+  color: var(--color-fg-deeper);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  transform: translateY(-150%);
+}
+
+.skip-link:focus {
+  transform: translateY(0);
 }
 
 .app-header-inner {

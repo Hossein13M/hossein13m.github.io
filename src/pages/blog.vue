@@ -23,6 +23,7 @@ useItemListJsonLd('Writing and talks', [
     <h1 class="page-title">Blog</h1>
 
     <section class="space-y-4">
+      <h2 class="visually-hidden">Podcasts</h2>
       <PodcastCard
         v-for="podcast in podcasts"
         :key="podcast.url"
@@ -31,6 +32,7 @@ useItemListJsonLd('Writing and talks', [
     </section>
 
     <section>
+      <h2 class="visually-hidden">Articles</h2>
       <div class="grid gap-x-6 gap-y-10 sm:grid-cols-2">
         <PublicationCard
           v-for="publication in publications"

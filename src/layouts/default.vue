@@ -2,7 +2,11 @@
   <div class="app-shell">
     <Header />
     <div class="app-scroll">
-      <main class="prose-site site-container flex-1 py-10">
+      <main
+        id="main-content"
+        class="prose-site site-container flex-1 py-10"
+        tabindex="-1"
+      >
         <slot />
       </main>
       <Footer />
@@ -26,6 +30,10 @@
   overflow-y: auto;
   overscroll-behavior: contain;
   scrollbar-gutter: stable;
+}
+
+#main-content:focus {
+  outline: none;
 }
 
 @media print {
