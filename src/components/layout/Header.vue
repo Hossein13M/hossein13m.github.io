@@ -14,7 +14,6 @@
   flex-shrink: 0;
   width: 100%;
   padding-top: env(safe-area-inset-top);
-  border-bottom: 1px solid var(--color-border);
 }
 
 .app-header-inner {
