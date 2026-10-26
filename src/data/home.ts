@@ -70,7 +70,7 @@ export const skillGroups: SkillGroup[] = [
 ];
 
 export const introduction =
-  'I’m a Senior DevOps Engineer based in the Netherlands, with 10+ years of experience in tech, having grown through roles in infrastructure, software engineering, and platform delivery. I care about reliable systems, clean automation, security, and cloud infrastructure teams can depend on. I enjoy mentoring engineers and helping teams move with more clarity and confidence.';
+  'I’m a Senior DevOps Engineer based in the Netherlands, with 10+ years of experience in tech, having grown through roles in infrastructure, software engineering, and platform delivery. I care about reliable and secure systems, clean automation, and cloud infrastructure teams can depend on. I helping teams move with more clarity and confidence and enjoy mentoring engineers.';
 
 export const socialLinks: SocialLink[] = [
   { label: 'GitHub', href: site.github, icon: socialIconUrl('GitHub') },
