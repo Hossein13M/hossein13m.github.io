@@ -153,7 +153,7 @@ export const podcasts: Podcast[] = [
     organization: 'Adventures in Angular',
     title: 'Podcast Guest: Template Driven VS Reactive Forms',
     image: socialImage('adventure-in-angular.webp'),
-    url: 'https://adventuresinangular.com/template-driven-approach-vs-reactive-form-approach-with-hossein-mousavi-aia-346',
+    url: 'https://topenddevs.com/podcasts/adventures-in-angular/template-driven-approach-vs-reactive-form-approach-with-hossein-mousavi-aia-346',
     description:
       'A practical discussion on Angular form approaches and tradeoffs.',
     links: [
