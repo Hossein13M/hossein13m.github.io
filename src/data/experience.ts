@@ -120,7 +120,7 @@ const roles: Role[] = [
     endDate: 'August 2026',
     title: 'Senior Software Engineer',
     summary:
-      'I brought several Angular codebases together into one Nx monorepo and introduced a shared design system and component library. I helped move the team from Bitbucket to GitHub, set up delivery with GitHub Actions and AWS, and shaped frontend architecture practices across projects. I used AI-assisted tools for exploration and refactoring and shipped a new reporting experience for the product.',
+      'I brought several Angular codebases together into one Nx monorepo and introduced a shared design system and component library. I helped move the team from Bitbucket to GitHub, set up delivery with GitHub Actions and AWS, and shaped architecture practices across projects. I used AI assisted tools for exploration and refactoring, and I built the reporting system for the product.',
     skills: [
       'JavaScript',
       'TypeScript',
@@ -174,7 +174,7 @@ const roles: Role[] = [
     endDate: 'July 2024',
     title: 'Senior Front End Engineer',
     summary:
-      'I focused on the tour product and conversion through experimentation and A/B testing. I led the migration from Vue 2 to Vue 3, improved day-to-day developer experience with auto-imports and a pnpm-based monorepo, and built the rate-and-review module. I worked closely with product and backend in an agile squad on features that supported steady growth in sales.',
+      'I focused on the tour product and conversion through experimentation and A/B testing. I led the migration from Vue 2 to Vue 3, improved day to day developer experience with auto imports and a pnpm based monorepo, and built the rate and review module with dynamic forms. I worked closely with product and backend in an agile squad on features that supported steady growth in sales.',
     skills: [
       'JavaScript',
       'TypeScript',
@@ -193,7 +193,7 @@ const roles: Role[] = [
     endDate: 'February 2022',
     title: 'Technical Author',
     summary:
-      'I wrote technical documentation on software testing methods and API testing, including guides, tutorials, and material for test plans, cases, and scripts. I worked with the product team to keep the docs accurate and stayed current on API testing and monitoring practices.',
+      'I wrote technical documentation on software testing methods and API testing, including guides, tutorials, and material for test plans, cases, and scripts. I worked with the product team to keep the docs accurate, and I stayed current on API testing and monitoring practices.',
     skills: [
       'Testing',
       'API Testing',
@@ -254,7 +254,7 @@ const roles: Role[] = [
     endDate: 'August 2019',
     title: 'Front End Developer',
     summary:
-      'I built a BPMN-based web application that replaced a lot of manual, paper-heavy workflows. I contributed to a widely used product for restaurants and retailers across the UK and chipped away at technical debt by tightening component boundaries and structure.',
+      'I built a BPMN based web application that replaced a lot of manual, paper heavy workflows. I also worked on a product that restaurants and retailers use for menus, floor maps, orders, and reporting.',
     skills: ['JavaScript', 'TypeScript', 'Angular', 'Git', 'Agile'],
   },
   {
