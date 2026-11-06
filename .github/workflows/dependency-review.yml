@@ -4,6 +4,7 @@ name: Dependency review
 on:
   pull_request:
     branches: [master]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -22,4 +23,7 @@ jobs:
         uses: actions/dependency-review-action@a1d282b36b6f3519aa1f3fc636f609c47dddb294 # v5.0.0
         with:
           fail-on-severity: high
-          comment-summary-in-pr: always
+          # A manual run has no pull request, so compare the selected branch with master and skip the comment.
+          comment-summary-in-pr: ${{ github.event_name == 'pull_request' && 'always' || 'never' }}
+          base-ref: ${{ github.event_name == 'workflow_dispatch' && 'master' || '' }}
+          head-ref: ${{ github.event_name == 'workflow_dispatch' && github.sha || '' }}
