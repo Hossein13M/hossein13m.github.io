@@ -1,6 +1,6 @@
 declare global {
   interface Window {
-    dataLayer?: unknown[][];
+    dataLayer?: unknown[];
   }
 }
 
@@ -14,7 +14,12 @@ export default defineNuxtPlugin(() => {
     loaded = true;
 
     const dataLayer = (window.dataLayer ||= []);
-    const gtag = (...args: unknown[]) => dataLayer.push(args);
+
+    function gtag(..._args: unknown[]) {
+      // gtag.js ignores a real array. The command has to be an Arguments object.
+      // eslint-disable-next-line prefer-rest-params
+      dataLayer.push(arguments);
+    }
 
     gtag('js', new Date());
     gtag('config', MEASUREMENT_ID);
@@ -24,16 +29,23 @@ export default defineNuxtPlugin(() => {
     script.src = `https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`;
     document.head.appendChild(script);
 
-    interactionEvents.forEach((event) =>
-      window.removeEventListener(event, loadAnalytics)
-    );
+    window.removeEventListener('pointerdown', loadAnalytics);
+    window.removeEventListener('keydown', loadAnalytics);
+    document.removeEventListener('scroll', loadAnalytics, true);
   };
 
-  const interactionEvents = ['pointerdown', 'keydown', 'scroll'] as const;
-  interactionEvents.forEach((event) =>
-    window.addEventListener(event, loadAnalytics, {
-      once: true,
-      passive: true,
-    })
-  );
+  window.addEventListener('pointerdown', loadAnalytics, {
+    once: true,
+    passive: true,
+  });
+  window.addEventListener('keydown', loadAnalytics, {
+    once: true,
+    passive: true,
+  });
+  // Scrolling happens inside .app-scroll, so a window scroll listener never runs.
+  document.addEventListener('scroll', loadAnalytics, {
+    capture: true,
+    once: true,
+    passive: true,
+  });
 });
