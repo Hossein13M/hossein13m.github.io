@@ -1,14 +1,40 @@
 # Hossein Mousavi
 
-> Personal site of Hossein Mousavi, a Senior DevOps Engineer. Use this file to understand the site structure, then follow the links for the pages you need.
+> Senior DevOps Engineer in the Netherlands. Personal site at https://hossein.dev with work history, writing, and contact links. There are no accounts, forms, or authenticated areas.
 
-This site is a static portfolio at https://hossein.dev. It covers work experience, writing, and contact links. There are no accounts, forms, or authenticated areas.
+Hossein Mousavi is a Senior DevOps Engineer based in the Netherlands, with more than 10 years in tech. He grew through network infrastructure, frontend and software engineering, and platform delivery. He cares about reliable and secure systems, clean automation, cloud infrastructure, and mentoring engineers.
+
+Email: dev.hosseinmousavi@gmail.com
+
+## Current role
+
+Senior DevOps Engineer at Nationale Nederlanden (NN) in the Netherlands, since September 2026. NN is a Dutch financial services company offering insurance, pensions, and banking. He works on the Customer Identity and Access Management (CIAM) team and helps design and implement the identity platform on cloud infrastructure, using Docker, Kubernetes, AWS, Azure, CI/CD, Helm, Kafka, Splunk, Prometheus, and Grafana.
+
+## Work history
+
+- September 2026–present: Senior DevOps Engineer, Nationale Nederlanden (NN), the Netherlands. Identity platform on cloud infrastructure for the CIAM team.
+- February 2025–August 2026: Senior Software Engineer, AIHR, the Netherlands. Brought Angular codebases into one Nx monorepo, introduced a shared design system, moved delivery to GitHub Actions and AWS, and built the product reporting system.
+- August 2024–January 2025: Senior Software Engineer, Eurowings, Germany. Strengthened checkout and payment flows with PCI tokenization, documented architecture for new engineers, and wrote about observability.
+- December 2020–July 2024: Senior Front End Engineer, Alibaba Travels, Iran. Tour product and conversion work, including the migration from Vue 2 to Vue 3 and a pnpm monorepo.
+- November 2021–February 2022: Technical Author, Testfully, Australia. Documentation on software testing methods and API testing.
+- December 2019–December 2020: Front End Team Lead, Tapsell, Iran. Led a website rewrite and a design system.
+- September 2019–December 2019: Front End Developer, Tapsell, Iran. Rebuilt the landing experience from WordPress to Angular.
+- July 2018–August 2019: Front End Developer, XEPOS LTD, United Kingdom. Built a BPMN web application and worked on retail software for menus, floor maps, orders, and reporting.
+- January 2016–July 2018: Network Infrastructure Engineer, MFT, Iran. Kept network and core IT services running across Linux, Windows, routing, and access management.
+
+## Skills
+
+Docker, Kubernetes, system design, AWS, Azure, Linux, CI/CD, Helm, Terraform, Kafka, Prometheus, Grafana, Splunk, Git, Bash, JavaScript, TypeScript, C#, Python, Node.js, SQL, MongoDB, Angular, Vue, React, Express, .NET, TCP/IP, AI, and Agile.
 
 ## Pages
 
-- [Home](https://hossein.dev/): Introduction, current workplace, skills, and contact links
-- [Experiences](https://hossein.dev/experiences): Roles at NN, AIHR, Eurowings, Alibaba Travels, Testfully, Tapsell, XEPOS, and MFT
-- [Blog](https://hossein.dev/blog): Technical articles and a podcast appearance
+- [Home](https://hossein.dev/): Introduction, current workplace, skills, mentoring, and contact links
+- [Experiences](https://hossein.dev/experiences): Full roles and company descriptions
+- [Blog](https://hossein.dev/blog): Article list and one podcast. The articles themselves are hosted on Medium and related sites, not on this domain.
+
+## Writing
+
+Articles cover observability, Vue reactivity and script setup, design principles, code smells, coupling, JavaScript garbage collection and Proxy, Angular i18n, interceptors, and reactive forms, API-first design, Next.js themes, and Git hooks with Husky. Podcast: guest on Adventures in Angular, "Template Driven VS Reactive Forms" (Top End Devs).
 
 ## Profiles
 

@@ -5,7 +5,7 @@ export const site = {
   jobTitle: 'Senior DevOps Engineer',
   title: 'Hossein Mousavi — Senior DevOps Engineer',
   description:
-    'Senior DevOps Engineer with 10+ years of experience in tech. Background in infrastructure, software engineering, and platform delivery with Docker, Kubernetes, AWS, and CI/CD.',
+    'Senior DevOps Engineer at Nationale Nederlanden in the Netherlands. 10+ years across infrastructure, software engineering, and platform delivery.',
   url: 'https://hossein.dev',
   ogImage: socialImage('og-preview.png'),
   email: 'dev.hosseinmousavi@gmail.com',

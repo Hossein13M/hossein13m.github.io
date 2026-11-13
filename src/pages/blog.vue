@@ -3,7 +3,8 @@ import { podcasts, publications } from '@/data/blog';
 
 usePageMeta({
   title: 'Blog',
-  description: 'Technical articles, publications, and podcast appearances.',
+  description:
+    'Writing by Hossein Mousavi on observability, Vue, Angular, JavaScript, and software design, plus a podcast on Angular forms.',
 });
 
 useItemListJsonLd('Writing and talks', [

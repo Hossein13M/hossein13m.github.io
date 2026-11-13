@@ -4,7 +4,7 @@ import { companies, getRolesForCompany } from '@/data/experience';
 usePageMeta({
   title: 'Experiences',
   description:
-    'Professional work experience at NN, AIHR, Eurowings, Alibaba Travels, Testfully, Tapsell, XEPOS, and MFT.',
+    'Work history from network infrastructure and frontend engineering to Senior DevOps at Nationale Nederlanden, including AIHR, Eurowings, and Alibaba Travels.',
 });
 
 const companiesWithRoles = computed(() =>

@@ -155,7 +155,7 @@ export const podcasts: Podcast[] = [
     image: socialImage('adventure-in-angular.webp'),
     url: 'https://topenddevs.com/podcasts/adventures-in-angular/template-driven-approach-vs-reactive-form-approach-with-hossein-mousavi-aia-346',
     description:
-      'A practical discussion on Angular form approaches and tradeoffs.',
+      'Hossein Mousavi on Adventures in Angular, comparing template-driven and reactive forms.',
     links: [
       {
         name: 'Spotify',
