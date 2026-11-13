@@ -25,8 +25,8 @@
     "vue"
   ],
   "engines": {
-    "node": ">=24.22.1",
-    "pnpm": ">=12.16.1"
+    "node": ">=26.13.1",
+    "pnpm": ">=12.20.0"
   },
   "type": "module",
   "scripts": {
@@ -45,7 +45,7 @@
       "prettier --write"
     ]
   },
-  "packageManager": "pnpm@12.16.1",
+  "packageManager": "pnpm@12.20.0",
   "dependencies": {
     "@tailwindcss/vite": "4.3.3",
     "nuxt": "4.6.3",
