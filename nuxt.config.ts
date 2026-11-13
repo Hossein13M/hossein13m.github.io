@@ -63,6 +63,11 @@ export default defineNuxtConfig({
         },
         { rel: 'manifest', href: '/site.webmanifest' },
         { rel: 'alternate', href: '/llms.txt', type: 'text/markdown' },
+        {
+          rel: 'ai-catalog',
+          href: '/.well-known/ai-catalog.json',
+          type: 'application/ai-catalog+json',
+        },
       ],
     },
   },
