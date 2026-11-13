@@ -8,13 +8,15 @@
     {
       "identifier": "urn:air:hossein.dev:site:portfolio",
       "displayName": "Hossein Mousavi",
-      "description": "Personal site of Hossein Mousavi, a Senior DevOps Engineer. Work experience, writing, and contact links.",
+      "description": "Personal site of Hossein Mousavi, a Senior DevOps Engineer at Nationale Nederlanden in the Netherlands. Work history, writing on software engineering, and contact links.",
       "type": "text/markdown; profile=\"urn:air:agent-skills\"",
       "url": "https://hossein.dev/llms.txt",
       "representativeQueries": [
         "Who is Hossein Mousavi?",
         "What is Hossein Mousavi's work experience?",
-        "Where can I read Hossein Mousavi's writing?"
+        "Where can I read Hossein Mousavi's writing?",
+        "How can I contact Hossein Mousavi?",
+        "What does Hossein Mousavi do at Nationale Nederlanden?"
       ]
     }
   ]
