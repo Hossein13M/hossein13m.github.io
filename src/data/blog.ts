@@ -127,21 +127,21 @@ export const publications: Publication[] = [
   },
   {
     title: 'Git Hook Husky 6 Lint and commitlint for JavaScript Projects',
-    url: 'https://medium.com/codex/git-hook-husky-6-lint-prettier-eslint-and-commitlint-for-javascript-projects-8cee3589b6b8',
+    url: 'https://medium.com/angular-in-depth/husky-6-lint-prettier-eslint-and-commitlint-for-javascript-project-d7174d44735a',
     image: publicationCover('medium-husky.webp'),
     summary:
       'Use Git hooks with Husky to lint commit messages, format the project with Prettier and ESLint, and keep JavaScript commits consistent.',
   },
   {
     title: 'Angular Reactive Form with Angular Material and Custom Validation',
-    url: 'https://medium.com/codex/angular-reactive-form-including-angular-material-and-custom-validation-5b207a9a2106',
+    url: 'https://hossein13m.medium.com/angular-forms-reactive-form-including-angular-material-and-custom-validator-9ef324cc3b08',
     image: publicationCover('medium-form.webp'),
     summary:
       'Implement a reactive Angular form with Angular Material and a custom, dynamic validator that changes with the selected role.',
   },
   {
     title: 'A Detailed Look at filter(), map(), and reduce() in JavaScript',
-    url: 'https://medium.com/p/18d72f483ada',
+    url: 'https://hossein13m.medium.com/take-a-good-look-at-filter-map-and-reduce-in-javascript-18d72f483ada',
     image: publicationCover('medium-javascript.webp'),
     summary:
       'A deep dive into filter, map, and reduce on Array.prototype in JavaScript, what each method does, and how they differ.',
@@ -160,7 +160,7 @@ export const podcasts: Podcast[] = [
       {
         name: 'Spotify',
         icon: socialIconUrl('Spotify'),
-        url: 'https://open.spotify.com/episode/5BoFoH3WNYU5khCOCqtogz?si=QBVzySKXQkWZ_wbwP9ay8Q',
+        url: 'https://open.spotify.com/episode/5BoFoH3WNYU5khCOCqtogz',
       },
       {
         name: 'Apple Podcast',

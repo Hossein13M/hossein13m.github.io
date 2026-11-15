@@ -11,8 +11,8 @@ export const site = {
   email: 'dev.hosseinmousavi@gmail.com',
   github: 'https://github.com/hossein13m',
   linkedin: 'https://www.linkedin.com/in/hossein13m',
-  stackoverflow: 'https://stackoverflow.com/users/10341207/hossein-mousavi',
+  stackoverflow: 'https://stackoverflow.com/users/hossein13m',
   medium: 'https://hossein13m.medium.com/',
   telegram: 'https://t.me/DevDastan',
-  mentorcruise: 'https://mentorcruise.com/mentor/hosseinmousavi/?source=embed',
+  mentorcruise: 'https://mentorcruise.com/mentor/hosseinmousavi/',
 } as const;
