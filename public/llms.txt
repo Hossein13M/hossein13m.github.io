@@ -41,6 +41,6 @@ Articles cover observability, Vue reactivity and script setup, design principles
 - [GitHub](https://github.com/hossein13m): Open source and public repositories
 - [LinkedIn](https://www.linkedin.com/in/hossein13m): Professional profile
 - [Medium](https://hossein13m.medium.com/): Long-form writing
-- [Stack Overflow](https://stackoverflow.com/users/10341207/hossein-mousavi): Q&A profile
+- [Stack Overflow](https://stackoverflow.com/users/hossein13m): Q&A profile
 - [MentorCruise](https://mentorcruise.com/mentor/hosseinmousavi/): Mentoring profile
 - [Telegram](https://t.me/DevDastan): Direct contact
