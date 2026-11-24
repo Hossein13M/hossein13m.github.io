@@ -50,21 +50,21 @@
     "@tailwindcss/vite": "4.3.5",
     "nuxt": "4.6.4",
     "tailwindcss": "4.3.5",
-    "vue": "3.5.45"
+    "vue": "3.5.46"
   },
   "devDependencies": {
     "@commitlint/cli": "21.2.4",
     "@commitlint/config-conventional": "21.2.4",
     "@eslint/js": "10.0.1",
     "@types/node": "26.6.6",
-    "eslint": "10.14.0",
+    "eslint": "10.15.0",
     "eslint-plugin-vue": "10.12.1",
     "globals": "17.14.0",
     "husky": "9.1.7",
-    "lint-staged": "17.6.0",
+    "lint-staged": "17.6.1",
     "prettier": "3.10.1",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.72.2",
+    "typescript-eslint": "8.73.0",
     "vue-eslint-parser": "10.4.2"
   }
 }
