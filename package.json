@@ -48,7 +48,7 @@
   "packageManager": "pnpm@12.20.0",
   "dependencies": {
     "@tailwindcss/vite": "4.3.5",
-    "nuxt": "4.6.4",
+    "nuxt": "4.7.0",
     "tailwindcss": "4.3.5",
     "vue": "3.5.46"
   },
@@ -61,10 +61,10 @@
     "eslint-plugin-vue": "10.12.1",
     "globals": "17.14.0",
     "husky": "9.1.7",
-    "lint-staged": "17.6.1",
+    "lint-staged": "17.6.2",
     "prettier": "3.10.1",
     "typescript": "6.0.3",
-    "typescript-eslint": "8.73.0",
+    "typescript-eslint": "8.74.0",
     "vue-eslint-parser": "10.4.2"
   }
 }
